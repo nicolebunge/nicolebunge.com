@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'nicolebunge',
         short_name: 'starter',
@@ -18,4 +18,4 @@ module.exports = {
     },
     'gatsby-plugin-offline',
   ],
-}
+};
