@@ -7,7 +7,7 @@ import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
 import Main from '../Main';
-import './style.css';
+import './style.module.css';
 
 class Layout extends PureComponent {
   static propTypes = {

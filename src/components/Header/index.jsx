@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import './style.css';
+import styles from './style.module.css';
 
 class Header extends PureComponent {
   static propTypes = {
@@ -16,7 +16,7 @@ class Header extends PureComponent {
 
     return (
       <header
-        className="header"
+        className={styles.header}
         role="banner"
       >
         {children}

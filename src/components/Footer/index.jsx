@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import './style.css';
+import styles from './style.module.css';
 
 class Footer extends PureComponent {
   static propTypes = {
@@ -16,7 +16,7 @@ class Footer extends PureComponent {
 
     return (
       <footer
-        className="footer"
+        className={styles.footer}
         role="contentinfo"
       >
         {children}

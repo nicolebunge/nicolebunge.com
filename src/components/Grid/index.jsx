@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import './style.css';
+import styles from './style.module.css';
 
 class Grid extends PureComponent {
   static propTypes = {
@@ -15,7 +15,7 @@ class Grid extends PureComponent {
     const { children } = this.props;
 
     return (
-      <div className="grid">
+      <div className={styles.grid}>
         {children}
       </div>
     );

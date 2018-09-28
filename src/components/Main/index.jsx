@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import './style.css';
+import styles from './style.module.css';
 
 class Main extends PureComponent {
   static propTypes = {
@@ -16,7 +16,7 @@ class Main extends PureComponent {
 
     return (
       <main
-        className="main"
+        className={styles.main}
         role="main"
       >
         {children}
