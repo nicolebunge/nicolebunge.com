@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
 import 'typeface-source-sans-pro';
+import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
+import Main from '../Main';
 import './style.css';
 
 class Layout extends PureComponent {
@@ -56,9 +58,20 @@ class Layout extends PureComponent {
                 </h1>
               </Grid>
             </Header>
-            <Grid>
-              {children}
-            </Grid>
+            <Main>
+              <Grid>
+                {children}
+              </Grid>
+            </Main>
+            <Footer>
+              <Grid>
+                ©
+                {' '}
+                {(new Date()).getFullYear()}
+                {' '}
+                Nicole Bunge
+              </Grid>
+            </Footer>
           </div>
         )}
       />
