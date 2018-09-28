@@ -3,7 +3,12 @@ module.exports = {
     title: 'Nicole Bunge',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-126642580-1',
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -16,6 +21,11 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-offline',
+    },
+    {
+      resolve: 'gatsby-plugin-react-helmet',
+    },
   ],
 };
