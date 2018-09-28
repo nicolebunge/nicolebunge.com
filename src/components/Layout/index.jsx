@@ -4,6 +4,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Grid from '../Grid';
 import Header from '../Header';
+import 'typeface-source-sans-pro';
 import './style.css';
 
 const Layout = ({ children }) => (
