@@ -1,4 +1,4 @@
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, Link, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -29,7 +29,21 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header>
+          <Grid>
+            <h1 style={{ margin: 0 }}>
+              <Link
+                to="/"
+                style={{
+                  color: 'white',
+                  textDecoration: 'none',
+                }}
+              >
+                {data.site.siteMetadata.title}
+              </Link>
+            </h1>
+          </Grid>
+        </Header>
         <Grid>
           {children}
         </Grid>

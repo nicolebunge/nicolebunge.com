@@ -1,33 +1,28 @@
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
-import Grid from '../Grid';
+import React, { PureComponent } from 'react';
 import './style.css';
 
-const Header = ({ siteTitle }) => (
-  <div className="header">
-    <Grid>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </Grid>
-  </div>
-);
+class Header extends PureComponent {
+  static propTypes = {
+    children: PropTypes.node,
+  };
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
+  static defaultProps = {
+    children: null,
+  };
 
-Header.defaultProps = {
-  siteTitle: '',
-};
+  render() {
+    const { children } = this.props;
+
+    return (
+      <header
+        className="header"
+        role="banner"
+      >
+        {children}
+      </header>
+    );
+  }
+}
 
 export default Header;
