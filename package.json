@@ -21,8 +21,9 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "lint:css": "stylelint '**/*.css'",
     "lint:js": "eslint '**/*.{js,jsx}'",
-    "lint": "npm run lint:js",
+    "lint": "npm run lint:css && npm run lint:js",
     "test": "npm run lint"
   },
   "repository": {
@@ -35,6 +36,9 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^1.0.0"
   }
 }
