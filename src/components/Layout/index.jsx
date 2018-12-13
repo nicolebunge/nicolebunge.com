@@ -7,6 +7,8 @@ import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
 import Main from '../Main';
+import Navigation from '../Navigation';
+import * as routes from '../../constants/routes';
 import './style.module.css';
 
 class Layout extends PureComponent {
@@ -56,6 +58,11 @@ class Layout extends PureComponent {
                     {data.site.siteMetadata.title}
                   </Link>
                 </h1>
+                <Navigation
+                  routes={[
+                    routes.INDEX,
+                  ]}
+                />
               </Grid>
             </Header>
             <Main>
@@ -65,11 +72,20 @@ class Layout extends PureComponent {
             </Main>
             <Footer>
               <Grid>
-                ©
-                {' '}
-                {(new Date()).getFullYear()}
-                {' '}
-                Nicole Bunge
+                <p>
+                  ©
+                  {' '}
+                  {(new Date()).getFullYear()}
+                  {' '}
+                  Nicole Bunge
+                </p>
+
+                <Navigation
+                  routes={[
+                    routes.PRIVACY,
+                    routes.IMPRINT,
+                  ]}
+                />
               </Grid>
             </Footer>
           </div>
