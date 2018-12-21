@@ -3,6 +3,7 @@ import { graphql, Link, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
+import Cookie from '../Cookie';
 import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
@@ -69,6 +70,7 @@ class Layout extends PureComponent {
                 <Navigation routes={[routes.PRIVACY, routes.IMPRINT]} />
               </Grid>
             </Footer>
+            <Cookie />
           </div>
         )}
       />
