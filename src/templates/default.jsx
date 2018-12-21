@@ -2,12 +2,14 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const Template = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark;
 
   return (
     <Layout>
+      <SEO title={frontmatter.title} />
       <h1>{frontmatter.title}</h1>
       <div
         className="blog-post-content"
