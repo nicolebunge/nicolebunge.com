@@ -21,10 +21,10 @@ class Navigation extends PureComponent {
     return (
       <nav className={styles.navigation}>
         {routes && (
-          <ul>
+          <ul className={styles.navigation__list}>
             {routes.map(route => (
               <li key={route.path}>
-                <Link to={route.path}>{route.name}</Link>
+                <Link to={route.path} activeClassName={styles['navigation__link--active']}>{route.name}</Link>
               </li>
             ))}
           </ul>

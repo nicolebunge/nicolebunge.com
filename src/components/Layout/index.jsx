@@ -1,15 +1,15 @@
+import 'typeface-source-sans-pro';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
-import 'typeface-source-sans-pro';
 import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
 import Main from '../Main';
 import Navigation from '../Navigation';
 import * as routes from '../../constants/routes';
-import './style.module.css';
+import styles from './style.module.css';
 
 class Layout extends PureComponent {
   static propTypes = {
@@ -35,7 +35,7 @@ class Layout extends PureComponent {
           }
         `}
         render={data => (
-          <div>
+          <div className={styles.layout}>
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
@@ -47,45 +47,26 @@ class Layout extends PureComponent {
             </Helmet>
             <Header>
               <Grid>
-                <h1 style={{ margin: 0 }}>
-                  <Link
-                    to="/"
-                    style={{
-                      color: 'white',
-                      textDecoration: 'none',
-                    }}
-                  >
-                    {data.site.siteMetadata.title}
-                  </Link>
+                <h1>
+                  <Link to="/">{data.site.siteMetadata.title}</Link>
                 </h1>
-                <Navigation
-                  routes={[
-                    routes.INDEX,
-                  ]}
-                />
+                <Navigation routes={[routes.INDEX]} />
               </Grid>
             </Header>
             <Main>
-              <Grid>
-                {children}
-              </Grid>
+              <Grid>{children}</Grid>
             </Main>
             <Footer>
               <Grid>
                 <p>
                   ©
                   {' '}
-                  {(new Date()).getFullYear()}
+                  {new Date().getFullYear()}
                   {' '}
                   Nicole Bunge
                 </p>
 
-                <Navigation
-                  routes={[
-                    routes.PRIVACY,
-                    routes.IMPRINT,
-                  ]}
-                />
+                <Navigation routes={[routes.PRIVACY, routes.IMPRINT]} />
               </Grid>
             </Footer>
           </div>
