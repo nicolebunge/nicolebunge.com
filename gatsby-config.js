@@ -30,14 +30,27 @@ module.exports = {
       resolve: 'gatsby-plugin-react-helmet',
     },
     {
+      resolve: 'gatsby-plugin-sharp',
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src`,
-        name: 'markdown-pages',
+        name: 'images',
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages/`,
+        name: 'pages',
       },
     },
     {
       resolve: 'gatsby-transformer-remark',
+    },
+    {
+      resolve: 'gatsby-transformer-sharp',
     },
   ],
 };
