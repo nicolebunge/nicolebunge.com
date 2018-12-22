@@ -51,7 +51,14 @@ class Layout extends PureComponent {
                 <h1>
                   <Link to="/">{data.site.siteMetadata.title}</Link>
                 </h1>
-                <Navigation routes={[routes.INDEX]} />
+                <Navigation
+                  routes={[
+                    routes.INDEX,
+                    routes.ABOUT,
+                    routes.ACTING,
+                    routes.THEATRE_PEDAGOGY,
+                  ]}
+                />
               </Grid>
             </Header>
             <Main>
