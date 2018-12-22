@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+figure {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -52,6 +56,12 @@ h5 {
 
 h6 {
   font-size: 1.125rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 p {

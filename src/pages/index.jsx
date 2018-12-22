@@ -1,15 +1,21 @@
-import { Link } from 'gatsby';
 import React from 'react';
+import Gallery from '../components/Gallery';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <Gallery
+      images={[
+        'https://via.placeholder.com/800x1600',
+        'https://via.placeholder.com/800x600',
+        'https://via.placeholder.com/800x600',
+        'https://via.placeholder.com/800x600',
+        'https://via.placeholder.com/800x600',
+      ]}
+    />
   </Layout>
 );
 

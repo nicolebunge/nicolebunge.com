@@ -1,0 +1,23 @@
+.gallery {
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__item:first-child {
+  grid-row-end: span 2;
+  grid-row-start: 1;
+}
+
+.gallery__figure {
+  height: 100%;
+}
+
+.gallery__image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
