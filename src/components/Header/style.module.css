@@ -1,6 +1,6 @@
 .header {
   bottom: 0;
-  box-shadow: 0.125em 0 0.125em rgba(0, 0, 0, 0.125);
+  box-shadow: 2em 0 2em -2em rgba(0, 0, 0, 0.125);
   height: 100vh;
   left: 0;
   min-width: 12em;
