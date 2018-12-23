@@ -1,0 +1,10 @@
+.form__field {
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+}
+
+.form__input {
+  border: 1px solid #000;
+  padding: 0.5em 1em;
+  width: 100%;
+}
