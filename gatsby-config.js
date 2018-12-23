@@ -3,6 +3,7 @@ module.exports = {
     title: 'Nicole Bunge',
     description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: '@BungeNicole',
+    siteUrl: 'https://www.nicolebunge.com',
   },
   plugins: [
     {
@@ -31,6 +32,9 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-sharp',
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
     },
     {
       resolve: 'gatsby-source-filesystem',
