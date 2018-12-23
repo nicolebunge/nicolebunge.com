@@ -13,9 +13,14 @@ export const ACTING = {
   path: '/schauspiel',
 };
 
-export const THEATRE_PEDAGOGY = {
-  name: 'Theater Pädagogik',
-  path: '/theaterpaedagogik',
+export const CONTACT = {
+  name: 'Kontakt',
+  path: '/kontakt',
+};
+
+export const IMPRINT = {
+  name: 'Impressum',
+  path: '/impressum',
 };
 
 export const PRIVACY = {
@@ -23,7 +28,7 @@ export const PRIVACY = {
   path: '/datenschutz',
 };
 
-export const IMPRINT = {
-  name: 'Impressum',
-  path: '/impressum',
+export const THEATRE_PEDAGOGY = {
+  name: 'Theaterpädagogik',
+  path: '/theaterpaedagogik',
 };

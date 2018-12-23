@@ -57,6 +57,7 @@ class Layout extends PureComponent {
                     routes.ABOUT,
                     routes.ACTING,
                     routes.THEATRE_PEDAGOGY,
+                    routes.CONTACT,
                   ]}
                 />
               </Grid>

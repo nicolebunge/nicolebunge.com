@@ -10,11 +10,7 @@ const Template = ({ data }) => {
   return (
     <Layout>
       <SEO title={frontmatter.title} />
-      <h1>{frontmatter.title}</h1>
-      <div
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
 };
