@@ -20,6 +20,12 @@ a {
   text-decoration: none;
 }
 
+address {
+  font-style: normal;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+}
+
 figure {
   margin: 0;
 }
@@ -58,6 +64,18 @@ h6 {
   font-size: 1.125rem;
 }
 
+button,
+input,
+textarea,
+select {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -73,6 +91,11 @@ ol,
 ul {
   margin-bottom: 1.5em;
   margin-top: 0.5em;
+}
+
+textarea {
+  min-height: 6em;
+  resize: vertical;
 }
 
 ul {

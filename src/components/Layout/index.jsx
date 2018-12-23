@@ -62,22 +62,30 @@ class Layout extends PureComponent {
                 />
               </Grid>
             </Header>
-            <Main>
-              <Grid>{children}</Grid>
-            </Main>
-            <Footer>
-              <Grid>
-                <p>
-                  ©
-                  {' '}
-                  {new Date().getFullYear()}
-                  {' '}
-                  Nicole Bunge
-                </p>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                flexGrow: 1,
+              }}
+            >
+              <Main>
+                <Grid>{children}</Grid>
+              </Main>
+              <Footer>
+                <Grid>
+                  <p>
+                    ©
+                    {' '}
+                    {new Date().getFullYear()}
+                    {' '}
+                    Nicole Bunge
+                  </p>
 
-                <Navigation routes={[routes.PRIVACY, routes.IMPRINT]} />
-              </Grid>
-            </Footer>
+                  <Navigation routes={[routes.PRIVACY, routes.IMPRINT]} />
+                </Grid>
+              </Footer>
+            </div>
             <Cookie />
           </div>
         )}
