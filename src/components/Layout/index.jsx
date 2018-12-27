@@ -11,6 +11,7 @@ import Main from '../Main';
 import Navigation from '../Navigation';
 import * as routes from '../../constants/routes';
 import styles from './style.module.css';
+import nicoleBunge from '../../images/nicole-bunge.svg';
 
 class Layout extends PureComponent {
   static propTypes = {
@@ -49,7 +50,13 @@ class Layout extends PureComponent {
             <Header>
               <Grid>
                 <h1>
-                  <Link to="/">{data.site.siteMetadata.title}</Link>
+                  <Link to="/">
+                    <img
+                      src={nicoleBunge}
+                      alt={data.site.siteMetadata.title}
+                      width="160"
+                    />
+                  </Link>
                 </h1>
                 <Navigation
                   routes={[
@@ -75,12 +82,12 @@ class Layout extends PureComponent {
               <Footer>
                 <Grid>
                   <p>
-                    ©
-                    {' '}
-                    {new Date().getFullYear()}
-                    {' '}
-                    Nicole Bunge
-                  </p>
+©
+{' '}
+{new Date().getFullYear()}
+{' '}
+Nicole Bunge
+</p>
 
                   <Navigation routes={[routes.PRIVACY, routes.IMPRINT]} />
                 </Grid>
