@@ -21,6 +21,7 @@ const ContactForm = () => (
       <div className={styles.form__field}>
         <Label htmlFor="name">Name</Label>
         <Field
+          autocomplete="name"
           className={styles.form__input}
           name="name"
           required
@@ -31,6 +32,7 @@ const ContactForm = () => (
       <div className={styles.form__field}>
         <Label htmlFor="email">E-Mail</Label>
         <Field
+          autocomplete="email"
           className={styles.form__input}
           name="email"
           required
@@ -43,8 +45,8 @@ const ContactForm = () => (
         <Field
           className={styles.form__input}
           component="textarea"
-          required
           name="message"
+          required
         />
       </div>
 
