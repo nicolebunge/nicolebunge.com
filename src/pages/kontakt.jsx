@@ -14,43 +14,45 @@ const ContactPage = () => (
       expedita suscipit alias optio est reprehenderit quisquam repellendus
       aliquid cumque nihil aperiam harum quis ea ab, vel dolores dicta.
     </p>
-    <address>
-      Nicole Bunge
-      <br />
-      <img src={email} alt="E-Mail Adresse" width="147.1" height="15" />
-    </address>
-    <ul>
-      <li>
-        <a
-          href="https://www.instagram.com/nicole.bunge/"
-          itemProp="sameAs"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img src={instagram} alt="Nicole Bunge auf Instagram" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/nicole-bunge-1b891415a/"
-          itemProp="sameAs"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img src={linkedin} alt="Nicole Bunge auf LinkedIn" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.xing.com/profile/Nicole_Bunge3"
-          itemProp="sameAs"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img src={xing} alt="Nicole Bunge auf Xing" />
-        </a>
-      </li>
-    </ul>
+    <div itemScope itemType="http://schema.org/Person">
+      <address>
+        <span itemProp="name">Nicole Bunge</span>
+        <br />
+        <img src={email} alt="E-Mail Adresse" width="147.1" height="15" />
+      </address>
+      <ul>
+        <li>
+          <a
+            href="https://www.instagram.com/nicole.bunge/"
+            itemProp="sameAs"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src={instagram} alt="Nicole Bunge auf Instagram" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/nicole-bunge-1b891415a/"
+            itemProp="sameAs"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src={linkedin} alt="Nicole Bunge auf LinkedIn" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.xing.com/profile/Nicole_Bunge3"
+            itemProp="sameAs"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src={xing} alt="Nicole Bunge auf Xing" />
+          </a>
+        </li>
+      </ul>
+    </div>
     <ContactForm />
   </Layout>
 );
