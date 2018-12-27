@@ -7,6 +7,7 @@ import Cookie from '../Cookie';
 import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
+import Icons from '../Icons';
 import Main from '../Main';
 import Navigation from '../Navigation';
 import * as routes from '../../constants/routes';
@@ -48,7 +49,11 @@ class Layout extends PureComponent {
               <html lang="en" />
             </Helmet>
             <Header>
-              <Grid>
+              <div
+                style={{
+                  flexGrow: 1,
+                }}
+              >
                 <h1>
                   <Link to="/">
                     <img
@@ -67,7 +72,8 @@ class Layout extends PureComponent {
                     routes.CONTACT,
                   ]}
                 />
-              </Grid>
+              </div>
+              <Icons />
             </Header>
             <div
               style={{

@@ -1,0 +1,10 @@
+.icons {
+  display: flex;
+  list-style: none;
+  margin: 0.25em -0.25em 1.25em;
+  padding: 0;
+}
+
+.icons > li {
+  margin: 0.25em;
+}
