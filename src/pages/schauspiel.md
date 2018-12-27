@@ -40,20 +40,20 @@ Regie: Abini Gold,
 **„Ein idealer Gatte“**, Das junge Mädchen  
 Oscar Wilde
 
-**„Der Tor und der Tod**“, Mabel Chiltern  
+**„Der Tor und der Tod“**, Mabel Chiltern  
 Hugo von Hofmannsthal
 
-**„Alice im Wunderland**“, Alice  
+**„Alice im Wunderland“**, Alice  
 Roland Schimmelpfennig
 
-**„Emilia Galotti**“, Gräfin Orsina  
+**„Emilia Galotti“**, Gräfin Orsina  
 Gotthold Ephraim Lessing
 
-**„La Double Inconstance**“, Silvia  
+**„La Double Inconstance“**, Silvia  
 Pierre Carlet de Marivaux
 
-**„Merlin oder das wüste Land**“, Mordred  
+**„Merlin oder das wüste Land“**, Mordred  
 Tankred Dorst
 
-**„Bier für Frauen**“, Eine Frau  
+**„Bier für Frauen“**, Eine Frau  
 Felicia Zeller
