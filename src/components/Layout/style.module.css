@@ -76,6 +76,13 @@ select {
   padding: 0;
 }
 
+[type="submit"] {
+  border: 1px solid;
+  font-size: 0.875rem;
+  padding: 0.5em 1.5em;
+  text-transform: uppercase;
+}
+
 img {
   height: auto;
   max-width: 100%;
