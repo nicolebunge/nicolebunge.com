@@ -82,12 +82,12 @@ class Layout extends PureComponent {
               <Footer>
                 <Grid>
                   <p>
-©
-{' '}
-{new Date().getFullYear()}
-{' '}
-Nicole Bunge
-</p>
+                    ©
+                    {' '}
+                    {new Date().getFullYear()}
+                    {' '}
+                    Nicole Bunge
+                  </p>
 
                   <Navigation routes={[routes.PRIVACY, routes.IMPRINT]} />
                 </Grid>
