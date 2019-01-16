@@ -1,0 +1,16 @@
+.social {
+  background-color: var(--color-secondary);
+  background-image: linear-gradient(to right, #f8f8f8 1px, transparent 1px);
+  background-position: 50%;
+  background-size: calc(var(--grid-max-width) / 3);
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  left: 0;
+  padding: 1.5em 3.5em;
+  position: fixed;
+  right: 0;
+  will-change: transform;
+  z-index: 1;
+}
