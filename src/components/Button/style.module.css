@@ -1,0 +1,17 @@
+.button {
+  font-weight: 600;
+  padding-right: 3em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.button::after {
+  background-color: currentColor;
+  content: '';
+  height: 0.125em;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5em;
+}
