@@ -5,10 +5,12 @@ import styles from './style.module.css';
 
 class Navigation extends PureComponent {
   static propTypes = {
-    routes: PropTypes.arrayOf(PropTypes.shape({
-      name: PropTypes.string,
-      path: PropTypes.string,
-    })),
+    routes: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        path: PropTypes.string,
+      }),
+    ),
   };
 
   static defaultProps = {
@@ -23,8 +25,14 @@ class Navigation extends PureComponent {
         {routes && (
           <ul className={styles.navigation__list}>
             {routes.map(route => (
-              <li key={route.path}>
-                <Link to={route.path} activeClassName={styles['navigation__link--active']}>{route.name}</Link>
+              <li className={styles.navigation__item} key={route.path}>
+                <Link
+                  to={route.path}
+                  className={styles.navigation__link}
+                  activeClassName={styles.navigation__linkActive}
+                >
+                  {route.name}
+                </Link>
               </li>
             ))}
           </ul>
