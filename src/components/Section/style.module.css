@@ -1,4 +1,7 @@
 .section {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
   padding-bottom: 6em;
   padding-top: 6em;
 }
