@@ -1,6 +1,6 @@
 .social {
   background-color: var(--color-secondary);
-  background-image: linear-gradient(to right, #f8f8f8 1px, transparent 1px);
+  background-image: linear-gradient(to right, #f4f4f4 1px, transparent 1px);
   background-position: 50%;
   background-size: calc(var(--grid-max-width) / 3);
   bottom: 0;
