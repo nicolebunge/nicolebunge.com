@@ -1,5 +1,3 @@
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import React from 'react';
 import GridColumn from '../components/GridColumn';
 import Grid from '../components/Grid';
@@ -8,7 +6,7 @@ import GridRow from '../components/GridRow';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
-const TheatrePedagogyPage = ({ data }) => (
+const TheatrePedagogyPage = () => (
   <Layout>
     <SEO title="Theaterpädagogik" />
 
@@ -89,15 +87,3 @@ const TheatrePedagogyPage = ({ data }) => (
 );
 
 export default TheatrePedagogyPage;
-
-export const pageQuery = graphql`
-  query {
-    image3: file(relativePath: { eq: "image-03-large.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-  }
-`;

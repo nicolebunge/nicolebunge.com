@@ -1,5 +1,6 @@
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
+import PropTypes from 'prop-types';
 import React from 'react';
 import Button from '../components/Button';
 import GridColumn from '../components/GridColumn';
@@ -104,6 +105,14 @@ const IndexPage = ({ data }) => (
     </Section>
   </Layout>
 );
+
+IndexPage.propTypes = {
+  data: PropTypes.shape(),
+};
+
+IndexPage.defaultProps = {
+  data: null,
+};
 
 export default IndexPage;
 

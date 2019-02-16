@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable react/no-array-index-key */
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React, { Component, Fragment } from 'react';
@@ -64,7 +66,7 @@ class Gallery extends Component {
 
   render() {
     const { currentImage, lightboxIsOpen } = this.state;
-    const { images, theme } = this.props;
+    const { images } = this.props;
 
     return (
       <Fragment>
@@ -80,7 +82,6 @@ class Gallery extends Component {
           ))}
         </ul>
         <Lightbox
-          backdropClosesModal={true}
           currentImage={currentImage}
           images={images.map((image) => image.fluid)}
           isOpen={lightboxIsOpen}
@@ -89,7 +90,6 @@ class Gallery extends Component {
           onClickPrev={() => this.gotoPrevious()}
           onClickThumbnail={() => this.gotoImage()}
           onClose={() => this.closeLightbox()}
-          theme={theme}
         />
       </Fragment>
     );
@@ -98,10 +98,10 @@ class Gallery extends Component {
 
 Gallery.propTypes = {
   images: PropTypes.arrayOf(PropTypes.shape()),
-  theme: PropTypes.shape(),
+};
+
+Gallery.defaultProps = {
+  images: [],
 };
 
 export default Gallery;
-
-// https://github.com/jossmac/react-images/blob/master/examples/src/components/Gallery.js
-// https://github.com/iammatthias/.com/blob/master/src/components/Gallery/GalleryGrid.js

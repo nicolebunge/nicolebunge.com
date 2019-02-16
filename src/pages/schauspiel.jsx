@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import React from 'react';
 import Gallery from '../components/Gallery';
 import Grid from '../components/Grid';
@@ -192,6 +193,14 @@ const ActingPage = ({ data }) => (
   </Layout>
 );
 
+ActingPage.propTypes = {
+  data: PropTypes.shape(),
+};
+
+ActingPage.defaultProps = {
+  data: null,
+};
+
 export default ActingPage;
 
 export const pageQuery = graphql`
@@ -222,48 +231,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-// query {
-//   alice: file(relativePath: { eq: "alice.jpg" }) {
-//     childImageSharp {
-//       fluid {
-//         ...GatsbyImageSharpFluid_withWebp_noBase64
-//       }
-//     }
-//   }
-//   berliner: file(relativePath: { eq: "berliner.jpg" }) {
-//     childImageSharp {
-//       fluid {
-//         ...GatsbyImageSharpFluid_withWebp_noBase64
-//       }
-//     }
-//   }
-//   goth: file(relativePath: { eq: "goth.jpg" }) {
-//     childImageSharp {
-//       fluid {
-//         ...GatsbyImageSharpFluid_withWebp_noBase64
-//       }
-//     }
-//   }
-//   kompagnie1: file(relativePath: { eq: "kompagnie-1.jpg" }) {
-//     childImageSharp {
-//       fluid {
-//         ...GatsbyImageSharpFluid_withWebp_noBase64
-//       }
-//     }
-//   }
-//   kompagnie2: file(relativePath: { eq: "kompagnie-2.jpg" }) {
-//     childImageSharp {
-//       fluid {
-//         ...GatsbyImageSharpFluid_withWebp_noBase64
-//       }
-//     }
-//   }
-//   toteMaedchen: file(relativePath: { eq: "das-tote-maedchen.jpg" }) {
-//     childImageSharp {
-//       fluid {
-//         ...GatsbyImageSharpFluid_withWebp_noBase64
-//       }
-//     }
-//   }
-// }
