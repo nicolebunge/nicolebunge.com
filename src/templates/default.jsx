@@ -1,7 +1,9 @@
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import Grid from '../components/Grid';
 import Layout from '../components/Layout';
+import Section from '../components/Section';
 import SEO from '../components/SEO';
 
 const Template = ({ data }) => {
@@ -10,7 +12,11 @@ const Template = ({ data }) => {
   return (
     <Layout>
       <SEO title={frontmatter.title} />
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Section>
+        <Grid>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </Grid>
+      </Section>
     </Layout>
   );
 };
