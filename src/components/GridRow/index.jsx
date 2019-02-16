@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import styles from './style.module.css';
 
-class Row extends PureComponent {
+class GridRow extends PureComponent {
   static propTypes = {
     children: PropTypes.node,
   };
@@ -15,11 +15,11 @@ class Row extends PureComponent {
     const { children } = this.props;
 
     return (
-      <div className={styles.row}>
+      <div className={styles.grid__row}>
         {children}
       </div>
     );
   }
 }
 
-export default Row;
+export default GridRow;
