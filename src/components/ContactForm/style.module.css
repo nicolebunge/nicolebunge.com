@@ -1,10 +1,35 @@
-.form__field {
+.form {
   margin-bottom: 1.5em;
   margin-top: 0.5em;
 }
 
+.form ::placeholder {
+  opacity: 0;
+}
+
+.form__field {
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  position: relative;
+}
+
+.form__label {
+  left: 0;
+  position: absolute;
+  top: 0.5em;
+  transform-origin: 0 50%;
+  transition: transform 0.3s;
+}
+
+.form__input:not(:placeholder-shown) ~ .form__label,
+.form__input:focus ~ .form__label,
+.form__input:valid ~ .form__label {
+  transform: translateY(-100%) scale(0.5);
+}
+
 .form__input {
-  border: 1px solid #000;
-  padding: 0.5em 1em;
+  border-bottom: 1px solid;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   width: 100%;
 }
