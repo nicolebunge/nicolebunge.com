@@ -1,13 +1,18 @@
 .header {
-  bottom: 0;
-  box-shadow: 2em 0 2em -2em rgba(0, 0, 0, 0.125);
+  align-items: center;
+  background-color: var(--color-secondary);
+  background-image: linear-gradient(to right, #f4f4f4 1px, transparent 1px);
+  background-position: 50%;
+  background-size: calc(var(--grid-max-width) / 3);
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
   left: 0;
-  min-width: 12em;
-  padding: 1.5em;
-  position: sticky;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  position: fixed;
+  right: 0;
   top: 0;
-  width: 20vw;
+  will-change: transform;
+  z-index: 1;
 }
