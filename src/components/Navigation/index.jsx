@@ -24,7 +24,7 @@ class Navigation extends PureComponent {
       <nav className={styles.navigation}>
         {routes && (
           <ul className={styles.navigation__list}>
-            {routes.map(route => (
+            {routes.map((route) => (
               <li className={styles.navigation__item} key={route.path}>
                 <Link
                   to={route.path}

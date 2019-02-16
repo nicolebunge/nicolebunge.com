@@ -16,10 +16,7 @@ class Label extends PureComponent {
     const { children, htmlFor } = this.props;
 
     return (
-      <label
-        className={styles.label}
-        htmlFor={htmlFor}
-      >
+      <label className={styles.label} htmlFor={htmlFor}>
         {children}
       </label>
     );

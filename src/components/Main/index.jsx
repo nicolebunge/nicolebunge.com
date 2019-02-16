@@ -15,10 +15,7 @@ class Main extends PureComponent {
     const { children } = this.props;
 
     return (
-      <main
-        className={styles.main}
-        role="main"
-      >
+      <main className={styles.main} role="main">
         {children}
       </main>
     );

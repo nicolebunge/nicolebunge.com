@@ -15,10 +15,7 @@ class Header extends PureComponent {
     const { children } = this.props;
 
     return (
-      <header
-        className={styles.header}
-        role="banner"
-      >
+      <header className={styles.header} role="banner">
         {children}
       </header>
     );

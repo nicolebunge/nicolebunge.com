@@ -33,9 +33,7 @@ class SEO extends PureComponent {
   };
 
   render() {
-    const {
-      description, lang, meta, keywords, title,
-    } = this.props;
+    const { description, lang, meta, keywords, title } = this.props;
 
     return (
       <StaticQuery
@@ -86,9 +84,9 @@ class SEO extends PureComponent {
                 .concat(
                   keywords.length > 0
                     ? {
-                      name: 'keywords',
-                      content: keywords.join(', '),
-                    }
+                        name: 'keywords',
+                        content: keywords.join(', '),
+                      }
                     : [],
                 )
                 .concat(meta)}

@@ -17,10 +17,7 @@ class Button extends PureComponent {
     const { children, to } = this.props;
 
     return (
-      <Link
-        className={styles.button}
-        to={to}
-      >
+      <Link className={styles.button} to={to}>
         {children}
       </Link>
     );

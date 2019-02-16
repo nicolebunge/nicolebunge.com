@@ -5,10 +5,8 @@ import * as routes from '../../constants/routes';
 
 const Cookie = () => (
   <CookieConsent>
-    Um die Webseite optimal gestalten und fortlaufend verbessern zu können,
-    werden Cookies verwendet. Durch die weitere Nutzung der Webseite stimmen Sie
-    der Verwendung von Cookies zu.
-    {' '}
+    Um die Webseite optimal gestalten und fortlaufend verbessern zu können, werden Cookies
+    verwendet. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.{' '}
     <Link to={routes.PRIVACY.path}>{routes.PRIVACY.name}</Link>
   </CookieConsent>
 );

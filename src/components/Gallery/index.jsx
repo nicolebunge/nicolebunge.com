@@ -62,14 +62,9 @@ class Gallery extends Component {
     this.gotoNext();
   }
 
-
   render() {
-    const {
-      currentImage, lightboxIsOpen,
-    } = this.state;
-    const {
-      images, theme,
-    } = this.props;
+    const { currentImage, lightboxIsOpen } = this.state;
+    const { images, theme } = this.props;
 
     return (
       <Fragment>
@@ -77,10 +72,7 @@ class Gallery extends Component {
           {images.map((image, index) => (
             <li key={index} className={styles.gallery__item}>
               <figure>
-                <a
-                  href={image.fluid.srcSet}
-                  onClick={event => this.openLightbox(index, event)}
-                >
+                <a href={image.fluid.srcSet} onClick={(event) => this.openLightbox(index, event)}>
                   <Img fluid={image.fluid} />
                 </a>
               </figure>
@@ -90,7 +82,7 @@ class Gallery extends Component {
         <Lightbox
           backdropClosesModal={true}
           currentImage={currentImage}
-          images={images.map(image => image.fluid)}
+          images={images.map((image) => image.fluid)}
           isOpen={lightboxIsOpen}
           onClickImage={() => this.handleClickImage()}
           onClickNext={() => this.gotoNext()}
@@ -110,7 +102,6 @@ Gallery.propTypes = {
 };
 
 export default Gallery;
-
 
 // https://github.com/jossmac/react-images/blob/master/examples/src/components/Gallery.js
 // https://github.com/iammatthias/.com/blob/master/src/components/Gallery/GalleryGrid.js

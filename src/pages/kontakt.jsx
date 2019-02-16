@@ -17,10 +17,9 @@ const ContactPage = () => (
       <Grid>
         <h1>Kontakt</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nam
-          iure expedita suscipit alias optio est reprehenderit quisquam
-          repellendus aliquid cumque nihil aperiam harum quis ea ab, vel dolores
-          dicta.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nam iure expedita
+          suscipit alias optio est reprehenderit quisquam repellendus aliquid cumque nihil aperiam
+          harum quis ea ab, vel dolores dicta.
         </p>
       </Grid>
     </Section>
@@ -33,10 +32,8 @@ const ContactPage = () => (
               <address>
                 <h5 itemProp="name">Nicole Bunge</h5>
                 Schauspielerin & Theaterpädagogin
-
                 <h5>E-Mail</h5>
                 <img src={email} alt="E-Mail Adresse" width="147.1" height="15" />
-
                 <h5>Webseite</h5>
                 <a href="https://www.nicolebunge.com">www.nicolebunge.com</a>
               </address>

@@ -25,9 +25,7 @@ class GridColumn extends PureComponent {
   };
 
   render() {
-    const {
-      children, columnAlign, columnSpan, columnStart, rowAlign,
-    } = this.props;
+    const { children, columnAlign, columnSpan, columnStart, rowAlign } = this.props;
 
     return (
       <div

@@ -15,17 +15,12 @@ const AboutPage = () => (
         <h1 id="bermich">Über Mich</h1>
         <GridRow>
           <GridColumn columnSpan={8}>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-              nihil.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel
-              molestias dolor earum reprehenderit. Quis rerum quae eius? Ad
-              sequi quisquam reprehenderit officia eveniet? Et, quod eaque
-              reiciendis in vel ab. Rerum labore expedita minima aut adipisci
-              eum, fugit tempore aperiam voluptatum nisi maxime optio velit quo
-              voluptatem illum quia?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel molestias dolor earum
+              reprehenderit. Quis rerum quae eius? Ad sequi quisquam reprehenderit officia eveniet?
+              Et, quod eaque reiciendis in vel ab. Rerum labore expedita minima aut adipisci eum,
+              fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
             </p>
           </GridColumn>
         </GridRow>

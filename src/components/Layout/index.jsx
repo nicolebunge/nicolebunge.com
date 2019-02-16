@@ -37,7 +37,7 @@ class Layout extends PureComponent {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <div className={styles.layout}>
             <Helmet
               title={data.site.siteMetadata.title}
@@ -50,11 +50,7 @@ class Layout extends PureComponent {
             </Helmet>
             <Header>
               <Link to="/">
-                <img
-                  src={nicoleBunge}
-                  alt={data.site.siteMetadata.title}
-                  width="160"
-                />
+                <img src={nicoleBunge} alt={data.site.siteMetadata.title} width="160" />
               </Link>
 
               <Navigation
@@ -67,24 +63,11 @@ class Layout extends PureComponent {
                 ]}
               />
             </Header>
-            <Main>
-              {children}
-            </Main>
+            <Main>{children}</Main>
             <Footer>
               <Grid>
-                <Navigation
-                  routes={[
-                    routes.PRIVACY,
-                    routes.IMPRINT,
-                  ]}
-                />
-                <p>
-                  ©
-                  {' '}
-                  {new Date().getFullYear()}
-                  {' '}
-                  Nicole Bunge
-                </p>
+                <Navigation routes={[routes.PRIVACY, routes.IMPRINT]} />
+                <p>© {new Date().getFullYear()} Nicole Bunge</p>
               </Grid>
             </Footer>
             <Cookie />
