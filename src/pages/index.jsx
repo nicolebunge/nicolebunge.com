@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
       <Grid>
         <GridRow>
           <GridColumn columnSpan={4} rowAlign="center">
-            <h2>Über Mich</h2>
+            <h2>Über mich</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
               doloribus vero cumque voluptatum beatae aperiam autem inventore, vitae aspernatur,

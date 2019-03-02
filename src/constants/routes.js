@@ -4,7 +4,7 @@ export const INDEX = {
 };
 
 export const ABOUT = {
-  name: 'Über Mich',
+  name: 'Über mich',
   path: '/ueber-mich',
 };
 
