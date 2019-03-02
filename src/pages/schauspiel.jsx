@@ -32,12 +32,6 @@ const ActingPage = ({ data }) => (
 
     <Section>
       <Grid>
-        <Gallery images={data.allFile.images.map((image) => image.node.childImageSharp)} />
-      </Grid>
-    </Section>
-
-    <Section>
-      <Grid>
         <GridRow>
           <GridColumn columnSpan={4}>
             <h2 id="rollenrepertoire">Rollenrepertoire</h2>
