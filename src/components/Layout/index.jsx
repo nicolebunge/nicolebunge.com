@@ -57,6 +57,7 @@ class Layout extends PureComponent {
                 routes={[
                   routes.INDEX,
                   routes.ABOUT,
+                  routes.GALLERY,
                   routes.ACTING,
                   routes.THEATRE_PEDAGOGY,
                   routes.CONTACT,

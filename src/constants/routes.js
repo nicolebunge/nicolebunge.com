@@ -18,6 +18,11 @@ export const CONTACT = {
   path: '/kontakt',
 };
 
+export const GALLERY = {
+  name: 'Galerie',
+  path: '/galerie',
+};
+
 export const IMPRINT = {
   name: 'Impressum',
   path: '/impressum',

@@ -1,7 +1,4 @@
-import { graphql } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
-import Gallery from '../components/Gallery';
 import Grid from '../components/Grid';
 import GridRow from '../components/GridRow';
 import GridColumn from '../components/GridColumn';
@@ -9,7 +6,7 @@ import Layout from '../components/Layout';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
-const ActingPage = ({ data }) => (
+const ActingPage = () => (
   <Layout>
     <SEO title="Schauspiel" />
 
@@ -187,41 +184,4 @@ const ActingPage = ({ data }) => (
   </Layout>
 );
 
-ActingPage.propTypes = {
-  data: PropTypes.shape(),
-};
-
-ActingPage.defaultProps = {
-  data: null,
-};
-
 export default ActingPage;
-
-export const pageQuery = graphql`
-  query {
-    allFile(
-      filter: {
-        relativePath: {
-          in: [
-            "alice.jpg"
-            "berliner.jpg"
-            "goth.jpg"
-            "kompagnie-1.jpg"
-            "kompagnie-2.jpg"
-            "das-tote-maedchen.jpg"
-          ]
-        }
-      }
-    ) {
-      images: edges {
-        node {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        }
-      }
-    }
-  }
-`;
