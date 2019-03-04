@@ -7,8 +7,8 @@ describe('Navigation component', () => {
     const routes = [
       {
         name: 'Index',
-        path: '/'
-      }
+        path: '/',
+      },
     ];
     const tree = renderer.create(<Navigation routes={routes} />).toJSON();
 
