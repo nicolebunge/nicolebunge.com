@@ -17,13 +17,14 @@ class Section extends PureComponent {
   };
 
   render() {
-    const { children, className, full } = this.props;
+    const { children, className, full, ...otherProps } = this.props;
 
     return (
       <section
         className={classNames(className, styles.section, {
           [styles.sectionFull]: full,
         })}
+        {...otherProps}
       >
         {children}
       </section>

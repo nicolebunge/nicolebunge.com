@@ -14,10 +14,10 @@ class Social extends PureComponent {
   };
 
   render() {
-    const { className } = this.props;
+    const { className, ...otherProps } = this.props;
 
     return (
-      <div className={classNames(className, styles.social)}>
+      <div className={classNames(className, styles.social)} {...otherProps}>
         <Icons />
       </div>
     );

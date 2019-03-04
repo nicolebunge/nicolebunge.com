@@ -15,10 +15,10 @@ class Footer extends PureComponent {
   };
 
   render() {
-    const { children, className } = this.props;
+    const { children, className, ...otherProps } = this.props;
 
     return (
-      <footer className={classNames(className, styles.footer)} role="contentinfo">
+      <footer className={classNames(className, styles.footer)} role="contentinfo" {...otherProps}>
         {children}
       </footer>
     );

@@ -27,7 +27,7 @@ class Layout extends PureComponent {
   };
 
   render() {
-    const { children, className } = this.props;
+    const { children, className, ...otherProps } = this.props;
 
     return (
       <StaticQuery
@@ -41,7 +41,7 @@ class Layout extends PureComponent {
           }
         `}
         render={(data) => (
-          <div className={classNames(className, styles.layout)}>
+          <div className={classNames(className, styles.layout)} {...otherProps}>
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[

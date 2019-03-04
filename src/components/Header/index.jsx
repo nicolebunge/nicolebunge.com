@@ -15,10 +15,10 @@ class Header extends PureComponent {
   };
 
   render() {
-    const { children, className } = this.props;
+    const { children, className, ...otherProps } = this.props;
 
     return (
-      <header className={classNames(className, styles.header)} role="banner">
+      <header className={classNames(className, styles.header)} role="banner" {...otherProps}>
         {children}
       </header>
     );

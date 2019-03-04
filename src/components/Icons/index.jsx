@@ -16,10 +16,10 @@ class Icons extends PureComponent {
   };
 
   render() {
-    const { className } = this.props;
+    const { className, ...otherProps } = this.props;
 
     return (
-      <ul className={classNames(className, styles.icons)}>
+      <ul className={classNames(className, styles.icons)} {...otherProps}>
         <li>
           <a
             href="https://www.instagram.com/nicole.bunge/"

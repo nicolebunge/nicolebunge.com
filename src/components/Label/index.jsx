@@ -16,10 +16,10 @@ class Label extends PureComponent {
   };
 
   render() {
-    const { children, className, htmlFor } = this.props;
+    const { children, className, htmlFor, ...otherProps } = this.props;
 
     return (
-      <label className={classNames(className, styles.label)} htmlFor={htmlFor}>
+      <label className={classNames(className, styles.label)} htmlFor={htmlFor} {...otherProps}>
         {children}
       </label>
     );

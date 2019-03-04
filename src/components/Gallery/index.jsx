@@ -77,11 +77,11 @@ class Gallery extends Component {
 
   render() {
     const { currentImage, lightboxIsOpen } = this.state;
-    const { className, images } = this.props;
+    const { className, images, ...otherProps } = this.props;
 
     return (
       <Fragment>
-        <ul className={classNames(className, styles.gallery)}>
+        <ul className={classNames(className, styles.gallery)} {...otherProps}>
           {images.map((image, index) => (
             <li key={index} className={styles.gallery__item}>
               <figure>

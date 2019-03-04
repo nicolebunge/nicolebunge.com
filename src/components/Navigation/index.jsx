@@ -21,10 +21,10 @@ class Navigation extends PureComponent {
   };
 
   render() {
-    const { className, routes } = this.props;
+    const { className, routes, ...otherProps } = this.props;
 
     return (
-      <nav className={classNames(className, styles.navigation)}>
+      <nav className={classNames(className, styles.navigation)} {...otherProps}>
         {routes && (
           <ul className={styles.navigation__list}>
             {routes.map((route) => (

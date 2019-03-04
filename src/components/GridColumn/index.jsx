@@ -27,7 +27,15 @@ class GridColumn extends PureComponent {
   };
 
   render() {
-    const { children, className, columnAlign, columnSpan, columnStart, rowAlign } = this.props;
+    const {
+      children,
+      className,
+      columnAlign,
+      columnSpan,
+      columnStart,
+      rowAlign,
+      ...otherProps
+    } = this.props;
 
     return (
       <div
@@ -37,6 +45,7 @@ class GridColumn extends PureComponent {
           [styles[`grid__columnColumnAlign${capitalize(columnAlign)}`]]: columnAlign,
           [styles[`grid__columnRowAlign${capitalize(rowAlign)}`]]: rowAlign,
         })}
+        {...otherProps}
       >
         {children}
       </div>

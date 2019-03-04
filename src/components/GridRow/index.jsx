@@ -15,9 +15,13 @@ class GridRow extends PureComponent {
   };
 
   render() {
-    const { children, className } = this.props;
+    const { children, className, ...otherProps } = this.props;
 
-    return <div className={classNames(className, styles.grid__row)}>{children}</div>;
+    return (
+      <div className={classNames(className, styles.grid__row)} {...otherProps}>
+        {children}
+      </div>
+    );
   }
 }
 
