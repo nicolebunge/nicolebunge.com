@@ -4,6 +4,11 @@
     "prettier",
     "prettier/react"
   ],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
   "parser": "babel-eslint",
   "rules": {
     "jsx-a11y/label-has-for": [2, {
