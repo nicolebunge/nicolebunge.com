@@ -1,4 +1,5 @@
 import 'typeface-source-sans-pro';
+import classNames from 'classnames';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
@@ -17,14 +18,16 @@ import nicoleBunge from '../../images/nicole-bunge.svg';
 class Layout extends PureComponent {
   static propTypes = {
     children: PropTypes.node,
+    className: PropTypes.string,
   };
 
   static defaultProps = {
     children: null,
+    className: '',
   };
 
   render() {
-    const { children } = this.props;
+    const { children, className } = this.props;
 
     return (
       <StaticQuery
@@ -38,7 +41,7 @@ class Layout extends PureComponent {
           }
         `}
         render={(data) => (
-          <div className={styles.layout}>
+          <div className={classNames(className, styles.layout)}>
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[

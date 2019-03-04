@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-array-index-key */
+import classNames from 'classnames';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React, { Component, Fragment } from 'react';
@@ -7,6 +8,16 @@ import Lightbox from 'react-images';
 import styles from './style.module.css';
 
 class Gallery extends Component {
+  static propTypes = {
+    className: PropTypes.string,
+    images: PropTypes.arrayOf(PropTypes.shape()),
+  };
+
+  static defaultProps = {
+    className: '',
+    images: [],
+  };
+
   constructor(props) {
     super(props);
 
@@ -66,11 +77,11 @@ class Gallery extends Component {
 
   render() {
     const { currentImage, lightboxIsOpen } = this.state;
-    const { images } = this.props;
+    const { className, images } = this.props;
 
     return (
       <Fragment>
-        <ul className={styles.gallery}>
+        <ul className={classNames(className, styles.gallery)}>
           {images.map((image, index) => (
             <li key={index} className={styles.gallery__item}>
               <figure>
@@ -95,13 +106,5 @@ class Gallery extends Component {
     );
   }
 }
-
-Gallery.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.shape()),
-};
-
-Gallery.defaultProps = {
-  images: [],
-};
 
 export default Gallery;

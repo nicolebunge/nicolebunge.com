@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
@@ -5,6 +6,7 @@ import styles from './style.module.css';
 
 class Navigation extends PureComponent {
   static propTypes = {
+    className: PropTypes.string,
     routes: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string,
@@ -14,14 +16,15 @@ class Navigation extends PureComponent {
   };
 
   static defaultProps = {
+    className: '',
     routes: [],
   };
 
   render() {
-    const { routes } = this.props;
+    const { className, routes } = this.props;
 
     return (
-      <nav className={styles.navigation}>
+      <nav className={classNames(className, styles.navigation)}>
         {routes && (
           <ul className={styles.navigation__list}>
             {routes.map((route) => (

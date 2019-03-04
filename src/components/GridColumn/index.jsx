@@ -10,6 +10,7 @@ function capitalize(string) {
 class GridColumn extends PureComponent {
   static propTypes = {
     children: PropTypes.node,
+    className: PropTypes.string,
     columnAlign: PropTypes.string,
     columnSpan: PropTypes.number,
     columnStart: PropTypes.number,
@@ -18,6 +19,7 @@ class GridColumn extends PureComponent {
 
   static defaultProps = {
     children: null,
+    className: '',
     columnAlign: '',
     columnSpan: 1,
     columnStart: 1,
@@ -25,11 +27,11 @@ class GridColumn extends PureComponent {
   };
 
   render() {
-    const { children, columnAlign, columnSpan, columnStart, rowAlign } = this.props;
+    const { children, className, columnAlign, columnSpan, columnStart, rowAlign } = this.props;
 
     return (
       <div
-        className={classNames(styles.grid__column, {
+        className={classNames(className, styles.grid__column, {
           [styles[`grid__columnColumnSpan${columnSpan}`]]: columnSpan,
           [styles[`grid__columnColumnStart${columnStart}`]]: columnStart,
           [styles[`grid__columnColumnAlign${capitalize(columnAlign)}`]]: columnAlign,

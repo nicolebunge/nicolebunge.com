@@ -6,20 +6,22 @@ import styles from './style.module.css';
 class Section extends PureComponent {
   static propTypes = {
     children: PropTypes.node,
+    className: PropTypes.string,
     full: PropTypes.bool,
   };
 
   static defaultProps = {
     children: null,
+    className: '',
     full: false,
   };
 
   render() {
-    const { children, full } = this.props;
+    const { children, className, full } = this.props;
 
     return (
       <section
-        className={classNames(styles.section, {
+        className={classNames(className, styles.section, {
           [styles.sectionFull]: full,
         })}
       >
