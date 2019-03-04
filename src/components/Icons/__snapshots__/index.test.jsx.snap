@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icons component renders correctly 1`] = `
+<ul
+  className="icons"
+>
+  <li>
+    <a
+      href="https://www.instagram.com/nicole.bunge/"
+      itemProp="sameAs"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Nicole Bunge auf Instagram"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.linkedin.com/in/nicole-bunge-1b891415a/"
+      itemProp="sameAs"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Nicole Bunge auf LinkedIn"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.xing.com/profile/Nicole_Bunge3"
+      itemProp="sameAs"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Nicole Bunge auf Xing"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+</ul>
+`;

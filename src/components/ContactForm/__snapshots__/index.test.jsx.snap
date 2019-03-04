@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm component renders correctly 1`] = `
+<form
+  action="/kontakt/danke"
+  className="form"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  method="post"
+  name="contact"
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <input
+    name="form-name"
+    onBlur={[Function]}
+    onChange={[Function]}
+    type="hidden"
+    value="contact"
+  />
+  <div
+    className="grid__row"
+  >
+    <div
+      className="grid__column grid__columnColumnSpan6 grid__columnColumnStart1"
+    >
+      <div
+        className="form__field"
+      >
+        <input
+          autoComplete="name"
+          className="form__input"
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Name"
+          required={true}
+          type="text"
+        />
+        <label
+          className="form__label label"
+          htmlFor="name"
+        >
+          Name
+        </label>
+      </div>
+    </div>
+    <div
+      className="grid__column grid__columnColumnSpan6 grid__columnColumnStart7"
+    >
+      <div
+        className="form__field"
+      >
+        <input
+          autoComplete="email"
+          className="form__input"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="E-Mail"
+          required={true}
+          type="email"
+        />
+        <label
+          className="form__label label"
+          htmlFor="email"
+        >
+          E-Mail
+        </label>
+      </div>
+    </div>
+    <div
+      className="grid__column grid__columnColumnSpan12 grid__columnColumnStart1"
+    >
+      <div
+        className="form__field"
+      >
+        <textarea
+          className="form__input"
+          name="message"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Nachricht"
+          required={true}
+        />
+        <label
+          className="form__label label"
+          htmlFor="message"
+        >
+          Nachricht
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="form__field"
+  >
+    <button
+      type="submit"
+    >
+      Senden
+    </button>
+  </div>
+</form>
+`;

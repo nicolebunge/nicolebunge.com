@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridColumn component renders correctly 1`] = `
+<div
+  className="grid__column grid__columnColumnSpan1 grid__columnColumnStart1"
+/>
+`;
