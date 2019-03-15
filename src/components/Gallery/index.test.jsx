@@ -4,7 +4,17 @@ import Gallery from '.';
 
 describe('Gallery component', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Gallery images={[]} />).toJSON();
+    const images = [
+      {
+        fluid: {
+          aspectRatio: 1,
+          sizes: '',
+          src: '',
+          srcSet: '',
+        },
+      },
+    ];
+    const tree = renderer.create(<Gallery images={images} />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });

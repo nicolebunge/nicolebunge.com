@@ -47,6 +47,7 @@ exports[`Cookie component renders correctly 1`] = `
         "borderRadius": "0px",
         "boxShadow": "none",
         "color": "black",
+        "cursor": "pointer",
         "flex": "0 0 auto",
         "margin": "15px",
         "padding": "5px 10px",
