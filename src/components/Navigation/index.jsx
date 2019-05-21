@@ -7,6 +7,7 @@ import styles from './style.module.css';
 class Navigation extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
+    inline: PropTypes.bool,
     routes: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string,
@@ -17,16 +18,21 @@ class Navigation extends PureComponent {
 
   static defaultProps = {
     className: '',
+    inline: false,
     routes: [],
   };
 
   render() {
-    const { className, routes, ...otherProps } = this.props;
+    const { className, inline, routes, ...otherProps } = this.props;
 
     return (
       <nav className={classNames(className, styles.navigation)} {...otherProps}>
         {routes && (
-          <ul className={styles.navigation__list}>
+          <ul
+            className={classNames(styles.navigation__list, {
+              [styles.navigation__listInline]: inline,
+            })}
+          >
             {routes.map((route) => (
               <li className={styles.navigation__item} key={route.path}>
                 <Link

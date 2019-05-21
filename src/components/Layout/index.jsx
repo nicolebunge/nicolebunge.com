@@ -1,19 +1,19 @@
-import 'typeface-source-sans-pro';
 import classNames from 'classnames';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
+import 'typeface-source-sans-pro';
+import * as routes from '../../constants/routes';
+import nicoleBunge from '../../images/nicole-bunge.svg';
 import Cookie from '../Cookie';
 import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
-import Social from '../Social';
 import Main from '../Main';
 import Navigation from '../Navigation';
-import * as routes from '../../constants/routes';
+import Social from '../Social';
 import styles from './style.module.css';
-import nicoleBunge from '../../images/nicole-bunge.svg';
 
 class Layout extends PureComponent {
   static propTypes = {
@@ -57,6 +57,7 @@ class Layout extends PureComponent {
               </Link>
 
               <Navigation
+                inline
                 routes={[
                   routes.INDEX,
                   routes.ABOUT,
@@ -70,7 +71,7 @@ class Layout extends PureComponent {
             <Main>{children}</Main>
             <Footer>
               <Grid>
-                <Navigation routes={[routes.PRIVACY, routes.IMPRINT]} />
+                <Navigation inline routes={[routes.PRIVACY, routes.IMPRINT]} />
                 <p>© {new Date().getFullYear()} Nicole Bunge</p>
               </Grid>
             </Footer>

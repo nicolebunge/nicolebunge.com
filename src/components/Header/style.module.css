@@ -3,16 +3,24 @@
   background-color: var(--color-secondary);
   background-image: linear-gradient(to right, #f4f4f4 1px, transparent 1px);
   background-position: 50%;
-  background-size: calc(var(--grid-max-width) / 3);
+  background-size: calc(90% / 2);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   left: 0;
-  padding-left: 3.5em;
-  padding-right: 3.5em;
+  padding-left: 5%;
+  padding-right: 5%;
   position: fixed;
   right: 0;
   top: 0;
   will-change: transform;
   z-index: 1;
+}
+
+@media (min-width: 1080px) {
+  .header {
+    background-size: calc(var(--grid-max-width) / 3);
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+  }
 }
