@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.7.1",
+    "babel-jest": "^24.8.0",
     "babel-preset-gatsby": "^0.1.11",
     "codecov": "^3.3.0",
     "eslint": "^5.16.0",
