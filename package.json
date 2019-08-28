@@ -44,7 +44,7 @@
     "url": "https://github.com/nicolebunge/nicolebunge.com"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.2",
+    "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.2.11",
     "codecov": "^3.5.0",
