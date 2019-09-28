@@ -1,28 +1,26 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import styles from './style.module.css';
 
-class GridRow extends PureComponent {
-  static propTypes = {
-    children: PropTypes.node,
-    className: PropTypes.string,
-  };
+const GridRow = (props) => {
+  const { children, className, ...otherProps } = props;
 
-  static defaultProps = {
-    children: null,
-    className: '',
-  };
+  return (
+    <div className={classNames(className, styles.grid__row)} {...otherProps}>
+      {children}
+    </div>
+  );
+};
 
-  render() {
-    const { children, className, ...otherProps } = this.props;
+GridRow.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
 
-    return (
-      <div className={classNames(className, styles.grid__row)} {...otherProps}>
-        {children}
-      </div>
-    );
-  }
-}
+GridRow.defaultProps = {
+  children: null,
+  className: '',
+};
 
 export default GridRow;

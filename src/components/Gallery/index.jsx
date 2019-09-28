@@ -3,21 +3,11 @@
 import classNames from 'classnames';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Lightbox from 'react-images';
 import styles from './style.module.css';
 
 class Gallery extends Component {
-  static propTypes = {
-    className: PropTypes.string,
-    images: PropTypes.arrayOf(PropTypes.shape()),
-  };
-
-  static defaultProps = {
-    className: '',
-    images: [],
-  };
-
   constructor(props) {
     super(props);
 
@@ -80,7 +70,7 @@ class Gallery extends Component {
     const { className, images, ...otherProps } = this.props;
 
     return (
-      <Fragment>
+      <>
         <ul className={classNames(className, styles.gallery)} {...otherProps}>
           {images.map((image, index) => (
             <li key={index} className={styles.gallery__item}>
@@ -102,9 +92,19 @@ class Gallery extends Component {
           onClickThumbnail={() => this.gotoImage()}
           onClose={() => this.closeLightbox()}
         />
-      </Fragment>
+      </>
     );
   }
 }
+
+Gallery.propTypes = {
+  className: PropTypes.string,
+  images: PropTypes.arrayOf(PropTypes.shape()),
+};
+
+Gallery.defaultProps = {
+  className: '',
+  images: [],
+};
 
 export default Gallery;

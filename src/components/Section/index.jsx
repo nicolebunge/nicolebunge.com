@@ -1,35 +1,33 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import styles from './style.module.css';
 
-class Section extends PureComponent {
-  static propTypes = {
-    children: PropTypes.node,
-    className: PropTypes.string,
-    full: PropTypes.bool,
-  };
+const Section = (props) => {
+  const { children, className, full, ...otherProps } = props;
 
-  static defaultProps = {
-    children: null,
-    className: '',
-    full: false,
-  };
+  return (
+    <section
+      className={classNames(className, styles.section, {
+        [styles.sectionFull]: full,
+      })}
+      {...otherProps}
+    >
+      {children}
+    </section>
+  );
+};
 
-  render() {
-    const { children, className, full, ...otherProps } = this.props;
+Section.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  full: PropTypes.bool,
+};
 
-    return (
-      <section
-        className={classNames(className, styles.section, {
-          [styles.sectionFull]: full,
-        })}
-        {...otherProps}
-      >
-        {children}
-      </section>
-    );
-  }
-}
+Section.defaultProps = {
+  children: null,
+  className: '',
+  full: false,
+};
 
 export default Section;

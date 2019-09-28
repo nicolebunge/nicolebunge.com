@@ -1,27 +1,25 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import Icons from '../Icons';
 import styles from './style.module.css';
 
-class Social extends PureComponent {
-  static propTypes = {
-    className: PropTypes.string,
-  };
+const Social = (props) => {
+  const { className, ...otherProps } = props;
 
-  static defaultProps = {
-    className: '',
-  };
+  return (
+    <div className={classNames(className, styles.social)} {...otherProps}>
+      <Icons />
+    </div>
+  );
+};
 
-  render() {
-    const { className, ...otherProps } = this.props;
+Social.propTypes = {
+  className: PropTypes.string,
+};
 
-    return (
-      <div className={classNames(className, styles.social)} {...otherProps}>
-        <Icons />
-      </div>
-    );
-  }
-}
+Social.defaultProps = {
+  className: '',
+};
 
 export default Social;

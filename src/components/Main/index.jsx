@@ -1,28 +1,26 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import styles from './style.module.css';
 
-class Main extends PureComponent {
-  static propTypes = {
-    children: PropTypes.node,
-    className: PropTypes.string,
-  };
+const Main = (props) => {
+  const { children, className, ...otherProps } = props;
 
-  static defaultProps = {
-    children: null,
-    className: '',
-  };
+  return (
+    <main className={classNames(className, styles.main)} role="main" {...otherProps}>
+      {children}
+    </main>
+  );
+};
 
-  render() {
-    const { children, className, ...otherProps } = this.props;
+Main.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
 
-    return (
-      <main className={classNames(className, styles.main)} role="main" {...otherProps}>
-        {children}
-      </main>
-    );
-  }
-}
+Main.defaultProps = {
+  children: null,
+  className: '',
+};
 
 export default Main;

@@ -1,29 +1,27 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import styles from './style.module.css';
 
-class Label extends PureComponent {
-  static propTypes = {
-    children: PropTypes.node,
-    className: PropTypes.string,
-    htmlFor: PropTypes.string.isRequired,
-  };
+const Label = (props) => {
+  const { children, className, htmlFor, ...otherProps } = props;
 
-  static defaultProps = {
-    children: null,
-    className: '',
-  };
+  return (
+    <label className={classNames(className, styles.label)} htmlFor={htmlFor} {...otherProps}>
+      {children}
+    </label>
+  );
+};
 
-  render() {
-    const { children, className, htmlFor, ...otherProps } = this.props;
+Label.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  htmlFor: PropTypes.string.isRequired,
+};
 
-    return (
-      <label className={classNames(className, styles.label)} htmlFor={htmlFor} {...otherProps}>
-        {children}
-      </label>
-    );
-  }
-}
+Label.defaultProps = {
+  children: null,
+  className: '',
+};
 
 export default Label;

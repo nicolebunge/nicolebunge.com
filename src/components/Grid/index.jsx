@@ -1,28 +1,26 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import styles from './style.module.css';
 
-class Grid extends PureComponent {
-  static propTypes = {
-    children: PropTypes.node,
-    className: PropTypes.string,
-  };
+const Grid = (props) => {
+  const { children, className, ...otherProps } = props;
 
-  static defaultProps = {
-    children: null,
-    className: '',
-  };
+  return (
+    <div className={classNames(className, styles.grid)} {...otherProps}>
+      {children}
+    </div>
+  );
+};
 
-  render() {
-    const { children, className, ...otherProps } = this.props;
+Grid.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
 
-    return (
-      <div className={classNames(className, styles.grid)} {...otherProps}>
-        {children}
-      </div>
-    );
-  }
-}
+Grid.defaultProps = {
+  children: null,
+  className: '',
+};
 
 export default Grid;

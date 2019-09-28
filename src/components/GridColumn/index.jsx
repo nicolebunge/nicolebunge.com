@@ -1,56 +1,54 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import styles from './style.module.css';
 
 function capitalize(string) {
   return `${string.charAt(0).toUpperCase()}${string.slice(1)}`;
 }
 
-class GridColumn extends PureComponent {
-  static propTypes = {
-    children: PropTypes.node,
-    className: PropTypes.string,
-    columnAlign: PropTypes.string,
-    columnSpan: PropTypes.number,
-    columnStart: PropTypes.number,
-    rowAlign: PropTypes.string,
-  };
+const GridColumn = (props) => {
+  const {
+    children,
+    className,
+    columnAlign,
+    columnSpan,
+    columnStart,
+    rowAlign,
+    ...otherProps
+  } = props;
 
-  static defaultProps = {
-    children: null,
-    className: '',
-    columnAlign: '',
-    columnSpan: 1,
-    columnStart: 1,
-    rowAlign: '',
-  };
+  return (
+    <div
+      className={classNames(className, styles.grid__column, {
+        [styles[`grid__columnColumnSpan${columnSpan}`]]: columnSpan,
+        [styles[`grid__columnColumnStart${columnStart}`]]: columnStart,
+        [styles[`grid__columnColumnAlign${capitalize(columnAlign)}`]]: columnAlign,
+        [styles[`grid__columnRowAlign${capitalize(rowAlign)}`]]: rowAlign,
+      })}
+      {...otherProps}
+    >
+      {children}
+    </div>
+  );
+};
 
-  render() {
-    const {
-      children,
-      className,
-      columnAlign,
-      columnSpan,
-      columnStart,
-      rowAlign,
-      ...otherProps
-    } = this.props;
+GridColumn.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  columnAlign: PropTypes.string,
+  columnSpan: PropTypes.number,
+  columnStart: PropTypes.number,
+  rowAlign: PropTypes.string,
+};
 
-    return (
-      <div
-        className={classNames(className, styles.grid__column, {
-          [styles[`grid__columnColumnSpan${columnSpan}`]]: columnSpan,
-          [styles[`grid__columnColumnStart${columnStart}`]]: columnStart,
-          [styles[`grid__columnColumnAlign${capitalize(columnAlign)}`]]: columnAlign,
-          [styles[`grid__columnRowAlign${capitalize(rowAlign)}`]]: rowAlign,
-        })}
-        {...otherProps}
-      >
-        {children}
-      </div>
-    );
-  }
-}
+GridColumn.defaultProps = {
+  children: null,
+  className: '',
+  columnAlign: '',
+  columnSpan: 1,
+  columnStart: 1,
+  rowAlign: '',
+};
 
 export default GridColumn;
