@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
 import 'typeface-source-sans-pro';
+import { NOW } from '../../constants/dates';
 import * as routes from '../../constants/routes';
 import nicoleBunge from '../../images/nicole-bunge.svg';
 import Cookie from '../Cookie';
@@ -61,7 +62,7 @@ const Layout = (props) => {
           <Footer>
             <Grid>
               <Navigation inline routes={[routes.PRIVACY, routes.IMPRINT]} />
-              <p>© {new Date().getFullYear()} Nicole Bunge</p>
+              <p>© {NOW.getFullYear()} Nicole Bunge</p>
             </Grid>
           </Footer>
           <Cookie />
