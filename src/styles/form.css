@@ -1,0 +1,23 @@
+button,
+input,
+textarea,
+select {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+[type='submit'] {
+  border: 1px solid;
+  font-size: 0.875rem;
+  padding: 0.5em 1.5em;
+  text-transform: uppercase;
+}
+
+textarea {
+  min-height: 8em;
+  resize: vertical;
+}
