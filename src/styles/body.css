@@ -1,0 +1,26 @@
+body {
+  background-image: linear-gradient(to right, #f4f4f4 1px, transparent 1px);
+  background-position: 50%;
+  background-size: calc(90% / 2);
+  color: var(--color-base);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 100vh;
+}
+
+@media (min-width: 1080px) {
+  body {
+    background-size: calc(var(--grid-max-width) / 3);
+  }
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+}
+
+body::-webkit-scrollbar {
+  height: 0.5em;
+  width: 0.25em;
+}
