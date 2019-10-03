@@ -1,11 +1,11 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
 import Grid from '../components/Grid';
+import GridColumn from '../components/GridColumn';
+import GridRow from '../components/GridRow';
 import Icons from '../components/Icons';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
-import GridRow from '../components/GridRow';
-import GridColumn from '../components/GridColumn';
 import SEO from '../components/SEO';
 import email from '../images/email.svg';
 
@@ -35,7 +35,7 @@ const ContactPage = () => (
                 <h5>E-Mail</h5>
                 <img src={email} alt="E-Mail Adresse" width="147.1" height="15" />
                 <h5>Webseite</h5>
-                <a href="https://www.nicolebunge.com">www.nicolebunge.com</a>
+                <a href="https://nicolebunge.com">www.nicolebunge.com</a>
               </address>
               <Icons />
             </div>
