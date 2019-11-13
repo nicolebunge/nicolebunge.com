@@ -16,7 +16,7 @@
     "gatsby-plugin-sitemap": "^2.2.16",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-transformer-remark": "^2.6.33",
-    "gatsby-transformer-sharp": "^2.3.3",
+    "gatsby-transformer-sharp": "^2.3.4",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-cookie-consent": "^2.5.0",
