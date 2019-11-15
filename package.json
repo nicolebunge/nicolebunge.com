@@ -6,7 +6,7 @@
     "classnames": "^2.2.6",
     "formik": "^2.0.4",
     "gatsby": "^2.17.13",
-    "gatsby-image": "^2.2.32",
+    "gatsby-image": "^2.2.33",
     "gatsby-plugin-google-analytics": "^2.1.19",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-offline": "^3.0.21",
