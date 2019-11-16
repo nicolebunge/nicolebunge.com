@@ -8,9 +8,9 @@ exports[`Gallery component renders correctly 1`] = `
     className="gallery__item"
   >
     <figure>
-      <a
-        href=""
+      <button
         onClick={[Function]}
+        type="button"
       >
         <div
           className=" gatsby-image-wrapper"
@@ -64,7 +64,7 @@ exports[`Gallery component renders correctly 1`] = `
             }
           />
         </div>
-      </a>
+      </button>
     </figure>
   </li>
 </ul>

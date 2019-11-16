@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Lightbox from 'react-images';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 import styles from './style.module.css';
 
 class Gallery extends Component {
@@ -12,62 +12,22 @@ class Gallery extends Component {
     super(props);
 
     this.state = {
+      selectedIndex: 0,
       lightboxIsOpen: false,
-      currentImage: 0,
     };
   }
 
-  openLightbox(index, event) {
-    event.preventDefault();
-    this.setState({
-      currentImage: index,
-      lightboxIsOpen: true,
-    });
-  }
-
-  closeLightbox() {
-    this.setState({
-      currentImage: 0,
-      lightboxIsOpen: false,
-    });
-  }
-
-  gotoPrevious() {
-    const { currentImage } = this.state;
-
-    this.setState({
-      currentImage: currentImage - 1,
-    });
-  }
-
-  gotoNext() {
-    const { currentImage } = this.state;
-
-    this.setState({
-      currentImage: currentImage + 1,
-    });
-  }
-
-  gotoImage(index) {
-    this.setState({
-      currentImage: index,
-    });
-  }
-
-  handleClickImage() {
-    const { currentImage } = this.state;
-    const { images } = this.props;
-
-    if (currentImage === images.length - 1) {
-      return;
-    }
-
-    this.gotoNext();
-  }
+  toggleLightbox = (selectedIndex) => {
+    this.setState((state) => ({
+      lightboxIsOpen: !state.lightboxIsOpen,
+      selectedIndex,
+    }));
+  };
 
   render() {
-    const { currentImage, lightboxIsOpen } = this.state;
-    const { className, images, ...otherProps } = this.props;
+    const { lightboxIsOpen, selectedIndex } = this.state;
+    const { className, images, isLoading, ...otherProps } = this.props;
+    const mappedImages = images.map((image) => ({ source: image.fluid.src }));
 
     return (
       <>
@@ -75,23 +35,24 @@ class Gallery extends Component {
           {images.map((image, index) => (
             <li key={index} className={styles.gallery__item}>
               <figure>
-                <a href={image.fluid.srcSet} onClick={(event) => this.openLightbox(index, event)}>
+                <button onClick={() => this.toggleLightbox(index)} type="button">
                   <Img fluid={image.fluid} />
-                </a>
+                </button>
               </figure>
             </li>
           ))}
         </ul>
-        <Lightbox
-          currentImage={currentImage}
-          images={images.map((image) => image.fluid)}
-          isOpen={lightboxIsOpen}
-          onClickImage={() => this.handleClickImage()}
-          onClickNext={() => this.gotoNext()}
-          onClickPrev={() => this.gotoPrevious()}
-          onClickThumbnail={() => this.gotoImage()}
-          onClose={() => this.closeLightbox()}
-        />
+        <ModalGateway>
+          {lightboxIsOpen && !isLoading ? (
+            <Modal onClose={this.toggleLightbox}>
+              <Carousel
+                currentIndex={selectedIndex}
+                frameProps={{ autoSize: 'height' }}
+                views={mappedImages}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
       </>
     );
   }
@@ -100,11 +61,13 @@ class Gallery extends Component {
 Gallery.propTypes = {
   className: PropTypes.string,
   images: PropTypes.arrayOf(PropTypes.shape()),
+  isLoading: PropTypes.bool,
 };
 
 Gallery.defaultProps = {
   className: '',
   images: [],
+  isLoading: false,
 };
 
 export default Gallery;
