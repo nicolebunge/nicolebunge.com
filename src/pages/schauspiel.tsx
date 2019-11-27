@@ -1,8 +1,8 @@
 import React from 'react';
 import Grid from '../components/Grid';
 import GridColumn from '../components/GridColumn';
-import GridRow from '../components/GridRow';
 import Layout from '../components/Layout';
+import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
@@ -13,7 +13,7 @@ const ActingPage: React.FC = () => (
     <Section>
       <Grid>
         <h1 id="schauspiel">Schauspiel</h1>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={8}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
@@ -23,13 +23,13 @@ const ActingPage: React.FC = () => (
               fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
             </p>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
 
     <Section>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={4}>
             <h2 id="rollenrepertoire">Rollenrepertoire</h2>
           </GridColumn>
@@ -82,13 +82,13 @@ const ActingPage: React.FC = () => (
               Felicia Zeller
             </p>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
 
     <Section>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={4}>
             <h2 id="film">Film</h2>
           </GridColumn>
@@ -103,13 +103,13 @@ const ActingPage: React.FC = () => (
               </a>
             </p>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
 
     <Section>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={4}>
             <h2 id="studium">Studium</h2>
           </GridColumn>
@@ -178,7 +178,7 @@ const ActingPage: React.FC = () => (
               </a>
             </p>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
   </Layout>

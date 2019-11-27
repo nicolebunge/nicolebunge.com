@@ -4,8 +4,8 @@ import React from 'react';
 import Button from '../components/Button';
 import Grid from '../components/Grid';
 import GridColumn from '../components/GridColumn';
-import GridRow from '../components/GridRow';
 import Layout from '../components/Layout';
+import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 import * as routes from '../constants/routes';
@@ -36,7 +36,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
 
     <Section full>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={4} rowAlign="center">
             <h2>Über mich</h2>
             <p>
@@ -54,13 +54,13 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               <Img fluid={data.image1.childImageSharp.fluid} />
             </Link>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
 
     <Section full>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={4} columnStart={7} rowAlign="center">
             <h2>Schauspiel</h2>
             <p>
@@ -77,13 +77,13 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               <Img fluid={data.image2.childImageSharp.fluid} />
             </Link>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
 
     <Section full>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={4} columnStart={2} rowAlign="center">
             <h2>Theaterpädagogik</h2>
             <p>
@@ -101,13 +101,13 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               <Img fluid={data.image3.childImageSharp.fluid} />
             </Link>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
 
     <Section full>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={6} columnStart={3}>
             <h2>Kontakt</h2>
             <p>
@@ -119,7 +119,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
             </p>
             <Button to={routes.CONTACT.path}>Kontakt aufnehmen</Button>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
   </Layout>

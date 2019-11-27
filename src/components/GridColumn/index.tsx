@@ -39,7 +39,7 @@ type GridColumnAlignClass =
   | 'grid__columnColumnAlignEnd'
   | 'grid__columnColumnAlignStart';
 
-type GridRowAlignClass =
+type RowAlignClass =
   | 'grid__columnRowAlignCenter'
   | 'grid__columnRowAlignEnd'
   | 'grid__columnRowAlignStart';
@@ -71,7 +71,7 @@ const GridColumn: React.FC<GridColumnProps> = (props) => {
         [styles[
           `grid__columnColumnAlign${capitalize(columnAlign)}` as GridColumnAlignClass
         ]]: columnAlign,
-        [styles[`grid__columnRowAlign${capitalize(rowAlign)}` as GridRowAlignClass]]: rowAlign,
+        [styles[`grid__columnRowAlign${capitalize(rowAlign)}` as RowAlignClass]]: rowAlign,
       })}
       {...otherProps}
     >

@@ -1,8 +1,8 @@
 import React from 'react';
 import Grid from '../components/Grid';
 import GridColumn from '../components/GridColumn';
-import GridRow from '../components/GridRow';
 import Layout from '../components/Layout';
+import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
@@ -13,7 +13,7 @@ const AboutPage: React.FC = () => (
     <Section>
       <Grid>
         <h1 id="bermich">Über Mich</h1>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={8}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
@@ -23,13 +23,13 @@ const AboutPage: React.FC = () => (
               fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
             </p>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
 
     <Section>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={4}>
             <h2 id="persoenlichkeit">Persönlichkeit</h2>
           </GridColumn>
@@ -65,13 +65,13 @@ const AboutPage: React.FC = () => (
               <li>Konfektion: XS</li>
             </ul>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
 
     <Section>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={4}>
             <h2 id="kenntnisseundfhigkeiten">Kenntnisse & Fähigkeiten</h2>
           </GridColumn>
@@ -129,7 +129,7 @@ const AboutPage: React.FC = () => (
               <li>Klasse B</li>
             </ul>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
   </Layout>

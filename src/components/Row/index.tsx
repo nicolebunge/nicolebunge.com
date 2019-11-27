@@ -2,18 +2,18 @@ import classNames from 'classnames';
 import React from 'react';
 import styles from './style.module.css';
 
-export interface GridRowProps {
+export interface RowProps {
   className?: string;
 }
 
-const GridRow: React.FC<GridRowProps> = (props) => {
+const Row: React.FC<RowProps> = (props) => {
   const { children, className, ...otherProps } = props;
 
   return (
-    <div className={classNames(className, styles.grid__row)} {...otherProps}>
+    <div className={classNames(className, styles.row)} {...otherProps}>
       {children}
     </div>
   );
 };
 
-export default GridRow;
+export default Row;

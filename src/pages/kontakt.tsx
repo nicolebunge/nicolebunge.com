@@ -2,9 +2,9 @@ import React from 'react';
 import ContactForm from '../components/ContactForm';
 import Grid from '../components/Grid';
 import GridColumn from '../components/GridColumn';
-import GridRow from '../components/GridRow';
 import Icons from '../components/Icons';
 import Layout from '../components/Layout';
+import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 import email from '../images/email.svg';
@@ -26,7 +26,7 @@ const ContactPage: React.FC = () => (
 
     <Section>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={3}>
             <div itemScope itemType="http://schema.org/Person">
               <address>
@@ -44,7 +44,7 @@ const ContactPage: React.FC = () => (
           <GridColumn columnSpan={8} columnStart={5} rowAlign="end">
             <ContactForm />
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
   </Layout>

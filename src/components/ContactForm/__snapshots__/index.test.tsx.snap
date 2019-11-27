@@ -19,7 +19,7 @@ exports[`ContactForm component renders correctly 1`] = `
     value="contact"
   />
   <div
-    className="grid__row"
+    className="row"
   >
     <div
       className="grid__column grid__columnColumnSpan6 grid__columnColumnStart1"

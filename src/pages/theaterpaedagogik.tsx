@@ -1,8 +1,8 @@
 import React from 'react';
 import Grid from '../components/Grid';
 import GridColumn from '../components/GridColumn';
-import GridRow from '../components/GridRow';
 import Layout from '../components/Layout';
+import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
@@ -13,7 +13,7 @@ const TheatrePedagogyPage: React.FC = () => (
     <Section>
       <Grid>
         <h1 id="theaterpaedagogik">Theaterpädagogik</h1>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={8}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
@@ -23,13 +23,13 @@ const TheatrePedagogyPage: React.FC = () => (
               fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
             </p>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
 
     <Section>
       <Grid>
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={4}>
             <h2 id="projekte">Projekte</h2>
           </GridColumn>
@@ -80,7 +80,7 @@ const TheatrePedagogyPage: React.FC = () => (
           <GridColumn columnSpan={6} columnStart={6}>
             <h3>Theaterpädagogin an der Kita Matt Lamb Berlin</h3>
           </GridColumn>
-        </GridRow>
+        </Row>
       </Grid>
     </Section>
   </Layout>

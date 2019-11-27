@@ -1,8 +1,8 @@
 import { Field, Form, Formik } from 'formik';
 import React from 'react';
 import GridColumn from '../GridColumn';
-import GridRow from '../GridRow';
 import Label from '../Label';
+import Row from '../Row';
 import styles from './style.module.css';
 
 const ContactForm: React.FC = () => (
@@ -23,7 +23,7 @@ const ContactForm: React.FC = () => (
       >
         <Field name="form-name" type="hidden" value="contact" />
 
-        <GridRow>
+        <Row>
           <GridColumn columnSpan={6}>
             <div className={styles.form__field}>
               <Field
@@ -70,7 +70,7 @@ const ContactForm: React.FC = () => (
               </Label>
             </div>
           </GridColumn>
-        </GridRow>
+        </Row>
 
         <div className={styles.form__field}>
           <button type="submit" disabled={isSubmitting}>
