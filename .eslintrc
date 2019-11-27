@@ -1,23 +1,40 @@
 {
-  "extends": ["airbnb", "prettier", "prettier/react"],
   "env": {
     "browser": true,
     "jest": true,
     "node": true
   },
-  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "prettier/react"
+  ],
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "jsx-a11y/label-has-for": [
-      2,
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
       {
-        "components": ["Label"],
-        "required": {
-          "some": ["nesting", "id"]
-        },
-        "allowChildren": false
+        "allowTypedFunctionExpressions": true
       }
     ],
-    "react/no-danger": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
     "react/jsx-props-no-spreading": 0
   }
 }

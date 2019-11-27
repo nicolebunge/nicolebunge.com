@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/camelcase */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+
 module.exports = {
   siteMetadata: {
     title: 'Nicole Bunge',
