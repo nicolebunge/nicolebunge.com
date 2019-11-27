@@ -6,7 +6,7 @@ const path = require('path');
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const defaultTemplate = path.resolve('src/templates/default.jsx');
+  const defaultTemplate = path.resolve('src/templates/default.tsx');
 
   return graphql(`
     {
