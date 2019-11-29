@@ -2,11 +2,11 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import GridColumn from '.';
+import Column from '.';
 
-describe('GridColumn component', () => {
+describe('Column component', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<GridColumn />).toJSON();
+    const tree = renderer.create(<Column />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });

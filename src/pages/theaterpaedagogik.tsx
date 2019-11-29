@@ -1,6 +1,6 @@
 import React from 'react';
+import Column from '../components/Column';
 import Grid from '../components/Grid';
-import GridColumn from '../components/GridColumn';
 import Layout from '../components/Layout';
 import Row from '../components/Row';
 import Section from '../components/Section';
@@ -14,7 +14,7 @@ const TheatrePedagogyPage: React.FC = () => (
       <Grid>
         <h1 id="theaterpaedagogik">Theaterpädagogik</h1>
         <Row>
-          <GridColumn columnSpan={8}>
+          <Column span={8}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel molestias dolor earum
@@ -22,7 +22,7 @@ const TheatrePedagogyPage: React.FC = () => (
               Et, quod eaque reiciendis in vel ab. Rerum labore expedita minima aut adipisci eum,
               fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
             </p>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>
@@ -30,35 +30,35 @@ const TheatrePedagogyPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <GridColumn columnSpan={4}>
+          <Column span={4}>
             <h2 id="projekte">Projekte</h2>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={6} columnStart={6}>
+          <Column span={6} start={6}>
             <h3>Unterstützung der Theaterpädagogen</h3>
             <p>
               Unterstützung der Theaterpädagogen in den jeweiligen Theaterprojekten an der
               Bismackschule Stuttgart Feuerbach
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={6} columnStart={6}>
+          <Column span={6} start={6}>
             <h3>Theaterpädagogische Zwischenprüfung</h3>
             <p>
               Erarbeitung eines Stückes anhand eines Märchens mit Studenten des Grundlagenjahres
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={6} columnStart={6}>
+          <Column span={6} start={6}>
             <h3>Workshopleitung der 13. Schultheatertage am Landestheater Tübingen</h3>
             <p>
               Workshoperarbeitung anhand eines Stücktitels im Rahmen der Schultheatertage gezeigten
               Inszenierungen. Zentrale Aufgabe war aus den gemischten Spielgruppen eine Gruppe zu
               formen. Das Arbeitsergebnis des Workshops wurde im LTT öffentlich präsentiert
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={6} columnStart={6}>
+          <Column span={6} start={6}>
             <h3>Theaterpädagogisches Diplomabschlussprojekt</h3>
             <p>
               Theaterpädagogisches Diplomabschlussprojekt an der Steinenberg-Grundschule in
@@ -67,19 +67,19 @@ const TheatrePedagogyPage: React.FC = () => (
               wir gemeinsam und was können wir damit erreichen?“ Entwicklung und Aufführung eines
               Theaterstückes zum Projektthema, sowie schriftliche Reflexionsmappe
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={6} columnStart={6}>
+          <Column span={6} start={6}>
             <h3>Theaterpädagogische Diplomabschlussprüfung im Fachbereich Regie</h3>
             <p>
               Erarbeitung eines Theaterstückes anhand der Stückvorlage „Leonce und Lena“ von Georg
               Büchner mit Studenten des Grundlagen- und zweiten Studienjahres
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={6} columnStart={6}>
+          <Column span={6} start={6}>
             <h3>Theaterpädagogin an der Kita Matt Lamb Berlin</h3>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>

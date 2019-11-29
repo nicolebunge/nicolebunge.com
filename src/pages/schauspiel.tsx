@@ -1,6 +1,6 @@
 import React from 'react';
+import Column from '../components/Column';
 import Grid from '../components/Grid';
-import GridColumn from '../components/GridColumn';
 import Layout from '../components/Layout';
 import Row from '../components/Row';
 import Section from '../components/Section';
@@ -14,7 +14,7 @@ const ActingPage: React.FC = () => (
       <Grid>
         <h1 id="schauspiel">Schauspiel</h1>
         <Row>
-          <GridColumn columnSpan={8}>
+          <Column span={8}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel molestias dolor earum
@@ -22,7 +22,7 @@ const ActingPage: React.FC = () => (
               Et, quod eaque reiciendis in vel ab. Rerum labore expedita minima aut adipisci eum,
               fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
             </p>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>
@@ -30,58 +30,58 @@ const ActingPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <GridColumn columnSpan={4}>
+          <Column span={4}>
             <h2 id="rollenrepertoire">Rollenrepertoire</h2>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <p>
               <strong>„Ein idealer Gatte“</strong>, Das junge Mädchen <br />
               Oscar Wilde
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <p>
               <strong>„Der Tor und der Tod“</strong>, Mabel Chiltern <br />
               Hugo von Hofmannsthal
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <p>
               <strong>„Alice im Wunderland“</strong>, Alice <br />
               Roland Schimmelpfennig
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <p>
               <strong>„Emilia Galotti“</strong>, Gräfin Orsina <br />
               Gotthold Ephraim Lessing
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <p>
               <strong>„La Double Inconstance“</strong>, Silvia <br />
               Pierre Carlet de Marivaux
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <p>
               <strong>„Merlin oder das wüste Land“</strong>, Mordred <br />
               Tankred Dorst
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <p>
               <strong>„Bier für Frauen“</strong>, Eine Frau <br />
               Felicia Zeller
             </p>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>
@@ -89,11 +89,11 @@ const ActingPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <GridColumn columnSpan={4}>
+          <Column span={4}>
             <h2 id="film">Film</h2>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <h3>2017</h3>
             <p>
               <strong>„Crossing Borders“</strong>, Leonie <br />
@@ -102,7 +102,7 @@ const ActingPage: React.FC = () => (
                 Filmakademie Baden-Württemberg
               </a>
             </p>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>
@@ -110,11 +110,11 @@ const ActingPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <GridColumn columnSpan={4}>
+          <Column span={4}>
             <h2 id="studium">Studium</h2>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <h3>2013 - 2015, 2017 & 2018</h3>
             <p>
               <strong>Camera Acting</strong>, Workshop <br />
@@ -122,9 +122,9 @@ const ActingPage: React.FC = () => (
                 Aleksandar Jovanovic
               </a>
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <h3>2018</h3>
             <p>
               <strong>Camera Acting</strong>, Workshop <br />
@@ -132,9 +132,9 @@ const ActingPage: React.FC = () => (
                 Attila Borlan
               </a>
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <h3>09.2013 - 09.2018</h3>
             <p>
               <strong>Ausbildung zur staatlich anerkannten Schauspielerin (ZAV)</strong> <br />
@@ -147,9 +147,9 @@ const ActingPage: React.FC = () => (
                 TheaterAkademieStuttgart
               </a>
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <h3>2017 - 2018</h3>
             <p>
               <strong>„Was Ihr Wollt“</strong>, Olivia <br />
@@ -162,9 +162,9 @@ const ActingPage: React.FC = () => (
                 TheaterKompagnieStuttgart
               </a>
             </p>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <h3>2017 - 2018</h3>
             <p>
               <strong>„Ein Mittsommernachtstraum“</strong>, Spinnweb & Krankenschwester <br />
@@ -177,7 +177,7 @@ const ActingPage: React.FC = () => (
                 TheaterKompagnieStuttgart
               </a>
             </p>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>

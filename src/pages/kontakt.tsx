@@ -1,7 +1,7 @@
 import React from 'react';
+import Column from '../components/Column';
 import ContactForm from '../components/ContactForm';
 import Grid from '../components/Grid';
-import GridColumn from '../components/GridColumn';
 import Icons from '../components/Icons';
 import Layout from '../components/Layout';
 import Row from '../components/Row';
@@ -27,7 +27,7 @@ const ContactPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <GridColumn columnSpan={3}>
+          <Column span={3}>
             <div itemScope itemType="http://schema.org/Person">
               <address>
                 <h5 itemProp="name">Nicole Bunge</h5>
@@ -39,11 +39,11 @@ const ContactPage: React.FC = () => (
               </address>
               <Icons />
             </div>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={8} columnStart={5} rowAlign="end">
+          <Column span={8} start={5} rowAlign="end">
             <ContactForm />
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>

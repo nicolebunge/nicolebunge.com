@@ -1,6 +1,6 @@
 import React from 'react';
+import Column from '../components/Column';
 import Grid from '../components/Grid';
-import GridColumn from '../components/GridColumn';
 import Layout from '../components/Layout';
 import Row from '../components/Row';
 import Section from '../components/Section';
@@ -14,7 +14,7 @@ const AboutPage: React.FC = () => (
       <Grid>
         <h1 id="bermich">Über Mich</h1>
         <Row>
-          <GridColumn columnSpan={8}>
+          <Column span={8}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel molestias dolor earum
@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => (
               Et, quod eaque reiciendis in vel ab. Rerum labore expedita minima aut adipisci eum,
               fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
             </p>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>
@@ -30,41 +30,41 @@ const AboutPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <GridColumn columnSpan={4}>
+          <Column span={4}>
             <h2 id="persoenlichkeit">Persönlichkeit</h2>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <h3>Herkunft</h3>
             <ul>
               <li>Geboren in Ludwigsburg</li>
               <li>Nationalität: deutsch</li>
             </ul>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <h3>Wohnmöglichkeit</h3>
             <ul>
               <li>Berlin</li>
               <li>Stuttgart</li>
             </ul>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <h3>Aussehen</h3>
             <ul>
               <li>Augenfarbe: grau-grün</li>
               <li>Haare: dunkelblond, sehr lang</li>
             </ul>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <h3>Statur</h3>
             <ul>
               <li>165cm groß</li>
               <li>Konfektion: XS</li>
             </ul>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>
@@ -72,22 +72,22 @@ const AboutPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <GridColumn columnSpan={4}>
+          <Column span={4}>
             <h2 id="kenntnisseundfhigkeiten">Kenntnisse & Fähigkeiten</h2>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <h3 id="sprachen">Sprachen & Dialekte</h3>
             <ul>
               <li>Deutsch (Muttersprache)</li>
               <li>Französisch (fließend)</li>
-              <li>columnSpanisch (fließend)</li>
+              <li>spanisch (fließend)</li>
               <li>Englisch (fließend)</li>
               <li>Berlinerisch</li>
             </ul>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <h3 id="musik">Musik</h3>
             <ul>
               <li>Blockflöte</li>
@@ -96,17 +96,17 @@ const AboutPage: React.FC = () => (
               <li>Akustik-Gitarre</li>
               <li>Trommeln (Djembé)</li>
             </ul>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <h3 id="tanz">Tanz</h3>
             <ul>
               <li>10 Jahre Standard- und Latein-Turniertanz</li>
               <li>Ballett, Hip-Hop, Modern, Jazz, Stepptanz, Contemporary</li>
             </ul>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <h3 id="sport">Sport</h3>
             <ul>
               <li>Schwimmen</li>
@@ -114,21 +114,21 @@ const AboutPage: React.FC = () => (
               <li>Fechten</li>
               <li>Jonglage</li>
             </ul>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={6}>
+          <Column span={3} start={6}>
             <h3 id="gesang">Gesang</h3>
             <ul>
               <li>Mezzosopran</li>
             </ul>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={3} columnStart={10}>
+          <Column span={3} start={10}>
             <h3 id="fuhrerschein">Führerschein</h3>
             <ul>
               <li>Klasse B</li>
             </ul>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>

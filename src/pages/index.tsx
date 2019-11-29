@@ -2,8 +2,8 @@ import { graphql, Link } from 'gatsby';
 import Img, { FluidObject } from 'gatsby-image';
 import React from 'react';
 import Button from '../components/Button';
+import Column from '../components/Column';
 import Grid from '../components/Grid';
-import GridColumn from '../components/GridColumn';
 import Layout from '../components/Layout';
 import Row from '../components/Row';
 import Section from '../components/Section';
@@ -37,7 +37,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
     <Section full>
       <Grid>
         <Row>
-          <GridColumn columnSpan={4} rowAlign="center">
+          <Column span={4} rowAlign="center">
             <h2>Über mich</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
@@ -47,13 +47,13 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               dolorem! Obcaecati sint neque non delectus soluta!
             </p>
             <Button to={routes.ABOUT.path}>Mehr über mich</Button>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={5} columnStart={6}>
+          <Column span={5} start={6}>
             <Link to={routes.ABOUT.path}>
               <Img fluid={data.image1.childImageSharp.fluid} />
             </Link>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>
@@ -61,7 +61,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
     <Section full>
       <Grid>
         <Row>
-          <GridColumn columnSpan={4} columnStart={7} rowAlign="center">
+          <Column span={4} start={7} rowAlign="center">
             <h2>Schauspiel</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
@@ -71,12 +71,12 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               dolorem! Obcaecati sint neque non delectus soluta!
             </p>
             <Button to={routes.ACTING.path}>Mehr zu Schauspiel</Button>
-          </GridColumn>
-          <GridColumn columnSpan={4} columnStart={3}>
+          </Column>
+          <Column span={4} start={3}>
             <Link to={routes.ACTING.path}>
               <Img fluid={data.image2.childImageSharp.fluid} />
             </Link>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>
@@ -84,7 +84,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
     <Section full>
       <Grid>
         <Row>
-          <GridColumn columnSpan={4} columnStart={2} rowAlign="center">
+          <Column span={4} start={2} rowAlign="center">
             <h2>Theaterpädagogik</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
@@ -94,13 +94,13 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               dolorem! Obcaecati sint neque non delectus soluta!
             </p>
             <Button to={routes.THEATRE_PEDAGOGY.path}>Mehr zu Theaterpädagogik</Button>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={5} columnStart={8}>
+          <Column span={5} start={8}>
             <Link to={routes.THEATRE_PEDAGOGY.path}>
               <Img fluid={data.image3.childImageSharp.fluid} />
             </Link>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>
@@ -108,7 +108,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
     <Section full>
       <Grid>
         <Row>
-          <GridColumn columnSpan={6} columnStart={3}>
+          <Column span={6} start={3}>
             <h2>Kontakt</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
@@ -118,7 +118,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               dolorem! Obcaecati sint neque non delectus soluta!
             </p>
             <Button to={routes.CONTACT.path}>Kontakt aufnehmen</Button>
-          </GridColumn>
+          </Column>
         </Row>
       </Grid>
     </Section>

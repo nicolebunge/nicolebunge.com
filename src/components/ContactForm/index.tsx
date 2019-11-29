@@ -1,6 +1,6 @@
 import { Field, Form, Formik } from 'formik';
 import React from 'react';
-import GridColumn from '../GridColumn';
+import Column from '../Column';
 import Label from '../Label';
 import Row from '../Row';
 import styles from './style.module.css';
@@ -24,7 +24,7 @@ const ContactForm: React.FC = () => (
         <Field name="form-name" type="hidden" value="contact" />
 
         <Row>
-          <GridColumn columnSpan={6}>
+          <Column span={6}>
             <div className={styles.form__field}>
               <Field
                 autoComplete="name"
@@ -38,9 +38,9 @@ const ContactForm: React.FC = () => (
                 Name
               </Label>
             </div>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={6} columnStart={7}>
+          <Column span={6} start={7}>
             <div className={styles.form__field}>
               <Field
                 autoComplete="email"
@@ -54,9 +54,9 @@ const ContactForm: React.FC = () => (
                 E-Mail
               </Label>
             </div>
-          </GridColumn>
+          </Column>
 
-          <GridColumn columnSpan={12}>
+          <Column span={12}>
             <div className={styles.form__field}>
               <Field
                 className={styles.form__input}
@@ -69,7 +69,7 @@ const ContactForm: React.FC = () => (
                 Nachricht
               </Label>
             </div>
-          </GridColumn>
+          </Column>
         </Row>
 
         <div className={styles.form__field}>
