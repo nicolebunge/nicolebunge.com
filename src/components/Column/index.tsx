@@ -1,10 +1,7 @@
 import classNames from 'classnames';
+import capitalize from 'lodash/capitalize';
 import React from 'react';
 import styles from './style.module.css';
-
-function capitalize(string = ''): string {
-  return `${string.charAt(0).toUpperCase()}${string.slice(1)}`;
-}
 
 type spanClass =
   | 'span1'
@@ -45,8 +42,6 @@ export interface ColumnProps {
   start?: number;
   rowAlign?: string;
 }
-
-console.log({ styles });
 
 const Column: React.FC<ColumnProps> = (props) => {
   const { children, className, columnAlign, span, start, rowAlign, ...otherProps } = props;
