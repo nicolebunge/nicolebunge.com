@@ -6,18 +6,6 @@
   margin-bottom: 0;
 }
 
-.column--align-start {
-  justify-self: flex-start;
-}
-
-.column--align-center {
-  justify-self: center;
-}
-
-.column--align-end {
-  justify-self: flex-end;
-}
-
 .column--span-1 {
   grid-column-end: span 1;
 }
@@ -112,16 +100,4 @@
 
 .column--start-12 {
   grid-column-start: 12;
-}
-
-.column--row-align-start {
-  align-self: flex-start;
-}
-
-.column--row-align-center {
-  align-self: center;
-}
-
-.column--row-align-end {
-  align-self: flex-end;
 }

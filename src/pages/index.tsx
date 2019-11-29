@@ -36,8 +36,8 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
 
     <Section full>
       <Grid>
-        <Row>
-          <Column span={4} rowAlign="center">
+        <Row align="center">
+          <Column span={4}>
             <h2>Über mich</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
@@ -60,8 +60,8 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
 
     <Section full>
       <Grid>
-        <Row>
-          <Column span={4} start={7} rowAlign="center">
+        <Row align="center">
+          <Column span={4} start={7}>
             <h2>Schauspiel</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
@@ -83,8 +83,8 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
 
     <Section full>
       <Grid>
-        <Row>
-          <Column span={4} start={2} rowAlign="center">
+        <Row align="center">
+          <Column span={4} start={2}>
             <h2>Theaterpädagogik</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas

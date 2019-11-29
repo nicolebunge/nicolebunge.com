@@ -1,7 +1,4 @@
 export const column: string;
-export const columnAlignCenter: string;
-export const columnAlignEnd: string;
-export const columnAlignStart: string;
 export const span1: string;
 export const span10: string;
 export const span11: string;
@@ -26,6 +23,3 @@ export const start6: string;
 export const start7: string;
 export const start8: string;
 export const start9: string;
-export const rowAlignCenter: string;
-export const rowAlignEnd: string;
-export const rowAlignStart: string;

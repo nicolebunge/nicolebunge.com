@@ -1,6 +1,6 @@
 import classNames from 'classnames';
-import capitalize from 'lodash/capitalize';
 import React from 'react';
+import Alignment, { AlignmentProps } from '../Alignment';
 import styles from './style.module.css';
 
 type spanClass =
@@ -31,33 +31,25 @@ type startClass =
   | 'start11'
   | 'start12';
 
-type ColumnAlignClass = 'columnAlignCenter' | 'columnAlignEnd' | 'columnAlignStart';
-
-type RowAlignClass = 'rowAlignCenter' | 'rowAlignEnd' | 'rowAlignStart';
-
-export interface ColumnProps {
+export interface ColumnProps extends AlignmentProps {
   className?: string;
-  columnAlign?: string;
   span?: number;
   start?: number;
-  rowAlign?: string;
 }
 
 const Column: React.FC<ColumnProps> = (props) => {
-  const { children, className, columnAlign, span, start, rowAlign, ...otherProps } = props;
+  const { children, className, span, start, ...otherProps } = props;
 
   return (
-    <div
+    <Alignment
       className={classNames(className, styles.column, {
         [styles[`columnSpan${span}` as spanClass]]: span,
         [styles[`columnStart${start}` as startClass]]: start,
-        [styles[`columnAlign${capitalize(columnAlign)}` as ColumnAlignClass]]: columnAlign,
-        [styles[`columnRowAlign${capitalize(rowAlign)}` as RowAlignClass]]: rowAlign,
       })}
       {...otherProps}
     >
       {children}
-    </div>
+    </Alignment>
   );
 };
 

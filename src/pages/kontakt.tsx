@@ -26,7 +26,7 @@ const ContactPage: React.FC = () => (
 
     <Section>
       <Grid>
-        <Row>
+        <Row align="end">
           <Column span={3}>
             <div itemScope itemType="http://schema.org/Person">
               <address>
@@ -41,7 +41,7 @@ const ContactPage: React.FC = () => (
             </div>
           </Column>
 
-          <Column span={8} start={5} rowAlign="end">
+          <Column span={8} start={5}>
             <ContactForm />
           </Column>
         </Row>
