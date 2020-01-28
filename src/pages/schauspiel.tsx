@@ -15,12 +15,104 @@ const ActingPage: React.FC = () => (
         <h1 id="schauspiel">Schauspiel</h1>
         <Row>
           <Column span={8}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel molestias dolor earum
-              reprehenderit. Quis rerum quae eius? Ad sequi quisquam reprehenderit officia eveniet?
-              Et, quod eaque reiciendis in vel ab. Rerum labore expedita minima aut adipisci eum,
-              fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
+              Derzeit bin ich deutschlandweit und in Österreich und der Schweiz mit dem Berliner
+              Kriminal Theater auf Tournee und in Berlin zu sehen. Zudem spiele ich am „Theater aus
+              dem Koffer“ Berlin, welches in jedem Stück das Spielen mehrerer Instrumente und
+              Gesangseinlagen beinhaltet.
+              <br /> Mein Diplomstudium absolvierte ich an der Theater Akademie Stuttgart mit
+              Schwerpunkt Schauspiel (ZAV) und Theaterpädagogik (BUT). Dort spielte ich an der
+              Theater Kompagnie Stuttgart Shakespeares “Mittsommernachtstraum” und “Was Ihr Wollt”.
+            </p>
+            <p>
+              Im frühen Kindesalter begann ich Instrumente zu spielen, Turniere zu tanzen und zu
+              schauspielern. Tanzen gehört mit der Musik zu meinen großen Leidenschaften. Ich habe
+              zehn Jahre Standard- und Latein-Turnier getanzt, ebenso Ballett und Hip-Hop. Ich
+              spiele seit meiner Kindheit Block- und Altflöte, später lernte ich E-Gitarre, wodurch
+              ich auch klassische Akustik-Gitarre spiele. Bewegung und Rhythmus sind für mich
+              wichtige Ausdrucksmittel in meiner Arbeit.
+            </p>
+            <p>
+              Als Schauspielerin möchte ich zeigen, dass sich der Alltag ablegen lassen kann, die
+              eigene Persönlichkeit in Bewegung kommt und somit die Kreativität und Phantasie des
+              Publikums wecken, wodurch diesem der Blick für die Kunst, seine Mitmenschen und sein
+              Umfeld geöffnet werden kann.
+            </p>
+          </Column>
+        </Row>
+      </Grid>
+    </Section>
+
+    <Section>
+      <Grid>
+        <Row>
+          <Column span={4}>
+            <h2 id="theater">Theater</h2>
+          </Column>
+
+          <Column span={7} start={6}>
+            <h3>Seit Januar 2020</h3>
+            <p>
+              <strong>„Passagier 23“</strong>, Lisa <br />
+              Regie: Thomas Wingrich, <br />
+              <a href="https://www.kriminaltheater.de/" rel="noopener noreferrer" target="_blank">
+                Berliner Kriminal Theater
+              </a>
+            </p>
+          </Column>
+
+          <Column span={3} start={6}>
+            <h3>Seit Januar 2019</h3>
+            <p>
+              <strong>„Die Liedfee und der Drehschwungtanz“</strong>, Liedfee
+              <br />
+              <strong>„Toni und die Urwaldparty“</strong>, Toni
+              <br />
+              <strong>„Toni und das große Durcheinander“</strong>, Toni
+              <br />
+              <strong>„Toni und das Gewitter im Zwergenwald“</strong>, Toni
+            </p>
+          </Column>
+
+          <Column span={3} start={10}>
+            <p>
+              <strong>„Toni und die Gute-Laune-Geräusche“</strong>, Toni
+              <br />
+              <strong>„Toni und die Gute-Laune-Geräusche“</strong>, Toni
+              <br />
+              <strong>„Toni und die Klapperschlangenbande“</strong>, Toni
+              <br />
+              <strong>„Toni und das geheimnisvolle Klingelingeling“</strong>, Toni
+              <br />
+              Regie: Nadja Schock, <br />
+              <a
+                href="https://theater-aus-dem-koffer.de/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Theater aus dem Koffer
+              </a>
+            </p>
+          </Column>
+        </Row>
+      </Grid>
+    </Section>
+
+    <Section>
+      <Grid>
+        <Row>
+          <Column span={4}>
+            <h2 id="film">Film</h2>
+          </Column>
+
+          <Column span={3} start={6}>
+            <h3>2017</h3>
+            <p>
+              <strong>„Crossing Borders“</strong>, Leonie <br />
+              Regie: Abini Gold, <br />
+              <a href="https://www.filmakademie.de/" rel="noopener noreferrer" target="_blank">
+                Filmakademie Baden-Württemberg
+              </a>
             </p>
           </Column>
         </Row>
@@ -80,27 +172,6 @@ const ActingPage: React.FC = () => (
             <p>
               <strong>„Bier für Frauen“</strong>, Eine Frau <br />
               Felicia Zeller
-            </p>
-          </Column>
-        </Row>
-      </Grid>
-    </Section>
-
-    <Section>
-      <Grid>
-        <Row>
-          <Column span={4}>
-            <h2 id="film">Film</h2>
-          </Column>
-
-          <Column span={3} start={6}>
-            <h3>2017</h3>
-            <p>
-              <strong>„Crossing Borders“</strong>, Leonie <br />
-              Regie: Abini Gold, <br />
-              <a href="https://www.filmakademie.de/" rel="noopener noreferrer" target="_blank">
-                Filmakademie Baden-Württemberg
-              </a>
             </p>
           </Column>
         </Row>
