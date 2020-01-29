@@ -22,6 +22,7 @@ exports[`Gallery component renders correctly 1`] = `
           }
         >
           <div
+            aria-hidden={true}
             style={
               Object {
                 "paddingBottom": "100%",
