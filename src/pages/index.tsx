@@ -64,11 +64,10 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
           <Column span={4} start={7}>
             <h2>Schauspiel</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
-              doloribus vero cumque voluptatum beatae aperiam autem inventore, vitae aspernatur,
-              consequatur dicta. Veritatis, repudiandae non voluptate repellat eos at odit, nobis
-              magni explicabo officiis beatae, officia rerum vero ipsa ipsam? Vitae, mollitia
-              dolorem! Obcaecati sint neque non delectus soluta!
+              Derzeit bin ich deutschlandweit und in Österreich und der Schweiz mit dem Berliner
+              Kriminal Theater auf Tournee und in Berlin zu sehen. Zudem spiele ich am „Theater aus
+              dem Koffer“ Berlin, welches in jedem Stück das Spielen mehrerer Instrumente und
+              Gesangseinlagen beinhaltet.
             </p>
             <Button to={routes.ACTING.path}>Mehr zu Schauspiel</Button>
           </Column>
