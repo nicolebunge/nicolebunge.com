@@ -2,7 +2,7 @@
 
 exports[`Cookie component renders correctly 1`] = `
 <div
-  className="cookieConsent "
+  className="CookieConsent"
   style={
     Object {
       "alignItems": "baseline",
@@ -36,25 +36,29 @@ exports[`Cookie component renders correctly 1`] = `
       Datenschutz
     </a>
   </div>
-  <button
+  <div
     className=""
-    id=""
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#ffd42d",
-        "border": "0",
-        "borderRadius": "0px",
-        "boxShadow": "none",
-        "color": "black",
-        "cursor": "pointer",
-        "flex": "0 0 auto",
-        "margin": "15px",
-        "padding": "5px 10px",
-      }
-    }
   >
-    I understand
-  </button>
+    <button
+      className=""
+      id="rcc-confirm-button"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#ffd42d",
+          "border": "0",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "black",
+          "cursor": "pointer",
+          "flex": "0 0 auto",
+          "margin": "15px",
+          "padding": "5px 10px",
+        }
+      }
+    >
+      I understand
+    </button>
+  </div>
 </div>
 `;

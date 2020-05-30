@@ -16,6 +16,8 @@ exports[`Gallery component renders correctly 1`] = `
           className=" gatsby-image-wrapper"
           style={
             Object {
+              "maxHeight": null,
+              "maxWidth": null,
               "overflow": "hidden",
               "position": "relative",
             }

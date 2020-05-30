@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/camelcase */
+/* eslint-disable camelcase */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
 module.exports = {
