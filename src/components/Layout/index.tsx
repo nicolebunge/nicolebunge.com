@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import 'typeface-source-sans-pro';
 import { NOW } from '../../constants/dates';
 import * as routes from '../../constants/routes';
