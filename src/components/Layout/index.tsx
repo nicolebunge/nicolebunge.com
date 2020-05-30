@@ -6,7 +6,6 @@ import 'typeface-source-sans-pro';
 import { NOW } from '../../constants/dates';
 import * as routes from '../../constants/routes';
 import nicoleBunge from '../../images/nicole-bunge.svg';
-import Cookie from '../Cookie';
 import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
@@ -68,7 +67,6 @@ const Layout: React.FC<LayoutProps> = (props) => {
               <p>© {NOW.getFullYear()} Nicole Bunge</p>
             </Grid>
           </Footer>
-          <Cookie />
           <Social />
         </div>
       )}
