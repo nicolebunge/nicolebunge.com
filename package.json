@@ -13,7 +13,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-sharp": "^2.6.24",
-    "gatsby-plugin-sitemap": "^2.4.11",
+    "gatsby-plugin-sitemap": "^2.4.12",
     "gatsby-plugin-typescript": "^2.4.16",
     "gatsby-source-filesystem": "^2.3.23",
     "gatsby-transformer-remark": "^2.8.27",
