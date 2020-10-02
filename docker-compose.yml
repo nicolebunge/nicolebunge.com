@@ -6,4 +6,4 @@ services:
     volumes:
       - .:/usr/src/app
     ports:
-      - "${PORT}:${PORT}"
+      - '${PORT}:${PORT}'

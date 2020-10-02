@@ -1,5 +1,5 @@
 ---
-path: "/impressum"
+path: '/impressum'
 title: Impressum
 ---
 
