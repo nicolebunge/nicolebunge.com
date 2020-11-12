@@ -1,14 +1,13 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styles from './style.module.css';
 
-export interface SectionProps {
-  className?: string;
+export interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   full?: boolean;
 }
 
 const Section: React.FC<SectionProps> = (props) => {
-  const { children, className, full, ...otherProps } = props;
+  const { className, full, ...otherProps } = props;
 
   return (
     <section
@@ -16,9 +15,7 @@ const Section: React.FC<SectionProps> = (props) => {
         [styles.sectionFull]: full,
       })}
       {...otherProps}
-    >
-      {children}
-    </section>
+    />
   );
 };
 

@@ -1,19 +1,13 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styles from './style.module.css';
 
-export interface MainProps {
-  className?: string;
-}
+export type MainProps = HTMLAttributes<HTMLDivElement>;
 
 const Main: React.FC<MainProps> = (props) => {
-  const { children, className, ...otherProps } = props;
+  const { className, ...otherProps } = props;
 
-  return (
-    <main className={classNames(className, styles.main)} role="main" {...otherProps}>
-      {children}
-    </main>
-  );
+  return <main className={classNames(className, styles.main)} role="main" {...otherProps} />;
 };
 
 export default Main;

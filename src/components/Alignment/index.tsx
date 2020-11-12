@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import capitalize from 'lodash/capitalize';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styles from './style.module.css';
 
 type Align = 'center' | 'end' | 'start';
@@ -12,14 +12,13 @@ type JustifyClass =
   | 'alignmentJustifySpaceBetween'
   | 'alignmentJustifyStart';
 
-export interface AlignmentProps {
+export interface AlignmentProps extends HTMLAttributes<HTMLDivElement> {
   align?: Align;
-  className?: string;
   justify?: Justify;
 }
 
 const Alignment: React.FC<AlignmentProps> = (props) => {
-  const { align, className, children, justify } = props;
+  const { align, className, justify, ...otherProps } = props;
 
   return (
     <div
@@ -28,9 +27,8 @@ const Alignment: React.FC<AlignmentProps> = (props) => {
         [styles[`alignmentAlign${capitalize(align)}` as AlignClass]]: align,
         [styles[`alignmentJustify${capitalize(justify)}` as JustifyClass]]: justify,
       })}
-    >
-      {children}
-    </div>
+      {...otherProps}
+    />
   );
 };
 

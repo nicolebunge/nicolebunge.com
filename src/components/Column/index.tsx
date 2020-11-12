@@ -32,13 +32,12 @@ type startClass =
   | 'start12';
 
 export interface ColumnProps extends AlignmentProps {
-  className?: string;
   span?: number;
   start?: number;
 }
 
 const Column: React.FC<ColumnProps> = (props) => {
-  const { children, className, span, start, ...otherProps } = props;
+  const { className, span, start, ...otherProps } = props;
 
   return (
     <Alignment
@@ -47,9 +46,7 @@ const Column: React.FC<ColumnProps> = (props) => {
         [styles[`columnStart${start}` as startClass]]: start,
       })}
       {...otherProps}
-    >
-      {children}
-    </Alignment>
+    />
   );
 };
 

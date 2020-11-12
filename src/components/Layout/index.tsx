@@ -1,6 +1,6 @@
 import classNames from 'classnames';
-import { graphql, Link, StaticQuery } from 'gatsby';
-import React from 'react';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import React, { HTMLAttributes } from 'react';
 import { Helmet } from 'react-helmet';
 import 'typeface-source-sans-pro';
 import { NOW } from '../../constants/dates';
@@ -14,63 +14,57 @@ import Navigation from '../Navigation';
 import Social from '../Social';
 import styles from './style.module.css';
 
-export interface LayoutProps {
-  className?: string;
-}
+export type LayoutProps = HTMLAttributes<HTMLDivElement>;
 
 const Layout: React.FC<LayoutProps> = (props) => {
   const { children, className, ...otherProps } = props;
+  const { site } = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
 
   return (
-    <StaticQuery
-      query={graphql`
-        query SiteTitleQuery {
-          site {
-            siteMetadata {
-              title
-            }
-          }
-        }
-      `}
-      render={(data): JSX.Element => (
-        <div className={classNames(className, styles.layout)} {...otherProps}>
-          <Helmet
-            title={data.site.siteMetadata.title}
-            meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
-            ]}
-          >
-            <html lang="en" />
-          </Helmet>
-          <Header>
-            <Link to="/">
-              <img src={nicoleBunge} alt={data.site.siteMetadata.title} width="160" />
-            </Link>
+    <div className={classNames(className, styles.layout)} {...otherProps}>
+      <Helmet
+        title={site.siteMetadata.title}
+        meta={[
+          { name: 'description', content: 'Sample' },
+          { name: 'keywords', content: 'sample, something' },
+        ]}
+      >
+        <html lang="en" />
+      </Helmet>
+      <Header>
+        <Link to="/">
+          <img src={nicoleBunge} alt={site.siteMetadata.title} width="160" />
+        </Link>
 
-            <Navigation
-              inline
-              routes={[
-                routes.INDEX,
-                routes.ABOUT,
-                routes.GALLERY,
-                routes.ACTING,
-                routes.THEATRE_PEDAGOGY,
-                routes.CONTACT,
-              ]}
-            />
-          </Header>
-          <Main>{children}</Main>
-          <Footer>
-            <Grid>
-              <Navigation inline routes={[routes.PRIVACY, routes.IMPRINT]} />
-              <p>© {NOW.getFullYear()} Nicole Bunge</p>
-            </Grid>
-          </Footer>
-          <Social />
-        </div>
-      )}
-    />
+        <Navigation
+          inline
+          routes={[
+            routes.INDEX,
+            routes.ABOUT,
+            routes.GALLERY,
+            routes.ACTING,
+            routes.THEATRE_PEDAGOGY,
+            routes.CONTACT,
+          ]}
+        />
+      </Header>
+      <Main>{children}</Main>
+      <Footer>
+        <Grid>
+          <Navigation inline routes={[routes.PRIVACY, routes.IMPRINT]} />
+          <p>© {NOW.getFullYear()} Nicole Bunge</p>
+        </Grid>
+      </Footer>
+      <Social />
+    </div>
   );
 };
 

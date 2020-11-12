@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Link } from 'gatsby';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styles from './style.module.css';
 
 interface Route {
@@ -8,8 +8,7 @@ interface Route {
   path: string;
 }
 
-export interface NavigationProps {
-  className?: string;
+export interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
   inline?: boolean;
   routes: Route[];
 }

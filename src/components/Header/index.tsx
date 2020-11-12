@@ -1,19 +1,13 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styles from './style.module.css';
 
-export interface HeaderProps {
-  className?: string;
-}
+export type HeaderProps = HTMLAttributes<HTMLDivElement>;
 
 const Header: React.FC<HeaderProps> = (props) => {
-  const { children, className, ...otherProps } = props;
+  const { className, ...otherProps } = props;
 
-  return (
-    <header className={classNames(className, styles.header)} role="banner" {...otherProps}>
-      {children}
-    </header>
-  );
+  return <header className={classNames(className, styles.header)} role="banner" {...otherProps} />;
 };
 
 export default Header;

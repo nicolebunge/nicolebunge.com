@@ -1,20 +1,17 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+
 import classNames from 'classnames';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styles from './style.module.css';
 
-export interface LabelProps {
-  className?: string;
+export interface LabelProps extends HTMLAttributes<HTMLLabelElement> {
   htmlFor: string;
 }
 
 const Label: React.FC<LabelProps> = (props) => {
-  const { children, className, htmlFor, ...otherProps } = props;
+  const { className, ...otherProps } = props;
 
-  return (
-    <label className={classNames(className, styles.label)} htmlFor={htmlFor} {...otherProps}>
-      {children}
-    </label>
-  );
+  return <label className={classNames(className, styles.label)} {...otherProps} />;
 };
 
 export default Label;

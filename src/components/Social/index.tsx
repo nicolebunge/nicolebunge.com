@@ -1,11 +1,9 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import Icons from '../Icons';
 import styles from './style.module.css';
 
-export interface SocialProps {
-  className?: string;
-}
+export type SocialProps = HTMLAttributes<HTMLDivElement>;
 
 const Social: React.FC<SocialProps> = (props) => {
   const { className, ...otherProps } = props;

@@ -1,18 +1,14 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styles from './style.module.css';
 
-export interface FooterProps {
-  className?: string;
-}
+export type FooterProps = HTMLAttributes<HTMLElement>;
 
 const Footer: React.FC<FooterProps> = (props) => {
-  const { children, className, ...otherProps } = props;
+  const { className, ...otherProps } = props;
 
   return (
-    <footer className={classNames(className, styles.footer)} role="contentinfo" {...otherProps}>
-      {children}
-    </footer>
+    <footer className={classNames(className, styles.footer)} role="contentinfo" {...otherProps} />
   );
 };
 

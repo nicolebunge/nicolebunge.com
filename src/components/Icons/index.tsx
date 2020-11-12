@@ -1,13 +1,11 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import instagram from '../../images/instagram.svg';
 import linkedin from '../../images/linkedin.svg';
 import xing from '../../images/xing.svg';
 import styles from './style.module.css';
 
-export interface IconsProps {
-  className?: string;
-}
+export type IconsProps = HTMLAttributes<HTMLUListElement>;
 
 const Icons: React.FC<IconsProps> = (props) => {
   const { className, ...otherProps } = props;
