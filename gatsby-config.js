@@ -49,9 +49,6 @@ module.exports = {
       resolve: 'gatsby-plugin-sitemap',
     },
     {
-      resolve: 'gatsby-plugin-typescript',
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
