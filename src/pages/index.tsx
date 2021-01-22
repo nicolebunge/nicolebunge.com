@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
-import * as routes from '../constants/routes';
+import { ABOUT, ACTING, CONTACT, THEATRE_PEDAGOGY } from '../constants/routes';
 
 export interface IndexPageProps {
   data: {
@@ -46,11 +46,11 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               magni explicabo officiis beatae, officia rerum vero ipsa ipsam? Vitae, mollitia
               dolorem! Obcaecati sint neque non delectus soluta!
             </p>
-            <Button to={routes.ABOUT.path}>Mehr über mich</Button>
+            <Button to={ABOUT.path}>Mehr über mich</Button>
           </Column>
 
           <Column span={5} start={6}>
-            <Link to={routes.ABOUT.path}>
+            <Link to={ABOUT.path}>
               <Img fluid={data.image1.childImageSharp.fluid} />
             </Link>
           </Column>
@@ -69,10 +69,10 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               dem Koffer“ Berlin, welches in jedem Stück das Spielen mehrerer Instrumente und
               Gesangseinlagen beinhaltet.
             </p>
-            <Button to={routes.ACTING.path}>Mehr zu Schauspiel</Button>
+            <Button to={ACTING.path}>Mehr zu Schauspiel</Button>
           </Column>
           <Column span={4} start={3}>
-            <Link to={routes.ACTING.path}>
+            <Link to={ACTING.path}>
               <Img fluid={data.image2.childImageSharp.fluid} />
             </Link>
           </Column>
@@ -92,11 +92,11 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               magni explicabo officiis beatae, officia rerum vero ipsa ipsam? Vitae, mollitia
               dolorem! Obcaecati sint neque non delectus soluta!
             </p>
-            <Button to={routes.THEATRE_PEDAGOGY.path}>Mehr zu Theaterpädagogik</Button>
+            <Button to={THEATRE_PEDAGOGY.path}>Mehr zu Theaterpädagogik</Button>
           </Column>
 
           <Column span={5} start={8}>
-            <Link to={routes.THEATRE_PEDAGOGY.path}>
+            <Link to={THEATRE_PEDAGOGY.path}>
               <Img fluid={data.image3.childImageSharp.fluid} />
             </Link>
           </Column>
@@ -116,7 +116,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => (
               magni explicabo officiis beatae, officia rerum vero ipsa ipsam? Vitae, mollitia
               dolorem! Obcaecati sint neque non delectus soluta!
             </p>
-            <Button to={routes.CONTACT.path}>Kontakt aufnehmen</Button>
+            <Button to={CONTACT.path}>Kontakt aufnehmen</Button>
           </Column>
         </Row>
       </Grid>

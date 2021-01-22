@@ -4,7 +4,16 @@ import React, { HTMLAttributes } from 'react';
 import { Helmet } from 'react-helmet';
 import 'typeface-source-sans-pro';
 import { NOW } from '../../constants/dates';
-import * as routes from '../../constants/routes';
+import {
+  ABOUT,
+  ACTING,
+  CONTACT,
+  GALLERY,
+  IMPRINT,
+  INDEX,
+  PRIVACY,
+  THEATRE_PEDAGOGY,
+} from '../../constants/routes';
 import nicoleBunge from '../../images/nicole-bunge.svg';
 import Footer from '../Footer';
 import Grid from '../Grid';
@@ -44,22 +53,12 @@ const Layout: React.FC<LayoutProps> = (props) => {
           <img src={nicoleBunge} alt={site.siteMetadata.title} width="160" />
         </Link>
 
-        <Navigation
-          inline
-          routes={[
-            routes.INDEX,
-            routes.ABOUT,
-            routes.GALLERY,
-            routes.ACTING,
-            routes.THEATRE_PEDAGOGY,
-            routes.CONTACT,
-          ]}
-        />
+        <Navigation inline routes={[INDEX, ABOUT, GALLERY, ACTING, THEATRE_PEDAGOGY, CONTACT]} />
       </Header>
       <Main>{children}</Main>
       <Footer>
         <Grid>
-          <Navigation inline routes={[routes.PRIVACY, routes.IMPRINT]} />
+          <Navigation inline routes={[PRIVACY, IMPRINT]} />
           <p>© {NOW.getFullYear()} Nicole Bunge</p>
         </Grid>
       </Footer>
