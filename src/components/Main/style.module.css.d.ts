@@ -1,3 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-
-export const main: string;
+declare const styles: {
+  readonly main: string;
+};
+export = styles;

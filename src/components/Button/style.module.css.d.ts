@@ -1,3 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-
-export const button: string;
+declare const styles: {
+  readonly button: string;
+};
+export = styles;

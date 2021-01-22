@@ -1,6 +1,7 @@
-/* eslint-disable camelcase */
-
-export const form: string;
-export const form__field: string;
-export const form__input: string;
-export const form__label: string;
+declare const styles: {
+  readonly form: string;
+  readonly form__field: string;
+  readonly form__label: string;
+  readonly form__input: string;
+};
+export = styles;

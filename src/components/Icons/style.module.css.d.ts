@@ -1,3 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-
-export const icons: string;
+declare const styles: {
+  readonly icons: string;
+};
+export = styles;

@@ -1,3 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-
-export const social: string;
+declare const styles: {
+  readonly social: string;
+};
+export = styles;

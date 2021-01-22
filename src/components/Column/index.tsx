@@ -4,32 +4,32 @@ import Alignment, { AlignmentProps } from '../Alignment';
 import styles from './style.module.css';
 
 type spanClass =
-  | 'span1'
-  | 'span2'
-  | 'span3'
-  | 'span4'
-  | 'span5'
-  | 'span6'
-  | 'span7'
-  | 'span8'
-  | 'span9'
-  | 'span10'
-  | 'span11'
-  | 'span12';
+  | 'columnSpan1'
+  | 'columnSpan2'
+  | 'columnSpan3'
+  | 'columnSpan4'
+  | 'columnSpan5'
+  | 'columnSpan6'
+  | 'columnSpan7'
+  | 'columnSpan8'
+  | 'columnSpan9'
+  | 'columnSpan10'
+  | 'columnSpan11'
+  | 'columnSpan12';
 
 type startClass =
-  | 'start1'
-  | 'start2'
-  | 'start3'
-  | 'start4'
-  | 'start5'
-  | 'start6'
-  | 'start7'
-  | 'start8'
-  | 'start9'
-  | 'start10'
-  | 'start11'
-  | 'start12';
+  | 'columnStart1'
+  | 'columnStart2'
+  | 'columnStart3'
+  | 'columnStart4'
+  | 'columnStart5'
+  | 'columnStart6'
+  | 'columnStart7'
+  | 'columnStart8'
+  | 'columnStart9'
+  | 'columnStart10'
+  | 'columnStart11'
+  | 'columnStart12';
 
 export interface ColumnProps extends AlignmentProps {
   span?: number;
@@ -41,7 +41,7 @@ const Column: React.FC<ColumnProps> = (props) => {
 
   return (
     <Alignment
-      className={classNames(className, styles.column, {
+      className={classNames(className, {
         [styles[`columnSpan${span}` as spanClass]]: span,
         [styles[`columnStart${start}` as startClass]]: start,
       })}

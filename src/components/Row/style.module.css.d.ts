@@ -1,3 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-
-export const row: string;
+declare const styles: {
+  readonly row: string;
+};
+export = styles;

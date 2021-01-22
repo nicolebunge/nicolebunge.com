@@ -1,4 +1,5 @@
-/* eslint-disable camelcase */
-
-export const gallery: string;
-export const gallery__item: string;
+declare const styles: {
+  readonly gallery: string;
+  readonly gallery__item: string;
+};
+export = styles;

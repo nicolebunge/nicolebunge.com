@@ -1,8 +1,11 @@
-export const alignment: string;
-export const alignmentAlignCenter: string;
-export const alignmentAlignEnd: string;
-export const alignmentAlignStart: string;
-export const alignmentJustifyCenter: string;
-export const alignmentJustifyEnd: string;
-export const alignmentJustifySpaceBetween: string;
-export const alignmentJustifyStart: string;
+declare const styles: {
+  readonly alignment: string;
+  readonly alignmentAlignCenter: string;
+  readonly alignmentAlignEnd: string;
+  readonly alignmentAlignStart: string;
+  readonly alignmentJustifyCenter: string;
+  readonly alignmentJustifyEnd: string;
+  readonly alignmentJustifySpaceBetween: string;
+  readonly alignmentJustifyStart: string;
+};
+export = styles;

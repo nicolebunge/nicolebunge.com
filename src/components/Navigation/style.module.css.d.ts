@@ -1,8 +1,11 @@
 /* eslint-disable camelcase */
 
-export const navigation: string;
-export const navigation__list: string;
-export const navigation__listInline: string;
-export const navigation__item: string;
-export const navigation__link: string;
-export const navigation__linkActive: string;
+declare const styles: {
+  readonly navigation: string;
+  readonly navigation__list: string;
+  readonly navigation__listInline: string;
+  readonly navigation__item: string;
+  readonly navigation__link: string;
+  readonly navigation__linkActive: string;
+};
+export = styles;

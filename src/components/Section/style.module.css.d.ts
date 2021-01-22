@@ -1,2 +1,5 @@
-export const section: string;
-export const sectionFull: string;
+declare const styles: {
+  readonly section: string;
+  readonly sectionFull: string;
+};
+export = styles;
