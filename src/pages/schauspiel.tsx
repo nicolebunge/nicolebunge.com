@@ -46,53 +46,145 @@ const ActingPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <Column span={4}>
+          <Column span={3}>
             <h2 id="theater">Theater</h2>
           </Column>
 
-          <Column span={7} start={6}>
-            <h3>Seit Januar 2020</h3>
-            <p>
-              <strong>„Passagier 23“</strong>, Lisa <br />
-              Regie: Thomas Wingrich, <br />
-              <a href="https://www.kriminaltheater.de/" rel="noopener noreferrer" target="_blank">
-                Berliner Kriminal Theater
-              </a>
-            </p>
-          </Column>
+          <Column span={8} start={5}>
+            <h3>Seit 2020</h3>
 
-          <Column span={3} start={6}>
-            <h3>Seit Januar 2019</h3>
-            <p>
-              <strong>„Die Liedfee und der Drehschwungtanz“</strong>, Liedfee
-              <br />
-              <strong>„Toni und die Urwaldparty“</strong>, Toni
-              <br />
-              <strong>„Toni und das große Durcheinander“</strong>, Toni
-              <br />
-              <strong>„Toni und das Gewitter im Zwergenwald“</strong>, Toni
-            </p>
-          </Column>
+            <Row>
+              <Column span={6}>
+                <p>
+                  <strong>„Inspektor Campbells letzter Fall 23“</strong>, Jennifer <br />
+                  Regie: Wolfgang Rumpf & Matti Wien <br />
+                  <a
+                    href="https://www.kriminaltheater.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Berliner Kriminal Theater
+                  </a>
+                </p>
+                <p>
+                  <strong>„Die zwölf Gescchworenen“</strong>, Nr. 5 <br />
+                  Regie: Wolfgang Rumpf <br />
+                  <a
+                    href="https://www.kriminaltheater.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Berliner Kriminal Theater
+                  </a>
+                </p>
+              </Column>
+              <Column span={6} start={7}>
+                <p>
+                  <strong>„Passagier 23“</strong>, Lisa <br />
+                  Regie: Thomas Wingrich, <br />
+                  <a
+                    href="https://www.kriminaltheater.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Berliner Kriminal Theater
+                  </a>
+                </p>
+              </Column>
+            </Row>
 
-          <Column span={3} start={10}>
-            <p>
-              <strong>„Toni und die Gute-Laune-Geräusche“</strong>, Toni
-              <br />
-              <strong>„Toni und die Gute-Laune-Geräusche“</strong>, Toni
-              <br />
-              <strong>„Toni und die Klapperschlangenbande“</strong>, Toni
-              <br />
-              <strong>„Toni und das geheimnisvolle Klingelingeling“</strong>, Toni
-              <br />
-              Regie: Nadja Schock, <br />
-              <a
-                href="https://theater-aus-dem-koffer.de/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Theater aus dem Koffer
-              </a>
-            </p>
+            <h3>Seit 2019</h3>
+
+            <Row>
+              <Column span={6}>
+                <p>
+                  <strong>„Die Liedfee und der Drehschwungtanz“</strong>, Liedfee
+                  <br />
+                  Regie: Nadja Schock,{' '}
+                  <a
+                    href="https://theater-aus-dem-koffer.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Theater aus dem Koffer
+                  </a>
+                </p>
+                <p>
+                  <strong>„Toni und die Urwaldparty“</strong>, Toni
+                  <br />
+                  Regie: Nadja Schock,{' '}
+                  <a
+                    href="https://theater-aus-dem-koffer.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Theater aus dem Koffer
+                  </a>
+                </p>
+                <p>
+                  <strong>„Toni und das große Durcheinander“</strong>, Toni
+                  <br />
+                  Regie: Nadja Schock,{' '}
+                  <a
+                    href="https://theater-aus-dem-koffer.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Theater aus dem Koffer
+                  </a>
+                </p>
+                <p>
+                  <strong>„Toni und das Gewitter im Zwergenwald“</strong>, Toni
+                  <br />
+                  Regie: Nadja Schock,{' '}
+                  <a
+                    href="https://theater-aus-dem-koffer.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Theater aus dem Koffer
+                  </a>
+                </p>
+              </Column>
+              <Column span={6} start={7}>
+                <p>
+                  <strong>„Toni und die Gute-Laune-Geräusche“</strong>, Toni
+                  <br />
+                  Regie: Nadja Schock,{' '}
+                  <a
+                    href="https://theater-aus-dem-koffer.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Theater aus dem Koffer
+                  </a>
+                </p>
+                <p>
+                  <strong>„Toni und die Klapperschlangenbande“</strong>, Toni
+                  <br />
+                  Regie: Nadja Schock,{' '}
+                  <a
+                    href="https://theater-aus-dem-koffer.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Theater aus dem Koffer
+                  </a>
+                </p>
+                <p>
+                  <strong>„Toni und das geheimnisvolle Klingelingeling“</strong>, Toni
+                  <br />
+                  Regie: Nadja Schock,{' '}
+                  <a
+                    href="https://theater-aus-dem-koffer.de/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Theater aus dem Koffer
+                  </a>
+                </p>
+              </Column>
+            </Row>
           </Column>
         </Row>
       </Grid>
@@ -101,11 +193,11 @@ const ActingPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <Column span={4}>
+          <Column span={3}>
             <h2 id="film">Film</h2>
           </Column>
 
-          <Column span={3} start={6}>
+          <Column span={8} start={5}>
             <h3>2017</h3>
             <p>
               <strong>„Crossing Borders“</strong>, Leonie <br />
@@ -122,57 +214,46 @@ const ActingPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <Column span={4}>
+          <Column span={3}>
             <h2 id="rollenrepertoire">Rollenrepertoire</h2>
           </Column>
 
-          <Column span={3} start={6}>
-            <p>
-              <strong>„Ein idealer Gatte“</strong>, Das junge Mädchen <br />
-              Oscar Wilde
-            </p>
-          </Column>
+          <Column span={8} start={5}>
+            <Row>
+              <Column span={6}>
+                <p>
+                  <strong>„Ein idealer Gatte“</strong>, Das junge Mädchen <br />
+                  Oscar Wilde
+                </p>
+                <p>
+                  <strong>„Alice im Wunderland“</strong>, Alice <br />
+                  Roland Schimmelpfennig
+                </p>
+                <p>
+                  <strong>„La Double Inconstance“</strong>, Silvia <br />
+                  Pierre Carlet de Marivaux
+                </p>
+                <p>
+                  <strong>„Bier für Frauen“</strong>, Eine Frau <br />
+                  Felicia Zeller
+                </p>
+              </Column>
 
-          <Column span={3} start={10}>
-            <p>
-              <strong>„Der Tor und der Tod“</strong>, Mabel Chiltern <br />
-              Hugo von Hofmannsthal
-            </p>
-          </Column>
-
-          <Column span={3} start={6}>
-            <p>
-              <strong>„Alice im Wunderland“</strong>, Alice <br />
-              Roland Schimmelpfennig
-            </p>
-          </Column>
-
-          <Column span={3} start={10}>
-            <p>
-              <strong>„Emilia Galotti“</strong>, Gräfin Orsina <br />
-              Gotthold Ephraim Lessing
-            </p>
-          </Column>
-
-          <Column span={3} start={6}>
-            <p>
-              <strong>„La Double Inconstance“</strong>, Silvia <br />
-              Pierre Carlet de Marivaux
-            </p>
-          </Column>
-
-          <Column span={3} start={10}>
-            <p>
-              <strong>„Merlin oder das wüste Land“</strong>, Mordred <br />
-              Tankred Dorst
-            </p>
-          </Column>
-
-          <Column span={3} start={6}>
-            <p>
-              <strong>„Bier für Frauen“</strong>, Eine Frau <br />
-              Felicia Zeller
-            </p>
+              <Column span={6} start={7}>
+                <p>
+                  <strong>„Der Tor und der Tod“</strong>, Mabel Chiltern <br />
+                  Hugo von Hofmannsthal
+                </p>
+                <p>
+                  <strong>„Emilia Galotti“</strong>, Gräfin Orsina <br />
+                  Gotthold Ephraim Lessing
+                </p>
+                <p>
+                  <strong>„Merlin oder das wüste Land“</strong>, Mordred <br />
+                  Tankred Dorst
+                </p>
+              </Column>
+            </Row>
           </Column>
         </Row>
       </Grid>
@@ -181,73 +262,76 @@ const ActingPage: React.FC = () => (
     <Section>
       <Grid>
         <Row>
-          <Column span={4}>
+          <Column span={3}>
             <h2 id="studium">Studium</h2>
           </Column>
 
-          <Column span={3} start={6}>
-            <h3>2013 - 2015, 2017 & 2018</h3>
-            <p>
-              <strong>Camera Acting</strong>, Workshop <br />
-              <a href="http://aleksandarjovanovic.com/" rel="noopener noreferrer" target="_blank">
-                Aleksandar Jovanovic
-              </a>
-            </p>
-          </Column>
+          <Column span={8} start={5}>
+            <Row>
+              <Column span={6}>
+                <h3>2013 - 2015, 2017 & 2018</h3>
+                <p>
+                  <strong>Camera Acting</strong>, Workshop <br />
+                  <a
+                    href="http://aleksandarjovanovic.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Aleksandar Jovanovic
+                  </a>
+                </p>
 
-          <Column span={3} start={10}>
-            <h3>2018</h3>
-            <p>
-              <strong>Camera Acting</strong>, Workshop <br />
-              <a href="http://www.attila-borlan.de" rel="noopener noreferrer" target="_blank">
-                Attila Borlan
-              </a>
-            </p>
-          </Column>
+                <h3>09.2013 - 09.2018</h3>
+                <p>
+                  <strong>Ausbildung zur staatlich anerkannten Schauspielerin (ZAV)</strong> <br />
+                  <strong>Ausbildung zur staatlich anerkannten Theaterpädagogin (BuT)</strong>{' '}
+                  <br />
+                  <a
+                    href="https://www.theater-akademie-stuttgart.de"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    TheaterAkademieStuttgart
+                  </a>
+                </p>
 
-          <Column span={3} start={6}>
-            <h3>09.2013 - 09.2018</h3>
-            <p>
-              <strong>Ausbildung zur staatlich anerkannten Schauspielerin (ZAV)</strong> <br />
-              <strong>Ausbildung zur staatlich anerkannten Theaterpädagogin (BuT)</strong> <br />
-              <a
-                href="https://www.theater-akademie-stuttgart.de"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                TheaterAkademieStuttgart
-              </a>
-            </p>
-          </Column>
+                <h3>2017 - 2018</h3>
+                <p>
+                  <strong>„Ein Mittsommernachtstraum“</strong>, Spinnweb & Krankenschwester <br />
+                  Regie: Christian Schlösser,{' '}
+                  <a
+                    href="https://www.theater-akademie-stuttgart.de"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    TheaterKompagnieStuttgart
+                  </a>
+                </p>
+              </Column>
 
-          <Column span={3} start={10}>
-            <h3>2017 - 2018</h3>
-            <p>
-              <strong>„Was Ihr Wollt“</strong>, Olivia <br />
-              Regie: Christian Schlösser,{' '}
-              <a
-                href="https://www.theater-akademie-stuttgart.de"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                TheaterKompagnieStuttgart
-              </a>
-            </p>
-          </Column>
+              <Column span={6} start={7}>
+                <h3>2018</h3>
+                <p>
+                  <strong>Camera Acting</strong>, Workshop <br />
+                  <a href="http://www.attila-borlan.de" rel="noopener noreferrer" target="_blank">
+                    Attila Borlan
+                  </a>
+                </p>
 
-          <Column span={3} start={6}>
-            <h3>2017 - 2018</h3>
-            <p>
-              <strong>„Ein Mittsommernachtstraum“</strong>, Spinnweb & Krankenschwester <br />
-              Regie: Christian Schlösser,{' '}
-              <a
-                href="https://www.theater-akademie-stuttgart.de"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                TheaterKompagnieStuttgart
-              </a>
-            </p>
+                <h3>2017 - 2018</h3>
+                <p>
+                  <strong>„Was Ihr Wollt“</strong>, Olivia <br />
+                  Regie: Christian Schlösser,{' '}
+                  <a
+                    href="https://www.theater-akademie-stuttgart.de"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    TheaterKompagnieStuttgart
+                  </a>
+                </p>
+              </Column>
+            </Row>
           </Column>
         </Row>
       </Grid>

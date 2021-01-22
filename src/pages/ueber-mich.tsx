@@ -81,7 +81,7 @@ const AboutPage: React.FC = () => (
             <ul>
               <li>Deutsch (Muttersprache)</li>
               <li>Französisch (fließend)</li>
-              <li>spanisch (fließend)</li>
+              <li>Spanisch (fließend)</li>
               <li>Englisch (fließend)</li>
               <li>Berlinerisch</li>
             </ul>
