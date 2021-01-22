@@ -1,13 +1,13 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
+import { render } from '@testing-library/react';
 import React from 'react';
-import renderer from 'react-test-renderer';
 import Label from '.';
 
 describe('Label component', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Label htmlFor="name" />).toJSON();
+    const { asFragment } = render(<Label htmlFor="name" />);
 
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

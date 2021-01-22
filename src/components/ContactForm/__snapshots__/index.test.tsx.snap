@@ -1,109 +1,99 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactForm component renders correctly 1`] = `
-<form
-  action="/kontakt/danke"
-  className="form"
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
-  method="post"
-  name="contact"
-  onReset={[Function]}
-  onSubmit={[Function]}
->
-  <input
-    name="form-name"
-    onBlur={[Function]}
-    onChange={[Function]}
-    type="hidden"
-    value="contact"
-  />
-  <div
-    className="row"
+<DocumentFragment>
+  <form
+    action="/kontakt/danke"
+    class="form"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    method="post"
+    name="contact"
   >
+    <input
+      name="form-name"
+      type="hidden"
+      value="contact"
+    />
     <div
-      className="column columnSpan6 columnStart1"
+      class="row"
     >
       <div
-        className="form__field"
+        class="column columnSpan6 columnStart1"
       >
-        <input
-          autoComplete="name"
-          className="form__input"
-          name="name"
-          onBlur={[Function]}
-          onChange={[Function]}
-          placeholder="Name"
-          required={true}
-          type="text"
-          value=""
-        />
-        <label
-          className="form__label label"
-          htmlFor="name"
+        <div
+          class="form__field"
         >
-          Name
-        </label>
+          <input
+            autocomplete="name"
+            class="form__input"
+            name="name"
+            placeholder="Name"
+            required=""
+            type="text"
+            value=""
+          />
+          <label
+            class="form__label label"
+            for="name"
+          >
+            Name
+          </label>
+        </div>
+      </div>
+      <div
+        class="column columnSpan6 columnStart7"
+      >
+        <div
+          class="form__field"
+        >
+          <input
+            autocomplete="email"
+            class="form__input"
+            name="email"
+            placeholder="E-Mail"
+            required=""
+            type="email"
+            value=""
+          />
+          <label
+            class="form__label label"
+            for="email"
+          >
+            E-Mail
+          </label>
+        </div>
+      </div>
+      <div
+        class="column columnSpan12 columnStart1"
+      >
+        <div
+          class="form__field"
+        >
+          <textarea
+            class="form__input"
+            name="message"
+            placeholder="Nachricht"
+            required=""
+          />
+          <label
+            class="form__label label"
+            for="message"
+          >
+            Nachricht
+          </label>
+        </div>
       </div>
     </div>
     <div
-      className="column columnSpan6 columnStart7"
+      class="form__field"
     >
-      <div
-        className="form__field"
+      <button
+        type="submit"
       >
-        <input
-          autoComplete="email"
-          className="form__input"
-          name="email"
-          onBlur={[Function]}
-          onChange={[Function]}
-          placeholder="E-Mail"
-          required={true}
-          type="email"
-          value=""
-        />
-        <label
-          className="form__label label"
-          htmlFor="email"
-        >
-          E-Mail
-        </label>
-      </div>
+        Senden
+      </button>
     </div>
-    <div
-      className="column columnSpan12 columnStart1"
-    >
-      <div
-        className="form__field"
-      >
-        <textarea
-          className="form__input"
-          name="message"
-          onBlur={[Function]}
-          onChange={[Function]}
-          placeholder="Nachricht"
-          required={true}
-          value=""
-        />
-        <label
-          className="form__label label"
-          htmlFor="message"
-        >
-          Nachricht
-        </label>
-      </div>
-    </div>
-  </div>
-  <div
-    className="form__field"
-  >
-    <button
-      disabled={false}
-      type="submit"
-    >
-      Senden
-    </button>
-  </div>
-</form>
+  </form>
+</DocumentFragment>
 `;

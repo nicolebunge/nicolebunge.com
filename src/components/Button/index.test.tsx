@@ -1,13 +1,13 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
+import { render } from '@testing-library/react';
 import React from 'react';
-import renderer from 'react-test-renderer';
 import Button from '.';
 
 describe('Button component', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Button to="/">Button</Button>).toJSON();
+    const { asFragment } = render(<Button to="/">Button</Button>);
 
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

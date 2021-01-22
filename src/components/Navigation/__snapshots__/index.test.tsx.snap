@@ -1,22 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation component renders correctly 1`] = `
-<nav
-  className="navigation"
->
-  <ul
-    className="navigation__list"
+<DocumentFragment>
+  <nav
+    class="navigation"
   >
-    <li
-      className="navigation__item"
+    <ul
+      class="navigation__list"
     >
-      <a
-        className="navigation__link"
-        href="/"
+      <li
+        class="navigation__item"
       >
-        Index
-      </a>
-    </li>
-  </ul>
-</nav>
+        <a
+          class="navigation__link"
+          href="/"
+        >
+          Index
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
 `;

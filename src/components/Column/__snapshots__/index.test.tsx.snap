@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Column component renders correctly 1`] = `
-<div
-  className="column columnSpan1 columnStart1"
-/>
+<DocumentFragment>
+  <div
+    class="column columnSpan1 columnStart1"
+  />
+</DocumentFragment>
 `;

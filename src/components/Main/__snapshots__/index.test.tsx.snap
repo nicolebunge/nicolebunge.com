@@ -1,8 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main component renders correctly 1`] = `
-<main
-  className="main"
-  role="main"
-/>
+<DocumentFragment>
+  <main
+    class="main"
+    role="main"
+  />
+</DocumentFragment>
 `;
