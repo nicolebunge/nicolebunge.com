@@ -3,12 +3,12 @@
 
 const path = require('path');
 
-exports.createPages = ({ actions, graphql }) => {
+const defaultTemplate = path.resolve('src/templates/default.tsx');
+
+async function createPages({ actions, graphql, reporter }) {
   const { createPage } = actions;
 
-  const defaultTemplate = path.resolve('src/templates/default.tsx');
-
-  return graphql(`
+  const { data, errors } = await graphql(`
     {
       allMarkdownRemark(limit: 1000) {
         edges {
@@ -20,17 +20,29 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then((result) => {
-    if (result.errors) {
-      return Promise.reject(result.errors);
-    }
+  `);
 
-    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: defaultTemplate,
-        context: {},
-      });
+  if (errors) {
+    reporter.panicBuild('There was an error loading your pages', errors);
+
+    return;
+  }
+
+  const {
+    allMarkdownRemark: { edges },
+  } = data;
+
+  edges.forEach((edge) => {
+    const { node } = edge;
+
+    createPage({
+      path: node.frontmatter.path,
+      component: defaultTemplate,
+      context: {},
     });
   });
+}
+
+module.exports = {
+  createPages,
 };
