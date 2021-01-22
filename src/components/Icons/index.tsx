@@ -14,7 +14,7 @@ const Icons: React.FC<IconsProps> = (props) => {
     <ul className={classNames(className, styles.icons)} {...otherProps}>
       <li>
         <a
-          href="https://www.instagram.com/nicole.bunge/"
+          href="https://www.instagram.com/nici.bunge"
           itemProp="sameAs"
           rel="noopener noreferrer"
           target="_blank"
@@ -24,7 +24,7 @@ const Icons: React.FC<IconsProps> = (props) => {
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/in/nicole-bunge-1b891415a/"
+          href="https://www.linkedin.com/in/nicolebunge"
           itemProp="sameAs"
           rel="noopener noreferrer"
           target="_blank"
