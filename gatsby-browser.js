@@ -1,3 +1,4 @@
+import 'typeface-source-sans-pro';
 import './src/styles/address.css';
 import './src/styles/all.css';
 import './src/styles/anchor.css';

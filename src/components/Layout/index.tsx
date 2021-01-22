@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React, { HTMLAttributes } from 'react';
 import { Helmet } from 'react-helmet';
-import 'typeface-source-sans-pro';
 import { NOW } from '../../constants/dates';
 import {
   ABOUT,
