@@ -1,4 +1,5 @@
-import React from 'react';
+import { PageProps } from 'gatsby';
+import React, { FC } from 'react';
 import Column from '../components/Column';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
@@ -6,7 +7,7 @@ import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
-const ActingPage: React.FC = () => (
+const ActingPage: FC<PageProps> = () => (
   <Layout>
     <SEO title="Schauspiel" />
 

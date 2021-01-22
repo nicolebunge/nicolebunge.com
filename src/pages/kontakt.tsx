@@ -1,4 +1,5 @@
-import React from 'react';
+import { PageProps } from 'gatsby';
+import React, { FC } from 'react';
 import Column from '../components/Column';
 import ContactForm from '../components/ContactForm';
 import Grid from '../components/Grid';
@@ -9,7 +10,7 @@ import Section from '../components/Section';
 import SEO from '../components/SEO';
 import email from '../images/email.svg';
 
-const ContactPage: React.FC = () => (
+const ContactPage: FC<PageProps> = () => (
   <Layout>
     <SEO title="Kontakt" />
 

@@ -1,22 +1,20 @@
-import { graphql } from 'gatsby';
-import React from 'react';
+import { graphql, PageProps } from 'gatsby';
+import React, { FC } from 'react';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
 export interface TemplateProps {
-  data: {
-    markdownRemark: {
-      frontmatter: {
-        title: string;
-      };
-      html: string;
+  markdownRemark: {
+    frontmatter: {
+      title: string;
     };
+    html: string;
   };
 }
 
-const Template: React.FC<TemplateProps> = (props) => {
+const Template: FC<PageProps<TemplateProps>> = (props) => {
   const {
     data: {
       markdownRemark: { frontmatter, html },

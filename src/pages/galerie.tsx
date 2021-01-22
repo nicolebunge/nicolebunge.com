@@ -1,6 +1,6 @@
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
-import React from 'react';
+import React, { FC } from 'react';
 import Gallery from '../components/Gallery';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
@@ -16,30 +16,36 @@ interface Image {
 }
 
 export interface GalleryPageProps {
-  data: {
-    allFile: {
-      images: Image[];
-    };
+  allFile: {
+    images: Image[];
   };
 }
 
-const GalleryPage: React.FC<GalleryPageProps> = ({ data }) => (
-  <Layout>
-    <SEO title="Galerie" />
+const GalleryPage: FC<PageProps<GalleryPageProps>> = (props) => {
+  const {
+    data: {
+      allFile: { images },
+    },
+  } = props;
 
-    <Section>
-      <Grid>
-        <h1 id="galerie">Galerie</h1>
-      </Grid>
-    </Section>
+  return (
+    <Layout>
+      <SEO title="Galerie" />
 
-    <Section>
-      <Grid>
-        <Gallery images={data.allFile.images.map((image) => image.node.childImageSharp)} />
-      </Grid>
-    </Section>
-  </Layout>
-);
+      <Section>
+        <Grid>
+          <h1 id="galerie">Galerie</h1>
+        </Grid>
+      </Section>
+
+      <Section>
+        <Grid>
+          <Gallery images={images.map((image) => image.node.childImageSharp)} />
+        </Grid>
+      </Section>
+    </Layout>
+  );
+};
 
 export default GalleryPage;
 
