@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import React, { HTMLAttributes } from 'react';
 import { Helmet } from 'react-helmet';
 import { NOW } from '../../constants/dates';
@@ -13,6 +13,7 @@ import {
   PRIVACY,
   THEATRE_PEDAGOGY,
 } from '../../constants/routes';
+import { useSite } from '../../hooks/site';
 import nicoleBunge from '../../images/nicole-bunge.svg';
 import Footer from '../Footer';
 import Grid from '../Grid';
@@ -26,15 +27,7 @@ export type LayoutProps = HTMLAttributes<HTMLDivElement>;
 
 const Layout: React.FC<LayoutProps> = (props) => {
   const { children, className, ...otherProps } = props;
-  const { site } = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  const { site } = useSite();
 
   return (
     <div className={classNames(className, styles.layout)} {...otherProps}>

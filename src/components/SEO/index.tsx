@@ -1,18 +1,6 @@
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-
-const detailsQuery = graphql`
-  query DefaultSEOQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        author
-      }
-    }
-  }
-`;
+import { useSite } from '../../hooks/site';
 
 type Lang = 'en' | 'de';
 type Meta = {
@@ -31,7 +19,7 @@ export interface SEOProps {
 const SEO: React.FC<SEOProps> = (props) => {
   const { description, lang = 'de', meta = [], title, ...otherProps } = props;
 
-  const { site } = useStaticQuery(detailsQuery);
+  const { site } = useSite();
   const metaDescription = description || site.siteMetadata.description;
 
   return (
