@@ -1,75 +1,72 @@
 /* eslint-disable react/no-array-index-key */
 
 import classNames from 'classnames';
-import Img, { FluidObject } from 'gatsby-image';
-import React, { Component } from 'react';
-import Carousel, { Modal, ModalGateway } from 'react-images';
+import { StaticImage } from 'gatsby-plugin-image';
+import React, { FC } from 'react';
 import styles from './style.module.css';
-
-interface Image {
-  fluid: FluidObject;
-}
 
 export interface GalleryProps {
   className?: string;
-  images: Image[];
   isLoading?: boolean;
 }
 
-export interface GalleryState {
-  lightboxIsOpen: boolean;
-  selectedIndex: number;
-}
+const Gallery: FC<GalleryProps> = (props) => {
+  const { className, ...otherProps } = props;
 
-class Gallery extends Component<GalleryProps, GalleryState> {
-  constructor(props: GalleryProps) {
-    super(props);
-
-    this.state = {
-      selectedIndex: 0,
-      lightboxIsOpen: false,
-    };
-  }
-
-  toggleLightbox = (selectedIndex: number): void => {
-    this.setState((state) => ({
-      lightboxIsOpen: !state.lightboxIsOpen,
-      selectedIndex,
-    }));
-  };
-
-  render(): JSX.Element {
-    const { lightboxIsOpen, selectedIndex } = this.state;
-    const { className, images, isLoading, ...otherProps } = this.props;
-    const mappedImages = images.map((image) => ({ source: image.fluid.src }));
-
-    return (
-      <>
-        <ul className={classNames(className, styles.gallery)} {...otherProps}>
-          {images.map((image, index) => (
-            <li key={index} className={styles.gallery__item}>
-              <figure>
-                <button onClick={(): void => this.toggleLightbox(index)} type="button">
-                  <Img fluid={image.fluid} />
-                </button>
-              </figure>
-            </li>
-          ))}
-        </ul>
-        <ModalGateway>
-          {lightboxIsOpen && !isLoading ? (
-            <Modal onClose={this.toggleLightbox}>
-              <Carousel
-                currentIndex={selectedIndex}
-                frameProps={{ autoSize: 'height' }}
-                views={mappedImages}
-              />
-            </Modal>
-          ) : null}
-        </ModalGateway>
-      </>
-    );
-  }
-}
+  return (
+    <ul className={classNames(className, styles.gallery)} {...otherProps}>
+      <li className={styles.gallery__item}>
+        <figure>
+          <StaticImage
+            src="../../images/alice.jpg"
+            alt="Rolle: Alice"
+            formats={['auto', 'webp', 'avif']}
+          />
+        </figure>
+      </li>
+      <li className={styles.gallery__item}>
+        <figure>
+          <StaticImage
+            src="../../images/berliner.jpg"
+            alt="Rolle: Berliner"
+            formats={['auto', 'webp', 'avif']}
+          />
+        </figure>
+      </li>
+      <li className={styles.gallery__item}>
+        <figure>
+          <StaticImage src="../../images/goth.jpg" alt="foo" formats={['auto', 'webp', 'avif']} />
+        </figure>
+      </li>
+      <li className={styles.gallery__item}>
+        <figure>
+          <StaticImage
+            src="../../images/kompagnie-1.jpg"
+            alt="Theater Kompagnie Stuttgart"
+            formats={['auto', 'webp', 'avif']}
+          />
+        </figure>
+      </li>
+      <li className={styles.gallery__item}>
+        <figure>
+          <StaticImage
+            src="../../images/kompagnie-2.jpg"
+            alt="Theater Kompagnie Stuttgart"
+            formats={['auto', 'webp', 'avif']}
+          />
+        </figure>
+      </li>
+      <li className={styles.gallery__item}>
+        <figure>
+          <StaticImage
+            src="../../images/das-tote-maedchen.jpg"
+            alt="Rolle: Das tote Mädchen"
+            formats={['auto', 'webp', 'avif']}
+          />
+        </figure>
+      </li>
+    </ul>
+  );
+};
 
 export default Gallery;

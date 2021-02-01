@@ -1,5 +1,4 @@
-import { graphql, PageProps } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
+import { PageProps } from 'gatsby';
 import React, { FC } from 'react';
 import Gallery from '../components/Gallery';
 import Grid from '../components/Grid';
@@ -7,27 +6,7 @@ import Layout from '../components/Layout';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
-interface Image {
-  node: {
-    childImageSharp: {
-      fluid: FluidObject;
-    };
-  };
-}
-
-export interface GalleryPageProps {
-  allFile: {
-    images: Image[];
-  };
-}
-
-const GalleryPage: FC<PageProps<GalleryPageProps>> = (props) => {
-  const {
-    data: {
-      allFile: { images },
-    },
-  } = props;
-
+const GalleryPage: FC<PageProps> = (props) => {
   return (
     <Layout>
       <SEO title="Galerie" />
@@ -40,7 +19,7 @@ const GalleryPage: FC<PageProps<GalleryPageProps>> = (props) => {
 
       <Section>
         <Grid>
-          <Gallery images={images.map((image) => image.node.childImageSharp)} />
+          <Gallery />
         </Grid>
       </Section>
     </Layout>
@@ -48,32 +27,3 @@ const GalleryPage: FC<PageProps<GalleryPageProps>> = (props) => {
 };
 
 export default GalleryPage;
-
-export const pageQuery = graphql`
-  query {
-    allFile(
-      filter: {
-        relativePath: {
-          in: [
-            "alice.jpg"
-            "berliner.jpg"
-            "goth.jpg"
-            "kompagnie-1.jpg"
-            "kompagnie-2.jpg"
-            "das-tote-maedchen.jpg"
-          ]
-        }
-      }
-    ) {
-      images: edges {
-        node {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        }
-      }
-    }
-  }
-`;

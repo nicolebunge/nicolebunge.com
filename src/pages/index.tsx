@@ -1,5 +1,5 @@
-import { graphql, Link, PageProps } from 'gatsby';
-import Img, { FluidObject } from 'gatsby-image';
+import { Link, PageProps } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import React, { FC } from 'react';
 import Button from '../components/Button';
 import Column from '../components/Column';
@@ -10,29 +10,7 @@ import Section from '../components/Section';
 import SEO from '../components/SEO';
 import { ABOUT, ACTING, CONTACT, THEATRE_PEDAGOGY } from '../constants/routes';
 
-export interface IndexPageProps {
-  image1: {
-    childImageSharp: {
-      fluid: FluidObject;
-    };
-  };
-  image2: {
-    childImageSharp: {
-      fluid: FluidObject;
-    };
-  };
-  image3: {
-    childImageSharp: {
-      fluid: FluidObject;
-    };
-  };
-}
-
-const IndexPage: FC<PageProps<IndexPageProps>> = (props) => {
-  const {
-    data: { image1, image2, image3 },
-  } = props;
-
+const IndexPage: FC<PageProps> = () => {
   return (
     <Layout>
       <SEO title="Home" />
@@ -54,7 +32,11 @@ const IndexPage: FC<PageProps<IndexPageProps>> = (props) => {
 
             <Column span={5} start={6}>
               <Link to={ABOUT.path}>
-                <Img fluid={image1.childImageSharp.fluid} />
+                <StaticImage
+                  src="../images/image-01.jpg"
+                  alt="Nicole Bunge"
+                  formats={['auto', 'webp', 'avif']}
+                />
               </Link>
             </Column>
           </Row>
@@ -76,7 +58,11 @@ const IndexPage: FC<PageProps<IndexPageProps>> = (props) => {
             </Column>
             <Column span={4} start={3}>
               <Link to={ACTING.path}>
-                <Img fluid={image2.childImageSharp.fluid} />
+                <StaticImage
+                  src="../images/image-02.jpg"
+                  alt="Nicole Bunge"
+                  formats={['auto', 'webp', 'avif']}
+                />
               </Link>
             </Column>
           </Row>
@@ -100,7 +86,11 @@ const IndexPage: FC<PageProps<IndexPageProps>> = (props) => {
 
             <Column span={5} start={8}>
               <Link to={THEATRE_PEDAGOGY.path}>
-                <Img fluid={image3.childImageSharp.fluid} />
+                <StaticImage
+                  src="../images/image-03.jpg"
+                  alt="Nicole Bunge"
+                  formats={['auto', 'webp', 'avif']}
+                />
               </Link>
             </Column>
           </Row>
@@ -129,29 +119,3 @@ const IndexPage: FC<PageProps<IndexPageProps>> = (props) => {
 };
 
 export default IndexPage;
-
-export const pageQuery = graphql`
-  query {
-    image1: file(relativePath: { eq: "image-01.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-    image2: file(relativePath: { eq: "image-02.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-    image3: file(relativePath: { eq: "image-03.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-  }
-`;

@@ -29,6 +29,9 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-image',
+    },
+    {
       resolve: 'gatsby-plugin-offline',
     },
     {
