@@ -3,16 +3,7 @@ import { Link } from 'gatsby';
 import React, { HTMLAttributes } from 'react';
 import { Helmet } from 'react-helmet';
 import { NOW } from '../../constants/dates';
-import {
-  ABOUT,
-  ACTING,
-  CONTACT,
-  GALLERY,
-  IMPRINT,
-  INDEX,
-  PRIVACY,
-  THEATRE_PEDAGOGY,
-} from '../../constants/routes';
+import { FOOTER, MAIN } from '../../constants/menus';
 import { useSite } from '../../hooks/site';
 import nicoleBunge from '../../images/nicole-bunge.svg';
 import Footer from '../Footer';
@@ -45,12 +36,12 @@ const Layout: React.FC<LayoutProps> = (props) => {
           <img src={nicoleBunge} alt={site.siteMetadata.title} width="160" />
         </Link>
 
-        <Navigation inline routes={[INDEX, ABOUT, GALLERY, ACTING, THEATRE_PEDAGOGY, CONTACT]} />
+        <Navigation inline routes={MAIN} />
       </Header>
       <Main>{children}</Main>
       <Footer>
         <Grid>
-          <Navigation inline routes={[PRIVACY, IMPRINT]} />
+          <Navigation inline routes={FOOTER} />
           <p>© {NOW.getFullYear()} Nicole Bunge</p>
         </Grid>
       </Footer>
