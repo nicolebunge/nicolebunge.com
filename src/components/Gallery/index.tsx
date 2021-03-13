@@ -3,7 +3,7 @@
 import classNames from 'classnames';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { FC } from 'react';
-import styles from './style.module.css';
+import * as styles from './style.module.css';
 
 export interface GalleryProps {
   className?: string;

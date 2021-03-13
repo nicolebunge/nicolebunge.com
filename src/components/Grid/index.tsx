@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { HTMLAttributes } from 'react';
-import styles from './style.module.css';
+import * as styles from './style.module.css';
 
 export type GridProps = HTMLAttributes<HTMLDivElement>;
 

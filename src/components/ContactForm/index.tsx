@@ -3,7 +3,7 @@ import React from 'react';
 import Column from '../Column';
 import Label from '../Label';
 import Row from '../Row';
-import styles from './style.module.css';
+import * as styles from './style.module.css';
 
 const ContactForm: React.FC = () => (
   <Formik

@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 declare const styles: {
   readonly form: string;
   readonly form__field: string;
