@@ -1,8 +1,6 @@
 import classNames from 'classnames';
 import React, { HTMLAttributes } from 'react';
-import instagram from '../../images/instagram.svg';
-import linkedin from '../../images/linkedin.svg';
-import xing from '../../images/xing.svg';
+import { INSTAGRAM, LINKED_IN, XING } from '../../constants/social';
 import styles from './style.module.css';
 
 export type IconsProps = HTMLAttributes<HTMLUListElement>;
@@ -12,36 +10,17 @@ const Icons: React.FC<IconsProps> = (props) => {
 
   return (
     <ul className={classNames(className, styles.icons)} {...otherProps}>
-      <li>
-        <a
-          href="https://www.instagram.com/nici.bunge"
-          itemProp="sameAs"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img src={instagram} alt="Nicole Bunge auf Instagram" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/nicolebunge"
-          itemProp="sameAs"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img src={linkedin} alt="Nicole Bunge auf LinkedIn" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.xing.com/profile/Nicole_Bunge3"
-          itemProp="sameAs"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img src={xing} alt="Nicole Bunge auf Xing" />
-        </a>
-      </li>
+      {[INSTAGRAM, LINKED_IN, XING].map((platform) => {
+        const { id } = platform;
+
+        return (
+          <li key={id}>
+            <a href={platform.url} itemProp="sameAs" rel="noopener noreferrer" target="_blank">
+              <img src={platform.icon.src} alt={`Nicole Bunge auf ${platform.title}`} />
+            </a>
+          </li>
+        );
+      })}
     </ul>
   );
 };
