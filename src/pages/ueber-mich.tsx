@@ -16,12 +16,27 @@ const AboutPage: FC<PageProps> = () => (
         <h1 id="bermich">Über Mich</h1>
         <Row>
           <Column span={8}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel molestias dolor earum
-              reprehenderit. Quis rerum quae eius? Ad sequi quisquam reprehenderit officia eveniet?
-              Et, quod eaque reiciendis in vel ab. Rerum labore expedita minima aut adipisci eum,
-              fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
+              Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
+              Theaterpädagogin. Studiert habe ich an der Theater Akademie in Stuttgart. Derzeit lebe
+              und arbeite ich in Berlin und spiele unter anderem am Berliner Kriminal Theater in
+              Friedrichshain, sowie am „Theater aus dem Koffer“, Berlin. Zudem doziere ich an der
+              Reduta Schauspielschule Berlin.{' '}
+            </p>
+            <p>
+              In Baden Württemberg bin ich seit vier Jahren jeden Sommer als leitende
+              Theaterpädagogin für das Theaterferienprogramm am Landeskriminalamt zuständig. Schon
+              im frühen Kindesalter begann ich Instrumente zu spielen,Turniere zu tanzen und zu
+              schauspielern.
+            </p>
+            <p>
+              Tanz und Bewegung sind für mich wichtige Ausdrucksmittel am Thea- ter, in meiner
+              schauspielerischen, als auch in meiner theaterpädagogischen Arbeit. Dies gehört mit
+              der Musik zu meinen großen Leidenschaften. Ich habe zehn Jahre Standard- und
+              Latein-Turnier getanzt, ebenso Ballett und Hip-Hop. Seit meiner Kindheit spiele ich
+              Block-, Altflöte, als auch E-Gitarre. Die Sprache nicht allein als Mittel zu nutzen,
+              um etwas zu erzählen, sondern als ein Ausdrucksmittel für Bewegung, Rhythmus und
+              Klang, sind für mich wichtige Aspekte in meiner Arbeit.
             </p>
           </Column>
         </Row>

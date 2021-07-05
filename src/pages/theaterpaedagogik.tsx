@@ -16,12 +16,23 @@ const TheatrePedagogyPage: FC<PageProps> = () => (
         <h1 id="theaterpaedagogik">Theaterpädagogik</h1>
         <Row>
           <Column span={8}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nihil.</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel molestias dolor earum
-              reprehenderit. Quis rerum quae eius? Ad sequi quisquam reprehenderit officia eveniet?
-              Et, quod eaque reiciendis in vel ab. Rerum labore expedita minima aut adipisci eum,
-              fugit tempore aperiam voluptatum nisi maxime optio velit quo voluptatem illum quia?
+              Theaterpädagogik bedeutet für mich die Kompetenzen des Einzelnen und der Gruppe durch
+              praktisches Arbeiten zu fördern. In meiner theaterpädagogischen Arbeit geht es für
+              mich nicht nur darum, etwas über Schauspiel zu erlernen, sondern auch etwas über sich
+              selbst. Theaterspielen hilft uns dabei sich selbst und seine Umwelt wahrzunehem und zu
+              verstehen.
+            </p>
+            <p>
+              Als Theaterpädagogin ist es mir wichtig mit der Gruppe zu forschen und Themen zu be-
+              und erarbeiten.
+            </p>
+            <p>
+              Ich möchte die Möglichkeit bieten, den Alltag ablegen zu können und die eigene
+              Persönlichkeit dadurch in Bewegung kommen zu lassen. Es soll miteinander ins Spiel und
+              auf die Bühne gehen. Mir ist es ein Anliegen, spielerisch und theatralisch Themen zu
+              vermitteln und zu bearbeiten sowie das Selbstbewusstsein der Teilnehmenden zu stärken
+              und die Möglichkeit zum eigenen persönlichen Ausdruck zu geben.
             </p>
           </Column>
         </Row>
