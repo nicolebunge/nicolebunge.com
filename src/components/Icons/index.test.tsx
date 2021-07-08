@@ -6,8 +6,8 @@ import Icons from '.';
 
 describe('Icons component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Icons />);
+    const { container } = render(<Icons />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

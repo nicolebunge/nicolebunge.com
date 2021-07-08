@@ -6,8 +6,8 @@ import Row from '.';
 
 describe('Row component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Row />);
+    const { container } = render(<Row />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

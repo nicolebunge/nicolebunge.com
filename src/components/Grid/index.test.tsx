@@ -6,8 +6,8 @@ import Grid from '.';
 
 describe('Grid component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Grid />);
+    const { container } = render(<Grid />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

@@ -12,8 +12,8 @@ describe('Navigation component', () => {
         path: '/',
       },
     ];
-    const { asFragment } = render(<Navigation routes={routes} />);
+    const { container } = render(<Navigation routes={routes} />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

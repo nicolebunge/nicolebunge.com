@@ -1,10 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer component renders correctly 1`] = `
-<DocumentFragment>
-  <footer
-    class="footer"
-    role="contentinfo"
-  />
-</DocumentFragment>
+<footer
+  class=""
+  role="contentinfo"
+/>
 `;

@@ -6,8 +6,8 @@ import Button from '.';
 
 describe('Button component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Button to="/">Button</Button>);
+    const { container } = render(<Button to="/">Button</Button>);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

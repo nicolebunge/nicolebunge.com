@@ -10,11 +10,8 @@ const config: Config.InitialOptions = {
   // Stop running tests after `n` failures
   // bail: 0,
 
-  // Respect "browser" field in package.json when resolving modules
-  // browser: false,
-
   // The directory where Jest should store its cached dependency information
-  // cacheDirectory: "/private/var/folders/qv/0dbhxd8x7_q27cjgb2sbd_3w0000gp/T/jest_dy",
+  // cacheDirectory: "/private/var/folders/ld/gybnxh395kx74t5vzyx4vk4w0000gq/T/jest_dz",
 
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
@@ -23,7 +20,7 @@ const config: Config.InitialOptions = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: null,
+  // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
   coverageDirectory: 'coverage',
@@ -32,6 +29,9 @@ const config: Config.InitialOptions = {
   // coveragePathIgnorePatterns: [
   //   "/node_modules/"
   // ],
+
+  // Indicates which provider should be used to instrument code for coverage
+  coverageProvider: 'v8',
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -42,10 +42,10 @@ const config: Config.InitialOptions = {
   // ],
 
   // An object that configures minimum threshold enforcement for coverage results
-  // coverageThreshold: null,
+  // coverageThreshold: undefined,
 
   // A path to a custom dependency extractor
-  // dependencyExtractor: null,
+  // dependencyExtractor: undefined,
 
   // Make calling deprecated APIs throw helpful error messages
   // errorOnDeprecated: false,
@@ -54,14 +54,16 @@ const config: Config.InitialOptions = {
   // forceCoverageMatch: [],
 
   // A path to a module which exports an async function that is triggered once before all test suites
-  // globalSetup: null,
+  // globalSetup: undefined,
 
   // A path to a module which exports an async function that is triggered once after all test suites
-  // globalTeardown: null,
+  // globalTeardown: undefined,
 
   // A set of global variables that need to be available in all test environments
   globals: {
-    __PATH_PREFIX__: '',
+    'ts-jest': {
+      diagnostics: false,
+    },
   },
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
@@ -75,10 +77,10 @@ const config: Config.InitialOptions = {
   // An array of file extensions your modules use
   // moduleFileExtensions: [
   //   "js",
-  //   "json",
   //   "jsx",
   //   "ts",
   //   "tsx",
+  //   "json",
   //   "node"
   // ],
 
@@ -101,7 +103,7 @@ const config: Config.InitialOptions = {
   preset: 'ts-jest',
 
   // Run tests from one or more projects
-  // projects: null,
+  // projects: undefined,
 
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
@@ -113,13 +115,13 @@ const config: Config.InitialOptions = {
   // resetModules: false,
 
   // A path to a custom resolver
-  // resolver: null,
+  // resolver: undefined,
 
   // Automatically restore mock state between every test
   // restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
-  // rootDir: null,
+  // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
@@ -130,10 +132,13 @@ const config: Config.InitialOptions = {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFiles: ['<rootDir>/loadershim.js'],
+  // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   // setupFilesAfterEnv: [],
+
+  // The number of seconds after which a test is considered as slow and reported as such in the results.
+  // slowTestThreshold: 5,
 
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
   // snapshotSerializers: [],
@@ -160,10 +165,10 @@ const config: Config.InitialOptions = {
   // testRegex: [],
 
   // This option allows the use of a custom results processor
-  // testResultsProcessor: null,
+  // testResultsProcessor: undefined,
 
   // This option allows use of a custom test runner
-  // testRunner: "jasmine2",
+  // testRunner: "jest-circus/runner",
 
   // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
   testURL: 'http://localhost',
@@ -172,18 +177,19 @@ const config: Config.InitialOptions = {
   // timers: "real",
 
   // A map from regular expressions to paths to transformers
-  transform: {
-    '^.+\\.jsx?$': `<rootDir>/jest-preprocess.js`,
-  },
+  // transform: undefined,
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  transformIgnorePatterns: ['node_modules/(?!(gatsby)/)'],
+  // transformIgnorePatterns: [
+  //   "/node_modules/",
+  //   "\\.pnp\\.[^\\/]+$"
+  // ],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
 
   // Indicates whether each individual test should be reported during the run
-  // verbose: null,
+  // verbose: undefined,
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
   // watchPathIgnorePatterns: [],

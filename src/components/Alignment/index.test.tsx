@@ -6,56 +6,56 @@ import Alignment from '.';
 
 describe('Alignment component', () => {
   it('should render correctly', () => {
-    const { asFragment } = render(<Alignment />);
+    const { container } = render(<Alignment />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render content correctly', () => {
-    const { asFragment } = render(<Alignment>Content</Alignment>);
+    const { container } = render(<Alignment>Content</Alignment>);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render align `center` correctly', () => {
-    const { asFragment } = render(<Alignment align="center" />);
+    const { container } = render(<Alignment align="center" />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render align `end` correctly', () => {
-    const { asFragment } = render(<Alignment align="end" />);
+    const { container } = render(<Alignment align="end" />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render align `start` correctly', () => {
-    const { asFragment } = render(<Alignment align="start" />);
+    const { container } = render(<Alignment align="start" />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render justify `center` correctly', () => {
-    const { asFragment } = render(<Alignment justify="center" />);
+    const { container } = render(<Alignment justify="center" />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render justify `end` correctly', () => {
-    const { asFragment } = render(<Alignment justify="end" />);
+    const { container } = render(<Alignment justify="end" />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render justify `space-between` correctly', () => {
-    const { asFragment } = render(<Alignment justify="space-between" />);
+    const { container } = render(<Alignment justify="space-between" />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render justify `start` correctly', () => {
-    const { asFragment } = render(<Alignment justify="start" />);
+    const { container } = render(<Alignment justify="start" />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

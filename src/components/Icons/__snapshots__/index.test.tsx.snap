@@ -1,49 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icons component renders correctly 1`] = `
-<DocumentFragment>
-  <ul
-    class="icons"
-  >
-    <li>
-      <a
-        href="https://www.instagram.com/nicole.bunge/"
-        itemprop="sameAs"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <img
-          alt="Nicole Bunge auf Instagram"
-          src="test-file-stub"
-        />
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://www.linkedin.com/in/nicole-bunge-1b891415a/"
-        itemprop="sameAs"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <img
-          alt="Nicole Bunge auf LinkedIn"
-          src="test-file-stub"
-        />
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://www.xing.com/profile/Nicole_Bunge3"
-        itemprop="sameAs"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <img
-          alt="Nicole Bunge auf Xing"
-          src="test-file-stub"
-        />
-      </a>
-    </li>
-  </ul>
-</DocumentFragment>
+<ul
+  class=""
+>
+  <li>
+    <a
+      href="https://www.instagram.com/nici.bunge"
+      itemprop="sameAs"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Nicole Bunge auf Instagram"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.linkedin.com/in/nicolebunge"
+      itemprop="sameAs"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Nicole Bunge auf LinkedIn"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.xing.com/profile/Nicole_Bunge3"
+      itemprop="sameAs"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Nicole Bunge auf XING"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+</ul>
 `;

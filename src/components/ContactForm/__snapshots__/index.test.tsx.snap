@@ -1,99 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactForm component renders correctly 1`] = `
-<DocumentFragment>
-  <form
-    action="/kontakt/danke"
-    class="form"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    method="post"
-    name="contact"
+<form
+  action="/kontakt/danke"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  method="post"
+  name="contact"
+>
+  <input
+    name="form-name"
+    type="hidden"
+    value="contact"
+  />
+  <div
+    class=""
   >
-    <input
-      name="form-name"
-      type="hidden"
-      value="contact"
-    />
     <div
-      class="row"
+      class="undefined"
     >
-      <div
-        class="column columnSpan6 columnStart1"
-      >
-        <div
-          class="form__field"
+      <div>
+        <input
+          autocomplete="name"
+          name="name"
+          placeholder="Name"
+          required=""
+          type="text"
+          value=""
+        />
+        <label
+          class=""
+          for="name"
         >
-          <input
-            autocomplete="name"
-            class="form__input"
-            name="name"
-            placeholder="Name"
-            required=""
-            type="text"
-            value=""
-          />
-          <label
-            class="form__label label"
-            for="name"
-          >
-            Name
-          </label>
-        </div>
-      </div>
-      <div
-        class="column columnSpan6 columnStart7"
-      >
-        <div
-          class="form__field"
-        >
-          <input
-            autocomplete="email"
-            class="form__input"
-            name="email"
-            placeholder="E-Mail"
-            required=""
-            type="email"
-            value=""
-          />
-          <label
-            class="form__label label"
-            for="email"
-          >
-            E-Mail
-          </label>
-        </div>
-      </div>
-      <div
-        class="column columnSpan12 columnStart1"
-      >
-        <div
-          class="form__field"
-        >
-          <textarea
-            class="form__input"
-            name="message"
-            placeholder="Nachricht"
-            required=""
-          />
-          <label
-            class="form__label label"
-            for="message"
-          >
-            Nachricht
-          </label>
-        </div>
+          Name
+        </label>
       </div>
     </div>
     <div
-      class="form__field"
+      class="undefined"
     >
-      <button
-        type="submit"
-      >
-        Senden
-      </button>
+      <div>
+        <input
+          autocomplete="email"
+          name="email"
+          placeholder="E-Mail"
+          required=""
+          type="email"
+          value=""
+        />
+        <label
+          class=""
+          for="email"
+        >
+          E-Mail
+        </label>
+      </div>
     </div>
-  </form>
-</DocumentFragment>
+    <div
+      class="undefined"
+    >
+      <div>
+        <textarea
+          name="message"
+          placeholder="Nachricht"
+          required=""
+        />
+        <label
+          class=""
+          for="message"
+        >
+          Nachricht
+        </label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Senden
+    </button>
+  </div>
+</form>
 `;

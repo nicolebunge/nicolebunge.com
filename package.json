@@ -31,12 +31,12 @@
     "build": "gatsby build",
     "check": "tsc --noEmit",
     "develop": "gatsby develop",
-    "format": "prettier --write .",
-    "lint:css": "stylelint '**/*.css'",
-    "lint:js": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --ignore-path .gitignore --write .",
+    "lint:css": "stylelint --ignore-path .gitignore '**/*.css'",
+    "lint:js": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
     "lint": "npm run lint:css && npm run lint:js",
-    "test": "jest",
-    "test:ci": "npm test && codecov"
+    "test": "jest --color --runInBand",
+    "test:ci": "npm run test -- --ci && codecov"
   },
   "repository": {
     "type": "git",

@@ -6,8 +6,8 @@ import Label from '.';
 
 describe('Label component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Label htmlFor="name" />);
+    const { container } = render(<Label htmlFor="name" />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

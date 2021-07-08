@@ -6,8 +6,8 @@ import Footer from '.';
 
 describe('Footer component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Footer />);
+    const { container } = render(<Footer />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

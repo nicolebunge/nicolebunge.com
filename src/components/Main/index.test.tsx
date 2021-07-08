@@ -6,8 +6,8 @@ import Main from '.';
 
 describe('Main component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Main />);
+    const { container } = render(<Main />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

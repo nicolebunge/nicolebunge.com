@@ -6,8 +6,8 @@ import Column from '.';
 
 describe('Column component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Column />);
+    const { container } = render(<Column />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

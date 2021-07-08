@@ -6,8 +6,8 @@ import Section from '.';
 
 describe('Section component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Section />);
+    const { container } = render(<Section />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

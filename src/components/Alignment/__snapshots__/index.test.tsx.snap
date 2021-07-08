@@ -1,75 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alignment component should render align \`center\` correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="alignment alignmentAlignCenter"
-  />
-</DocumentFragment>
+<div
+  class=""
+/>
 `;
 
 exports[`Alignment component should render align \`end\` correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="alignment alignmentAlignEnd"
-  />
-</DocumentFragment>
+<div
+  class=""
+/>
 `;
 
 exports[`Alignment component should render align \`start\` correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="alignment alignmentAlignStart"
-  />
-</DocumentFragment>
+<div
+  class=""
+/>
 `;
 
 exports[`Alignment component should render content correctly 1`] = `
-<DocumentFragment>
-  <div
-    class=""
-  >
-    Content
-  </div>
-</DocumentFragment>
+<div
+  class=""
+>
+  Content
+</div>
 `;
 
 exports[`Alignment component should render correctly 1`] = `
-<DocumentFragment>
-  <div
-    class=""
-  />
-</DocumentFragment>
+<div
+  class=""
+/>
 `;
 
 exports[`Alignment component should render justify \`center\` correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="alignment alignmentJustifyCenter"
-  />
-</DocumentFragment>
+<div
+  class="undefined"
+/>
 `;
 
 exports[`Alignment component should render justify \`end\` correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="alignment alignmentJustifyEnd"
-  />
-</DocumentFragment>
+<div
+  class="undefined"
+/>
 `;
 
 exports[`Alignment component should render justify \`space-between\` correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="alignment alignmentJustifySpace-between"
-  />
-</DocumentFragment>
+<div
+  class="undefined"
+/>
 `;
 
 exports[`Alignment component should render justify \`start\` correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="alignment alignmentJustifyStart"
-  />
-</DocumentFragment>
+<div
+  class="undefined"
+/>
 `;

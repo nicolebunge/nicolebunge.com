@@ -6,8 +6,8 @@ import Social from '.';
 
 describe('Social component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Social />);
+    const { container } = render(<Social />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

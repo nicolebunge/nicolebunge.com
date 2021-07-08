@@ -16,8 +16,8 @@ describe('Gallery component', () => {
         },
       },
     ];
-    const { asFragment } = render(<Gallery images={images} />);
+    const { container } = render(<Gallery images={images} />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

@@ -6,8 +6,8 @@ import Header from '.';
 
 describe('Header component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Header />);
+    const { container } = render(<Header />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

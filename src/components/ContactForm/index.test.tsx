@@ -6,8 +6,8 @@ import ContactForm from '.';
 
 describe('ContactForm component', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<ContactForm />);
+    const { container } = render(<ContactForm />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
