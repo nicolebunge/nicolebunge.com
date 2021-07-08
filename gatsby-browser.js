@@ -1,4 +1,5 @@
-import 'typeface-source-sans-pro';
+import '@fontsource/source-sans-pro/latin-400.css';
+import '@fontsource/source-sans-pro/latin-600.css';
 import './src/styles/address.css';
 import './src/styles/all.css';
 import './src/styles/anchor.css';
