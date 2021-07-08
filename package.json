@@ -36,7 +36,7 @@
     "lint:js": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
     "lint": "npm run lint:css && npm run lint:js",
     "test": "jest --color --runInBand",
-    "test:ci": "npm run test -- --ci && codecov"
+    "test:ci": "npm run test -- --ci"
   },
   "repository": {
     "type": "git",
@@ -54,7 +54,6 @@
     "@types/react-helmet": "^6.1.2",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.5",
-    "codecov": "^3.8.3",
     "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
