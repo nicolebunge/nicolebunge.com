@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Section from '.';
+import Main from '..';
 
-describe('Section component', () => {
+describe('Main component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Section />);
+    const { container } = render(<Main />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

@@ -2,7 +2,7 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Alignment from '.';
+import Alignment from '..';
 
 describe('Alignment component', () => {
   it('should render correctly', () => {

@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Main from '.';
+import ContactForm from '..';
 
-describe('Main component', () => {
+describe('ContactForm component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Main />);
+    const { container } = render(<ContactForm />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Social from '.';
+import Button from '..';
 
-describe('Social component', () => {
+describe('Button component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Social />);
+    const { container } = render(<Button to="/">Button</Button>);
 
     expect(container.firstChild).toMatchSnapshot();
   });

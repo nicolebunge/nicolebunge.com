@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Icons from '.';
+import Header from '..';
 
-describe('Icons component', () => {
+describe('Header component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Icons />);
+    const { container } = render(<Header />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

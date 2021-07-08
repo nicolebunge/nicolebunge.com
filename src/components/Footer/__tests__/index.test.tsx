@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Button from '.';
+import Footer from '..';
 
-describe('Button component', () => {
+describe('Footer component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Button to="/">Button</Button>);
+    const { container } = render(<Footer />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

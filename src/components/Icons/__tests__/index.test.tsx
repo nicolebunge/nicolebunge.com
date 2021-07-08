@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Footer from '.';
+import Icons from '..';
 
-describe('Footer component', () => {
+describe('Icons component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Footer />);
+    const { container } = render(<Icons />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

@@ -2,7 +2,7 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Gallery from '.';
+import Gallery from '..';
 
 describe('Gallery component', () => {
   it('renders correctly', () => {

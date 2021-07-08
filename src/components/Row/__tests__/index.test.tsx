@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Label from '.';
+import Row from '..';
 
-describe('Label component', () => {
+describe('Row component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Label htmlFor="name" />);
+    const { container } = render(<Row />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

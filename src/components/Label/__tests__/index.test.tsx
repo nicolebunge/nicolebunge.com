@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import ContactForm from '.';
+import Label from '..';
 
-describe('ContactForm component', () => {
+describe('Label component', () => {
   it('renders correctly', () => {
-    const { container } = render(<ContactForm />);
+    const { container } = render(<Label htmlFor="name" />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

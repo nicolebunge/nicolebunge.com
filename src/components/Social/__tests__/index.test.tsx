@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Header from '.';
+import Social from '..';
 
-describe('Header component', () => {
+describe('Social component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Header />);
+    const { container } = render(<Social />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

@@ -2,11 +2,17 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Row from '.';
+import Navigation from '..';
 
-describe('Row component', () => {
+describe('Navigation component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Row />);
+    const routes = [
+      {
+        name: 'Index',
+        path: '/',
+      },
+    ];
+    const { container } = render(<Navigation routes={routes} />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
