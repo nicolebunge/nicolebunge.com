@@ -5,7 +5,7 @@
   "dependencies": {
     "classnames": "^2.3.1",
     "formik": "^2.2.9",
-    "gatsby": "^3.8.1",
+    "gatsby": "^3.10.2",
     "gatsby-plugin-google-analytics": "^3.8.0",
     "gatsby-plugin-manifest": "^3.8.0",
     "gatsby-plugin-offline": "^4.8.0",
