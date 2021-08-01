@@ -13,7 +13,7 @@
     "gatsby-plugin-image": "^1.8.0",
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-sharp": "^3.8.0",
-    "gatsby-plugin-sitemap": "^4.4.0",
+    "gatsby-plugin-sitemap": "^4.6.0",
     "gatsby-source-filesystem": "^3.8.0",
     "gatsby-transformer-remark": "^4.5.0",
     "gatsby-transformer-sharp": "^3.8.0",
