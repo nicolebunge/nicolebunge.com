@@ -1,14 +1,16 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Alignment, { AlignmentProps } from '../Alignment';
 import * as styles from './Row.module.css';
 
-export type RowProps = AlignmentProps;
+export interface RowProps extends AlignmentProps {
+  children: ReactNode;
+}
 
-const Row: React.FC<RowProps> = (props) => {
+function Row(props: RowProps): JSX.Element {
   const { className, ...otherProps } = props;
 
   return <Alignment className={classNames(className, styles.row)} {...otherProps} />;
-};
+}
 
 export default Row;

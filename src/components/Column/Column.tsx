@@ -36,7 +36,7 @@ export interface ColumnProps extends AlignmentProps {
   start?: number;
 }
 
-const Column: React.FC<ColumnProps> = (props) => {
+function Column(props: ColumnProps): JSX.Element {
   const { className, span, start, ...otherProps } = props;
 
   return (
@@ -48,7 +48,7 @@ const Column: React.FC<ColumnProps> = (props) => {
       {...otherProps}
     />
   );
-};
+}
 
 Column.defaultProps = {
   span: 1,

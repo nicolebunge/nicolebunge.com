@@ -16,7 +16,7 @@ export interface SEOProps {
   title: string;
 }
 
-const SEO: React.FC<SEOProps> = (props) => {
+function SEO(props: SEOProps): JSX.Element {
   const { description, lang = 'de', meta = [], title, ...otherProps } = props;
 
   const { site } = useSite();
@@ -64,6 +64,6 @@ const SEO: React.FC<SEOProps> = (props) => {
       {...otherProps}
     />
   );
-};
+}
 
 export default SEO;

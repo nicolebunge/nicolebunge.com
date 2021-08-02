@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { FC } from 'react';
+import React from 'react';
 import CloudinaryImage, { CloudinaryImageProps } from '../CloudinaryImage';
 import * as styles from './Gallery.module.css';
 
@@ -8,7 +8,7 @@ export interface GalleryProps {
   images: CloudinaryImageProps[];
 }
 
-const Gallery: FC<GalleryProps> = (props) => {
+function Gallery(props: GalleryProps): JSX.Element {
   const { className, images, ...otherProps } = props;
 
   return (
@@ -22,6 +22,6 @@ const Gallery: FC<GalleryProps> = (props) => {
       ))}
     </ul>
   );
-};
+}
 
 export default Gallery;

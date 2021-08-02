@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 
-import React, { FC } from 'react';
+import React from 'react';
 
 export interface CloudinaryImageProps {
   alt: string;
@@ -9,7 +9,7 @@ export interface CloudinaryImageProps {
   width?: number;
 }
 
-const CloudinaryImage: FC<CloudinaryImageProps> = (props) => {
+function CloudinaryImage(props: CloudinaryImageProps): JSX.Element {
   const { src, ...otherProps } = props;
 
   return (
@@ -19,6 +19,6 @@ const CloudinaryImage: FC<CloudinaryImageProps> = (props) => {
       {...otherProps}
     />
   );
-};
+}
 
 export default CloudinaryImage;

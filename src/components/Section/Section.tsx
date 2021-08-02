@@ -1,12 +1,13 @@
 import classNames from 'classnames';
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './Section.module.css';
 
 export interface SectionProps extends HTMLAttributes<HTMLDivElement> {
+  children: ReactNode;
   full?: boolean;
 }
 
-const Section: React.FC<SectionProps> = (props) => {
+function Section(props: SectionProps): JSX.Element {
   const { className, full, ...otherProps } = props;
 
   return (
@@ -17,6 +18,6 @@ const Section: React.FC<SectionProps> = (props) => {
       {...otherProps}
     />
   );
-};
+}
 
 export default Section;

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import capitalize from 'lodash/capitalize';
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './Alignment.module.css';
 
 type Align = 'center' | 'end' | 'start';
@@ -14,10 +14,11 @@ type JustifyClass =
 
 export interface AlignmentProps extends HTMLAttributes<HTMLDivElement> {
   align?: Align;
+  children: ReactNode;
   justify?: Justify;
 }
 
-const Alignment: React.FC<AlignmentProps> = (props) => {
+function Alignment(props: AlignmentProps): JSX.Element {
   const { align, className, justify, ...otherProps } = props;
 
   return (
@@ -30,6 +31,6 @@ const Alignment: React.FC<AlignmentProps> = (props) => {
       {...otherProps}
     />
   );
-};
+}
 
 export default Alignment;

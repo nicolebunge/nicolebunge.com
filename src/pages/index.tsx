@@ -1,5 +1,5 @@
 import { Link, PageProps } from 'gatsby';
-import React, { FC } from 'react';
+import React from 'react';
 import Button from '../components/Button';
 import CloudinaryImage from '../components/CloudinaryImage';
 import Column from '../components/Column';
@@ -10,7 +10,7 @@ import Section from '../components/Section';
 import SEO from '../components/SEO';
 import { ABOUT, ACTING, CONTACT, THEATRE_PEDAGOGY } from '../constants/routes';
 
-const IndexPage: FC<PageProps> = () => {
+function IndexPage(_props: PageProps): JSX.Element {
   return (
     <Layout>
       <SEO title="Home" />
@@ -104,6 +104,6 @@ const IndexPage: FC<PageProps> = () => {
       </Section>
     </Layout>
   );
-};
+}
 
 export default IndexPage;

@@ -13,7 +13,7 @@ export interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
   routes: Route[];
 }
 
-const Navigation: React.FC<NavigationProps> = (props) => {
+function Navigation(props: NavigationProps): JSX.Element {
   const { className, inline, routes, ...otherProps } = props;
 
   return (
@@ -39,6 +39,6 @@ const Navigation: React.FC<NavigationProps> = (props) => {
       )}
     </nav>
   );
-};
+}
 
 export default Navigation;

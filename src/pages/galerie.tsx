@@ -1,12 +1,12 @@
 import { PageProps } from 'gatsby';
-import React, { FC } from 'react';
+import React from 'react';
 import Gallery from '../components/Gallery';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
-const GalleryPage: FC<PageProps> = () => {
+function GalleryPage(_props: PageProps): JSX.Element {
   return (
     <Layout>
       <SEO title="Galerie" />
@@ -51,6 +51,6 @@ const GalleryPage: FC<PageProps> = () => {
       </Section>
     </Layout>
   );
-};
+}
 
 export default GalleryPage;

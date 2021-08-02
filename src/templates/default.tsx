@@ -1,11 +1,11 @@
 import { graphql, PageProps } from 'gatsby';
-import React, { FC } from 'react';
+import React from 'react';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
 
-export interface TemplateProps {
+interface DataType {
   markdownRemark: {
     frontmatter: {
       title: string;
@@ -14,7 +14,9 @@ export interface TemplateProps {
   };
 }
 
-const Template: FC<PageProps<TemplateProps>> = (props) => {
+export type DefaultTemplateProps = PageProps<DataType>;
+
+function DefaultTemplate(props: DefaultTemplateProps): JSX.Element {
   const {
     data: {
       markdownRemark: { frontmatter, html },
@@ -31,9 +33,8 @@ const Template: FC<PageProps<TemplateProps>> = (props) => {
       </Section>
     </Layout>
   );
-};
+}
 
-export default Template;
 export const pageQuery = graphql`
   query ($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -44,3 +45,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default DefaultTemplate;

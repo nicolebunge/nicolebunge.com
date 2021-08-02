@@ -5,7 +5,7 @@ import * as styles from './Icons.module.css';
 
 export type IconsProps = HTMLAttributes<HTMLUListElement>;
 
-const Icons: React.FC<IconsProps> = (props) => {
+function Icons(props: IconsProps): JSX.Element {
   const { className, ...otherProps } = props;
 
   return (
@@ -23,6 +23,6 @@ const Icons: React.FC<IconsProps> = (props) => {
       })}
     </ul>
   );
-};
+}
 
 export default Icons;

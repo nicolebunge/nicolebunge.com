@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Link } from 'gatsby';
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
 import { NOW } from '../../constants/dates';
 import { FOOTER, MAIN } from '../../constants/menus';
@@ -14,9 +14,11 @@ import Navigation from '../Navigation';
 import Social from '../Social';
 import * as styles from './Layout.module.css';
 
-export type LayoutProps = HTMLAttributes<HTMLDivElement>;
+export interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
+  children: ReactNode;
+}
 
-const Layout: React.FC<LayoutProps> = (props) => {
+function Layout(props: LayoutProps): JSX.Element {
   const { children, className, ...otherProps } = props;
   const { site } = useSite();
 
@@ -48,6 +50,6 @@ const Layout: React.FC<LayoutProps> = (props) => {
       <Social />
     </div>
   );
-};
+}
 
 export default Layout;

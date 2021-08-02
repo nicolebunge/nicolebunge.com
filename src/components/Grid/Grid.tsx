@@ -1,13 +1,15 @@
 import classNames from 'classnames';
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './Grid.module.css';
 
-export type GridProps = HTMLAttributes<HTMLDivElement>;
+export interface GridProps extends HTMLAttributes<HTMLDivElement> {
+  children: ReactNode;
+}
 
-const Grid: React.FC<GridProps> = (props) => {
+function Grid(props: GridProps): JSX.Element {
   const { className, ...otherProps } = props;
 
   return <div className={classNames(className, styles.grid)} {...otherProps} />;
-};
+}
 
 export default Grid;

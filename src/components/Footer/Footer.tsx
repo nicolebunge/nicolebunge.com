@@ -1,15 +1,17 @@
 import classNames from 'classnames';
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './Footer.module.css';
 
-export type FooterProps = HTMLAttributes<HTMLElement>;
+export interface FooterProps extends HTMLAttributes<HTMLElement> {
+  children: ReactNode;
+}
 
-const Footer: React.FC<FooterProps> = (props) => {
+function Footer(props: FooterProps): JSX.Element {
   const { className, ...otherProps } = props;
 
   return (
     <footer className={classNames(className, styles.footer)} role="contentinfo" {...otherProps} />
   );
-};
+}
 
 export default Footer;

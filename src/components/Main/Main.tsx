@@ -1,13 +1,15 @@
 import classNames from 'classnames';
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './Main.module.css';
 
-export type MainProps = HTMLAttributes<HTMLDivElement>;
+export interface MainProps extends HTMLAttributes<HTMLDivElement> {
+  children: ReactNode;
+}
 
-const Main: React.FC<MainProps> = (props) => {
+function Main(props: MainProps): JSX.Element {
   const { className, ...otherProps } = props;
 
   return <main className={classNames(className, styles.main)} role="main" {...otherProps} />;
-};
+}
 
 export default Main;

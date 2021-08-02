@@ -5,7 +5,7 @@ import * as styles from './Social.module.css';
 
 export type SocialProps = HTMLAttributes<HTMLDivElement>;
 
-const Social: React.FC<SocialProps> = (props) => {
+function Social(props: SocialProps): JSX.Element {
   const { className, ...otherProps } = props;
 
   return (
@@ -13,6 +13,6 @@ const Social: React.FC<SocialProps> = (props) => {
       <Icons />
     </div>
   );
-};
+}
 
 export default Social;
