@@ -3,25 +3,15 @@
 exports[`Gallery component renders correctly 1`] = `
 <ul
   class=""
-  images="[object Object]"
 >
   <li>
-    <figure />
-  </li>
-  <li>
-    <figure />
-  </li>
-  <li>
-    <figure />
-  </li>
-  <li>
-    <figure />
-  </li>
-  <li>
-    <figure />
-  </li>
-  <li>
-    <figure />
+    <figure>
+      <img
+        alt="Image alt tag"
+        loading="lazy"
+        src="https://res.cloudinary.com/nicolebunge/image/upload/f_auto,q_auto/v1627923793/nicolebunge.com/path/to/image.jpg"
+      />
+    </figure>
   </li>
 </ul>
 `;

@@ -29,9 +29,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-image',
-    },
-    {
       resolve: 'gatsby-plugin-offline',
     },
     {
@@ -44,9 +41,6 @@ module.exports = {
         environment: process.env.NODE_ENV,
         enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
       },
-    },
-    {
-      resolve: 'gatsby-plugin-sharp',
     },
     {
       resolve: 'gatsby-plugin-sitemap',
@@ -67,9 +61,6 @@ module.exports = {
     },
     {
       resolve: 'gatsby-transformer-remark',
-    },
-    {
-      resolve: 'gatsby-transformer-sharp',
     },
   ],
 };

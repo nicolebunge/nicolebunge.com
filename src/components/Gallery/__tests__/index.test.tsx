@@ -8,12 +8,8 @@ describe('Gallery component', () => {
   it('renders correctly', () => {
     const images = [
       {
-        fluid: {
-          aspectRatio: 1,
-          sizes: '',
-          src: '',
-          srcSet: '',
-        },
+        src: 'path/to/image.jpg',
+        alt: 'Image alt tag',
       },
     ];
     const { container } = render(<Gallery images={images} />);

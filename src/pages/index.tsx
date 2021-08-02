@@ -1,7 +1,7 @@
 import { Link, PageProps } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import React, { FC } from 'react';
 import Button from '../components/Button';
+import CloudinaryImage from '../components/CloudinaryImage';
 import Column from '../components/Column';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
@@ -32,11 +32,7 @@ const IndexPage: FC<PageProps> = () => {
 
             <Column span={5} start={6}>
               <Link to={ABOUT.path}>
-                <StaticImage
-                  src="../images/image-01.jpg"
-                  alt="Nicole Bunge"
-                  formats={['auto', 'webp', 'avif']}
-                />
+                <CloudinaryImage src="gallery/image-01.jpg" alt="Nicole Bunge" />
               </Link>
             </Column>
           </Row>
@@ -58,11 +54,7 @@ const IndexPage: FC<PageProps> = () => {
             </Column>
             <Column span={4} start={3}>
               <Link to={ACTING.path}>
-                <StaticImage
-                  src="../images/image-02.jpg"
-                  alt="Nicole Bunge"
-                  formats={['auto', 'webp', 'avif']}
-                />
+                <CloudinaryImage src="gallery/image-02.jpg" alt="Nicole Bunge" />
               </Link>
             </Column>
           </Row>
@@ -86,11 +78,7 @@ const IndexPage: FC<PageProps> = () => {
 
             <Column span={5} start={8}>
               <Link to={THEATRE_PEDAGOGY.path}>
-                <StaticImage
-                  src="../images/image-03.jpg"
-                  alt="Nicole Bunge"
-                  formats={['auto', 'webp', 'avif']}
-                />
+                <CloudinaryImage src="gallery/image-03.jpg" alt="Nicole Bunge" />
               </Link>
             </Column>
           </Row>
