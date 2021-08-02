@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { HTMLAttributes } from 'react';
-import * as styles from './style.module.css';
+import * as styles from './Header.module.css';
 
 export type HeaderProps = HTMLAttributes<HTMLDivElement>;
 

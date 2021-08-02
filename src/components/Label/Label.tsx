@@ -2,7 +2,7 @@
 
 import classNames from 'classnames';
 import React, { HTMLAttributes } from 'react';
-import * as styles from './style.module.css';
+import * as styles from './Label.module.css';
 
 export interface LabelProps extends HTMLAttributes<HTMLLabelElement> {
   htmlFor: string;

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { HTMLAttributes } from 'react';
-import * as styles from './style.module.css';
+import * as styles from './Section.module.css';
 
 export interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   full?: boolean;

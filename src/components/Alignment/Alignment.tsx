@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import capitalize from 'lodash/capitalize';
 import React, { HTMLAttributes } from 'react';
-import * as styles from './style.module.css';
+import * as styles from './Alignment.module.css';
 
 type Align = 'center' | 'end' | 'start';
 type AlignClass = 'alignmentAlignCenter' | 'alignmentAlignEnd' | 'alignmentAlignStart';

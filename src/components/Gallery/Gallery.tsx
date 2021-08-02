@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React, { FC } from 'react';
 import CloudinaryImage, { CloudinaryImageProps } from '../CloudinaryImage';
-import * as styles from './style.module.css';
+import * as styles from './Gallery.module.css';
 
 export interface GalleryProps {
   className?: string;

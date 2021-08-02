@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 import Alignment, { AlignmentProps } from '../Alignment';
-import * as styles from './style.module.css';
+import * as styles from './Column.module.css';
 
 type spanClass =
   | 'columnSpan1'

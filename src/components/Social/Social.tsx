@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React, { HTMLAttributes } from 'react';
-import Icons from '../Icons';
-import * as styles from './style.module.css';
+import Icons from '../Icons/Icons';
+import * as styles from './Social.module.css';
 
 export type SocialProps = HTMLAttributes<HTMLDivElement>;
 

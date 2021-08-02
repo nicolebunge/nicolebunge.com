@@ -1,11 +1,15 @@
 import { Field, Form, Formik } from 'formik';
-import React from 'react';
+import React, { FC } from 'react';
 import Column from '../Column';
 import Label from '../Label';
 import Row from '../Row';
-import * as styles from './style.module.css';
+import * as styles from './ContactForm.module.css';
 
-const ContactForm: React.FC = () => (
+export interface ContactFormProps {
+  initialValues?: any;
+}
+
+const ContactForm: FC<ContactFormProps> = () => (
   <Formik
     initialValues={{ name: '', email: '', message: '' }}
     onSubmit={(_values, { setSubmitting }): void => {

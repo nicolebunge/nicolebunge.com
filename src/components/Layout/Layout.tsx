@@ -12,7 +12,7 @@ import Header from '../Header';
 import Main from '../Main';
 import Navigation from '../Navigation';
 import Social from '../Social';
-import * as styles from './style.module.css';
+import * as styles from './Layout.module.css';
 
 export type LayoutProps = HTMLAttributes<HTMLDivElement>;
 

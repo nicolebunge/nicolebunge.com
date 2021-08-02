@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React, { HTMLAttributes } from 'react';
 import { INSTAGRAM, LINKED_IN, XING } from '../../constants/social';
-import * as styles from './style.module.css';
+import * as styles from './Icons.module.css';
 
 export type IconsProps = HTMLAttributes<HTMLUListElement>;
 
