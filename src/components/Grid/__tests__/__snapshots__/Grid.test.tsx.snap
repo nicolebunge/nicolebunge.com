@@ -3,5 +3,7 @@
 exports[`Grid component renders correctly 1`] = `
 <div
   class=""
-/>
+>
+  Grid
+</div>
 `;

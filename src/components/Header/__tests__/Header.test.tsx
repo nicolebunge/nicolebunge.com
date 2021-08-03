@@ -6,7 +6,7 @@ import Header from '..';
 
 describe('Header component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Header />);
+    const { container } = render(<Header>Header</Header>);
 
     expect(container.firstChild).toMatchSnapshot();
   });

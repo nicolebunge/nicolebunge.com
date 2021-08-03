@@ -13,7 +13,7 @@ exports[`Icons component renders correctly 1`] = `
     >
       <img
         alt="Nicole Bunge auf Instagram"
-        src="test-file-stub"
+        src="/icons/instagram.svg"
       />
     </a>
   </li>
@@ -26,7 +26,7 @@ exports[`Icons component renders correctly 1`] = `
     >
       <img
         alt="Nicole Bunge auf LinkedIn"
-        src="test-file-stub"
+        src="/icons/linkedin.svg"
       />
     </a>
   </li>
@@ -39,7 +39,7 @@ exports[`Icons component renders correctly 1`] = `
     >
       <img
         alt="Nicole Bunge auf XING"
-        src="test-file-stub"
+        src="/icons/xing.svg"
       />
     </a>
   </li>

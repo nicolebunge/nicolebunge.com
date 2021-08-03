@@ -3,5 +3,7 @@
 exports[`Row component renders correctly 1`] = `
 <div
   class=""
-/>
+>
+  Row
+</div>
 `;

@@ -6,7 +6,7 @@ import Main from '..';
 
 describe('Main component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Main />);
+    const { container } = render(<Main>Main</Main>);
 
     expect(container.firstChild).toMatchSnapshot();
   });

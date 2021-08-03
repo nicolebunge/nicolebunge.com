@@ -3,5 +3,7 @@
 exports[`Column component renders correctly 1`] = `
 <div
   class="undefined"
-/>
+>
+  Column
+</div>
 `;

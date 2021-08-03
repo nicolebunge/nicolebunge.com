@@ -6,7 +6,7 @@ import Row from '..';
 
 describe('Row component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Row />);
+    const { container } = render(<Row>Row</Row>);
 
     expect(container.firstChild).toMatchSnapshot();
   });

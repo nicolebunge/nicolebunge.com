@@ -6,7 +6,7 @@ import Footer from '..';
 
 describe('Footer component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Footer />);
+    const { container } = render(<Footer>Footer</Footer>);
 
     expect(container.firstChild).toMatchSnapshot();
   });
