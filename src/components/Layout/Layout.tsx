@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import { NOW } from '../../constants/dates';
 import { FOOTER, MAIN } from '../../constants/menus';
 import { useSite } from '../../hooks/site';
-import nicoleBunge from '../../images/nicole-bunge.svg';
+import CloudinaryImage from '../CloudinaryImage';
 import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
@@ -35,7 +35,7 @@ function Layout(props: LayoutProps): JSX.Element {
       </Helmet>
       <Header>
         <Link to="/">
-          <img src={nicoleBunge} alt={site.siteMetadata.title} width="160" />
+          <CloudinaryImage src="nicole-bunge.svg" alt={site.siteMetadata.title} width={160} />
         </Link>
 
         <Navigation inline routes={MAIN} />
