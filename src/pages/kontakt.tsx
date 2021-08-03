@@ -1,13 +1,13 @@
 import { PageProps } from 'gatsby';
 import React from 'react';
-import Column from '../components/Column';
-import ContactForm from '../components/ContactForm';
-import Grid from '../components/Grid';
-import Icons from '../components/Icons';
 import Layout from '../components/Layout';
-import Row from '../components/Row';
-import Section from '../components/Section';
 import SEO from '../components/SEO';
+import Section from '../components/Section';
+import Grid from '../components/Grid';
+import Row from '../components/Row';
+import Column from '../components/Column';
+import Icons from '../components/Icons';
+import ContactForm from '../components/ContactForm';
 import email from '../images/email.svg';
 
 function ContactPage(_props: PageProps): JSX.Element {

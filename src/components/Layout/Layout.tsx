@@ -5,12 +5,12 @@ import { Helmet } from 'react-helmet';
 import { NOW } from '../../constants/dates';
 import { FOOTER, MAIN } from '../../constants/menus';
 import { useSite } from '../../hooks/site';
+import Header from '../Header';
 import CloudinaryImage from '../CloudinaryImage';
+import Navigation from '../Navigation';
+import Main from '../Main';
 import Footer from '../Footer';
 import Grid from '../Grid';
-import Header from '../Header';
-import Main from '../Main';
-import Navigation from '../Navigation';
 import Social from '../Social';
 import * as styles from './Layout.module.css';
 

@@ -1,11 +1,11 @@
 import { PageProps } from 'gatsby';
 import React from 'react';
-import Column from '../components/Column';
-import Grid from '../components/Grid';
 import Layout from '../components/Layout';
-import Row from '../components/Row';
-import Section from '../components/Section';
 import SEO from '../components/SEO';
+import Section from '../components/Section';
+import Grid from '../components/Grid';
+import Row from '../components/Row';
+import Column from '../components/Column';
 
 function TheatrePedagogyPage(_props: PageProps): JSX.Element {
   return (
