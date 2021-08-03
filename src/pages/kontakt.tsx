@@ -8,7 +8,6 @@ import Row from '../components/Row';
 import Column from '../components/Column';
 import Icons from '../components/Icons';
 import ContactForm from '../components/ContactForm';
-import email from '../images/email.svg';
 
 function ContactPage(_props: PageProps): JSX.Element {
   return (
@@ -35,7 +34,7 @@ function ContactPage(_props: PageProps): JSX.Element {
                   <h5 itemProp="name">Nicole Bunge</h5>
                   Schauspielerin & Theaterpädagogin
                   <h5>E-Mail</h5>
-                  <img src={email} alt="E-Mail Adresse" width="147.1" height="15" />
+                  <img src="/icons/email.svg" alt="E-Mail Adresse" width="147.1" height="15" />
                   <h5>Webseite</h5>
                   <a href="https://nicolebunge.com">www.nicolebunge.com</a>
                 </address>

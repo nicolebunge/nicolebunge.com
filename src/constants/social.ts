@@ -1,10 +1,6 @@
-import instagramIcon from '../images/instagram.svg';
-import linkedinIcon from '../images/linkedin.svg';
-import xingIcon from '../images/xing.svg';
-
 export const INSTAGRAM = {
   icon: {
-    src: instagramIcon,
+    src: '/icons/instagram.svg',
   },
   id: 'instagram',
   title: 'Instagram',
@@ -13,7 +9,7 @@ export const INSTAGRAM = {
 
 export const LINKED_IN = {
   icon: {
-    src: linkedinIcon,
+    src: '/icons/linkedin.svg',
   },
   id: 'linkedin',
   title: 'LinkedIn',
@@ -22,7 +18,7 @@ export const LINKED_IN = {
 
 export const XING = {
   icon: {
-    src: xingIcon,
+    src: '/icons/xing.svg',
   },
   id: 'xing',
   title: 'XING',
