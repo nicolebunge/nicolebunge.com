@@ -24,8 +24,8 @@ function ActingPage(_props: PageProps): JSX.Element {
                 Gesangseinlagen beinhaltet.
                 <br /> Mein Diplomstudium absolvierte ich an der Theater Akademie Stuttgart mit
                 Schwerpunkt Schauspiel (ZAV) und Theaterpädagogik (BUT). Dort spielte ich an der
-                Theater Kompagnie Stuttgart Shakespeares “Mittsommernachtstraum” und “Was Ihr
-                Wollt”.
+                Theater Kompagnie Stuttgart Shakespeares „Mittsommernachtstraum“ und „Was Ihr
+                Wollt“.
               </p>
               <p>
                 Im frühen Kindesalter begann ich Instrumente zu spielen, Turniere zu tanzen und zu

@@ -21,11 +21,11 @@ function IndexPage(_props: PageProps): JSX.Element {
             <Column span={4}>
               <h2>Über mich</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
-                doloribus vero cumque voluptatum beatae aperiam autem inventore, vitae aspernatur,
-                consequatur dicta. Veritatis, repudiandae non voluptate repellat eos at odit, nobis
-                magni explicabo officiis beatae, officia rerum vero ipsa ipsam? Vitae, mollitia
-                dolorem! Obcaecati sint neque non delectus soluta!
+                Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
+                Theaterpädagogin. Studiert habe ich an der Theater Akademie in Stuttgart. Derzeit
+                lebe und arbeite ich in Berlin und spiele unter anderem am Berliner Kriminal Theater
+                in Friedrichshain, sowie am „Theater aus dem Koffer“, Berlin. Zudem doziere ich an
+                der Reduta Schauspielschule Berlin.
               </p>
               <Button to={ABOUT.path}>Mehr über mich</Button>
             </Column>
@@ -67,11 +67,11 @@ function IndexPage(_props: PageProps): JSX.Element {
             <Column span={4} start={2}>
               <h2>Theaterpädagogik</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
-                doloribus vero cumque voluptatum beatae aperiam autem inventore, vitae aspernatur,
-                consequatur dicta. Veritatis, repudiandae non voluptate repellat eos at odit, nobis
-                magni explicabo officiis beatae, officia rerum vero ipsa ipsam? Vitae, mollitia
-                dolorem! Obcaecati sint neque non delectus soluta!
+                Theaterpädagogik bedeutet für mich die Kompetenzen des Einzelnen und der Gruppe
+                durch praktisches Arbeiten zu fördern. In meiner theaterpädagogischen Arbeit geht es
+                für mich nicht nur darum, etwas über Schauspiel zu erlernen, sondern auch etwas über
+                sich selbst. Theaterspielen hilft uns dabei sich selbst und seine Umwelt wahrzunehem
+                und zu verstehen.
               </p>
               <Button to={THEATRE_PEDAGOGY.path}>Mehr zu Theaterpädagogik</Button>
             </Column>
