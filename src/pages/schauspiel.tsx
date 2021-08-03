@@ -18,14 +18,37 @@ function ActingPage(_props: PageProps): JSX.Element {
           <Row>
             <Column span={8}>
               <p>
-                Derzeit bin ich deutschlandweit und in Österreich und der Schweiz mit dem Berliner
-                Kriminal Theater auf Tournee und in Berlin zu sehen. Zudem spiele ich am „Theater
-                aus dem Koffer“ Berlin, welches in jedem Stück das Spielen mehrerer Instrumente und
-                Gesangseinlagen beinhaltet.
-                <br /> Mein Diplomstudium absolvierte ich an der Theater Akademie Stuttgart mit
-                Schwerpunkt Schauspiel (ZAV) und Theaterpädagogik (BUT). Dort spielte ich an der
-                Theater Kompagnie Stuttgart Shakespeares „Mittsommernachtstraum“ und „Was Ihr
-                Wollt“.
+                Derzeit bin ich deutschlandweit und in Österreich und der Schweiz mit dem{' '}
+                <a href="https://www.kriminaltheater.de/" rel="noopener noreferrer" target="_blank">
+                  Berliner Kriminal Theater
+                </a>{' '}
+                auf Tournee und in Berlin zu sehen. Zudem spiele ich am{' '}
+                <a
+                  href="https://theater-aus-dem-koffer.de/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  „Theater aus dem Koffer“
+                </a>{' '}
+                Berlin, welches in jedem Stück das Spielen mehrerer Instrumente und Gesangseinlagen
+                beinhaltet.
+                <br /> Mein Diplomstudium absolvierte ich an der{' '}
+                <a
+                  href="https://www.theater-akademie-stuttgart.de"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  TheaterAkademieStuttgart
+                </a>{' '}
+                mit Schwerpunkt Schauspiel (ZAV) und Theaterpädagogik (BUT). Dort spielte ich an der{' '}
+                <a
+                  href="https://theater-kompagnie-stuttgart.de/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Theater Kompagnie Stuttgart
+                </a>{' '}
+                Shakespeares „Mittsommernachtstraum“ und „Was Ihr Wollt“.
               </p>
               <p>
                 Im frühen Kindesalter begann ich Instrumente zu spielen, Turniere zu tanzen und zu
@@ -59,8 +82,10 @@ function ActingPage(_props: PageProps): JSX.Element {
               <Row>
                 <Column span={6}>
                   <p>
-                    <strong>„Inspektor Campbells letzter Fall 23“</strong>, Jennifer <br />
-                    Regie: Wolfgang Rumpf & Matti Wien <br />
+                    <strong>„Erbarmen“</strong>, Lis Sørensen
+                    <br />
+                    Regie: Wolfgang Rumpf
+                    <br />
                     <a
                       href="https://www.kriminaltheater.de/"
                       rel="noopener noreferrer"
@@ -70,8 +95,23 @@ function ActingPage(_props: PageProps): JSX.Element {
                     </a>
                   </p>
                   <p>
-                    <strong>„Die zwölf Gescchworenen“</strong>, Nr. 5 <br />
-                    Regie: Wolfgang Rumpf <br />
+                    <strong>„Arsen und Spitzenhäubchen“</strong>, Elaine Harper
+                    <br />
+                    Regie: Wolfgang Rumpf
+                    <br />
+                    <a
+                      href="https://www.kriminaltheater.de/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Berliner Kriminal Theater
+                    </a>
+                  </p>
+                  <p>
+                    <strong>„Inspektor Campbells letzter Fall 23“</strong>, Jennifer
+                    <br />
+                    Regie: Wolfgang Rumpf & Matti Wien
+                    <br />
                     <a
                       href="https://www.kriminaltheater.de/"
                       rel="noopener noreferrer"
@@ -83,8 +123,22 @@ function ActingPage(_props: PageProps): JSX.Element {
                 </Column>
                 <Column span={6} start={7}>
                   <p>
-                    <strong>„Passagier 23“</strong>, Lisa <br />
-                    Regie: Thomas Wingrich, <br />
+                    <strong>„Die zwölf Gescchworenen“</strong>, Nr. 5<br />
+                    Regie: Wolfgang Rumpf
+                    <br />
+                    <a
+                      href="https://www.kriminaltheater.de/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Berliner Kriminal Theater
+                    </a>
+                  </p>
+                  <p>
+                    <strong>„Passagier 23“</strong>, Lisa
+                    <br />
+                    Regie: Thomas Wingrich,
+                    <br />
                     <a
                       href="https://www.kriminaltheater.de/"
                       rel="noopener noreferrer"

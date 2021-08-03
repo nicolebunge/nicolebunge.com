@@ -48,10 +48,27 @@ function TheatrePedagogyPage(_props: PageProps): JSX.Element {
             </Column>
 
             <Column span={6} start={6}>
+              <h3>Dozentin für Gesellschaftstanz</h3>
+              <p>
+                Seit Mai 2020 an der{' '}
+                <a href="https://reduta-berlin.de/" rel="noopener noreferrer" target="_blank">
+                  Reduta-Berlin Schauspielschule
+                </a>{' '}
+                für Theater und Film
+              </p>
+            </Column>
+
+            <Column span={6} start={6}>
               <h3>Unterstützung der Theaterpädagogen</h3>
               <p>
-                Unterstützung der Theaterpädagogen in den jeweiligen Theaterprojekten an der
-                Bismackschule Stuttgart Feuerbach
+                Unterstützung der Theaterpädagogen in den jeweiligen Theaterprojekten an der{' '}
+                <a
+                  href="https://www.bismarckschule-stuttgart.de/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Bismackschule Stuttgart Feuerbach
+                </a>
               </p>
             </Column>
 
@@ -75,8 +92,15 @@ function TheatrePedagogyPage(_props: PageProps): JSX.Element {
             <Column span={6} start={6}>
               <h3>Theaterpädagogisches Diplomabschlussprojekt</h3>
               <p>
-                Theaterpädagogisches Diplomabschlussprojekt an der Steinenberg-Grundschule in
-                Stuttgart Hedelfingen Theaterpädagogischer Unterricht mit Schülern der dritten
+                Theaterpädagogisches Diplomabschlussprojekt an der{' '}
+                <a
+                  href="https://www.steinenbergschule.de/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Steinenberg-Grundschule
+                </a>{' '}
+                in Stuttgart Hedelfingen Theaterpädagogischer Unterricht mit Schülern der dritten
                 Klasse. „Das Hexenstück – Wie sehe ich mich selbst? Wie sehen die anderen mich? Wie
                 agieren wir gemeinsam und was können wir damit erreichen?“ Entwicklung und
                 Aufführung eines Theaterstückes zum Projektthema, sowie schriftliche Reflexionsmappe

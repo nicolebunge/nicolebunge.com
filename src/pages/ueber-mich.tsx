@@ -19,16 +19,40 @@ function AboutPage(_props: PageProps): JSX.Element {
             <Column span={8}>
               <p>
                 Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
-                Theaterpädagogin. Studiert habe ich an der Theater Akademie in Stuttgart. Derzeit
-                lebe und arbeite ich in Berlin und spiele unter anderem am Berliner Kriminal Theater
-                in Friedrichshain, sowie am „Theater aus dem Koffer“, Berlin. Zudem doziere ich an
-                der Reduta Schauspielschule Berlin.
+                Theaterpädagogin. Studiert habe ich an der{' '}
+                <a
+                  href="https://www.theater-akademie-stuttgart.de"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  TheaterAkademieStuttgart
+                </a>
+                . Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
+                <a href="https://www.kriminaltheater.de/" rel="noopener noreferrer" target="_blank">
+                  Berliner Kriminal Theater
+                </a>
+                in Friedrichshain, sowie am{' '}
+                <a
+                  href="https://theater-aus-dem-koffer.de/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  „Theater aus dem Koffer“
+                </a>
+                , Berlin. Zudem doziere ich an der{' '}
+                <a href="https://reduta-berlin.de/" rel="noopener noreferrer" target="_blank">
+                  Reduta-Berlin Schauspielschule
+                </a>
+                .
               </p>
               <p>
                 In Baden Württemberg bin ich seit vier Jahren jeden Sommer als leitende
-                Theaterpädagogin für das Theaterferienprogramm am Landeskriminalamt zuständig. Schon
-                im frühen Kindesalter begann ich Instrumente zu spielen, Turniere zu tanzen und zu
-                schauspielern.
+                Theaterpädagogin für das Theaterferienprogramm am{' '}
+                <a href="https://lka.polizei-bw.de/" rel="noopener noreferrer" target="_blank">
+                  Landeskriminalamt
+                </a>{' '}
+                zuständig. Schon im frühen Kindesalter begann ich Instrumente zu spielen, Turniere
+                zu tanzen und zu schauspielern.
               </p>
               <p>
                 Tanz und Bewegung sind für mich wichtige Ausdrucksmittel am Theater, in meiner
@@ -78,8 +102,8 @@ function AboutPage(_props: PageProps): JSX.Element {
             <Column span={3} start={10}>
               <h3>Statur</h3>
               <ul>
-                <li>165cm groß</li>
-                <li>Konfektion: XS</li>
+                <li>165 cm groß</li>
+                <li>Konfektion: xs</li>
               </ul>
             </Column>
           </Row>
