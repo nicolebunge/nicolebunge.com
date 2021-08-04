@@ -13,12 +13,6 @@ function GalleryPage(_props: PageProps): JSX.Element {
 
       <Section>
         <Grid>
-          <h1 id="galerie">Galerie</h1>
-        </Grid>
-      </Section>
-
-      <Section>
-        <Grid>
           <Gallery
             images={[
               {

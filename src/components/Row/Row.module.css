@@ -1,6 +1,6 @@
 .row {
   grid-auto-flow: dense;
-  grid-gap: 1.5em;
+  grid-gap: 2em;
   grid-template-columns: repeat(12, 1fr);
 }
 
