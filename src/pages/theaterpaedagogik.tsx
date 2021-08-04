@@ -47,7 +47,7 @@ function TheatrePedagogyPage(_props: PageProps): JSX.Element {
               <h2 id="projekte">Projekte</h2>
             </Column>
 
-            <Column span={6} start={6}>
+            <Column span={4} start={5}>
               <h3>Dozentin für Gesellschaftstanz</h3>
               <p>
                 Seit Mai 2020 an der{' '}
@@ -58,7 +58,7 @@ function TheatrePedagogyPage(_props: PageProps): JSX.Element {
               </p>
             </Column>
 
-            <Column span={6} start={6}>
+            <Column span={4} start={9}>
               <h3>Unterstützung der Theaterpädagogen</h3>
               <p>
                 Unterstützung der Theaterpädagogen in den jeweiligen Theaterprojekten an der{' '}
@@ -72,14 +72,14 @@ function TheatrePedagogyPage(_props: PageProps): JSX.Element {
               </p>
             </Column>
 
-            <Column span={6} start={6}>
+            <Column span={4} start={5}>
               <h3>Theaterpädagogische Zwischenprüfung</h3>
               <p>
                 Erarbeitung eines Stückes anhand eines Märchens mit Studenten des Grundlagenjahres
               </p>
             </Column>
 
-            <Column span={6} start={6}>
+            <Column span={4} start={9}>
               <h3>Workshopleitung der 13. Schultheatertage am Landestheater Tübingen</h3>
               <p>
                 Workshoperarbeitung anhand eines Stücktitels im Rahmen der Schultheatertage
@@ -89,7 +89,7 @@ function TheatrePedagogyPage(_props: PageProps): JSX.Element {
               </p>
             </Column>
 
-            <Column span={6} start={6}>
+            <Column span={4} start={5}>
               <h3>Theaterpädagogisches Diplomabschlussprojekt</h3>
               <p>
                 Theaterpädagogisches Diplomabschlussprojekt an der{' '}
@@ -107,7 +107,7 @@ function TheatrePedagogyPage(_props: PageProps): JSX.Element {
               </p>
             </Column>
 
-            <Column span={6} start={6}>
+            <Column span={4} start={9}>
               <h3>Theaterpädagogische Diplomabschlussprüfung im Fachbereich Regie</h3>
               <p>
                 Erarbeitung eines Theaterstückes anhand der Stückvorlage „Leonce und Lena“ von Georg
@@ -115,7 +115,7 @@ function TheatrePedagogyPage(_props: PageProps): JSX.Element {
               </p>
             </Column>
 
-            <Column span={6} start={6}>
+            <Column span={4} start={5}>
               <h3>Theaterpädagogin an der Kita Matt Lamb Berlin</h3>
             </Column>
           </Row>

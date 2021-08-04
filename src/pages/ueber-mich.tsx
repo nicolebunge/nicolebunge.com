@@ -75,7 +75,7 @@ function AboutPage(_props: PageProps): JSX.Element {
               <h2 id="persoenlichkeit">Persönlichkeit</h2>
             </Column>
 
-            <Column span={3} start={6}>
+            <Column span={4} start={5}>
               <h3>Herkunft</h3>
               <ul>
                 <li>Geboren in Ludwigsburg</li>
@@ -83,7 +83,7 @@ function AboutPage(_props: PageProps): JSX.Element {
               </ul>
             </Column>
 
-            <Column span={3} start={10}>
+            <Column span={4} start={9}>
               <h3>Wohnmöglichkeit</h3>
               <ul>
                 <li>Berlin</li>
@@ -91,7 +91,7 @@ function AboutPage(_props: PageProps): JSX.Element {
               </ul>
             </Column>
 
-            <Column span={3} start={6}>
+            <Column span={4} start={5}>
               <h3>Aussehen</h3>
               <ul>
                 <li>Augenfarbe: grau-grün</li>
@@ -99,7 +99,7 @@ function AboutPage(_props: PageProps): JSX.Element {
               </ul>
             </Column>
 
-            <Column span={3} start={10}>
+            <Column span={4} start={9}>
               <h3>Statur</h3>
               <ul>
                 <li>165 cm groß</li>
@@ -117,7 +117,7 @@ function AboutPage(_props: PageProps): JSX.Element {
               <h2 id="kenntnisseundfhigkeiten">Kenntnisse & Fähigkeiten</h2>
             </Column>
 
-            <Column span={3} start={6}>
+            <Column span={4} start={5}>
               <h3 id="sprachen">Sprachen & Dialekte</h3>
               <ul>
                 <li>Deutsch (Muttersprache)</li>
@@ -128,7 +128,7 @@ function AboutPage(_props: PageProps): JSX.Element {
               </ul>
             </Column>
 
-            <Column span={3} start={10}>
+            <Column span={4} start={9}>
               <h3 id="musik">Musik</h3>
               <ul>
                 <li>Blockflöte</li>
@@ -139,7 +139,7 @@ function AboutPage(_props: PageProps): JSX.Element {
               </ul>
             </Column>
 
-            <Column span={3} start={6}>
+            <Column span={4} start={5}>
               <h3 id="tanz">Tanz</h3>
               <ul>
                 <li>10 Jahre Standard- und Latein-Turniertanz</li>
@@ -147,7 +147,7 @@ function AboutPage(_props: PageProps): JSX.Element {
               </ul>
             </Column>
 
-            <Column span={3} start={10}>
+            <Column span={4} start={9}>
               <h3 id="sport">Sport</h3>
               <ul>
                 <li>Schwimmen</li>
@@ -157,14 +157,14 @@ function AboutPage(_props: PageProps): JSX.Element {
               </ul>
             </Column>
 
-            <Column span={3} start={6}>
+            <Column span={4} start={5}>
               <h3 id="gesang">Gesang</h3>
               <ul>
                 <li>Mezzosopran</li>
               </ul>
             </Column>
 
-            <Column span={3} start={10}>
+            <Column span={4} start={9}>
               <h3 id="fuhrerschein">Führerschein</h3>
               <ul>
                 <li>Klasse B</li>
