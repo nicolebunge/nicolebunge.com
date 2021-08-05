@@ -123,7 +123,7 @@ function ActingPage(_props: PageProps): JSX.Element {
                 </Column>
                 <Column span={6} start={7}>
                   <p>
-                    <strong>„Die zwölf Gescchworenen“</strong>, Nr. 5<br />
+                    <strong>„Die zwölf Geschworenen“</strong>, Nr. 5<br />
                     Regie: Wolfgang Rumpf
                     <br />
                     <a
