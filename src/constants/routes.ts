@@ -5,35 +5,35 @@ export const INDEX = {
 
 export const ABOUT = {
   name: 'Über mich',
-  path: '/ueber-mich',
+  path: '/ueber-mich/',
 };
 
 export const ACTING = {
   name: 'Schauspiel',
-  path: '/schauspiel',
+  path: '/schauspiel/',
 };
 
 export const CONTACT = {
   name: 'Kontakt',
-  path: '/kontakt',
+  path: '/kontakt/',
 };
 
 export const GALLERY = {
   name: 'Galerie',
-  path: '/galerie',
+  path: '/galerie/',
 };
 
 export const IMPRINT = {
   name: 'Impressum',
-  path: '/impressum',
+  path: '/impressum/',
 };
 
 export const PRIVACY = {
   name: 'Datenschutz',
-  path: '/datenschutz',
+  path: '/datenschutz/',
 };
 
 export const THEATRE_PEDAGOGY = {
   name: 'Theaterpädagogik',
-  path: '/theaterpaedagogik',
+  path: '/theaterpaedagogik/',
 };
