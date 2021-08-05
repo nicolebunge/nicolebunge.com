@@ -3,37 +3,15 @@ import React from 'react';
 import Alignment, { AlignmentProps } from '../Alignment';
 import * as styles from './Column.module.css';
 
-type spanClass =
-  | 'columnSpan1'
-  | 'columnSpan2'
-  | 'columnSpan3'
-  | 'columnSpan4'
-  | 'columnSpan5'
-  | 'columnSpan6'
-  | 'columnSpan7'
-  | 'columnSpan8'
-  | 'columnSpan9'
-  | 'columnSpan10'
-  | 'columnSpan11'
-  | 'columnSpan12';
+type Span = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+type Start = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
-type startClass =
-  | 'columnStart1'
-  | 'columnStart2'
-  | 'columnStart3'
-  | 'columnStart4'
-  | 'columnStart5'
-  | 'columnStart6'
-  | 'columnStart7'
-  | 'columnStart8'
-  | 'columnStart9'
-  | 'columnStart10'
-  | 'columnStart11'
-  | 'columnStart12';
+type SpanClass = `columnSpan${Span}`;
+type StartClass = `columnStart${Start}`;
 
 export interface ColumnProps extends AlignmentProps {
-  span?: number;
-  start?: number;
+  span?: Span;
+  start?: Start;
 }
 
 function Column(props: ColumnProps): JSX.Element {
@@ -42,17 +20,12 @@ function Column(props: ColumnProps): JSX.Element {
   return (
     <Alignment
       className={classNames(className, {
-        [styles[`columnSpan${span}` as spanClass]]: span,
-        [styles[`columnStart${start}` as startClass]]: start,
+        [styles[`columnSpan${span}` as SpanClass]]: span,
+        [styles[`columnStart${start}` as StartClass]]: start,
       })}
       {...otherProps}
     />
   );
 }
-
-Column.defaultProps = {
-  span: 1,
-  start: 1,
-};
 
 export default Column;

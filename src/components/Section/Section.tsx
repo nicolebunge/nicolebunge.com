@@ -4,16 +4,16 @@ import * as styles from './Section.module.css';
 
 export interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
-  full?: boolean;
+  isFull?: boolean;
 }
 
 function Section(props: SectionProps): JSX.Element {
-  const { className, full, ...otherProps } = props;
+  const { className, isFull = false, ...otherProps } = props;
 
   return (
     <section
       className={classNames(className, styles.section, {
-        [styles.sectionFull]: full,
+        [styles.sectionFull]: isFull,
       })}
       {...otherProps}
     />

@@ -17,7 +17,7 @@ exports[`ContactForm component renders correctly 1`] = `
     class=""
   >
     <div
-      class="undefined"
+      class=""
     >
       <div>
         <input
@@ -57,7 +57,7 @@ exports[`ContactForm component renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="undefined"
+      class=""
     >
       <div>
         <textarea

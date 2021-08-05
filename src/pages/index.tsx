@@ -15,7 +15,7 @@ function IndexPage(_props: PageProps): JSX.Element {
     <Layout>
       <SEO title="Home" />
 
-      <Section full>
+      <Section isFull>
         <Grid>
           <Row align="center">
             <Column span={4}>
@@ -39,7 +39,7 @@ function IndexPage(_props: PageProps): JSX.Element {
         </Grid>
       </Section>
 
-      <Section full>
+      <Section isFull>
         <Grid>
           <Row align="center">
             <Column span={4} start={7}>
@@ -61,7 +61,7 @@ function IndexPage(_props: PageProps): JSX.Element {
         </Grid>
       </Section>
 
-      <Section full>
+      <Section isFull>
         <Grid>
           <Row align="center">
             <Column span={4} start={2}>
@@ -85,7 +85,7 @@ function IndexPage(_props: PageProps): JSX.Element {
         </Grid>
       </Section>
 
-      <Section full>
+      <Section isFull>
         <Grid>
           <Row>
             <Column span={6} start={3}>
