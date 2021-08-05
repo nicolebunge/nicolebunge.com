@@ -85,7 +85,7 @@ function IndexPage(_props: PageProps): JSX.Element {
         </Grid>
       </Section>
 
-      <Section isFull>
+      {/* <Section isFull>
         <Grid>
           <Row>
             <Column span={6} start={3}>
@@ -101,7 +101,7 @@ function IndexPage(_props: PageProps): JSX.Element {
             </Column>
           </Row>
         </Grid>
-      </Section>
+      </Section> */}
     </Layout>
   );
 }
