@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: 'Nicole Bunge',
     description:
-      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
+      'Schauspielerin & Theaterpädagogin. Schauspielerin am Berliner Kriminal Theater, sowie am Theater aus dem Koffer. Dozentin an der Reduta Schauspielschule Berlin.',
     author: '@BungeNicole',
     siteUrl: 'https://nicolebunge.com',
   },
@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'nicolebunge',
-        short_name: 'starter',
+        name: 'Nicole Bunge',
+        short_name: 'Nicole Bunge',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#fff',
+        theme_color: '#000',
         display: 'minimal-ui',
         icon: 'src/images/nicole-bunge-icon.png', // This path is relative to the root of the site.
       },

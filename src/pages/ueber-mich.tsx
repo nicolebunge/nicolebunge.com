@@ -14,7 +14,7 @@ function AboutPage(_props: PageProps): JSX.Element {
 
       <Section>
         <Grid>
-          <h1 id="bermich">Über Mich</h1>
+          <h1 id="ueber-mich">Über Mich</h1>
           <Row>
             <Column span={8}>
               <p>
