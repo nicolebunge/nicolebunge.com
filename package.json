@@ -26,11 +26,14 @@
   "scripts": {
     "build": "gatsby build",
     "check": "tsc --noEmit",
+    "clean": "gatsby clean",
     "develop": "gatsby develop",
     "format": "prettier --ignore-path .gitignore --write .",
     "lint:css": "stylelint --ignore-path .gitignore '**/*.css'",
     "lint:js": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
     "lint": "npm run lint:css && npm run lint:js",
+    "serve": "gatsby serve",
+    "start": "npm run serve",
     "test": "jest --color --runInBand",
     "test:ci": "npm run test -- --ci"
   },
