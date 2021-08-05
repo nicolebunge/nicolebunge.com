@@ -7,14 +7,13 @@ title: Impressum
 
 ## Angaben gemäß § 5 TMG
 
-VORNAME NACHNAME
-STRASSE
-PLZ ORT
+Nicole Bunge\
+Akeleiweg 93\
+12487, Berlin
 
 ## Kontakt
 
-Telefon: TELEFON
-E-Mail: EMAIL
+Mail: <img src="/email.svg" width="147" />
 
 ### Haftung für Inhalte
 
