@@ -40,7 +40,19 @@ function ActingPage(_props: PageProps): JSX.Element {
                 >
                   TheaterAkademieStuttgart
                 </a>{' '}
-                mit Schwerpunkt Schauspiel (ZAV) und Theaterpädagogik (BUT). Dort spielte ich an der{' '}
+                mit Schwerpunkt Schauspiel (
+                <a
+                  href="https://zav.arbeitsagentur.de/DE/Kuenstler/Schauspiel/F/B/Bunge-Nicole/Sedcard.html"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  ZAV
+                </a>
+                ) und Theaterpädagogik (
+                <a href="https://www.butinfo.de/" rel="noopener noreferrer" target="_blank">
+                  BuT
+                </a>
+                ). Dort spielte ich an der{' '}
                 <a
                   href="https://theater-kompagnie-stuttgart.de/"
                   rel="noopener noreferrer"
@@ -326,7 +338,7 @@ function ActingPage(_props: PageProps): JSX.Element {
             <Column span={8} start={5}>
               <Row>
                 <Column span={6}>
-                  <h3>2013 - 2015, 2017 & 2018</h3>
+                  <h3>2013 – 2015, 2017 & 2018</h3>
                   <p>
                     <strong>Camera Acting</strong>, Workshop <br />
                     <a
@@ -338,7 +350,7 @@ function ActingPage(_props: PageProps): JSX.Element {
                     </a>
                   </p>
 
-                  <h3>09.2013 - 09.2018</h3>
+                  <h3>09.2013 – 09.2018</h3>
                   <p>
                     <strong>Ausbildung zur staatlich anerkannten Schauspielerin (ZAV)</strong>{' '}
                     <br />
@@ -355,7 +367,7 @@ function ActingPage(_props: PageProps): JSX.Element {
                     </a>
                   </p>
 
-                  <h3>2017 - 2018</h3>
+                  <h3>2017 – 2018</h3>
                   <p>
                     <strong>„Ein Mittsommernachtstraum“</strong>, Spinnweb & Krankenschwester <br />
                     Regie: Christian Schlösser,{' '}
@@ -378,7 +390,7 @@ function ActingPage(_props: PageProps): JSX.Element {
                     </a>
                   </p>
 
-                  <h3>2017 - 2018</h3>
+                  <h3>2017 – 2018</h3>
                   <p>
                     <strong>„Was Ihr Wollt“</strong>, Olivia <br />
                     Regie: Christian Schlösser,{' '}
