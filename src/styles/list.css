@@ -2,14 +2,10 @@ li {
   max-width: 768px;
 }
 
-ol,
 ul {
   margin-bottom: 1.5em;
   margin-top: 0.5em;
-}
-
-ul {
-  padding-left: 1.5em;
+  padding-left: 1.25em;
 }
 
 ::marker {

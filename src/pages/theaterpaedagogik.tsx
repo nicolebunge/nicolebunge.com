@@ -16,7 +16,7 @@ function TheatrePedagogyPage(_props: PageProps): JSX.Element {
         <Grid>
           <h1 id="theaterpaedagogik">Theaterpädagogik</h1>
           <Row>
-            <Column span={8}>
+            <Column span={9}>
               <p>
                 Theaterpädagogik bedeutet für mich die Kompetenzen des Einzelnen und der Gruppe
                 durch praktisches Arbeiten zu fördern. In meiner theaterpädagogischen Arbeit geht es

@@ -16,7 +16,7 @@ function AboutPage(_props: PageProps): JSX.Element {
         <Grid>
           <h1 id="ueber-mich">Über Mich</h1>
           <Row>
-            <Column span={8}>
+            <Column span={9}>
               <p>
                 Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
                 Theaterpädagogin. Studiert habe ich an der{' '}

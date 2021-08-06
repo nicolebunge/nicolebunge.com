@@ -1,8 +1,15 @@
 .section {
   align-items: center;
   display: flex;
-  padding-bottom: 6em;
-  padding-top: 6em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+@media (min-width: 1080px) {
+  .section {
+    padding-bottom: 6em;
+    padding-top: 6em;
+  }
 }
 
 .section--full {

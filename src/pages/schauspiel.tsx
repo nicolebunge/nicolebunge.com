@@ -16,7 +16,7 @@ function ActingPage(_props: PageProps): JSX.Element {
         <Grid>
           <h1 id="schauspiel">Schauspiel</h1>
           <Row>
-            <Column span={8}>
+            <Column span={9}>
               <p>
                 Derzeit bin ich deutschlandweit und in Österreich und der Schweiz mit dem{' '}
                 <a href="https://www.kriminaltheater.de/" rel="noopener noreferrer" target="_blank">

@@ -4,7 +4,7 @@ body {
   background-size: calc(90% / 2);
   color: var(--color-base);
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 0.8125rem + 0.3125vw, 1rem);
   line-height: 1.75;
   margin: 0;
   min-height: 100vh;

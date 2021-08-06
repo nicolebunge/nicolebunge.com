@@ -1,5 +1,7 @@
-.alignment {
-  display: flex;
+@media (min-width: 640px) {
+  .alignment {
+    display: flex;
+  }
 }
 
 .alignment--align-center {
