@@ -1,7 +1,7 @@
 body {
   background-image: linear-gradient(to right, #f4f4f4 1px, transparent 1px);
   background-position: 50%;
-  background-size: calc(90% / 2);
+  background-size: calc(90% / 3);
   color: var(--color-base);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: clamp(0.875rem, 0.8125rem + 0.3125vw, 1rem);
@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
   body {
     background-size: calc(var(--grid-max-width) / 3);
   }
