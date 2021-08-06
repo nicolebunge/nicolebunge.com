@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './Section.module.css';
 
@@ -12,7 +12,7 @@ function Section(props: SectionProps): JSX.Element {
 
   return (
     <section
-      className={classNames(className, styles.section, {
+      className={clsx(className, styles.section, {
         [styles.sectionFull]: isFull,
       })}
       {...otherProps}

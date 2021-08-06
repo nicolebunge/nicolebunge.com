@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import { Link } from 'gatsby';
 import React, { HTMLAttributes, ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
@@ -23,7 +23,7 @@ function Layout(props: LayoutProps): JSX.Element {
   const { site } = useSite();
 
   return (
-    <div className={classNames(className, styles.layout)} {...otherProps}>
+    <div className={clsx(className, styles.layout)} {...otherProps}>
       <Helmet
         title={site.siteMetadata.title}
         meta={[

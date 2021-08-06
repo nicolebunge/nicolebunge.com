@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import React from 'react';
 import CloudinaryImage, { CloudinaryImageProps } from '../CloudinaryImage';
 import * as styles from './Gallery.module.css';
@@ -12,7 +12,7 @@ function Gallery(props: GalleryProps): JSX.Element {
   const { className, images, ...otherProps } = props;
 
   return (
-    <ul className={classNames(className, styles.gallery)} {...otherProps}>
+    <ul className={clsx(className, styles.gallery)} {...otherProps}>
       {images.map((image) => (
         <li className={styles.gallery__item} key={image.src}>
           <figure>

@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import React from 'react';
 import Alignment, { AlignmentProps } from '../Alignment';
 import * as styles from './Column.module.css';
@@ -19,7 +19,7 @@ function Column(props: ColumnProps): JSX.Element {
 
   return (
     <Alignment
-      className={classNames(className, {
+      className={clsx(className, {
         [styles[`columnSpan${span}` as SpanClass]]: span,
         [styles[`columnStart${start}` as StartClass]]: start,
       })}

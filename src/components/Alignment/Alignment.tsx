@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import capitalize from 'lodash/capitalize';
 import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './Alignment.module.css';
@@ -23,7 +23,7 @@ function Alignment(props: AlignmentProps): JSX.Element {
 
   return (
     <div
-      className={classNames(className, {
+      className={clsx(className, {
         [styles.alignment]: align || justify,
         [styles[`alignmentAlign${capitalize(align)}` as AlignClass]]: align,
         [styles[`alignmentJustify${capitalize(justify)}` as JustifyClass]]: justify,

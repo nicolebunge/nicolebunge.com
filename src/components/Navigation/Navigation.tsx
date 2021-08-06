@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import { Link } from 'gatsby';
 import capitalize from 'lodash/capitalize';
 import React, { HTMLAttributes } from 'react';
@@ -22,14 +22,14 @@ function Navigation(props: NavigationProps): JSX.Element {
 
   return (
     <nav
-      className={classNames(className, styles.navigation, {
+      className={clsx(className, styles.navigation, {
         [styles[`navigation${capitalize(name)}` as NavigationClass]]: name,
       })}
       {...otherProps}
     >
       {routes && (
         <ul
-          className={classNames(styles.navigation__list, {
+          className={clsx(styles.navigation__list, {
             [styles.navigation__listInline]: inline,
           })}
         >
