@@ -2,11 +2,11 @@
 
 import { render } from '@testing-library/react';
 import React from 'react';
-import Icons from '..';
+import { Instagram } from '..';
 
-describe('Icons component', () => {
+describe('Instagram icon component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Icons />);
+    const { container } = render(<Instagram width={24} height={24} fill="#000" />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

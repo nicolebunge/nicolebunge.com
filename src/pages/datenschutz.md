@@ -57,7 +57,7 @@ Nicole Bunge\
 Akeleiweg 93\
 12487, Berlin
 
-Mail: <img src="/email.svg" width="147" />
+Mail: <img src="/images/email.svg" width="147" />
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 

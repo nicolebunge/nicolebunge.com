@@ -29,8 +29,10 @@
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "format": "prettier --ignore-path .gitignore --write .",
+    "generate:svg": "svgr --icon --typescript --out-dir src/components/Icons src/images/icons",
+    "generate": "npm run generate:svg",
     "lint:css": "stylelint --ignore-path .gitignore '**/*.css'",
-    "lint:js": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
+    "lint:js": "eslint '**/*.{js,jsx,ts,tsx}'",
     "lint": "npm run lint:css && npm run lint:js",
     "serve": "gatsby serve",
     "start": "npm run serve",
@@ -42,6 +44,7 @@
     "url": "https://github.com/nicolebunge/nicolebunge.com"
   },
   "devDependencies": {
+    "@svgr/cli": "^5.5.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/classnames": "^2.3.1",

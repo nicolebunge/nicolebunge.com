@@ -13,3 +13,4 @@ import './src/styles/list.css';
 import './src/styles/paragraph.css';
 import './src/styles/root.css';
 import './src/styles/selection.css';
+import './src/styles/svg.css';

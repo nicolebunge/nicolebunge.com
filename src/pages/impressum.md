@@ -13,7 +13,7 @@ Akeleiweg 93\
 
 ## Kontakt
 
-Mail: <img src="/email.svg" width="147" />
+Mail: <img src="/images/email.svg" width="147" />
 
 ### Haftung für Inhalte
 
