@@ -38,7 +38,7 @@ function Layout(props: LayoutProps): JSX.Element {
           <CloudinaryImage src="nicole-bunge.svg" alt={site.siteMetadata.title} width={160} />
         </Link>
 
-        <Navigation inline routes={MAIN} />
+        <Navigation inline name="main" routes={MAIN} />
       </Header>
       <Main>{children}</Main>
       <Footer>
