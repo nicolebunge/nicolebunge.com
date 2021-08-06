@@ -13,11 +13,6 @@ export const ACTING = {
   path: '/schauspiel/',
 };
 
-export const CONTACT = {
-  name: 'Kontakt',
-  path: '/kontakt/',
-};
-
 export const GALLERY = {
   name: 'Galerie',
   path: '/galerie/',
