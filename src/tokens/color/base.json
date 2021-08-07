@@ -1,0 +1,13 @@
+{
+  "color": {
+    "primary": {
+      "value": "#000"
+    },
+    "base": {
+      "value": "#222"
+    },
+    "background": {
+      "value": "#f4f4f4"
+    }
+  }
+}

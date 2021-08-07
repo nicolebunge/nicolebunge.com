@@ -1,6 +1,6 @@
 p {
-  margin-bottom: 1.5em;
-  margin-top: 0.5em;
+  margin-bottom: var(--space-lg);
+  margin-top: var(--space-xs);
   max-width: 768px;
 }
 

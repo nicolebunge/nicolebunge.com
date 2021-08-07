@@ -1,10 +1,9 @@
 .navigation {
-  color: var(--color-primary);
   font-weight: 600;
 }
 
 .navigation--main .navigation__link--active::after {
-  background-color: var(--color-primary);
+  background-color: currentColor;
   content: '';
   height: 0.25em;
   position: absolute;
@@ -29,10 +28,9 @@
 }
 
 .navigation__link {
-  color: #333;
   display: inline-block;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
+  padding-bottom: var(--space-lg);
+  padding-top: var(--space-lg);
   position: relative;
   transition: color 0.3s;
 }

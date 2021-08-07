@@ -18,7 +18,7 @@ jobs:
         run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
         id: nvm
 
-      - name: ⚙️ Use Node.js (.nvmrc)
+      - name: 💚 Use Node.js (.nvmrc)
         uses: actions/setup-node@v2
         with:
           cache: 'npm'
@@ -29,6 +29,9 @@ jobs:
 
       - name: 🤖 Linting
         run: npm run lint
+
+      - name: ⚙️ Generate
+        run: npm run generate
 
       - name: 🧪 Testing
         run: npm run test:ci
