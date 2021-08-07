@@ -8,7 +8,7 @@ import Row from '../components/Row';
 import Column from '../components/Column';
 import Button from '../components/Button';
 import CloudinaryImage from '../components/CloudinaryImage';
-import { ABOUT, ACTING, CONTACT, THEATRE_PEDAGOGY } from '../constants/routes';
+import { ABOUT, ACTING, THEATRE_PEDAGOGY } from '../constants/routes';
 
 function IndexPage(_props: PageProps): JSX.Element {
   return (
@@ -84,24 +84,6 @@ function IndexPage(_props: PageProps): JSX.Element {
           </Row>
         </Grid>
       </Section>
-
-      {/* <Section isFull>
-        <Grid>
-          <Row>
-            <Column span={6} start={3}>
-              <h2>Kontakt</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam voluptas
-                doloribus vero cumque voluptatum beatae aperiam autem inventore, vitae aspernatur,
-                consequatur dicta. Veritatis, repudiandae non voluptate repellat eos at odit, nobis
-                magni explicabo officiis beatae, officia rerum vero ipsa ipsam? Vitae, mollitia
-                dolorem! Obcaecati sint neque non delectus soluta!
-              </p>
-              <Button to={CONTACT.path}>Kontakt aufnehmen</Button>
-            </Column>
-          </Row>
-        </Grid>
-      </Section> */}
     </Layout>
   );
 }
