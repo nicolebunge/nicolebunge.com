@@ -1,6 +1,7 @@
 .header {
   align-items: center;
-  background-image: linear-gradient(to right, var(--color-background) 1px, transparent 1px);
+  background-color: var(--color-background);
+  background-image: linear-gradient(to right, #f4f4f4 1px, transparent 1px);
   background-position: 50%;
   background-size: calc(90% / 3);
   display: flex;
