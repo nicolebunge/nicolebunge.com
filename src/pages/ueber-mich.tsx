@@ -30,7 +30,7 @@ function AboutPage(_props: PageProps): JSX.Element {
                 . Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
                 <a href="https://www.kriminaltheater.de/" rel="noopener noreferrer" target="_blank">
                   Berliner Kriminal Theater
-                </a>
+                </a>{' '}
                 in Friedrichshain, sowie am{' '}
                 <a
                   href="https://theater-aus-dem-koffer.de/"
