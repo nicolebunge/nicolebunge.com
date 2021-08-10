@@ -27,11 +27,11 @@ jobs:
       - name: 🔋 Install
         run: npm ci
 
-      - name: 🤖 Linting
-        run: npm run lint
-
       - name: ⚙️ Generate
         run: npm run generate
+
+      - name: 🤖 Linting
+        run: npm run lint
 
       - name: 🧪 Testing
         run: npm run test:ci
