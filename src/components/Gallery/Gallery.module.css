@@ -8,8 +8,13 @@
   row-gap: 12em;
 }
 
+.gallery__item figure {
+  overflow: hidden;
+}
+
 .gallery__item img {
   object-fit: cover;
+  transition: transform 1s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
 .gallery__item:nth-child(7n + 1) {
@@ -76,4 +81,8 @@
 
 .gallery__item:nth-child(7n + 7) img {
   aspect-ratio: 4 / 3;
+}
+
+.gallery__item figure:hover img {
+  transform: scale(1.05);
 }
