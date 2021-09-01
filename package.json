@@ -6,7 +6,7 @@
     "@fontsource/source-sans-pro": "^4.5.0",
     "clsx": "^1.1.1",
     "gatsby": "^3.11.0",
-    "gatsby-plugin-google-analytics": "^3.11.0",
+    "gatsby-plugin-google-analytics": "^3.13.0",
     "gatsby-plugin-manifest": "^3.11.0",
     "gatsby-plugin-react-helmet": "^4.11.0",
     "gatsby-plugin-sentry": "^1.0.1",
