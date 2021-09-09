@@ -29,7 +29,7 @@
     "format": "prettier --ignore-path .gitignore --write .",
     "generate:svg": "svgr --icon --typescript --out-dir src/components/Icons src/images/icons",
     "generate:tokens": "style-dictionary build --config src/style-dictionary.json",
-    "generate": "npm run generate:svg",
+    "generate": "npm run generate:svg && npm run generate:tokens",
     "lint:css": "stylelint --ignore-path .gitignore '**/*.css'",
     "lint:js": "eslint '**/*.{js,jsx,ts,tsx}'",
     "lint": "npm run lint:css && npm run lint:js",
