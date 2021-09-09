@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-const path = require('path');
+const { resolve } = require('path');
 
-const defaultTemplate = path.resolve('src/templates/default.tsx');
+const defaultTemplate = resolve('src/templates/default.tsx');
 
 async function createPages({ actions, graphql, reporter }) {
   const { createPage } = actions;
