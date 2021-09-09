@@ -2,9 +2,11 @@
 
 exports[`Gallery component renders correctly 1`] = `
 <ul
-  class=""
+  class="gallery"
 >
-  <li>
+  <li
+    class="gallery__item"
+  >
     <figure>
       <img
         alt="Image alt tag"

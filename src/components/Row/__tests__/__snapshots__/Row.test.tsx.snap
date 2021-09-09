@@ -2,7 +2,7 @@
 
 exports[`Row component renders correctly 1`] = `
 <div
-  class=""
+  class="row"
 >
   Row
 </div>

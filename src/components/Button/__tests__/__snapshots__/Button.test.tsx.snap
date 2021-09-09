@@ -2,7 +2,7 @@
 
 exports[`Button component renders correctly 1`] = `
 <a
-  class=""
+  class="button"
   href="/"
 >
   Button

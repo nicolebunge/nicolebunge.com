@@ -1,7 +1,9 @@
+/* eslint-disable camelcase */
+
 import clsx from 'clsx';
 import React, { HTMLAttributes } from 'react';
 import { INSTAGRAM, LINKED_IN, XING } from '../../constants/social';
-import * as styles from './Social.module.css';
+import { social, social__icon, social__icons } from './Social.module.css';
 
 export type SocialProps = HTMLAttributes<HTMLDivElement>;
 
@@ -9,8 +11,8 @@ function Social(props: SocialProps): JSX.Element {
   const { className, ...otherProps } = props;
 
   return (
-    <div className={clsx(className, styles.social)} {...otherProps}>
-      <ul className={styles.social__icons}>
+    <div className={clsx(className, social)} {...otherProps}>
+      <ul className={social__icons}>
         {[INSTAGRAM, LINKED_IN, XING].map((platform) => {
           const { id, Component, url } = platform;
 
@@ -18,7 +20,7 @@ function Social(props: SocialProps): JSX.Element {
             <li key={id}>
               <a
                 href={url}
-                className={styles.social__icon}
+                className={social__icon}
                 itemProp="sameAs"
                 rel="noopener noreferrer"
                 target="_blank"

@@ -1,16 +1,18 @@
 import clsx from 'clsx';
-import capitalize from 'lodash/capitalize';
 import React, { HTMLAttributes, ReactNode } from 'react';
-import * as styles from './Alignment.module.css';
+import {
+  alignment,
+  alignmentAlignCenter,
+  alignmentJustifyCenter,
+  alignmentAlignEnd,
+  alignmentAlignStart,
+  alignmentJustifyEnd,
+  alignmentJustifySpaceBetween,
+  alignmentJustifyStart,
+} from './Alignment.module.css';
 
 type Align = 'center' | 'end' | 'start';
-type AlignClass = 'alignmentAlignCenter' | 'alignmentAlignEnd' | 'alignmentAlignStart';
 type Justify = 'center' | 'end' | 'space-between' | 'start';
-type JustifyClass =
-  | 'alignmentJustifyCenter'
-  | 'alignmentJustifyEnd'
-  | 'alignmentJustifySpaceBetween'
-  | 'alignmentJustifyStart';
 
 export interface AlignmentProps extends HTMLAttributes<HTMLDivElement> {
   align?: Align;
@@ -18,15 +20,28 @@ export interface AlignmentProps extends HTMLAttributes<HTMLDivElement> {
   justify?: Justify;
 }
 
+const alignClassNames = {
+  center: alignmentAlignCenter,
+  end: alignmentAlignEnd,
+  start: alignmentAlignStart,
+};
+
+const justifyClassNames = {
+  center: alignmentJustifyCenter,
+  end: alignmentJustifyEnd,
+  'space-between': alignmentJustifySpaceBetween,
+  start: alignmentJustifyStart,
+};
+
 function Alignment(props: AlignmentProps): JSX.Element {
   const { align, className, justify, ...otherProps } = props;
 
   return (
     <div
       className={clsx(className, {
-        [styles.alignment]: align || justify,
-        [styles[`alignmentAlign${capitalize(align)}` as AlignClass]]: align,
-        [styles[`alignmentJustify${capitalize(justify)}` as JustifyClass]]: justify,
+        [alignment]: align || justify,
+        [alignClassNames[align!]]: align,
+        [justifyClassNames[justify!]]: justify,
       })}
       {...otherProps}
     />

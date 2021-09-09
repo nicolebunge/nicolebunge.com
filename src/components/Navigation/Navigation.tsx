@@ -1,44 +1,68 @@
+/* eslint-disable camelcase */
+
 import clsx from 'clsx';
 import { Link } from 'gatsby';
-import capitalize from 'lodash/capitalize';
-import React, { HTMLAttributes } from 'react';
-import * as styles from './Navigation.module.css';
+import React, { HTMLAttributes, useState } from 'react';
+import {
+  navigation,
+  navigationMain,
+  navigation__button,
+  navigation__item,
+  navigation__link,
+  navigation__linkActive,
+  navigation__list,
+  navigation__listInline,
+} from './Navigation.module.css';
 
 interface Route {
   name: string;
   path: string;
 }
 
-type NavigationClass = 'navigationMain';
+type Name = 'main';
 
 export interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
   inline?: boolean;
   routes: Route[];
-  name?: 'main';
+  name?: Name;
 }
+
+const navigationClassNames = {
+  main: navigationMain,
+};
 
 function Navigation(props: NavigationProps): JSX.Element {
   const { className, inline, name, routes, ...otherProps } = props;
+  const [isActive, setIsActive] = useState(false);
+
+  function clickHandler(): void {
+    setIsActive((state) => !state);
+  }
 
   return (
     <nav
-      className={clsx(className, styles.navigation, {
-        [styles[`navigation${capitalize(name)}` as NavigationClass]]: name,
+      className={clsx(className, navigation, {
+        [navigationClassNames[name!]]: name,
+        'is-active': isActive,
       })}
       {...otherProps}
     >
+      <button className={navigation__button} type="button" onClick={clickHandler}>
+        Menu
+      </button>
+
       {routes && (
         <ul
-          className={clsx(styles.navigation__list, {
-            [styles.navigation__listInline]: inline,
+          className={clsx(navigation__list, {
+            [navigation__listInline]: inline,
           })}
         >
           {routes.map((route) => (
-            <li className={styles.navigation__item} key={route.path}>
+            <li className={navigation__item} key={route.path}>
               <Link
                 to={route.path}
-                className={styles.navigation__link}
-                activeClassName={styles.navigation__linkActive}
+                className={navigation__link}
+                activeClassName={navigation__linkActive}
               >
                 {route.name}
               </Link>

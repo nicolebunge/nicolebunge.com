@@ -12,7 +12,7 @@ import Main from '../Main';
 import Footer from '../Footer';
 import Grid from '../Grid';
 import Social from '../Social';
-import * as styles from './Layout.module.css';
+import { layout } from './Layout.module.css';
 
 export interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
@@ -23,7 +23,7 @@ function Layout(props: LayoutProps): JSX.Element {
   const { site } = useSite();
 
   return (
-    <div className={clsx(className, styles.layout)} {...otherProps}>
+    <div className={clsx(className, layout)} {...otherProps}>
       <Helmet
         title={site.siteMetadata.title}
         meta={[

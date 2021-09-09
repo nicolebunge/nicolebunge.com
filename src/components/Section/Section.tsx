@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React, { HTMLAttributes, ReactNode } from 'react';
-import * as styles from './Section.module.css';
+import { section, sectionFull } from './Section.module.css';
 
 export interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
@@ -12,8 +12,8 @@ function Section(props: SectionProps): JSX.Element {
 
   return (
     <section
-      className={clsx(className, styles.section, {
-        [styles.sectionFull]: isFull,
+      className={clsx(className, section, {
+        [sectionFull]: isFull,
       })}
       {...otherProps}
     />

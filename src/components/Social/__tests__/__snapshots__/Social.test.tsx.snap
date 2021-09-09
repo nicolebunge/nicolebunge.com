@@ -2,11 +2,14 @@
 
 exports[`Social component renders correctly 1`] = `
 <div
-  class=""
+  class="social"
 >
-  <ul>
+  <ul
+    class="social__icons"
+  >
     <li>
       <a
+        class="social__icon"
         href="https://www.instagram.com/nici.bunge"
         itemprop="sameAs"
         rel="noopener noreferrer"
@@ -26,6 +29,7 @@ exports[`Social component renders correctly 1`] = `
     </li>
     <li>
       <a
+        class="social__icon"
         href="https://www.linkedin.com/in/nicolebunge"
         itemprop="sameAs"
         rel="noopener noreferrer"
@@ -45,6 +49,7 @@ exports[`Social component renders correctly 1`] = `
     </li>
     <li>
       <a
+        class="social__icon"
         href="https://www.xing.com/profile/Nicole_Bunge3"
         itemprop="sameAs"
         rel="noopener noreferrer"

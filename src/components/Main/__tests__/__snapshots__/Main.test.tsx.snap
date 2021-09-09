@@ -2,7 +2,7 @@
 
 exports[`Main component renders correctly 1`] = `
 <main
-  class=""
+  class="main"
   role="main"
 >
   Main

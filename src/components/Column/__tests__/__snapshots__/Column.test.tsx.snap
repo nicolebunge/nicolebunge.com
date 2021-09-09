@@ -2,7 +2,7 @@
 
 exports[`Column component renders correctly 1`] = `
 <div
-  class=""
+  class="columnSpan1 columnStart1"
 >
   Column
 </div>

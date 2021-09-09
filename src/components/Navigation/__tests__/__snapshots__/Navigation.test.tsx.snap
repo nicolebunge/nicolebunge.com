@@ -2,13 +2,22 @@
 
 exports[`Navigation component renders correctly 1`] = `
 <nav
-  class=""
+  class="navigation"
 >
-  <ul
-    class=""
+  <button
+    class="navigation__button"
+    type="button"
   >
-    <li>
+    Menu
+  </button>
+  <ul
+    class="navigation__list"
+  >
+    <li
+      class="navigation__item"
+    >
       <a
+        class="navigation__link"
         href="/"
       >
         Index

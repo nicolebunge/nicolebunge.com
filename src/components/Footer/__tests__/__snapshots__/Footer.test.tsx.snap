@@ -2,7 +2,7 @@
 
 exports[`Footer component renders correctly 1`] = `
 <footer
-  class=""
+  class="footer"
   role="contentinfo"
 >
   Footer

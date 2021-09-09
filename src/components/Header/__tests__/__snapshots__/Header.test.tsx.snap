@@ -2,7 +2,7 @@
 
 exports[`Header component renders correctly 1`] = `
 <header
-  class=""
+  class="header"
   role="banner"
 >
   Header

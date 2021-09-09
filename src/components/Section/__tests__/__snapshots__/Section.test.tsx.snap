@@ -2,7 +2,7 @@
 
 exports[`Section component renders correctly 1`] = `
 <section
-  class=""
+  class="section"
 >
   Section
 </section>

@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React, { HTMLAttributes, ReactNode } from 'react';
-import * as styles from './Grid.module.css';
+import { grid } from './Grid.module.css';
 
 export interface GridProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
@@ -9,7 +9,7 @@ export interface GridProps extends HTMLAttributes<HTMLDivElement> {
 function Grid(props: GridProps): JSX.Element {
   const { className, ...otherProps } = props;
 
-  return <div className={clsx(className, styles.grid)} {...otherProps} />;
+  return <div className={clsx(className, grid)} {...otherProps} />;
 }
 
 export default Grid;

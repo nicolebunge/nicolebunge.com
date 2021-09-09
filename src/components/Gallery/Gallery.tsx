@@ -1,7 +1,9 @@
+/* eslint-disable camelcase */
+
 import clsx from 'clsx';
 import React from 'react';
 import CloudinaryImage, { CloudinaryImageProps } from '../CloudinaryImage';
-import * as styles from './Gallery.module.css';
+import { gallery, gallery__item } from './Gallery.module.css';
 
 export interface GalleryProps {
   className?: string;
@@ -12,9 +14,9 @@ function Gallery(props: GalleryProps): JSX.Element {
   const { className, images, ...otherProps } = props;
 
   return (
-    <ul className={clsx(className, styles.gallery)} {...otherProps}>
+    <ul className={clsx(className, gallery)} {...otherProps}>
       {images.map((image) => (
-        <li className={styles.gallery__item} key={image.src}>
+        <li className={gallery__item} key={image.src}>
           <figure>
             <CloudinaryImage {...image} />
           </figure>

@@ -12,14 +12,42 @@
   width: 100%;
 }
 
+.navigation--main.is-active {
+  background-color: #fff;
+  bottom: 0;
+  display: grid;
+  height: 100vh;
+  left: 0;
+  place-content: center;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+}
+
 .navigation__list {
   list-style: none;
   margin: -1em;
   padding: 0;
 }
 
+.navigation--main .navigation__list {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .navigation__button {
+    display: none;
+  }
+
+  .navigation--main .navigation__list {
+    display: flex;
+  }
+}
+
 .navigation__list--inline {
-  display: flex;
   flex-wrap: wrap;
 }
 

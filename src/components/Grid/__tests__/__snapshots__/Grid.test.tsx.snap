@@ -2,7 +2,7 @@
 
 exports[`Grid component renders correctly 1`] = `
 <div
-  class=""
+  class="grid"
 >
   Grid
 </div>
