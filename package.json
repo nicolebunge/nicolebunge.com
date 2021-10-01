@@ -11,7 +11,7 @@
     "gatsby-plugin-react-helmet": "^4.14.0",
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-sitemap": "^4.10.0",
-    "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-source-filesystem": "^3.14.0",
     "gatsby-transformer-remark": "^4.10.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
