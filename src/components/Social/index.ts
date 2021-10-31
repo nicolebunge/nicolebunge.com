@@ -1,5 +1,2 @@
-import Social from './Social';
-
+export { default } from './Social';
 export * from './Social';
-
-export default Social;

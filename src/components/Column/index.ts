@@ -1,5 +1,2 @@
-import Column from './Column';
-
+export { default } from './Column';
 export * from './Column';
-
-export default Column;
