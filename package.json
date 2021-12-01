@@ -43,7 +43,7 @@
     "url": "https://github.com/nicolebunge/nicolebunge.com"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
     "@svgr/cli": "^5.5.0",
