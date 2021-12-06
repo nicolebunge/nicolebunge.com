@@ -1,64 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Alignment component should render align \`center\` correctly 1`] = `
-<div
-  class="alignment alignmentAlignCenter"
->
-  Alignment
-</div>
-`;
-
-exports[`Alignment component should render align \`end\` correctly 1`] = `
-<div
-  class="alignment alignmentAlignEnd"
->
-  Alignment
-</div>
-`;
-
-exports[`Alignment component should render align \`start\` correctly 1`] = `
-<div
-  class="alignment alignmentAlignStart"
->
-  Alignment
-</div>
-`;
-
 exports[`Alignment component should render correctly 1`] = `
 <div
   class=""
->
-  Alignment
-</div>
-`;
-
-exports[`Alignment component should render justify \`center\` correctly 1`] = `
-<div
-  class="alignment alignmentJustifyCenter"
->
-  Alignment
-</div>
-`;
-
-exports[`Alignment component should render justify \`end\` correctly 1`] = `
-<div
-  class="alignment alignmentJustifyEnd"
->
-  Alignment
-</div>
-`;
-
-exports[`Alignment component should render justify \`space-between\` correctly 1`] = `
-<div
-  class="alignment alignmentJustifySpaceBetween"
->
-  Alignment
-</div>
-`;
-
-exports[`Alignment component should render justify \`start\` correctly 1`] = `
-<div
-  class="alignment alignmentJustifyStart"
 >
   Alignment
 </div>

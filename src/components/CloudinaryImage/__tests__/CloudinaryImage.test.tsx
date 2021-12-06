@@ -1,12 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
+import { composeStories } from '@storybook/testing-react';
 import { render } from '@testing-library/react';
 import React from 'react';
-import CloudinaryImage from '..';
+import * as stories from '../CloudinaryImage.stories';
+
+const { Default } = composeStories(stories);
 
 describe('Cloudinary image component', () => {
   it('renders correctly', () => {
-    const { container } = render(<CloudinaryImage alt="Image alt text" src="path/to/image.jpg" />);
+    const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

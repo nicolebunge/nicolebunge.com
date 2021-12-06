@@ -1,12 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
+import { composeStories } from '@storybook/testing-react';
 import { render } from '@testing-library/react';
 import React from 'react';
-import Button from '..';
+import * as stories from '../Button.stories';
+
+const { Default } = composeStories(stories);
 
 describe('Button component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Button to="/">Button</Button>);
+    const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
