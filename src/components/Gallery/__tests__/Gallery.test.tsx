@@ -1,18 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
+import { composeStories } from '@storybook/testing-react';
 import { render } from '@testing-library/react';
 import React from 'react';
-import Gallery from '..';
+import * as stories from '../Gallery.stories';
+
+const { Default } = composeStories(stories);
 
 describe('Gallery component', () => {
   it('renders correctly', () => {
-    const images = [
-      {
-        src: 'path/to/image.jpg',
-        alt: 'Image alt tag',
-      },
-    ];
-    const { container } = render(<Gallery images={images} />);
+    const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

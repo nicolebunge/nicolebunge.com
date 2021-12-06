@@ -1,12 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
+import { composeStories } from '@storybook/testing-react';
 import { render } from '@testing-library/react';
 import React from 'react';
-import Main from '..';
+import * as stories from '../Main.stories';
+
+const { Default } = composeStories(stories);
 
 describe('Main component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Main>Main</Main>);
+    const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();
   });

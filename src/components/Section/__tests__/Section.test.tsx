@@ -1,12 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
+import { composeStories } from '@storybook/testing-react';
 import { render } from '@testing-library/react';
 import React from 'react';
-import Section from '..';
+import * as stories from '../Section.stories';
+
+const { Default } = composeStories(stories);
 
 describe('Section component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Section>Section</Section>);
+    const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
