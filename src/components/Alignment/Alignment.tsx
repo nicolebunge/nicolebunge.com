@@ -3,9 +3,9 @@ import React, { HTMLAttributes, ReactNode } from 'react';
 import {
   alignment,
   alignmentAlignCenter,
-  alignmentJustifyCenter,
   alignmentAlignEnd,
   alignmentAlignStart,
+  alignmentJustifyCenter,
   alignmentJustifyEnd,
   alignmentJustifySpaceBetween,
   alignmentJustifyStart,
