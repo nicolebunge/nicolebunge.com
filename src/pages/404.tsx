@@ -1,8 +1,7 @@
-import { PageProps } from 'gatsby';
 import React from 'react';
 import Layout from '../components/Layout';
 
-function NotFoundPage(_props: PageProps): JSX.Element {
+function NotFoundPage(): JSX.Element {
   return (
     <Layout>
       <h1>NOT FOUND</h1>

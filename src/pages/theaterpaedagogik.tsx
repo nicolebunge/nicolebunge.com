@@ -1,13 +1,12 @@
-import { PageProps } from 'gatsby';
 import React from 'react';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import Section from '../components/Section';
-import Grid from '../components/Grid';
-import Row from '../components/Row';
 import Column from '../components/Column';
+import Grid from '../components/Grid';
+import Layout from '../components/Layout';
+import Row from '../components/Row';
+import Section from '../components/Section';
+import SEO from '../components/SEO';
 
-function TheatrePedagogyPage(_props: PageProps): JSX.Element {
+function TheatrePedagogyPage(): JSX.Element {
   return (
     <Layout>
       <SEO title="Theaterpädagogik" />

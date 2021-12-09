@@ -1,12 +1,11 @@
-import { PageProps } from 'gatsby';
 import React from 'react';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import Section from '../components/Section';
-import Grid from '../components/Grid';
 import Gallery from '../components/Gallery';
+import Grid from '../components/Grid';
+import Layout from '../components/Layout';
+import Section from '../components/Section';
+import SEO from '../components/SEO';
 
-function GalleryPage(_props: PageProps): JSX.Element {
+function GalleryPage(): JSX.Element {
   return (
     <Layout>
       <SEO title="Galerie" />
