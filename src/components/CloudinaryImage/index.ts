@@ -1,2 +1,4 @@
-export { default } from './CloudinaryImage';
+import CloudinaryImage from './CloudinaryImage';
+
 export * from './CloudinaryImage';
+export default CloudinaryImage;

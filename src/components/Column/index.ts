@@ -1,2 +1,4 @@
-export { default } from './Column';
+import Column from './Column';
+
 export * from './Column';
+export default Column;
