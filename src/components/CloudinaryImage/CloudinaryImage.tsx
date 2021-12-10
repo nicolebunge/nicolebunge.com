@@ -2,10 +2,25 @@
 
 import React from 'react';
 
+type Images =
+  | 'gallery/alice.jpg'
+  | 'gallery/berliner.jpg'
+  | 'gallery/das-tote-maedchen.jpg'
+  | 'gallery/goth.jpg'
+  | 'gallery/image-01-large.jpg'
+  | 'gallery/image-01.jpg'
+  | 'gallery/image-02-large.jpg'
+  | 'gallery/image-02.jpg'
+  | 'gallery/image-03-large.jpg'
+  | 'gallery/image-03.jpg'
+  | 'gallery/kompagnie-1.jpg'
+  | 'gallery/kompagnie-2.jpg'
+  | 'nicole-bunge.svg';
+
 export interface CloudinaryImageProps {
   alt: string;
   height?: number;
-  src: string;
+  src: Images;
   width?: number;
 }
 
