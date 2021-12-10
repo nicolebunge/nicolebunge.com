@@ -23,7 +23,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "check": "tsc --noEmit",
+    "check": "tsc",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "format": "prettier --ignore-path .gitignore --write .",
