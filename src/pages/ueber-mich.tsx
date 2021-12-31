@@ -2,9 +2,17 @@ import React from 'react';
 import Column from '../components/Column';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
+import Link from '../components/Link';
 import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
+import {
+  BERLINER_KRIMINAL_THEATER,
+  LKA,
+  REDUTA_BERLIN,
+  THEATER_AKADEMIE_STUTTGART,
+  THEATER_AUS_DEM_KOFFER,
+} from '../constants/organizations';
 
 function AboutPage(): JSX.Element {
   return (
@@ -19,39 +27,18 @@ function AboutPage(): JSX.Element {
               <p>
                 Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
                 Theaterpädagogin. Studiert habe ich an der{' '}
-                <a
-                  href="https://www.theater-akademie-stuttgart.de"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  TheaterAkademieStuttgart
-                </a>
-                . Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
-                <a href="https://www.kriminaltheater.de/" rel="noopener noreferrer" target="_blank">
-                  Berliner Kriminal Theater
-                </a>{' '}
-                in Friedrichshain, sowie am{' '}
-                <a
-                  href="https://theater-aus-dem-koffer.de/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  „Theater aus dem Koffer“
-                </a>
-                , Berlin. Zudem doziere ich an der{' '}
-                <a href="https://reduta-berlin.de/" rel="noopener noreferrer" target="_blank">
-                  Reduta-Berlin Schauspielschule
-                </a>
-                .
+                <Link to={THEATER_AKADEMIE_STUTTGART.url}>{THEATER_AKADEMIE_STUTTGART.name}</Link>.
+                Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
+                <Link to={BERLINER_KRIMINAL_THEATER.url}>{BERLINER_KRIMINAL_THEATER.name}</Link> in
+                Friedrichshain, sowie am{' '}
+                <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link>, Berlin.
+                Zudem doziere ich an der <Link to={REDUTA_BERLIN.url}>{REDUTA_BERLIN.name}</Link>.
               </p>
               <p>
                 In Baden Württemberg bin ich seit vier Jahren jeden Sommer als leitende
                 Theaterpädagogin für das Theaterferienprogramm am{' '}
-                <a href="https://lka.polizei-bw.de/" rel="noopener noreferrer" target="_blank">
-                  Landeskriminalamt
-                </a>{' '}
-                zuständig. Schon im frühen Kindesalter begann ich Instrumente zu spielen, Turniere
-                zu tanzen und zu schauspielern.
+                <Link to={LKA.url}>{LKA.name}</Link> zuständig. Schon im frühen Kindesalter begann
+                ich Instrumente zu spielen, Turniere zu tanzen und zu schauspielern.
               </p>
               <p>
                 Tanz und Bewegung sind für mich wichtige Ausdrucksmittel am Theater, in meiner

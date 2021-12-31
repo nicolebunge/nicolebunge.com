@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link component renders correctly 1`] = `
+<a
+  href="/"
+>
+  Internal Link
+</a>
+`;
+
+exports[`Link component should render external link correctly 1`] = `
+<a
+  href="http://example.com"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  External Link
+</a>
+`;

@@ -3,6 +3,7 @@
 import clsx from 'clsx';
 import React, { HTMLAttributes } from 'react';
 import { INSTAGRAM, LINKED_IN, XING } from '../../constants/social';
+import Link from '../Link';
 import { social, social__icon, social__icons } from './Social.module.css';
 
 export type SocialProps = HTMLAttributes<HTMLDivElement>;
@@ -18,15 +19,9 @@ function Social(props: SocialProps): JSX.Element {
 
           return (
             <li key={id}>
-              <a
-                href={url}
-                className={social__icon}
-                itemProp="sameAs"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <Link to={url} className={social__icon} itemProp="sameAs">
                 <Component />
-              </a>
+              </Link>
             </li>
           );
         })}
