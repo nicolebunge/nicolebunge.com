@@ -9,3 +9,22 @@ export const Default = {
     children: 'Alignment',
   },
 };
+
+export const AlignCenter = {
+  args: {
+    align: 'center',
+  },
+};
+
+export const JustifyCenter = {
+  args: {
+    justify: 'center',
+  },
+};
+
+export const Center = {
+  args: {
+    align: 'center',
+    justify: 'center',
+  },
+};
