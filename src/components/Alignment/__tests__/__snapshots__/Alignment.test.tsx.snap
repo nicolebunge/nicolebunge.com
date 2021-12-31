@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Alignment component should align content to center 1`] = `
+<div
+  class="alignment alignmentAlignCenter"
+/>
+`;
+
+exports[`Alignment component should center content 1`] = `
+<div
+  class="alignment alignmentAlignCenter alignmentJustifyCenter"
+/>
+`;
+
+exports[`Alignment component should justify content to center 1`] = `
+<div
+  class="alignment alignmentJustifyCenter"
+/>
+`;
+
 exports[`Alignment component should render correctly 1`] = `
 <div
   class=""
