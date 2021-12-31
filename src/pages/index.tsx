@@ -1,13 +1,19 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import Button from '../components/Button';
 import CloudinaryImage from '../components/CloudinaryImage';
 import Column from '../components/Column';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
+import Link from '../components/Link';
 import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
+import {
+  BERLINER_KRIMINAL_THEATER,
+  REDUTA_BERLIN,
+  THEATER_AKADEMIE_STUTTGART,
+  THEATER_AUS_DEM_KOFFER,
+} from '../constants/organizations';
 import { ABOUT, ACTING, THEATRE_PEDAGOGY } from '../constants/routes';
 
 function IndexPage(): JSX.Element {
@@ -22,10 +28,11 @@ function IndexPage(): JSX.Element {
               <h2>Über mich</h2>
               <p>
                 Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
-                Theaterpädagogin. Studiert habe ich an der Theater Akademie in Stuttgart. Derzeit
-                lebe und arbeite ich in Berlin und spiele unter anderem am Berliner Kriminal Theater
-                in Friedrichshain, sowie am „Theater aus dem Koffer“, Berlin. Zudem doziere ich an
-                der Reduta Schauspielschule Berlin.
+                Theaterpädagogin. Studiert habe ich an der {THEATER_AKADEMIE_STUTTGART.name} in
+                Stuttgart. Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
+                {BERLINER_KRIMINAL_THEATER.name}
+                in Friedrichshain, sowie am {THEATER_AUS_DEM_KOFFER.name}, Berlin. Zudem doziere ich
+                an der {REDUTA_BERLIN.name}.
               </p>
               <Button to={ABOUT.path}>Mehr über mich</Button>
             </Column>
@@ -45,10 +52,10 @@ function IndexPage(): JSX.Element {
             <Column span={4} start={7}>
               <h2>Schauspiel</h2>
               <p>
-                Derzeit bin ich deutschlandweit und in Österreich und der Schweiz mit dem Berliner
-                Kriminal Theater auf Tournee und in Berlin zu sehen. Zudem spiele ich am „Theater
-                aus dem Koffer“ Berlin, welches in jedem Stück das Spielen mehrerer Instrumente und
-                Gesangseinlagen beinhaltet.
+                Derzeit bin ich deutschlandweit und in Österreich und der Schweiz mit dem{' '}
+                {BERLINER_KRIMINAL_THEATER.name} auf Tournee und in Berlin zu sehen. Zudem spiele
+                ich am {THEATER_AUS_DEM_KOFFER.name} Berlin, welches in jedem Stück das Spielen
+                mehrerer Instrumente und Gesangseinlagen beinhaltet.
               </p>
               <Button to={ACTING.path}>Mehr zu Schauspiel</Button>
             </Column>

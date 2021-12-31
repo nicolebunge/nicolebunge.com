@@ -1,8 +1,8 @@
 /* eslint-disable camelcase */
 
 import clsx from 'clsx';
-import { Link } from 'gatsby';
 import React, { HTMLAttributes, useState } from 'react';
+import Link from '../Link';
 import {
   navigation,
   navigationMain,

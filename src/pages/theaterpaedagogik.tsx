@@ -2,9 +2,11 @@ import React from 'react';
 import Column from '../components/Column';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
+import Link from '../components/Link';
 import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
+import { BISMARCKSCHULE, REDUTA_BERLIN, STEINENBERG_SCHULE } from '../constants/organizations';
 
 function TheatrePedagogyPage(): JSX.Element {
   return (
@@ -49,11 +51,8 @@ function TheatrePedagogyPage(): JSX.Element {
             <Column span={4} start={5}>
               <h3>Dozentin für Gesellschaftstanz</h3>
               <p>
-                Seit Mai 2020 an der{' '}
-                <a href="https://reduta-berlin.de/" rel="noopener noreferrer" target="_blank">
-                  Reduta-Berlin Schauspielschule
-                </a>{' '}
-                für Theater und Film
+                Seit Mai 2020 an der <Link to={REDUTA_BERLIN.url}>{REDUTA_BERLIN.name}</Link> für
+                Theater und Film
               </p>
             </Column>
 
@@ -61,13 +60,7 @@ function TheatrePedagogyPage(): JSX.Element {
               <h3>Unterstützung der Theaterpädagogen</h3>
               <p>
                 Unterstützung der Theaterpädagogen in den jeweiligen Theaterprojekten an der{' '}
-                <a
-                  href="https://www.bismarckschule-stuttgart.de/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Bismackschule Stuttgart Feuerbach
-                </a>
+                <Link to={BISMARCKSCHULE.url}>{BISMARCKSCHULE.name}</Link>
               </p>
             </Column>
 
@@ -92,17 +85,11 @@ function TheatrePedagogyPage(): JSX.Element {
               <h3>Theaterpädagogisches Diplomabschlussprojekt</h3>
               <p>
                 Theaterpädagogisches Diplomabschlussprojekt an der{' '}
-                <a
-                  href="https://www.steinenbergschule.de/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Steinenberg-Grundschule
-                </a>{' '}
-                in Stuttgart Hedelfingen Theaterpädagogischer Unterricht mit Schülern der dritten
-                Klasse. „Das Hexenstück – Wie sehe ich mich selbst? Wie sehen die anderen mich? Wie
-                agieren wir gemeinsam und was können wir damit erreichen?“ Entwicklung und
-                Aufführung eines Theaterstückes zum Projektthema, sowie schriftliche Reflexionsmappe
+                <Link to={STEINENBERG_SCHULE.url}>{STEINENBERG_SCHULE.name}</Link> in Stuttgart
+                Hedelfingen Theaterpädagogischer Unterricht mit Schülern der dritten Klasse. „Das
+                Hexenstück – Wie sehe ich mich selbst? Wie sehen die anderen mich? Wie agieren wir
+                gemeinsam und was können wir damit erreichen?“ Entwicklung und Aufführung eines
+                Theaterstückes zum Projektthema, sowie schriftliche Reflexionsmappe
               </p>
             </Column>
 
