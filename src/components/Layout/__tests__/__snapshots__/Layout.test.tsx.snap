@@ -122,7 +122,7 @@ exports[`layout component should render correctly 1`] = `
       </nav>
       <p>
         © 
-        2021
+        2000
          Nicole Bunge
       </p>
     </div>

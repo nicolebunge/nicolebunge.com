@@ -5,6 +5,7 @@ import * as stories from '../Layout.stories';
 
 const { Default } = composeStories(stories);
 
+jest.mock('../../../constants/dates');
 jest.mock('../../../hooks/site');
 
 describe('layout component', () => {
