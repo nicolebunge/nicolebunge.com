@@ -3,28 +3,20 @@ import Column from '../components/Column';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
+import Productions from '../components/Productions';
 import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
-import {
-  BORLAN,
-  GOLD,
-  JOVANOVIC,
-  RUMPF,
-  SCHLOESSER,
-  SCHOCK,
-  WIEN,
-  WINGRICH,
-} from '../constants/directors';
+import { BORLAN, JOVANOVIC, SCHLOESSER } from '../constants/directors';
 import {
   BERLINER_KRIMINAL_THEATER,
   BUT,
-  FILMAKADEMIE,
   THEATER_AKADEMIE_STUTTGART,
   THEATER_AUS_DEM_KOFFER,
   THEATER_KOMPAGNIE_STUTTGART,
   ZAV,
 } from '../constants/organizations';
+import PRODUCTIONS from '../constants/productions';
 
 function ActingPage(): JSX.Element {
   return (
@@ -82,97 +74,42 @@ function ActingPage(): JSX.Element {
             </Column>
 
             <Column span={8} start={5}>
-              <h3>Seit 2020</h3>
-
               <Row>
-                <Column span={6}>
-                  <p>
-                    <strong>„Erbarmen“</strong>, Lis Sørensen
-                    <br />
-                    Regie: {RUMPF.name}
-                    <br />
-                    <Link to={BERLINER_KRIMINAL_THEATER.url}>{BERLINER_KRIMINAL_THEATER.name}</Link>
-                  </p>
-                  <p>
-                    <strong>„Arsen und Spitzenhäubchen“</strong>, Elaine Harper
-                    <br />
-                    Regie: {RUMPF.name}
-                    <br />
-                    <Link to={BERLINER_KRIMINAL_THEATER.url}>{BERLINER_KRIMINAL_THEATER.name}</Link>
-                  </p>
-                  <p>
-                    <strong>„Inspektor Campbells letzter Fall 23“</strong>, Jennifer
-                    <br />
-                    Regie: {RUMPF.name} & {WIEN.name}
-                    <br />
-                    <Link to={BERLINER_KRIMINAL_THEATER.url}>{BERLINER_KRIMINAL_THEATER.name}</Link>
-                  </p>
-                </Column>
-                <Column span={6} start={7}>
-                  <p>
-                    <strong>„Die zwölf Geschworenen“</strong>, Nr. 5<br />
-                    Regie: {RUMPF.name}
-                    <br />
-                    <Link to={BERLINER_KRIMINAL_THEATER.url}>{BERLINER_KRIMINAL_THEATER.name}</Link>
-                  </p>
-                  <p>
-                    <strong>„Passagier 23“</strong>, Lisa
-                    <br />
-                    Regie: {WINGRICH.name},
-                    <br />
-                    <Link to={BERLINER_KRIMINAL_THEATER.url}>{BERLINER_KRIMINAL_THEATER.name}</Link>
-                  </p>
-                </Column>
-              </Row>
+                <Column span={12}>
+                  <h3>Seit 2020</h3>
 
-              <h3>Seit 2019</h3>
-
-              <Row>
-                <Column span={6}>
-                  <p>
-                    <strong>„Die Liedfee und der Drehschwungtanz“</strong>, Liedfee
-                    <br />
-                    Regie: {SCHOCK.name},{' '}
-                    <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link>
-                  </p>
-                  <p>
-                    <strong>„Toni und die Urwaldparty“</strong>, Toni
-                    <br />
-                    Regie: {SCHOCK.name},{' '}
-                    <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link>
-                  </p>
-                  <p>
-                    <strong>„Toni und das große Durcheinander“</strong>, Toni
-                    <br />
-                    Regie: {SCHOCK.name},{' '}
-                    <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link>
-                  </p>
-                  <p>
-                    <strong>„Toni und das Gewitter im Zwergenwald“</strong>, Toni
-                    <br />
-                    Regie: {SCHOCK.name},{' '}
-                    <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link>
-                  </p>
+                  <div
+                    style={{
+                      display: 'grid',
+                      gap: '1em',
+                      gridTemplateColumns: 'repeat(2, 1fr)',
+                    }}
+                  >
+                    <Productions
+                      productions={PRODUCTIONS.filter(
+                        (production) =>
+                          production.organization.slug === 'berliner-kriminal-theater',
+                      )}
+                    />
+                  </div>
                 </Column>
-                <Column span={6} start={7}>
-                  <p>
-                    <strong>„Toni und die Gute-Laune-Geräusche“</strong>, Toni
-                    <br />
-                    Regie: {SCHOCK.name},{' '}
-                    <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link>
-                  </p>
-                  <p>
-                    <strong>„Toni und die Klapperschlangenbande“</strong>, Toni
-                    <br />
-                    Regie: {SCHOCK.name},{' '}
-                    <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link>
-                  </p>
-                  <p>
-                    <strong>„Toni und das geheimnisvolle Klingelingeling“</strong>, Toni
-                    <br />
-                    Regie: {SCHOCK.name},{' '}
-                    <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link>
-                  </p>
+
+                <Column span={12}>
+                  <h3>Seit 2019</h3>
+
+                  <div
+                    style={{
+                      display: 'grid',
+                      gap: '1em',
+                      gridTemplateColumns: 'repeat(2, 1fr)',
+                    }}
+                  >
+                    <Productions
+                      productions={PRODUCTIONS.filter(
+                        (production) => production.organization.slug === 'theater-aus-dem-koffer',
+                      )}
+                    />
+                  </div>
                 </Column>
               </Row>
             </Column>
@@ -188,12 +125,25 @@ function ActingPage(): JSX.Element {
             </Column>
 
             <Column span={8} start={5}>
-              <h3>2017</h3>
-              <p>
-                <strong>„Crossing Borders“</strong>, Leonie <br />
-                Regie: {GOLD.name}, <br />
-                <Link to={FILMAKADEMIE.url}>{FILMAKADEMIE.name}</Link>
-              </p>
+              <Row>
+                <Column span={12}>
+                  <h3>2017</h3>
+                  <div
+                    style={{
+                      display: 'grid',
+                      gap: '1em',
+                      gridTemplateColumns: 'repeat(2, 1fr)',
+                    }}
+                  >
+                    <Productions
+                      productions={PRODUCTIONS.filter(
+                        (production) =>
+                          production.organization.slug === 'filmakademie-baden-wuerttemberg',
+                      )}
+                    />
+                  </div>
+                </Column>
+              </Row>
             </Column>
           </Row>
         </Grid>
@@ -208,38 +158,43 @@ function ActingPage(): JSX.Element {
 
             <Column span={8} start={5}>
               <Row>
-                <Column span={6}>
-                  <p>
-                    <strong>„Ein idealer Gatte“</strong>, Das junge Mädchen <br />
-                    Oscar Wilde
-                  </p>
-                  <p>
-                    <strong>„Alice im Wunderland“</strong>, Alice <br />
-                    Roland Schimmelpfennig
-                  </p>
-                  <p>
-                    <strong>„La Double Inconstance“</strong>, Silvia <br />
-                    Pierre Carlet de Marivaux
-                  </p>
-                  <p>
-                    <strong>„Bier für Frauen“</strong>, Eine Frau <br />
-                    Felicia Zeller
-                  </p>
-                </Column>
-
-                <Column span={6} start={7}>
-                  <p>
-                    <strong>„Der Tor und der Tod“</strong>, Mabel Chiltern <br />
-                    Hugo von Hofmannsthal
-                  </p>
-                  <p>
-                    <strong>„Emilia Galotti“</strong>, Gräfin Orsina <br />
-                    Gotthold Ephraim Lessing
-                  </p>
-                  <p>
-                    <strong>„Merlin oder das wüste Land“</strong>, Mordred <br />
-                    Tankred Dorst
-                  </p>
+                <Column span={12}>
+                  <div
+                    style={{
+                      display: 'grid',
+                      gap: '1em',
+                      gridTemplateColumns: 'repeat(2, 1fr)',
+                    }}
+                  >
+                    <p>
+                      <strong>„Ein idealer Gatte“</strong>, Das junge Mädchen <br />
+                      Oscar Wilde
+                    </p>
+                    <p>
+                      <strong>„Alice im Wunderland“</strong>, Alice <br />
+                      Roland Schimmelpfennig
+                    </p>
+                    <p>
+                      <strong>„La Double Inconstance“</strong>, Silvia <br />
+                      Pierre Carlet de Marivaux
+                    </p>
+                    <p>
+                      <strong>„Bier für Frauen“</strong>, Eine Frau <br />
+                      Felicia Zeller
+                    </p>
+                    <p>
+                      <strong>„Der Tor und der Tod“</strong>, Mabel Chiltern <br />
+                      Hugo von Hofmannsthal
+                    </p>
+                    <p>
+                      <strong>„Emilia Galotti“</strong>, Gräfin Orsina <br />
+                      Gotthold Ephraim Lessing
+                    </p>
+                    <p>
+                      <strong>„Merlin oder das wüste Land“</strong>, Mordred <br />
+                      Tankred Dorst
+                    </p>
+                  </div>
                 </Column>
               </Row>
             </Column>
@@ -258,49 +213,60 @@ function ActingPage(): JSX.Element {
               <Row>
                 <Column span={6}>
                   <h3>2013 – 2015, 2017 & 2018</h3>
-                  <p>
-                    <strong>Camera Acting</strong>, Workshop <br />
-                    <Link to={JOVANOVIC.url}>{JOVANOVIC.name}</Link>
-                  </p>
+                  <div>
+                    <p>
+                      <strong>Camera Acting</strong>, Workshop <br />
+                      <Link to={JOVANOVIC.url}>{JOVANOVIC.name}</Link>
+                    </p>
+                  </div>
 
                   <h3>09.2013 – 09.2018</h3>
-                  <p>
-                    <strong>Ausbildung zur staatlich anerkannten Schauspielerin (ZAV)</strong>{' '}
-                    <br />
-                    <strong>
-                      Ausbildung zur staatlich anerkannten Theaterpädagogin (BuT)
-                    </strong>{' '}
-                    <br />
-                    <Link to={THEATER_AKADEMIE_STUTTGART.url}>
-                      {THEATER_AKADEMIE_STUTTGART.name}
-                    </Link>
-                  </p>
+                  <div>
+                    <p>
+                      <strong>Ausbildung zur staatlich anerkannten Schauspielerin (ZAV)</strong>{' '}
+                      <br />
+                      <strong>
+                        Ausbildung zur staatlich anerkannten Theaterpädagogin (BuT)
+                      </strong>{' '}
+                      <br />
+                      <Link to={THEATER_AKADEMIE_STUTTGART.url}>
+                        {THEATER_AKADEMIE_STUTTGART.name}
+                      </Link>
+                    </p>
+                  </div>
 
                   <h3>2017 – 2018</h3>
-                  <p>
-                    <strong>„Ein Mittsommernachtstraum“</strong>, Spinnweb & Krankenschwester <br />
-                    Regie: {SCHLOESSER.name},{' '}
-                    <Link to={THEATER_AKADEMIE_STUTTGART.url}>
-                      {THEATER_KOMPAGNIE_STUTTGART.name}
-                    </Link>
-                  </p>
+                  <div>
+                    <p>
+                      <strong>„Ein Mittsommernachtstraum“</strong>, Spinnweb & Krankenschwester{' '}
+                      <br />
+                      Regie: {SCHLOESSER.name},{' '}
+                      <Link to={THEATER_AKADEMIE_STUTTGART.url}>
+                        {THEATER_KOMPAGNIE_STUTTGART.name}
+                      </Link>
+                    </p>
+                  </div>
                 </Column>
 
                 <Column span={6} start={7}>
                   <h3>2018</h3>
-                  <p>
-                    <strong>Camera Acting</strong>, Workshop <br />
-                    <Link to={BORLAN.url}>{BORLAN.name}</Link>
-                  </p>
+                  <div>
+                    <p>
+                      <strong>Camera Acting</strong>, Workshop <br />
+                      <Link to={BORLAN.url}>{BORLAN.name}</Link>
+                    </p>
+                  </div>
 
                   <h3>2017 – 2018</h3>
-                  <p>
-                    <strong>„Was Ihr Wollt“</strong>, Olivia <br />
-                    Regie: {SCHLOESSER.name},{' '}
-                    <Link to={THEATER_AKADEMIE_STUTTGART.url}>
-                      {THEATER_KOMPAGNIE_STUTTGART.name}
-                    </Link>
-                  </p>
+                  <div>
+                    <p>
+                      <strong>„Was Ihr Wollt“</strong>, Olivia <br />
+                      Regie: {SCHLOESSER.name},{' '}
+                      <Link to={THEATER_AKADEMIE_STUTTGART.url}>
+                        {THEATER_KOMPAGNIE_STUTTGART.name}
+                      </Link>
+                    </p>
+                  </div>
                 </Column>
               </Row>
             </Column>
