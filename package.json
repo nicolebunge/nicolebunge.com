@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.5",
-    "@babel/preset-react": "^7.16.5",
+    "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.5",
     "@storybook/testing-react": "^1.2.2",
     "@svgr/cli": "^6.1.2",
