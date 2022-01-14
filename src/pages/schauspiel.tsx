@@ -7,18 +7,22 @@ import Productions from '../components/Productions';
 import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
-import { BORLAN, JOVANOVIC, SCHLOESSER } from '../constants/directors';
-import {
-  BERLINER_KRIMINAL_THEATER,
-  BUT,
-  THEATER_AKADEMIE_STUTTGART,
-  THEATER_AUS_DEM_KOFFER,
-  THEATER_KOMPAGNIE_STUTTGART,
-  ZAV,
-} from '../constants/organizations';
-import PRODUCTIONS from '../constants/productions';
+import { useDirectors } from '../hooks/directors';
+import { useOrganizations } from '../hooks/organizations';
+import { useProductions } from '../hooks/productions';
 
 function ActingPage(): JSX.Element {
+  const { borlan, jovanovic, schloesser } = useDirectors();
+  const {
+    berlinerKriminalTheater,
+    but,
+    theaterAkademieStuttgart,
+    theaterAusDemKoffer,
+    theaterKompagnieStuttgart,
+    zav,
+  } = useOrganizations();
+  const { allProduction } = useProductions();
+
   return (
     <Layout>
       <SEO title="Schauspiel" />
@@ -30,20 +34,17 @@ function ActingPage(): JSX.Element {
             <Column span={9}>
               <p>
                 Derzeit bin ich deutschlandweit und in Österreich und der Schweiz mit dem{' '}
-                <Link to={BERLINER_KRIMINAL_THEATER.url}>{BERLINER_KRIMINAL_THEATER.name}</Link> auf
+                <Link to={berlinerKriminalTheater.url}>{berlinerKriminalTheater.name}</Link> auf
                 Tournee und in Berlin zu sehen. Zudem spiele ich am{' '}
-                <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link> Berlin,
-                welches in jedem Stück das Spielen mehrerer Instrumente und Gesangseinlagen
-                beinhaltet.
+                <Link to={theaterAusDemKoffer.url}>{theaterAusDemKoffer.name}</Link> Berlin, welches
+                in jedem Stück das Spielen mehrerer Instrumente und Gesangseinlagen beinhaltet.
                 <br /> Mein Diplomstudium absolvierte ich an der{' '}
-                <Link to={THEATER_AKADEMIE_STUTTGART.url}>
-                  {THEATER_AKADEMIE_STUTTGART.name}
-                </Link>{' '}
-                mit Schwerpunkt Schauspiel (<Link to={ZAV.url}>{ZAV.name}</Link>) und
-                Theaterpädagogik (<Link to={BUT.url}>{BUT.name}</Link>
+                <Link to={theaterAkademieStuttgart.url}>{theaterAkademieStuttgart.name}</Link> mit
+                Schwerpunkt Schauspiel (<Link to={zav.url}>{zav.name}</Link>) und Theaterpädagogik (
+                <Link to={but.url}>{but.name}</Link>
                 ). Dort spielte ich an der{' '}
-                <Link to={THEATER_KOMPAGNIE_STUTTGART.url}>
-                  {THEATER_KOMPAGNIE_STUTTGART.name}
+                <Link to={theaterKompagnieStuttgart.url}>
+                  {theaterKompagnieStuttgart.name}
                 </Link>{' '}
                 Shakespeares „Mittsommernachtstraum“ und „Was Ihr Wollt“.
               </p>
@@ -86,10 +87,12 @@ function ActingPage(): JSX.Element {
                     }}
                   >
                     <Productions
-                      productions={PRODUCTIONS.filter(
-                        (production) =>
-                          production.organization.slug === 'berliner-kriminal-theater',
-                      )}
+                      productions={allProduction.edges
+                        .filter(
+                          (edge) =>
+                            edge.node.organization.fields.slug === 'berliner-kriminal-theater',
+                        )
+                        .map((edge) => edge.node)}
                     />
                   </div>
                 </Column>
@@ -105,9 +108,11 @@ function ActingPage(): JSX.Element {
                     }}
                   >
                     <Productions
-                      productions={PRODUCTIONS.filter(
-                        (production) => production.organization.slug === 'theater-aus-dem-koffer',
-                      )}
+                      productions={allProduction.edges
+                        .filter(
+                          (edge) => edge.node.organization.fields.slug === 'theater-aus-dem-koffer',
+                        )
+                        .map((edge) => edge.node)}
                     />
                   </div>
                 </Column>
@@ -136,10 +141,13 @@ function ActingPage(): JSX.Element {
                     }}
                   >
                     <Productions
-                      productions={PRODUCTIONS.filter(
-                        (production) =>
-                          production.organization.slug === 'filmakademie-baden-wuerttemberg',
-                      )}
+                      productions={allProduction.edges
+                        .filter(
+                          (edge) =>
+                            edge.node.organization.fields.slug ===
+                            'filmakademie-baden-wuerttemberg',
+                        )
+                        .map((edge) => edge.node)}
                     />
                   </div>
                 </Column>
@@ -216,7 +224,7 @@ function ActingPage(): JSX.Element {
                   <div>
                     <p>
                       <strong>Camera Acting</strong>, Workshop <br />
-                      <Link to={JOVANOVIC.url}>{JOVANOVIC.name}</Link>
+                      <Link to={jovanovic.url}>{jovanovic.name}</Link>
                     </p>
                   </div>
 
@@ -229,9 +237,7 @@ function ActingPage(): JSX.Element {
                         Ausbildung zur staatlich anerkannten Theaterpädagogin (BuT)
                       </strong>{' '}
                       <br />
-                      <Link to={THEATER_AKADEMIE_STUTTGART.url}>
-                        {THEATER_AKADEMIE_STUTTGART.name}
-                      </Link>
+                      <Link to={theaterAkademieStuttgart.url}>{theaterAkademieStuttgart.name}</Link>
                     </p>
                   </div>
 
@@ -240,9 +246,9 @@ function ActingPage(): JSX.Element {
                     <p>
                       <strong>„Ein Mittsommernachtstraum“</strong>, Spinnweb & Krankenschwester{' '}
                       <br />
-                      Regie: {SCHLOESSER.name},{' '}
-                      <Link to={THEATER_AKADEMIE_STUTTGART.url}>
-                        {THEATER_KOMPAGNIE_STUTTGART.name}
+                      Regie: {schloesser.name},{' '}
+                      <Link to={theaterKompagnieStuttgart.url}>
+                        {theaterKompagnieStuttgart.name}
                       </Link>
                     </p>
                   </div>
@@ -253,7 +259,7 @@ function ActingPage(): JSX.Element {
                   <div>
                     <p>
                       <strong>Camera Acting</strong>, Workshop <br />
-                      <Link to={BORLAN.url}>{BORLAN.name}</Link>
+                      <Link to={borlan.url}>{borlan.name}</Link>
                     </p>
                   </div>
 
@@ -261,9 +267,9 @@ function ActingPage(): JSX.Element {
                   <div>
                     <p>
                       <strong>„Was Ihr Wollt“</strong>, Olivia <br />
-                      Regie: {SCHLOESSER.name},{' '}
-                      <Link to={THEATER_AKADEMIE_STUTTGART.url}>
-                        {THEATER_KOMPAGNIE_STUTTGART.name}
+                      Regie: {schloesser.name},{' '}
+                      <Link to={theaterKompagnieStuttgart.url}>
+                        {theaterKompagnieStuttgart.name}
                       </Link>
                     </p>
                   </div>

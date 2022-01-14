@@ -13,16 +13,19 @@ interface Director {
 }
 
 interface Organization {
+  fields: {
+    slug: string;
+  };
   name: string;
-  slug: string;
   url: string;
 }
 
 export interface ProductionProps {
-  name: string;
-  role: string;
   directors: Director[];
+  id: string;
+  name: string;
   organization: Organization;
+  role: string;
 }
 
 function Production(props: ProductionProps): JSX.Element {

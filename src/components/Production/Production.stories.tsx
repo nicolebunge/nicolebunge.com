@@ -6,6 +6,7 @@ export default {
 
 export const Default = {
   args: {
+    id: '12345678-9012-3456-7890-123456789012',
     name: 'Erbarmen',
     role: 'Lis Sørensen',
     organization: {
