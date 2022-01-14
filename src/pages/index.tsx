@@ -1,13 +1,13 @@
 import React from 'react';
-import Button from '../components/Button';
-import CloudinaryImage from '../components/CloudinaryImage';
-import Column from '../components/Column';
-import Grid from '../components/Grid';
 import Layout from '../components/Layout';
-import Link from '../components/Link';
-import Row from '../components/Row';
-import Section from '../components/Section';
 import SEO from '../components/SEO';
+import Section from '../components/Section';
+import Grid from '../components/Grid';
+import Row from '../components/Row';
+import Column from '../components/Column';
+import Button from '../components/Button';
+import Link from '../components/Link';
+import CloudinaryImage from '../components/CloudinaryImage';
 import { ABOUT, ACTING, THEATRE_PEDAGOGY } from '../constants/routes';
 import { useOrganizations } from '../hooks/organizations';
 

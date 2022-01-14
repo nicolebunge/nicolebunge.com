@@ -1,9 +1,9 @@
 import React from 'react';
-import Gallery from '../components/Gallery';
-import Grid from '../components/Grid';
 import Layout from '../components/Layout';
-import Section from '../components/Section';
 import SEO from '../components/SEO';
+import Section from '../components/Section';
+import Grid from '../components/Grid';
+import Gallery from '../components/Gallery';
 
 function GalleryPage(): JSX.Element {
   return (
