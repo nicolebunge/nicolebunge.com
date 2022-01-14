@@ -5,6 +5,7 @@
   "dependencies": {
     "@fontsource/source-sans-pro": "^4.5.1",
     "@sentry/gatsby": "^6.16.1",
+    "@sentry/tracing": "^6.16.1",
     "@sindresorhus/slugify": "^1.1.2",
     "clsx": "^1.1.1",
     "gatsby": "^4.5.2",
