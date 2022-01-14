@@ -1,5 +1,7 @@
+!.env.sample
 .cache
 .DS_Store
+.env*
 build
 coverage
 node_modules
