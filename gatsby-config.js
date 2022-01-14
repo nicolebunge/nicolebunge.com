@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: '@sentry/gatsby',
       options: {
-        tracesSampleRate: 1,
+        tracesSampleRate: 0.2,
       },
     },
     {
