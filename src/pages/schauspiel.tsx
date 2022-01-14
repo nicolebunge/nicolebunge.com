@@ -1,12 +1,12 @@
 import React from 'react';
-import Column from '../components/Column';
-import Grid from '../components/Grid';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import Section from '../components/Section';
+import Grid from '../components/Grid';
+import Row from '../components/Row';
+import Column from '../components/Column';
 import Link from '../components/Link';
 import Productions from '../components/Productions';
-import Row from '../components/Row';
-import Section from '../components/Section';
-import SEO from '../components/SEO';
 import { useDirectors } from '../hooks/directors';
 import { useOrganizations } from '../hooks/organizations';
 import { useProductions } from '../hooks/productions';
