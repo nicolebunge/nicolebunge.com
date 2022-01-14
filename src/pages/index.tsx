@@ -8,15 +8,13 @@ import Link from '../components/Link';
 import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
-import {
-  BERLINER_KRIMINAL_THEATER,
-  REDUTA_BERLIN,
-  THEATER_AKADEMIE_STUTTGART,
-  THEATER_AUS_DEM_KOFFER,
-} from '../constants/organizations';
 import { ABOUT, ACTING, THEATRE_PEDAGOGY } from '../constants/routes';
+import { useOrganizations } from '../hooks/organizations';
 
 function IndexPage(): JSX.Element {
+  const { berlinerKriminalTheater, reduta, theaterAkademieStuttgart, theaterAusDemKoffer } =
+    useOrganizations();
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -28,11 +26,11 @@ function IndexPage(): JSX.Element {
               <h2>Über mich</h2>
               <p>
                 Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
-                Theaterpädagogin. Studiert habe ich an der {THEATER_AKADEMIE_STUTTGART.name} in
+                Theaterpädagogin. Studiert habe ich an der {theaterAkademieStuttgart.name} in
                 Stuttgart. Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
-                {BERLINER_KRIMINAL_THEATER.name}
-                in Friedrichshain, sowie am {THEATER_AUS_DEM_KOFFER.name}, Berlin. Zudem doziere ich
-                an der {REDUTA_BERLIN.name}.
+                {berlinerKriminalTheater.name}
+                in Friedrichshain, sowie am {theaterAusDemKoffer.name}, Berlin. Zudem doziere ich an
+                der {reduta.name}.
               </p>
               <Button to={ABOUT.path}>Mehr über mich</Button>
             </Column>
@@ -53,9 +51,9 @@ function IndexPage(): JSX.Element {
               <h2>Schauspiel</h2>
               <p>
                 Derzeit bin ich deutschlandweit und in Österreich und der Schweiz mit dem{' '}
-                {BERLINER_KRIMINAL_THEATER.name} auf Tournee und in Berlin zu sehen. Zudem spiele
-                ich am {THEATER_AUS_DEM_KOFFER.name} Berlin, welches in jedem Stück das Spielen
-                mehrerer Instrumente und Gesangseinlagen beinhaltet.
+                {berlinerKriminalTheater.name} auf Tournee und in Berlin zu sehen. Zudem spiele ich
+                am {theaterAusDemKoffer.name} Berlin, welches in jedem Stück das Spielen mehrerer
+                Instrumente und Gesangseinlagen beinhaltet.
               </p>
               <Button to={ACTING.path}>Mehr zu Schauspiel</Button>
             </Column>

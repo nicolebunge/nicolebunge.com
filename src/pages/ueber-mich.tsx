@@ -6,15 +6,12 @@ import Link from '../components/Link';
 import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
-import {
-  BERLINER_KRIMINAL_THEATER,
-  LKA,
-  REDUTA_BERLIN,
-  THEATER_AKADEMIE_STUTTGART,
-  THEATER_AUS_DEM_KOFFER,
-} from '../constants/organizations';
+import { useOrganizations } from '../hooks/organizations';
 
 function AboutPage(): JSX.Element {
+  const { berlinerKriminalTheater, lka, reduta, theaterAkademieStuttgart, theaterAusDemKoffer } =
+    useOrganizations();
+
   return (
     <Layout>
       <SEO title="Über Mich" />
@@ -27,17 +24,17 @@ function AboutPage(): JSX.Element {
               <p>
                 Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
                 Theaterpädagogin. Studiert habe ich an der{' '}
-                <Link to={THEATER_AKADEMIE_STUTTGART.url}>{THEATER_AKADEMIE_STUTTGART.name}</Link>.
+                <Link to={theaterAkademieStuttgart.url}>{theaterAkademieStuttgart.name}</Link>.
                 Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
-                <Link to={BERLINER_KRIMINAL_THEATER.url}>{BERLINER_KRIMINAL_THEATER.name}</Link> in
+                <Link to={berlinerKriminalTheater.url}>{berlinerKriminalTheater.name}</Link> in
                 Friedrichshain, sowie am{' '}
-                <Link to={THEATER_AUS_DEM_KOFFER.url}>{THEATER_AUS_DEM_KOFFER.name}</Link>, Berlin.
-                Zudem doziere ich an der <Link to={REDUTA_BERLIN.url}>{REDUTA_BERLIN.name}</Link>.
+                <Link to={theaterAusDemKoffer.url}>{theaterAusDemKoffer.name}</Link>, Berlin. Zudem
+                doziere ich an der <Link to={reduta.url}>{reduta.name}</Link>.
               </p>
               <p>
                 In Baden Württemberg bin ich seit vier Jahren jeden Sommer als leitende
                 Theaterpädagogin für das Theaterferienprogramm am{' '}
-                <Link to={LKA.url}>{LKA.name}</Link> zuständig. Schon im frühen Kindesalter begann
+                <Link to={lka.url}>{lka.name}</Link> zuständig. Schon im frühen Kindesalter begann
                 ich Instrumente zu spielen, Turniere zu tanzen und zu schauspielern.
               </p>
               <p>

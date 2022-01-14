@@ -6,9 +6,11 @@ import Link from '../components/Link';
 import Row from '../components/Row';
 import Section from '../components/Section';
 import SEO from '../components/SEO';
-import { BISMARCKSCHULE, REDUTA_BERLIN, STEINENBERG_SCHULE } from '../constants/organizations';
+import { useOrganizations } from '../hooks/organizations';
 
 function TheatrePedagogyPage(): JSX.Element {
+  const { bismarckschule, reduta, steinenbergSchule } = useOrganizations();
+
   return (
     <Layout>
       <SEO title="Theaterpädagogik" />
@@ -51,8 +53,7 @@ function TheatrePedagogyPage(): JSX.Element {
             <Column span={4} start={5}>
               <h3>Dozentin für Gesellschaftstanz</h3>
               <p>
-                Seit Mai 2020 an der <Link to={REDUTA_BERLIN.url}>{REDUTA_BERLIN.name}</Link> für
-                Theater und Film
+                Seit Mai 2020 an der <Link to={reduta.url}>{reduta.name}</Link> für Theater und Film
               </p>
             </Column>
 
@@ -60,7 +61,7 @@ function TheatrePedagogyPage(): JSX.Element {
               <h3>Unterstützung der Theaterpädagogen</h3>
               <p>
                 Unterstützung der Theaterpädagogen in den jeweiligen Theaterprojekten an der{' '}
-                <Link to={BISMARCKSCHULE.url}>{BISMARCKSCHULE.name}</Link>
+                <Link to={bismarckschule.url}>{bismarckschule.name}</Link>
               </p>
             </Column>
 
@@ -85,7 +86,7 @@ function TheatrePedagogyPage(): JSX.Element {
               <h3>Theaterpädagogisches Diplomabschlussprojekt</h3>
               <p>
                 Theaterpädagogisches Diplomabschlussprojekt an der{' '}
-                <Link to={STEINENBERG_SCHULE.url}>{STEINENBERG_SCHULE.name}</Link> in Stuttgart
+                <Link to={steinenbergSchule.url}>{steinenbergSchule.name}</Link> in Stuttgart
                 Hedelfingen Theaterpädagogischer Unterricht mit Schülern der dritten Klasse. „Das
                 Hexenstück – Wie sehe ich mich selbst? Wie sehen die anderen mich? Wie agieren wir
                 gemeinsam und was können wir damit erreichen?“ Entwicklung und Aufführung eines

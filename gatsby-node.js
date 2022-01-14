@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 const { resolve } = require('path');
+const slugify = require('@sindresorhus/slugify');
 
 const defaultTemplate = resolve('src/templates/default.tsx');
 
@@ -43,6 +44,44 @@ async function createPages({ actions, graphql, reporter }) {
   });
 }
 
+function createSchemaCustomization({ actions }) {
+  const { createTypes } = actions;
+
+  const typeDefs = `
+    type Director implements Node {
+      productions: [Production] @link(by: "director.fields.slug", from: "fields.slug")
+    }
+    type Organization implements Node {
+      productions: [Production] @link(by: "organization.fields.slug", from: "slug")
+    }
+    type Production implements Node {
+      directors: [Director] @link(by: "fields.slug")
+      organization: Organization @link(by: "fields.slug")
+    }
+  `;
+
+  createTypes(typeDefs);
+}
+
+function onCreateNode({ node, actions }) {
+  const { internal } = node;
+
+  if (['Director', 'Organization'].includes(internal.type)) {
+    const { name } = node;
+    const { createNodeField } = actions;
+
+    createNodeField({
+      name: 'slug',
+      node,
+      value: slugify(name, {
+        decamelize: false,
+      }),
+    });
+  }
+}
+
 module.exports = {
   createPages,
+  createSchemaCustomization,
+  onCreateNode,
 };

@@ -10,9 +10,11 @@ function Productions(props: ProductionsProps): JSX.Element {
 
   return (
     <>
-      {productions.map((production) => (
-        <Production {...production} />
-      ))}
+      {productions.map((production) => {
+        const { id } = production;
+
+        return <Production key={id} {...production} />;
+      })}
     </>
   );
 }

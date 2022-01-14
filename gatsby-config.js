@@ -1,5 +1,8 @@
-/* eslint-disable camelcase */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable camelcase */
+
+const startCase = require('lodash/startCase');
 
 const environment = process.env.NODE_ENV;
 
@@ -47,6 +50,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'data',
+        path: `${__dirname}/src/data/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'images',
         path: `${__dirname}/src/images/`,
       },
@@ -56,6 +66,12 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages/`,
         name: 'pages',
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-json',
+      options: {
+        typeName: ({ node }) => startCase(node.name),
       },
     },
     {
