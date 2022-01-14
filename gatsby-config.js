@@ -4,8 +4,6 @@
 
 const startCase = require('lodash/startCase');
 
-const environment = process.env.NODE_ENV;
-
 module.exports = {
   siteMetadata: {
     author: '@BungeNicole',
@@ -37,11 +35,9 @@ module.exports = {
       resolve: 'gatsby-plugin-react-helmet',
     },
     {
-      resolve: 'gatsby-plugin-sentry',
+      resolve: '@sentry/gatsby',
       options: {
         dsn: 'https://0e535dcfe7544f5f9bcbe979d0a5f181@sentry.io/1400930',
-        environment,
-        enabled: ['production', 'stage'].includes(environment),
       },
     },
     {
