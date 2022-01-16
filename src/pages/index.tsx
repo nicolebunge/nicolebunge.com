@@ -28,16 +28,20 @@ function IndexPage(): JSX.Element {
                 Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
                 Theaterpädagogin. Studiert habe ich an der {theaterAkademieStuttgart.name} in
                 Stuttgart. Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
-                {berlinerKriminalTheater.name}
-                in Friedrichshain, sowie am {theaterAusDemKoffer.name}, Berlin. Zudem doziere ich an
-                der {reduta.name}.
+                {berlinerKriminalTheater.name} in Friedrichshain, sowie am{' '}
+                {theaterAusDemKoffer.name}, Berlin. Zudem doziere ich an der {reduta.name}.
               </p>
               <Button to={ABOUT.path}>Mehr über mich</Button>
             </Column>
 
             <Column span={5} start={6}>
               <Link to={ABOUT.path}>
-                <CloudinaryImage src="gallery/image-01.jpg" alt="Nicole Bunge" />
+                <CloudinaryImage
+                  src="gallery/image-01.jpg"
+                  alt="Nicole Bunge"
+                  width={464}
+                  height={464}
+                />
               </Link>
             </Column>
           </Row>
@@ -59,7 +63,12 @@ function IndexPage(): JSX.Element {
             </Column>
             <Column span={4} start={3}>
               <Link to={ACTING.path}>
-                <CloudinaryImage src="gallery/image-02.jpg" alt="Nicole Bunge" />
+                <CloudinaryImage
+                  src="gallery/image-02.jpg"
+                  alt="Nicole Bunge"
+                  width={451}
+                  height={602}
+                />
               </Link>
             </Column>
           </Row>
@@ -83,7 +92,12 @@ function IndexPage(): JSX.Element {
 
             <Column span={5} start={8}>
               <Link to={THEATRE_PEDAGOGY.path}>
-                <CloudinaryImage src="gallery/image-03.jpg" alt="Nicole Bunge" />
+                <CloudinaryImage
+                  src="gallery/image-03.jpg"
+                  alt="Nicole Bunge"
+                  width={464}
+                  height={464}
+                />
               </Link>
             </Column>
           </Row>

@@ -13,6 +13,7 @@ exports[`layout component should render correctly 1`] = `
     >
       <img
         alt="Site Title"
+        height="28"
         loading="lazy"
         src="https://res.cloudinary.com/nicolebunge/image/upload/f_auto,q_auto/v1627923793/nicolebunge.com/nicole-bunge.svg"
         width="160"
@@ -140,6 +141,7 @@ exports[`layout component should render correctly 1`] = `
           itemprop="sameAs"
           rel="noopener noreferrer"
           target="_blank"
+          title="Nicole Bunge auf Instagram"
         >
           <svg
             height="1em"
@@ -160,6 +162,7 @@ exports[`layout component should render correctly 1`] = `
           itemprop="sameAs"
           rel="noopener noreferrer"
           target="_blank"
+          title="Nicole Bunge auf LinkedIn"
         >
           <svg
             height="1em"
@@ -180,6 +183,7 @@ exports[`layout component should render correctly 1`] = `
           itemprop="sameAs"
           rel="noopener noreferrer"
           target="_blank"
+          title="Nicole Bunge auf XING"
         >
           <svg
             height="1em"

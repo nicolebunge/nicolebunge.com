@@ -14,6 +14,7 @@ exports[`Social component renders correctly 1`] = `
         itemprop="sameAs"
         rel="noopener noreferrer"
         target="_blank"
+        title="Nicole Bunge auf Instagram"
       >
         <svg
           height="1em"
@@ -34,6 +35,7 @@ exports[`Social component renders correctly 1`] = `
         itemprop="sameAs"
         rel="noopener noreferrer"
         target="_blank"
+        title="Nicole Bunge auf LinkedIn"
       >
         <svg
           height="1em"
@@ -54,6 +56,7 @@ exports[`Social component renders correctly 1`] = `
         itemprop="sameAs"
         rel="noopener noreferrer"
         target="_blank"
+        title="Nicole Bunge auf XING"
       >
         <svg
           height="1em"

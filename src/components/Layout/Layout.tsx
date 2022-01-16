@@ -24,18 +24,14 @@ function Layout(props: LayoutProps): JSX.Element {
 
   return (
     <div className={clsx(className, layout)} {...otherProps}>
-      <Helmet
-        title={site.siteMetadata.title}
-        meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
-        ]}
-      >
-        <html lang="en" />
-      </Helmet>
       <Header>
         <Link to="/">
-          <CloudinaryImage src="nicole-bunge.svg" alt={site.siteMetadata.title} width={160} />
+          <CloudinaryImage
+            src="nicole-bunge.svg"
+            alt={site.siteMetadata.title}
+            width={160}
+            height={28}
+          />
         </Link>
 
         <Navigation inline name="main" routes={MAIN} />

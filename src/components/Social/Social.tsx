@@ -15,11 +15,16 @@ function Social(props: SocialProps): JSX.Element {
     <div className={clsx(className, social)} {...otherProps}>
       <ul className={social__icons}>
         {[INSTAGRAM, LINKED_IN, XING].map((platform) => {
-          const { id, Component, url } = platform;
+          const { id, Component, title, url } = platform;
 
           return (
             <li key={id}>
-              <Link to={url} className={social__icon} itemProp="sameAs">
+              <Link
+                to={url}
+                className={social__icon}
+                itemProp="sameAs"
+                title={`Nicole Bunge auf ${title}`}
+              >
                 <Component />
               </Link>
             </li>
