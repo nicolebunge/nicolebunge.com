@@ -3,7 +3,9 @@
 exports[`Cloudinary image component renders correctly 1`] = `
 <img
   alt="Image alt text"
+  height="300"
   loading="lazy"
-  src="https://res.cloudinary.com/nicolebunge/image/upload/f_auto,q_auto/v1627923793/nicolebunge.com/path/to/image.jpg"
+  src="https://res.cloudinary.com/nicolebunge/image/upload/c_fill,f_auto,h_300,q_auto,w_400/v1627923793/nicolebunge.com/path/to/image.jpg"
+  width="400"
 />
 `;

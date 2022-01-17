@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 
 import React from 'react';
+import { buildQuery } from '../../utils/cloudinary';
 
 type Images =
   | 'gallery/alice.jpg'
@@ -19,18 +20,21 @@ type Images =
 
 export interface CloudinaryImageProps {
   alt: string;
-  height?: number;
+  height: number;
   src: Images;
-  width?: number;
+  width: number;
 }
 
 function CloudinaryImage(props: CloudinaryImageProps): JSX.Element {
-  const { src, ...otherProps } = props;
+  const { height, src, width, ...otherProps } = props;
+  const query = buildQuery({ height, width });
 
   return (
     <img
+      height={height}
       loading="lazy"
-      src={`https://res.cloudinary.com/nicolebunge/image/upload/f_auto,q_auto/v1627923793/nicolebunge.com/${src}`}
+      src={`https://res.cloudinary.com/nicolebunge/image/upload/${query}/v1627923793/nicolebunge.com/${src}`}
+      width={width}
       {...otherProps}
     />
   );
