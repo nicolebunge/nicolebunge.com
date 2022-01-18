@@ -3,6 +3,7 @@ a {
   text-decoration: none;
 }
 
+li a,
 p a {
   text-decoration: underline;
 }
