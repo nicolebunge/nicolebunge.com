@@ -10,6 +10,7 @@ import Productions from '../components/Productions';
 import { useDirectors } from '../hooks/directors';
 import { useOrganizations } from '../hooks/organizations';
 import { useProductions } from '../hooks/productions';
+import { usePublications } from '../hooks/publications';
 
 function ActingPage(): JSX.Element {
   const { borlan, jovanovic, schloesser } = useDirectors();
@@ -22,6 +23,7 @@ function ActingPage(): JSX.Element {
     zav,
   } = useOrganizations();
   const { allProduction } = useProductions();
+  const { allPublication } = usePublications();
 
   return (
     <Layout>
@@ -275,6 +277,30 @@ function ActingPage(): JSX.Element {
                   </div>
                 </Column>
               </Row>
+            </Column>
+          </Row>
+        </Grid>
+      </Section>
+
+      <Section>
+        <Grid>
+          <Row>
+            <Column span={3}>
+              <h2 id="publikationen">Publikationen</h2>
+            </Column>
+
+            <Column span={8} start={5}>
+              <ul>
+                {allPublication.edges.map((edge) => {
+                  const { date, id, title, url } = edge.node;
+
+                  return (
+                    <li key={id}>
+                      <Link to={url}>„{title}“</Link> – {date}
+                    </li>
+                  );
+                })}
+              </ul>
             </Column>
           </Row>
         </Grid>
