@@ -5,6 +5,7 @@ exports[`MainNavigation component renders correctly 1`] = `
   class="mainNavigation"
 >
   <button
+    aria-label="Menü öffnen"
     class="mainNavigation__button"
     type="button"
   >

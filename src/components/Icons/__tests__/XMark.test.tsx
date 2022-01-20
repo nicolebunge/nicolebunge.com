@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import { render } from '@testing-library/react';
 import React from 'react';
 import { XMark1 } from '..';

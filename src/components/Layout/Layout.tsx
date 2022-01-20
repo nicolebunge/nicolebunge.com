@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import { Link } from 'gatsby';
 import React, { HTMLAttributes, ReactNode } from 'react';
-import { Helmet } from 'react-helmet';
 import { NOW } from '../../constants/dates';
 import { FOOTER, MAIN } from '../../constants/menus';
 import { useSite } from '../../hooks/site';

@@ -39,7 +39,12 @@ function MainNavigation(props: NavigationProps): JSX.Element {
       })}
       {...otherProps}
     >
-      <button className={mainNavigation__button} type="button" onClick={toggle}>
+      <button
+        className={mainNavigation__button}
+        type="button"
+        onClick={toggle}
+        aria-label={isActive ? 'Menü schließen' : 'Menü öffnen'}
+      >
         {isActive ? <XMark1 /> : <Menu1 />}
       </button>
 

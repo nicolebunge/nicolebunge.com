@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '../Link';
 
-function formatList(list: any[]): string {
+function formatList(list: string[]): string {
   return list.reduce(
     (text, value, i, array) => text + (i < array.length - 1 ? ', ' : ' & ') + value,
   );
