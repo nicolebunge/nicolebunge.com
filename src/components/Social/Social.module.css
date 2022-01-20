@@ -9,10 +9,9 @@
   justify-content: flex-end;
   left: 0;
   padding: var(--space-xs) 5% var(--space-lg);
-  position: fixed;
+  position: sticky;
   right: 0;
   will-change: transform;
-  z-index: 1;
 }
 
 @media (min-width: 1440px) {

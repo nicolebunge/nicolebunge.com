@@ -13,6 +13,7 @@ import Footer from '../Footer';
 import Grid from '../Grid';
 import Social from '../Social';
 import { layout } from './Layout.module.css';
+import MainNavigation from '../MainNavigation';
 
 export interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
@@ -34,7 +35,7 @@ function Layout(props: LayoutProps): JSX.Element {
           />
         </Link>
 
-        <Navigation inline name="main" routes={MAIN} />
+        <MainNavigation routes={MAIN} />
       </Header>
       <Main>{children}</Main>
       <Footer>

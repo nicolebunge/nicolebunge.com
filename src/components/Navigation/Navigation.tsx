@@ -1,12 +1,10 @@
 /* eslint-disable camelcase */
 
 import clsx from 'clsx';
-import React, { HTMLAttributes, useState } from 'react';
+import React, { HTMLAttributes } from 'react';
 import Link from '../Link';
 import {
   navigation,
-  navigationMain,
-  navigation__button,
   navigation__item,
   navigation__link,
   navigation__linkActive,
@@ -19,38 +17,16 @@ interface Route {
   path: string;
 }
 
-type Name = 'main';
-
 export interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
   inline?: boolean;
   routes: Route[];
-  name?: Name;
 }
 
-const navigationClassNames = {
-  main: navigationMain,
-};
-
 function Navigation(props: NavigationProps): JSX.Element {
-  const { className, inline, name, routes, ...otherProps } = props;
-  const [isActive, setIsActive] = useState(false);
-
-  function clickHandler(): void {
-    setIsActive((state) => !state);
-  }
+  const { className, inline, routes, ...otherProps } = props;
 
   return (
-    <nav
-      className={clsx(className, navigation, {
-        [navigationClassNames[name!]]: name,
-        'is-active': isActive,
-      })}
-      {...otherProps}
-    >
-      <button className={navigation__button} type="button" onClick={clickHandler}>
-        Menu
-      </button>
-
+    <nav className={clsx(className, navigation)} {...otherProps}>
       {routes && (
         <ul
           className={clsx(navigation__list, {

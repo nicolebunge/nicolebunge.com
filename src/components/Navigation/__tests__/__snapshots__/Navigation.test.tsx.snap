@@ -4,12 +4,6 @@ exports[`Navigation component renders correctly 1`] = `
 <nav
   class="navigation"
 >
-  <button
-    class="navigation__button"
-    type="button"
-  >
-    Menu
-  </button>
   <ul
     class="navigation__list"
   >

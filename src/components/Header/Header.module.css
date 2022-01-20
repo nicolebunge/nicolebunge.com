@@ -8,13 +8,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   left: 0;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: var(--space-xs) 5%;
   position: fixed;
   right: 0;
   top: 0;
   will-change: transform;
   z-index: 1;
+}
+
+@media (min-width: 640px) {
+  .header {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 1440px) {
