@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+
 import clsx from 'clsx';
 import React, { HTMLAttributes, ReactNode } from 'react';
 import {

@@ -28,6 +28,7 @@ function DefaultTemplate(props: DefaultTemplateProps): JSX.Element {
       <SEO title={frontmatter.title} />
       <Section>
         <Grid>
+          {/* eslint-disable-next-line react/no-danger */}
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </Grid>
       </Section>
