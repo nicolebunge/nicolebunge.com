@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
 import Grid from '../components/Grid';
@@ -7,7 +6,7 @@ import Gallery from '../components/Gallery';
 
 function GalleryPage(): JSX.Element {
   return (
-    <Layout>
+    <>
       <SEO title="Galerie" />
 
       <Section>
@@ -54,7 +53,7 @@ function GalleryPage(): JSX.Element {
           />
         </Grid>
       </Section>
-    </Layout>
+    </>
   );
 }
 
