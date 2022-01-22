@@ -5,7 +5,6 @@ declare const styles: {
   readonly mainNavigationIsActive: string;
   readonly mainNavigation__button: string;
   readonly mainNavigation__list: string;
-  readonly mainNavigation__listInline: string;
   readonly mainNavigation__item: string;
   readonly mainNavigation__link: string;
   readonly mainNavigation__linkActive: string;

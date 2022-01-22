@@ -21,7 +21,7 @@ exports[`MainNavigation component renders correctly 1`] = `
     </svg>
   </button>
   <ul
-    class="mainNavigation__list mainNavigation__listInline"
+    class="mainNavigation__list"
   >
     <li
       class="mainNavigation__item"

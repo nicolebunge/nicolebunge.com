@@ -27,7 +27,7 @@ export interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 function MainNavigation(props: NavigationProps): JSX.Element {
-  const { className, inline = true, routes, ...otherProps } = props;
+  const { className, routes, ...otherProps } = props;
   const [isActive, toggle] = useToggle(false);
 
   useLockBodyScroll(isActive);
@@ -49,11 +49,7 @@ function MainNavigation(props: NavigationProps): JSX.Element {
       </button>
 
       {routes && (
-        <ul
-          className={clsx(mainNavigation__list, {
-            [mainNavigation__listInline]: inline,
-          })}
-        >
+        <ul className={clsx(mainNavigation__list)}>
           {routes.map((route) => (
             <li className={mainNavigation__item} key={route.path}>
               <Link
