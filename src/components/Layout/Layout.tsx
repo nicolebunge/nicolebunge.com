@@ -19,11 +19,11 @@ export interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 function Layout(props: LayoutProps): JSX.Element {
-  const { children, className, ...otherProps } = props;
+  const { children, className } = props;
   const { site } = useSite();
 
   return (
-    <div className={clsx(className, layout)} {...otherProps}>
+    <div className={clsx(className, layout)}>
       <Header>
         <Link to="/">
           <CloudinaryImage

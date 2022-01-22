@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
 import Grid from '../components/Grid';
@@ -12,7 +11,7 @@ function TheatrePedagogyPage(): JSX.Element {
   const { bismarckschule, reduta, steinenbergSchule } = useOrganizations();
 
   return (
-    <Layout>
+    <>
       <SEO title="Theaterpädagogik" />
 
       <Section>
@@ -108,7 +107,7 @@ function TheatrePedagogyPage(): JSX.Element {
           </Row>
         </Grid>
       </Section>
-    </Layout>
+    </>
   );
 }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
 import Grid from '../components/Grid';
@@ -26,7 +25,7 @@ function ActingPage(): JSX.Element {
   const { allPublication } = usePublications();
 
   return (
-    <Layout>
+    <>
       <SEO title="Schauspiel" />
 
       <Section>
@@ -305,7 +304,7 @@ function ActingPage(): JSX.Element {
           </Row>
         </Grid>
       </Section>
-    </Layout>
+    </>
   );
 }
 

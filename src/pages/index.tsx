@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
 import Grid from '../components/Grid';
@@ -16,7 +15,7 @@ function IndexPage(): JSX.Element {
     useOrganizations();
 
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
 
       <Section isFull>
@@ -103,7 +102,7 @@ function IndexPage(): JSX.Element {
           </Row>
         </Grid>
       </Section>
-    </Layout>
+    </>
   );
 }
 
