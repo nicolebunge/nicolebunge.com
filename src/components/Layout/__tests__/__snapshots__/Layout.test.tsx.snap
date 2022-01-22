@@ -39,7 +39,7 @@ exports[`layout component should render correctly 1`] = `
         </svg>
       </button>
       <ul
-        class="mainNavigation__list mainNavigation__listInline"
+        class="mainNavigation__list"
       >
         <li
           class="mainNavigation__item"
@@ -103,9 +103,7 @@ exports[`layout component should render correctly 1`] = `
         <ul
           class="navigation__list navigation__listInline"
         >
-          <li
-            class="navigation__item"
-          >
+          <li>
             <a
               class="navigation__link"
               href="/impressum/"
@@ -113,9 +111,7 @@ exports[`layout component should render correctly 1`] = `
               Impressum
             </a>
           </li>
-          <li
-            class="navigation__item"
-          >
+          <li>
             <a
               class="navigation__link"
               href="/datenschutz/"

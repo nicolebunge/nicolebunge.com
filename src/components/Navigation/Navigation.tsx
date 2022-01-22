@@ -5,7 +5,6 @@ import React, { HTMLAttributes } from 'react';
 import Link from '../Link';
 import {
   navigation,
-  navigation__item,
   navigation__link,
   navigation__linkActive,
   navigation__list,
@@ -34,7 +33,7 @@ function Navigation(props: NavigationProps): JSX.Element {
           })}
         >
           {routes.map((route) => (
-            <li className={navigation__item} key={route.path}>
+            <li key={route.path}>
               <Link
                 to={route.path}
                 className={navigation__link}
