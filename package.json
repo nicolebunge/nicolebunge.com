@@ -1,7 +1,8 @@
 {
   "name": "nicolebunge.com",
-  "description": "",
+  "description": "Personal website of Nicole Bunge",
   "version": "1.0.0",
+  "private": true,
   "dependencies": {
     "@fontsource/source-sans-pro": "^4.5.1",
     "@sentry/gatsby": "^6.16.1",
