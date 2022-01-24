@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable react/jsx-filename-extension */
 
-// You can delete this file if you're not using it
+import React from 'react';
+import Layout from './src/components/Layout';
+
+function wrapPageElement({ element, props }) {
+  return <Layout {...props}>{element}</Layout>;
+}
+
+export { wrapPageElement };
