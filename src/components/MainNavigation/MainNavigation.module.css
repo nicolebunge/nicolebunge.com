@@ -62,7 +62,7 @@
   }
 
   .mainNavigation__link--active::after {
-    background-color: currentColor;
+    background-color: currentcolor;
     content: "";
     height: 0.25em;
     position: absolute;
