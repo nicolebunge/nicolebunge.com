@@ -7,7 +7,7 @@
 }
 
 .button::after {
-  background-color: currentColor;
+  background-color: currentcolor;
   content: "";
   height: 0.125em;
   position: absolute;
