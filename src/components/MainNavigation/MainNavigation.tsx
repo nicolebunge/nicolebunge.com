@@ -12,7 +12,6 @@ import {
   mainNavigation__link,
   mainNavigation__linkActive,
   mainNavigation__list,
-  mainNavigation__listInline,
 } from './MainNavigation.module.css';
 import { Menu1, XMark1 } from '../Icons';
 
@@ -56,6 +55,7 @@ function MainNavigation(props: NavigationProps): JSX.Element {
                 to={route.path}
                 className={mainNavigation__link}
                 activeClassName={mainNavigation__linkActive}
+                onClick={(): void => toggle(false)}
               >
                 {route.name}
               </Link>
