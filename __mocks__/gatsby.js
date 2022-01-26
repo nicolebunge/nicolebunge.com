@@ -2,6 +2,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
+/**
+ * @link https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/#mocking-gatsby
+ */
+
 const React = require('react');
 
 const gatsby = jest.requireActual('gatsby');

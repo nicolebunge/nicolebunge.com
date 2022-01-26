@@ -63,6 +63,10 @@ function createSchemaCustomization({ actions }) {
   createTypes(typeDefs);
 }
 
+/**
+ *
+ * @link https://www.gatsbyjs.com/docs/creating-slugs-for-pages/
+ */
 function onCreateNode({ node, actions }) {
   const { internal } = node;
 

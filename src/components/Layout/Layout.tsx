@@ -18,6 +18,10 @@ export interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
 }
 
+/**
+ * @link https://www.gatsbyjs.com/docs/how-to/routing/layout-components/
+ */
+
 function Layout(props: LayoutProps): JSX.Element {
   const { children, className } = props;
   const { site } = useSite();

@@ -12,6 +12,10 @@ export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement>
   to: string;
 }
 
+/**
+ * @link https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/#reminder-use-link-only-for-internal-links
+ */
+
 function Link(props: LinkProps): JSX.Element {
   const { to, external = false, ...otherProps } = props;
 

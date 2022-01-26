@@ -14,6 +14,10 @@ module.exports = {
   },
   plugins: [
     {
+      /**
+       * @link https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/
+       * @link https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/#anonymize
+       */
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         anonymize: true,

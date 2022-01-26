@@ -2,7 +2,11 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useSite } from '../../hooks/site';
 
-type Lang = 'en' | 'de';
+/**
+ * @link https://www.gatsbyjs.com/docs/add-seo-component/
+ */
+
+type Lang = 'de';
 type Meta = {
   name: string;
   content: string;
