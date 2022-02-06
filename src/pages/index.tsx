@@ -24,11 +24,11 @@ function IndexPage(): JSX.Element {
             <Column span={4}>
               <h2>Über mich</h2>
               <p>
-                Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
-                Theaterpädagogin. Studiert habe ich an der {theaterAkademieStuttgart.name} in
-                Stuttgart. Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
-                {berlinerKriminalTheater.name} in Friedrichshain, sowie am{' '}
-                {theaterAusDemKoffer.name}, Berlin. Zudem doziere ich an der {reduta.name}.
+                Mein Name ist <span itemProp="name">Nicole Bunge</span>, ich bin staatlich
+                anerkannte Schauspielerin und Theaterpädagogin. Studiert habe ich an der{' '}
+                {theaterAkademieStuttgart.name} in Stuttgart. Derzeit lebe und arbeite ich in Berlin
+                und spiele unter anderem am {berlinerKriminalTheater.name} in Friedrichshain, sowie
+                am {theaterAusDemKoffer.name}, Berlin. Zudem doziere ich an der {reduta.name}.
               </p>
               <Button to={ABOUT.path}>Mehr über mich</Button>
             </Column>

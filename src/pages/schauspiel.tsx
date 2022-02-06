@@ -88,12 +88,11 @@ function ActingPage(): JSX.Element {
                     }}
                   >
                     <Productions
-                      productions={allProduction.edges
-                        .filter(
-                          (edge) =>
-                            edge.node.organization.fields.slug === 'berliner-kriminal-theater',
-                        )
-                        .map((edge) => edge.node)}
+                      productions={
+                        allProduction.group
+                          .find((group) => group.fieldValue === 'berliner-kriminal-theater')
+                          ?.edges.map((edge) => edge.node) || []
+                      }
                     />
                   </div>
                 </Column>
@@ -109,11 +108,11 @@ function ActingPage(): JSX.Element {
                     }}
                   >
                     <Productions
-                      productions={allProduction.edges
-                        .filter(
-                          (edge) => edge.node.organization.fields.slug === 'theater-aus-dem-koffer',
-                        )
-                        .map((edge) => edge.node)}
+                      productions={
+                        allProduction.group
+                          .find((group) => group.fieldValue === 'theater-aus-dem-koffer')
+                          ?.edges.map((edge) => edge.node) || []
+                      }
                     />
                   </div>
                 </Column>
@@ -142,13 +141,11 @@ function ActingPage(): JSX.Element {
                     }}
                   >
                     <Productions
-                      productions={allProduction.edges
-                        .filter(
-                          (edge) =>
-                            edge.node.organization.fields.slug ===
-                            'filmakademie-baden-wuerttemberg',
-                        )
-                        .map((edge) => edge.node)}
+                      productions={
+                        allProduction.group
+                          .find((group) => group.fieldValue === 'filmakademie-baden-wuerttemberg')
+                          ?.edges.map((edge) => edge.node) || []
+                      }
                     />
                   </div>
                 </Column>

@@ -21,10 +21,11 @@ function AboutPage(): JSX.Element {
           <Row>
             <Column span={9}>
               <p>
-                Mein Name ist Nicole Bunge, ich bin staatlich anerkannte Schauspielerin und
-                Theaterpädagogin. Studiert habe ich an der{' '}
+                Mein Name ist <span itemProp="name">Nicole Bunge</span>, ich bin staatlich
+                anerkannte Schauspielerin und Theaterpädagogin. Studiert habe ich an der{' '}
                 <Link to={theaterAkademieStuttgart.url}>{theaterAkademieStuttgart.name}</Link>.
-                Derzeit lebe und arbeite ich in Berlin und spiele unter anderem am{' '}
+                Derzeit lebe und arbeite ich in <span itemProp="addressLocality">Berlin</span> und
+                spiele unter anderem am{' '}
                 <Link to={berlinerKriminalTheater.url}>{berlinerKriminalTheater.name}</Link> in
                 Friedrichshain, sowie am{' '}
                 <Link to={theaterAusDemKoffer.url}>{theaterAusDemKoffer.name}</Link>, Berlin. Zudem
@@ -96,7 +97,7 @@ function AboutPage(): JSX.Element {
         <Grid>
           <Row>
             <Column span={4}>
-              <h2 id="kenntnisseundfhigkeiten">Kenntnisse & Fähigkeiten</h2>
+              <h2 id="kenntnisse-und-faehigkeiten">Kenntnisse & Fähigkeiten</h2>
             </Column>
 
             <Column span={4} start={5}>
@@ -147,7 +148,7 @@ function AboutPage(): JSX.Element {
             </Column>
 
             <Column span={4} start={9}>
-              <h3 id="fuhrerschein">Führerschein</h3>
+              <h3 id="fuehrerschein">Führerschein</h3>
               <ul>
                 <li>Klasse B</li>
               </ul>
