@@ -13,19 +13,24 @@ interface Organization {
   url: string;
 }
 
+interface Edge {
+  node: {
+    directors: Director[];
+    id: string;
+    name: string;
+    organization: Organization;
+    role: string;
+  };
+}
+
+interface Group {
+  fieldValue: string;
+  edges: Edge[];
+}
+
 interface ProductionsQuery {
   allProduction: {
-    edges: [
-      {
-        node: {
-          directors: Director[];
-          id: string;
-          name: string;
-          organization: Organization;
-          role: string;
-        };
-      },
-    ];
+    group: Group[];
   };
 }
 
@@ -33,22 +38,25 @@ function useProductions(): ProductionsQuery {
   return useStaticQuery<ProductionsQuery>(graphql`
     {
       allProduction {
-        edges {
-          node {
-            directors {
-              name
-              url
-            }
-            id
-            name
-            organization {
-              fields {
-                slug
+        group(field: organization___fields___slug) {
+          fieldValue
+          edges {
+            node {
+              directors {
+                name
+                url
               }
+              id
               name
-              url
+              organization {
+                fields {
+                  slug
+                }
+                name
+                url
+              }
+              role
             }
-            role
           }
         }
       }
