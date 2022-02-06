@@ -20,7 +20,9 @@ exports[`layout component should render correctly 1`] = `
       />
     </a>
     <nav
+      aria-label="Hauptmenü"
       class="mainNavigation"
+      role="navigation"
     >
       <button
         aria-label="Menü öffnen"
@@ -98,7 +100,9 @@ exports[`layout component should render correctly 1`] = `
       class="grid"
     >
       <nav
+        aria-label="sekundäre Menü"
         class="navigation"
+        role="navigation"
       >
         <ul
           class="navigation__list navigation__listInline"

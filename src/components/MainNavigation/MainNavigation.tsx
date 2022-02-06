@@ -36,6 +36,8 @@ function MainNavigation(props: NavigationProps): JSX.Element {
       className={clsx(className, mainNavigation, {
         [mainNavigationIsActive]: isActive,
       })}
+      role="navigation"
+      aria-label="Hauptmenü"
       {...otherProps}
     >
       <button
