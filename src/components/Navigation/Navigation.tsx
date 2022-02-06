@@ -25,7 +25,12 @@ function Navigation(props: NavigationProps): JSX.Element {
   const { className, inline, routes, ...otherProps } = props;
 
   return (
-    <nav className={clsx(className, navigation)} {...otherProps}>
+    <nav
+      className={clsx(className, navigation)}
+      role="navigation"
+      aria-label="sekundäre Menü"
+      {...otherProps}
+    >
       {routes && (
         <ul
           className={clsx(navigation__list, {

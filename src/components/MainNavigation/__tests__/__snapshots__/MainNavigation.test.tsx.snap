@@ -2,7 +2,9 @@
 
 exports[`MainNavigation component renders correctly 1`] = `
 <nav
+  aria-label="Hauptmenü"
   class="mainNavigation"
+  role="navigation"
 >
   <button
     aria-label="Menü öffnen"
