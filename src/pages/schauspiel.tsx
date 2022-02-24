@@ -10,9 +10,10 @@ import { useDirectors } from '../hooks/directors';
 import { useOrganizations } from '../hooks/organizations';
 import { useProductions } from '../hooks/productions';
 import { usePublications } from '../hooks/publications';
+import Button from '../components/Button';
 
 function ActingPage(): JSX.Element {
-  const { borlan, jovanovic, schloesser } = useDirectors();
+  const { akkaya, borlan, jovanovic, schloesser } = useDirectors();
   const {
     berlinerKriminalTheater,
     but,
@@ -63,6 +64,114 @@ function ActingPage(): JSX.Element {
                 Publikums wecken, wodurch diesem der Blick für die Kunst, seine Mitmenschen und sein
                 Umfeld geöffnet werden kann.
               </p>
+            </Column>
+          </Row>
+        </Grid>
+      </Section>
+
+      <Section>
+        <Grid>
+          <h1>Vita</h1>
+          <Row>
+            <Column span={4}>
+              <h2 id="persoenlichkeit">Persönlichkeit</h2>
+            </Column>
+
+            <Column span={4} start={5}>
+              <h3>Aussehen</h3>
+              <ul>
+                <li>Augenfarbe: grau-grün</li>
+                <li>Haare: dunkelblond, sehr lang</li>
+              </ul>
+            </Column>
+
+            <Column span={4} start={9}>
+              <h3>Herkunft</h3>
+              <ul>
+                <li>Geboren in Ludwigsburg</li>
+                <li>Nationalität: deutsch</li>
+              </ul>
+            </Column>
+
+            <Column span={4} start={5}>
+              <h3>Statur</h3>
+              <ul>
+                <li>165 cm groß</li>
+                <li>Konfektion: xs</li>
+              </ul>
+            </Column>
+
+            <Column span={4} start={9}>
+              <h3>Wohnmöglichkeit</h3>
+              <ul>
+                <li>Berlin</li>
+                <li>Stuttgart</li>
+              </ul>
+            </Column>
+          </Row>
+        </Grid>
+      </Section>
+
+      <Section>
+        <Grid>
+          <Row>
+            <Column span={4}>
+              <h2 id="kenntnisse-und-faehigkeiten">Kenntnisse & Fähigkeiten</h2>
+            </Column>
+
+            <Column span={4} start={5}>
+              <h3 id="sprachen">Sprachen & Dialekte</h3>
+              <ul>
+                <li>Deutsch (Muttersprache)</li>
+                <li>Französisch (fließend)</li>
+                <li>Spanisch (fließend)</li>
+                <li>Englisch (fließend)</li>
+                <li>Schwäbisch</li>
+                <li>Berlinerisch</li>
+              </ul>
+            </Column>
+
+            <Column span={4} start={9}>
+              <h3 id="musik">Musik</h3>
+              <ul>
+                <li>Blockflöte</li>
+                <li>Altflöte</li>
+                <li>E-Gitarre</li>
+                <li>Akustik-Gitarre</li>
+                <li>Trommeln (Djembé)</li>
+              </ul>
+            </Column>
+
+            <Column span={4} start={5}>
+              <h3 id="tanz">Tanz</h3>
+              <ul>
+                <li>10 Jahre Standard- und Latein-Turniertanz</li>
+                <li>Ballett, Hip-Hop, Modern, Jazz, Stepptanz, Contemporary</li>
+              </ul>
+            </Column>
+
+            <Column span={4} start={9}>
+              <h3 id="sport">Sport</h3>
+              <ul>
+                <li>Schwimmen</li>
+                <li>Reiten</li>
+                <li>Fechten</li>
+                <li>Jonglage</li>
+              </ul>
+            </Column>
+
+            <Column span={4} start={5}>
+              <h3 id="gesang">Gesang</h3>
+              <ul>
+                <li>Mezzosopran</li>
+              </ul>
+            </Column>
+
+            <Column span={4} start={9}>
+              <h3 id="fuehrerschein">Führerschein</h3>
+              <ul>
+                <li>Klasse B</li>
+              </ul>
             </Column>
           </Row>
         </Grid>
@@ -212,34 +321,60 @@ function ActingPage(): JSX.Element {
         <Grid>
           <Row>
             <Column span={3}>
-              <h2 id="studium">Studium</h2>
+              <h2 id="bildung">Bildung</h2>
             </Column>
 
             <Column span={8} start={5}>
               <Row>
-                <Column span={6}>
-                  <h3>2013 – 2015, 2017 & 2018</h3>
+                <Column span={7}>
+                  <h3>2018</h3>
                   <div>
                     <p>
-                      <strong>Camera Acting</strong>, Workshop <br />
-                      <Link to={jovanovic.url}>{jovanovic.name}</Link>
-                    </p>
-                  </div>
-
-                  <h3>09.2013 – 09.2018</h3>
-                  <div>
-                    <p>
-                      <strong>Ausbildung zur staatlich anerkannten Schauspielerin (ZAV)</strong>{' '}
+                      <strong>
+                        Diplomabschluss zur staatlich anerkannten Schauspielerin (ZAV)
+                      </strong>{' '}
                       <br />
                       <strong>
-                        Ausbildung zur staatlich anerkannten Theaterpädagogin (BuT)
+                        Diplomabschluss zur staatlich anerkannten Theaterpädagogin (BuT)
                       </strong>{' '}
                       <br />
                       <Link to={theaterAkademieStuttgart.url}>{theaterAkademieStuttgart.name}</Link>
                     </p>
                   </div>
 
-                  <h3>2017 – 2018</h3>
+                  <h3>2013 – 2018</h3>
+                  <div>
+                    <p>
+                      <strong>Studium an der</strong>{' '}
+                      <Link to={theaterAkademieStuttgart.url}>{theaterAkademieStuttgart.name}</Link>
+                    </p>
+                  </div>
+
+                  <h3>2013 – 2018</h3>
+                  <div>
+                    <p>
+                      <strong>Camera Acting</strong>, Workshop mit{' '}
+                      <Link to={jovanovic.url}>{jovanovic.name}</Link>
+                    </p>
+                  </div>
+
+                  <h3>2018</h3>
+                  <div>
+                    <p>
+                      <strong>Camera Acting</strong>, Workshop mit{' '}
+                      <Link to={borlan.url}>{borlan.name}</Link>
+                    </p>
+                  </div>
+
+                  <h3>2017 / 2018</h3>
+                  <div>
+                    <p>
+                      <strong>Camera Acting</strong>, Workshop mit{' '}
+                      <Link to={akkaya.url}>{akkaya.name}</Link>
+                    </p>
+                  </div>
+
+                  <h3>2017 / 2018</h3>
                   <div>
                     <p>
                       <strong>„Ein Mittsommernachtstraum“</strong>, Spinnweb & Krankenschwester{' '}
@@ -250,18 +385,8 @@ function ActingPage(): JSX.Element {
                       </Link>
                     </p>
                   </div>
-                </Column>
 
-                <Column span={6} start={7}>
-                  <h3>2018</h3>
-                  <div>
-                    <p>
-                      <strong>Camera Acting</strong>, Workshop <br />
-                      <Link to={borlan.url}>{borlan.name}</Link>
-                    </p>
-                  </div>
-
-                  <h3>2017 – 2018</h3>
+                  <h3>2017 / 2018</h3>
                   <div>
                     <p>
                       <strong>„Was Ihr Wollt“</strong>, Olivia <br />
@@ -269,6 +394,15 @@ function ActingPage(): JSX.Element {
                       <Link to={theaterKompagnieStuttgart.url}>
                         {theaterKompagnieStuttgart.name}
                       </Link>
+                    </p>
+                  </div>
+
+                  <h3>2012</h3>
+                  <div>
+                    <p>
+                      <strong>Abitur</strong>
+                      <br />
+                      Friedrich-Schiller-Gymnasium, Ludwigsburg
                     </p>
                   </div>
                 </Column>

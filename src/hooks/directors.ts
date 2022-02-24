@@ -1,6 +1,10 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 interface DirectorsQuery {
+  akkaya: {
+    name: string;
+    url: string;
+  };
   borlan: {
     name: string;
     url: string;
@@ -32,6 +36,10 @@ interface DirectorsQuery {
 function useDirectors(): DirectorsQuery {
   return useStaticQuery<DirectorsQuery>(graphql`
     {
+      akkaya: director(fields: { slug: { eq: "ben-akkaya" } }) {
+        name
+        url
+      }
       borlan: director(fields: { slug: { eq: "attila-borlan" } }) {
         name
         url
