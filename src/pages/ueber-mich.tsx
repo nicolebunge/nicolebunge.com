@@ -55,102 +55,17 @@ function AboutPage(): JSX.Element {
         <Grid>
           <Row>
             <Column span={4}>
-              <h2 id="persoenlichkeit">Persönlichkeit</h2>
+              <h2>Was Sie von mir und meiner Arbeit erwarten können</h2>
             </Column>
 
-            <Column span={4} start={5}>
-              <h3>Herkunft</h3>
+            <Column span={7} start={5}>
               <ul>
-                <li>Geboren in Ludwigsburg</li>
-                <li>Nationalität: deutsch</li>
-              </ul>
-            </Column>
-
-            <Column span={4} start={9}>
-              <h3>Wohnmöglichkeit</h3>
-              <ul>
-                <li>Berlin</li>
-                <li>Stuttgart</li>
-              </ul>
-            </Column>
-
-            <Column span={4} start={5}>
-              <h3>Aussehen</h3>
-              <ul>
-                <li>Augenfarbe: grau-grün</li>
-                <li>Haare: dunkelblond, sehr lang</li>
-              </ul>
-            </Column>
-
-            <Column span={4} start={9}>
-              <h3>Statur</h3>
-              <ul>
-                <li>165 cm groß</li>
-                <li>Konfektion: xs</li>
-              </ul>
-            </Column>
-          </Row>
-        </Grid>
-      </Section>
-
-      <Section>
-        <Grid>
-          <Row>
-            <Column span={4}>
-              <h2 id="kenntnisse-und-faehigkeiten">Kenntnisse & Fähigkeiten</h2>
-            </Column>
-
-            <Column span={4} start={5}>
-              <h3 id="sprachen">Sprachen & Dialekte</h3>
-              <ul>
-                <li>Deutsch (Muttersprache)</li>
-                <li>Französisch (fließend)</li>
-                <li>Spanisch (fließend)</li>
-                <li>Englisch (fließend)</li>
-                <li>Berlinerisch</li>
-              </ul>
-            </Column>
-
-            <Column span={4} start={9}>
-              <h3 id="musik">Musik</h3>
-              <ul>
-                <li>Blockflöte</li>
-                <li>Altflöte</li>
-                <li>E-Gitarre</li>
-                <li>Akustik-Gitarre</li>
-                <li>Trommeln (Djembé)</li>
-              </ul>
-            </Column>
-
-            <Column span={4} start={5}>
-              <h3 id="tanz">Tanz</h3>
-              <ul>
-                <li>10 Jahre Standard- und Latein-Turniertanz</li>
-                <li>Ballett, Hip-Hop, Modern, Jazz, Stepptanz, Contemporary</li>
-              </ul>
-            </Column>
-
-            <Column span={4} start={9}>
-              <h3 id="sport">Sport</h3>
-              <ul>
-                <li>Schwimmen</li>
-                <li>Reiten</li>
-                <li>Fechten</li>
-                <li>Jonglage</li>
-              </ul>
-            </Column>
-
-            <Column span={4} start={5}>
-              <h3 id="gesang">Gesang</h3>
-              <ul>
-                <li>Mezzosopran</li>
-              </ul>
-            </Column>
-
-            <Column span={4} start={9}>
-              <h3 id="fuehrerschein">Führerschein</h3>
-              <ul>
-                <li>Klasse B</li>
+                <li>Gut strukturierte und klare Vorbereitung</li>
+                <li>Tiefgründige und gut fundierte künstlerische Arbeit</li>
+                <li>Prozess- und zielorientiert</li>
+                <li>Gruppendynamische Prozesse – Die Erkenntniss des Individuums für die Gruppe</li>
+                <li>Teamorientiertes Arbeiten</li>
+                <li>Abholen und Leiten einer Gruppe</li>
               </ul>
             </Column>
           </Row>
