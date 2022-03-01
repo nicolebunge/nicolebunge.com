@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable import/prefer-default-export */
-/* eslint-disable react/jsx-filename-extension */
 
+import { WrapPageElementBrowserArgs } from 'gatsby';
 import React from 'react';
 import Layout from './src/components/Layout';
 
@@ -9,7 +8,7 @@ import Layout from './src/components/Layout';
  * @link https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement
  */
 
-function wrapPageElement({ element, props }) {
+function wrapPageElement({ element, props }: WrapPageElementBrowserArgs): JSX.Element {
   return <Layout {...props}>{element}</Layout>;
 }
 

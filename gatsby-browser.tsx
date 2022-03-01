@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable import/prefer-default-export */
-/* eslint-disable react/jsx-filename-extension */
 
 /**
  * @link https://www.gatsbyjs.com/docs/how-to/styling/using-web-fonts/#self-host-google-fonts-with-fontsource
@@ -8,6 +6,7 @@
 
 import '@fontsource/source-sans-pro/latin-400.css';
 import '@fontsource/source-sans-pro/latin-600.css';
+import { WrapPageElementBrowserArgs } from 'gatsby';
 import React from 'react';
 import './build/css/variables.css';
 import Layout from './src/components/Layout';
@@ -28,7 +27,7 @@ import './src/styles/svg.css';
  * @link https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement
  */
 
-function wrapPageElement({ element, props }) {
+function wrapPageElement({ element, props }: WrapPageElementBrowserArgs): JSX.Element {
   return <Layout {...props}>{element}</Layout>;
 }
 
