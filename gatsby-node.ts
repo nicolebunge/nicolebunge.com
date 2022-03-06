@@ -1,12 +1,26 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-/* eslint-disable @typescript-eslint/no-var-requires */
-
-const { resolve } = require('path');
-const slugify = require('@sindresorhus/slugify');
+import { resolve } from 'path';
+import type { GatsbyNode } from 'gatsby';
+import slugify from '@sindresorhus/slugify';
 
 const defaultTemplate = resolve('src/templates/default.tsx');
 
-async function createPages({ actions, graphql, reporter }) {
+interface Data {
+  allMarkdownRemark: {
+    edges: {
+      node: {
+        frontmatter: {
+          path: string;
+        };
+      };
+    }[];
+  };
+}
+
+interface Node {
+  name: string;
+}
+
+const createPages: GatsbyNode['createPages'] = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
   const { data, errors } = await graphql(`
@@ -24,14 +38,14 @@ async function createPages({ actions, graphql, reporter }) {
   `);
 
   if (errors) {
-    reporter.panicBuild('There was an error loading your pages', errors);
+    reporter.panicOnBuild('There was an error loading your pages', errors);
 
     return;
   }
 
   const {
     allMarkdownRemark: { edges },
-  } = data;
+  } = data as Data;
 
   edges.forEach((edge) => {
     const { node } = edge;
@@ -42,9 +56,9 @@ async function createPages({ actions, graphql, reporter }) {
       context: {},
     });
   });
-}
+};
 
-function createSchemaCustomization({ actions }) {
+const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({ actions }) => {
   const { createTypes } = actions;
 
   const typeDefs = `
@@ -61,17 +75,18 @@ function createSchemaCustomization({ actions }) {
   `;
 
   createTypes(typeDefs);
-}
+};
 
 /**
  *
  * @link https://www.gatsbyjs.com/docs/creating-slugs-for-pages/
  */
-function onCreateNode({ node, actions }) {
+
+const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
   const { internal } = node;
 
   if (['Director', 'Organization'].includes(internal.type)) {
-    const { name } = node;
+    const { name } = node as unknown as Node;
     const { createNodeField } = actions;
 
     createNodeField({
@@ -82,10 +97,6 @@ function onCreateNode({ node, actions }) {
       }),
     });
   }
-}
-
-module.exports = {
-  createPages,
-  createSchemaCustomization,
-  onCreateNode,
 };
+
+export { createPages, createSchemaCustomization, onCreateNode };

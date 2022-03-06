@@ -1,10 +1,13 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable camelcase */
 
-const startCase = require('lodash/startCase');
+import type { GatsbyConfig } from 'gatsby';
+import startCase from 'lodash/startCase';
 
-module.exports = {
+interface Node {
+  name: string;
+}
+
+const config: GatsbyConfig = {
   siteMetadata: {
     author: '@BungeNicole',
     description:
@@ -73,7 +76,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-json',
       options: {
-        typeName: ({ node }) => startCase(node.name),
+        typeName: ({ node }: { node: Node }) => startCase(node.name),
       },
     },
     {
@@ -81,3 +84,5 @@ module.exports = {
     },
   ],
 };
+
+export default config;
