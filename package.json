@@ -16,7 +16,7 @@
     "gatsby-plugin-sitemap": "^5.8.0",
     "gatsby-source-filesystem": "^4.8.2",
     "gatsby-transformer-json": "^4.8.0",
-    "gatsby-transformer-remark": "^5.8.2",
+    "gatsby-transformer-remark": "^5.11.1",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
