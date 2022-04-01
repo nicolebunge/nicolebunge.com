@@ -52,7 +52,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
-    "@storybook/testing-react": "^1.2.3",
+    "@storybook/testing-react": "^1.2.4",
     "@svgr/cli": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.4",
