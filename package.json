@@ -9,7 +9,7 @@
     "@sentry/tracing": "^6.17.3",
     "@sindresorhus/slugify": "^1.1.2",
     "clsx": "^1.1.1",
-    "gatsby": "^4.8.2",
+    "gatsby": "^4.24.1",
     "gatsby-plugin-google-analytics": "^4.11.0",
     "gatsby-plugin-manifest": "^4.8.2",
     "gatsby-plugin-react-helmet": "^5.8.0",
