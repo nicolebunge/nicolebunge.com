@@ -10,7 +10,6 @@ import { useDirectors } from '../hooks/directors';
 import { useOrganizations } from '../hooks/organizations';
 import { useProductions } from '../hooks/productions';
 import { usePublications } from '../hooks/publications';
-import Button from '../components/Button';
 
 function ActingPage(): JSX.Element {
   const { akkaya, borlan, jovanovic, schloesser } = useDirectors();

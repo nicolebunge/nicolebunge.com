@@ -22,6 +22,7 @@ interface Organization {
 
 export interface ProductionProps {
   directors: Director[];
+  // eslint-disable-next-line react/no-unused-prop-types
   id: string;
   name: string;
   organization: Organization;
