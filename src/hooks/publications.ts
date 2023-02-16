@@ -20,7 +20,7 @@ interface PublicationsQuery {
 function usePublications(): PublicationsQuery {
   return useStaticQuery<PublicationsQuery>(graphql`
     {
-      allPublication(sort: { fields: date, order: DESC }) {
+      allPublication(sort: { date: DESC }) {
         edges {
           node {
             date(formatString: "DD.MM.YYYY")

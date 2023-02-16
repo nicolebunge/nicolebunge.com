@@ -38,7 +38,7 @@ function useProductions(): ProductionsQuery {
   return useStaticQuery<ProductionsQuery>(graphql`
     {
       allProduction {
-        group(field: organization___fields___slug) {
+        group(field: { organization: { fields: { slug: SELECT } } }) {
           fieldValue
           edges {
             node {

@@ -34,12 +34,18 @@ async function createPages({ actions, graphql, reporter }) {
   } = data;
 
   edges.forEach((edge) => {
-    const { node } = edge;
+    const {
+      node: {
+        frontmatter: { path },
+      },
+    } = edge;
 
     createPage({
-      path: node.frontmatter.path,
+      path,
       component: defaultTemplate,
-      context: {},
+      context: {
+        slug: path,
+      },
     });
   });
 }
