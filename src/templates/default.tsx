@@ -36,8 +36,8 @@ function DefaultTemplate(props: DefaultTemplateProps): JSX.Element {
 }
 
 export const pageQuery = graphql`
-  query ($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query ($slug: String!) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       frontmatter {
         title
