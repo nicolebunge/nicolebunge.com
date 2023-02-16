@@ -1,9 +1,7 @@
-import type { Config } from '@jest/types';
-
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
 
-const config: Config.InitialOptions = {
+const config = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -86,8 +84,8 @@ const config: Config.InitialOptions = {
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss)$': `identity-obj-proxy`,
     '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': `<rootDir>/__mocks__/file-mock.js`,
-    '^gatsby-page-utils/(.*)$': `gatsby-page-utils/dist/$1`, // Workaround for https://github.com/facebook/jest/issues/9771
-    '^gatsby-core-utils/(.*)$': `gatsby-core-utils/dist/$1`, // Workaround for https://github.com/facebook/jest/issues/9771
+    // '^gatsby-page-utils/(.*)$': `gatsby-page-utils/dist/$1`, // Workaround for https://github.com/facebook/jest/issues/9771
+    // '^gatsby-core-utils/(.*)$': `gatsby-core-utils/dist/$1`, // Workaround for https://github.com/facebook/jest/issues/9771
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -147,7 +145,10 @@ const config: Config.InitialOptions = {
   testEnvironment: 'jsdom',
 
   // Options that will be passed to the testEnvironment
-  // testEnvironmentOptions: {},
+  testEnvironmentOptions: {
+    // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
+    url: `http://localhost`,
+  },
 
   // Adds a location field to test results
   // testLocationInResults: false,
@@ -169,9 +170,6 @@ const config: Config.InitialOptions = {
 
   // This option allows use of a custom test runner
   // testRunner: "jest-circus/runner",
-
-  // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
-  testURL: `http://localhost`,
 
   // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
   // timers: "real",
@@ -195,4 +193,4 @@ const config: Config.InitialOptions = {
   // watchman: true,
 };
 
-export default config;
+module.exports = config;
