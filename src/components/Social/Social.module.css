@@ -14,7 +14,7 @@
   will-change: transform;
 }
 
-@media (min-width: 1440px) {
+@media (width >= 1440px) {
   .social {
     background-size: calc(var(--grid-max-width) / 3);
     padding-left: 3.5em;

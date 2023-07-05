@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-@media (min-width: 1440px) {
+@media (width >= 1440px) {
   body {
     background-size: calc(var(--grid-max-width) / 3);
   }

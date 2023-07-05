@@ -1,4 +1,4 @@
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .alignment {
     display: flex;
   }
