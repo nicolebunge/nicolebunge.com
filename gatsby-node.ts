@@ -1,15 +1,31 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-const { resolve } = require('path');
-const slugify = require('@sindresorhus/slugify');
+import type { CreatePagesArgs, CreateSchemaCustomizationArgs, CreateNodeArgs } from 'gatsby';
+import { resolve } from 'node:path';
+import slugify from '@sindresorhus/slugify';
 
 const defaultTemplate = resolve('src/templates/default.tsx');
 
-async function createPages({ actions, graphql, reporter }) {
+interface Edge {
+  node: {
+    frontmatter: {
+      path: string;
+    };
+  };
+}
+
+interface Data {
+  allMarkdownRemark: {
+    edges: Edge[];
+  };
+}
+
+async function createPages(props: CreatePagesArgs): Promise<void> {
+  const { actions, graphql, reporter } = props;
   const { createPage } = actions;
 
-  const { data, errors } = await graphql(`
+  const { data, errors } = await graphql<Data>(`
     {
       allMarkdownRemark(limit: 1000) {
         edges {
@@ -24,14 +40,12 @@ async function createPages({ actions, graphql, reporter }) {
   `);
 
   if (errors) {
-    reporter.panicBuild('There was an error loading your pages', errors);
-
-    return;
+    reporter.panicOnBuild('There was an error loading your pages', errors);
   }
 
   const {
     allMarkdownRemark: { edges },
-  } = data;
+  } = data!;
 
   edges.forEach((edge) => {
     const {
@@ -50,7 +64,8 @@ async function createPages({ actions, graphql, reporter }) {
   });
 }
 
-function createSchemaCustomization({ actions }) {
+function createSchemaCustomization(props: CreateSchemaCustomizationArgs): void {
+  const { actions } = props;
   const { createTypes } = actions;
 
   const typeDefs = `
@@ -69,11 +84,16 @@ function createSchemaCustomization({ actions }) {
   createTypes(typeDefs);
 }
 
+interface Node extends Record<string, unknown> {
+  name: string;
+}
+
 /**
  *
  * @link https://www.gatsbyjs.com/docs/creating-slugs-for-pages/
  */
-function onCreateNode({ node, actions }) {
+function onCreateNode(props: CreateNodeArgs<Node>): void {
+  const { node, actions } = props;
   const { internal } = node;
 
   if (['Director', 'Organization'].includes(internal.type)) {
@@ -90,8 +110,5 @@ function onCreateNode({ node, actions }) {
   }
 }
 
-module.exports = {
-  createPages,
-  createSchemaCustomization,
-  onCreateNode,
-};
+export type { Node };
+export { createPages, createSchemaCustomization, onCreateNode };
