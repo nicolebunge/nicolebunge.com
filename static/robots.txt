@@ -1,2 +1,1 @@
 User-agent: *
-Sitemap: https://nicolebunge.com/sitemap.xml
