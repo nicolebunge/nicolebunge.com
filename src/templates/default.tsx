@@ -1,8 +1,9 @@
-import { graphql, PageProps } from 'gatsby';
+import type { HeadProps, PageProps } from 'gatsby';
+import { graphql } from 'gatsby';
 import React from 'react';
+import Grid from '../components/Grid';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
-import Grid from '../components/Grid';
 
 interface DataType {
   markdownRemark: {
@@ -18,20 +19,17 @@ export type DefaultTemplateProps = PageProps<DataType>;
 function DefaultTemplate(props: DefaultTemplateProps): JSX.Element {
   const {
     data: {
-      markdownRemark: { frontmatter, html },
+      markdownRemark: { html },
     },
   } = props;
 
   return (
-    <>
-      <SEO title={frontmatter.title} />
-      <Section>
-        <Grid>
-          {/* eslint-disable-next-line react/no-danger */}
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-        </Grid>
-      </Section>
-    </>
+    <Section>
+      <Grid>
+        {/* eslint-disable-next-line react/no-danger */}
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </Grid>
+    </Section>
   );
 }
 
@@ -45,5 +43,15 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export function Head(props: HeadProps<DataType>): JSX.Element {
+  const {
+    data: {
+      markdownRemark: { frontmatter },
+    },
+  } = props;
+
+  return <SEO title={frontmatter.title} />;
+}
 
 export default DefaultTemplate;

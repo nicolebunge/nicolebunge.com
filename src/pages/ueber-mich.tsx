@@ -13,8 +13,6 @@ function AboutPage(): JSX.Element {
 
   return (
     <>
-      <SEO title="Über Mich" />
-
       <Section>
         <Grid>
           <h1 id="ueber-mich">Über Mich</h1>
@@ -73,6 +71,10 @@ function AboutPage(): JSX.Element {
       </Section>
     </>
   );
+}
+
+export function Head(): JSX.Element {
+  return <SEO title="Über Mich" />;
 }
 
 export default AboutPage;

@@ -12,8 +12,6 @@ function TheatrePedagogyPage(): JSX.Element {
 
   return (
     <>
-      <SEO title="Theaterpädagogik" />
-
       <Section>
         <Grid>
           <h1 id="theaterpaedagogik">Theaterpädagogik</h1>
@@ -109,6 +107,10 @@ function TheatrePedagogyPage(): JSX.Element {
       </Section>
     </>
   );
+}
+
+export function Head(): JSX.Element {
+  return <SEO title="Theaterpädagogik" />;
 }
 
 export default TheatrePedagogyPage;
