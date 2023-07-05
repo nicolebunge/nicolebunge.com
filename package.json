@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@fontsource/source-sans-pro": "^4.5.11",
+    "@fontsource/source-sans-pro": "^5.0.4",
     "@sentry/gatsby": "^7.57.0",
     "@sentry/tracing": "^7.57.0",
     "@sindresorhus/slugify": "^1.1.2",
