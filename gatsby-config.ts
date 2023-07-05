@@ -28,25 +28,10 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        background_color: '#fff',
-        display: 'minimal-ui',
-        icon: 'src/images/nicole-bunge-icon.png',
-        name: 'Nicole Bunge',
-        short_name: 'Nicole Bunge',
-        start_url: '/',
-        theme_color: '#000',
-      },
-    },
-    {
       resolve: '@sentry/gatsby',
       options: {
         tracesSampleRate: 0.2,
       },
-    },
-    {
-      resolve: 'gatsby-plugin-sitemap',
     },
     {
       resolve: 'gatsby-source-filesystem',
