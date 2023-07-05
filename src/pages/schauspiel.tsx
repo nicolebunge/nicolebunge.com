@@ -26,8 +26,6 @@ function ActingPage(): JSX.Element {
 
   return (
     <>
-      <SEO title="Schauspiel" />
-
       <Section>
         <Grid>
           <h1 id="schauspiel">Schauspiel</h1>
@@ -436,6 +434,10 @@ function ActingPage(): JSX.Element {
       </Section>
     </>
   );
+}
+
+export function Head(): JSX.Element {
+  return <SEO title="Schauspiel" />;
 }
 
 export default ActingPage;

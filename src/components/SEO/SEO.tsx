@@ -1,73 +1,42 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React, { ReactNode } from 'react';
 import { useSite } from '../../hooks/site';
 
 /**
  * @link https://www.gatsbyjs.com/docs/add-seo-component/
  */
-
 type Lang = 'de';
-type Meta = {
-  name: string;
-  content: string;
-};
 
-export interface SEOProps {
+interface SEOProps {
+  children?: ReactNode;
   description?: string;
   lang?: Lang;
-  keywords?: string[];
-  meta?: Meta[];
   title: string;
 }
 
 function SEO(props: SEOProps): JSX.Element {
-  const { description, lang = 'de', meta = [], title, ...otherProps } = props;
+  const { children, description, lang = 'de', title } = props;
 
   const { site } = useSite();
   const metaDescription = description || site.siteMetadata.description;
 
   return (
-    <Helmet
-      htmlAttributes={{ lang }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: 'description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:title',
-          content: title,
-        },
-        {
-          property: 'og:description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:type',
-          content: 'website',
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary',
-        },
-        {
-          name: 'twitter:creator',
-          content: site.siteMetadata.author,
-        },
-        {
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          name: 'twitter:description',
-          content: metaDescription,
-        },
-      ].concat(meta)}
-      {...otherProps}
-    />
+    <>
+      <html lang={lang} />
+      <title>
+        {title} | {site.siteMetadata.title}
+      </title>
+      <meta name="description" content={metaDescription} />
+      <meta name="og:description" content={metaDescription} />
+      <meta name="og:title" content={title} />
+      <meta name="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={site.siteMetadata.author} />
+      <meta name="twitter:description" content={metaDescription} />
+      <meta name="twitter:title" content={title} />
+      {children}
+    </>
   );
 }
 
+export type { SEOProps };
 export default SEO;

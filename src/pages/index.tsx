@@ -16,8 +16,6 @@ function IndexPage(): JSX.Element {
 
   return (
     <>
-      <SEO title="Home" />
-
       <Section isFull>
         <Grid>
           <Row align="center">
@@ -104,6 +102,10 @@ function IndexPage(): JSX.Element {
       </Section>
     </>
   );
+}
+
+export function Head(): JSX.Element {
+  return <SEO title="Home" />;
 }
 
 export default IndexPage;

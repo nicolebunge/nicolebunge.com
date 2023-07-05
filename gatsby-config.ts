@@ -40,9 +40,6 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-helmet',
-    },
-    {
       resolve: '@sentry/gatsby',
       options: {
         tracesSampleRate: 0.2,
