@@ -1,9 +1,7 @@
 import type { HeadProps, PageProps } from 'gatsby';
 import { graphql } from 'gatsby';
 import React from 'react';
-import Grid from '../components/Grid';
-import SEO from '../components/SEO';
-import Section from '../components/Section';
+import { Grid, SEO, Section } from '../components';
 
 interface DataType {
   markdownRemark: {

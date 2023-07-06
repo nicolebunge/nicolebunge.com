@@ -14,7 +14,7 @@ import Social from '../Social';
 import { layout } from './Layout.module.css';
 import MainNavigation from '../MainNavigation';
 
-export interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
+interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
 }
 
@@ -52,4 +52,5 @@ function Layout(props: LayoutProps): JSX.Element {
   );
 }
 
+export type { LayoutProps };
 export default Layout;

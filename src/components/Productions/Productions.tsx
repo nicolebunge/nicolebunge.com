@@ -1,7 +1,7 @@
 import React from 'react';
 import Production, { ProductionProps } from '../Production';
 
-export interface ProductionsProps {
+interface ProductionsProps {
   productions: ProductionProps[];
 }
 
@@ -19,4 +19,5 @@ function Productions(props: ProductionsProps): JSX.Element {
   );
 }
 
+export type { ProductionsProps };
 export default Productions;

@@ -20,12 +20,12 @@ interface Route {
   path: string;
 }
 
-export interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
+interface MainNavigationProps extends HTMLAttributes<HTMLDivElement> {
   inline?: boolean;
   routes: Route[];
 }
 
-function MainNavigation(props: NavigationProps): JSX.Element {
+function MainNavigation(props: MainNavigationProps): JSX.Element {
   const { className, routes, ...otherProps } = props;
   const [isActive, toggle] = useToggle(false);
 
@@ -69,4 +69,5 @@ function MainNavigation(props: NavigationProps): JSX.Element {
   );
 }
 
+export type { MainNavigationProps };
 export default MainNavigation;

@@ -1,11 +1,5 @@
 import React from 'react';
-import SEO from '../components/SEO';
-import Section from '../components/Section';
-import Grid from '../components/Grid';
-import Row from '../components/Row';
-import Column from '../components/Column';
-import Link from '../components/Link';
-import Productions from '../components/Productions';
+import { Column, Grid, Link, Productions, Row, SEO, Section } from '../components';
 import { useDirectors } from '../hooks/directors';
 import { useOrganizations } from '../hooks/organizations';
 import { useProductions } from '../hooks/productions';

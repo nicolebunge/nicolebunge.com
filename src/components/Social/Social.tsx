@@ -6,7 +6,7 @@ import { INSTAGRAM, LINKED_IN, XING } from '../../constants/social';
 import Link from '../Link';
 import { social, social__icon, social__icons } from './Social.module.css';
 
-export type SocialProps = HTMLAttributes<HTMLDivElement>;
+type SocialProps = HTMLAttributes<HTMLDivElement>;
 
 function Social(props: SocialProps): JSX.Element {
   const { className, ...otherProps } = props;
@@ -35,4 +35,5 @@ function Social(props: SocialProps): JSX.Element {
   );
 }
 
+export type { SocialProps };
 export default Social;

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import React, { ReactNode } from 'react';
 import { button } from './Button.module.css';
 
-export interface ButtonProps {
+interface ButtonProps {
   className?: string;
   children: ReactNode;
   to: string;
@@ -15,4 +15,5 @@ function Button(props: ButtonProps): JSX.Element {
   return <Link className={clsx(className, button)} {...otherProps} />;
 }
 
+export type { ButtonProps };
 export default Button;

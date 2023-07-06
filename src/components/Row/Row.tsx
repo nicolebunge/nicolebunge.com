@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import Alignment, { AlignmentProps } from '../Alignment';
 import { row } from './Row.module.css';
 
-export interface RowProps extends AlignmentProps {
+interface RowProps extends AlignmentProps {
   children: ReactNode;
 }
 
@@ -13,4 +13,5 @@ function Row(props: RowProps): JSX.Element {
   return <Alignment className={clsx(className, row)} {...otherProps} />;
 }
 
+export type { RowProps };
 export default Row;

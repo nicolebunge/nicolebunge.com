@@ -5,7 +5,7 @@ import React from 'react';
 import CloudinaryImage, { CloudinaryImageProps } from '../CloudinaryImage';
 import { gallery, gallery__item } from './Gallery.module.css';
 
-export interface GalleryProps {
+interface GalleryProps {
   className?: string;
   images: CloudinaryImageProps[];
 }
@@ -26,4 +26,5 @@ function Gallery(props: GalleryProps): JSX.Element {
   );
 }
 
+export type { GalleryProps };
 export default Gallery;

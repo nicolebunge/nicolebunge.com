@@ -1,12 +1,5 @@
 import React from 'react';
-import SEO from '../components/SEO';
-import Section from '../components/Section';
-import Grid from '../components/Grid';
-import Row from '../components/Row';
-import Column from '../components/Column';
-import Button from '../components/Button';
-import Link from '../components/Link';
-import CloudinaryImage from '../components/CloudinaryImage';
+import { Button, CloudinaryImage, Column, Grid, Link, Row, SEO, Section } from '../components';
 import { ABOUT, ACTING, THEATRE_PEDAGOGY } from '../constants/routes';
 import { useOrganizations } from '../hooks/organizations';
 
