@@ -61,7 +61,7 @@ const startClassNames = {
   12: columnStart12,
 };
 
-export interface ColumnProps extends AlignmentProps {
+interface ColumnProps extends AlignmentProps {
   span?: Span;
   start?: Start;
 }
@@ -80,4 +80,5 @@ function Column(props: ColumnProps): JSX.Element {
   );
 }
 
+export type { ColumnProps };
 export default Column;

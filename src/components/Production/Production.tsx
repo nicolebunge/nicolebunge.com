@@ -20,7 +20,7 @@ interface Organization {
   url: string;
 }
 
-export interface ProductionProps {
+interface ProductionProps {
   directors: Director[];
   // eslint-disable-next-line react/no-unused-prop-types
   id: string;
@@ -42,4 +42,5 @@ function Production(props: ProductionProps): JSX.Element {
   );
 }
 
+export type { ProductionProps };
 export default Production;

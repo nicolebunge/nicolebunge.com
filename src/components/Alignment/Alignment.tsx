@@ -16,7 +16,7 @@ import {
 type Align = 'center' | 'end' | 'start';
 type Justify = 'center' | 'end' | 'space-between' | 'start';
 
-export interface AlignmentProps extends HTMLAttributes<HTMLDivElement> {
+interface AlignmentProps extends HTMLAttributes<HTMLDivElement> {
   align?: Align;
   children: ReactNode;
   justify?: Justify;
@@ -50,4 +50,5 @@ function Alignment(props: AlignmentProps): JSX.Element {
   );
 }
 
+export type { AlignmentProps };
 export default Alignment;

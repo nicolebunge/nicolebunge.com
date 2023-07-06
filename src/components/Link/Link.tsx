@@ -5,7 +5,7 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import React, { ReactNode } from 'react';
 import { isExternalUrl } from '../../utils/string';
 
-export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   activeClassName?: string;
   children: ReactNode;
   external?: boolean;
@@ -26,4 +26,5 @@ function Link(props: LinkProps): JSX.Element {
   return <GatsbyLink to={to} {...otherProps} />;
 }
 
+export type { LinkProps };
 export default Link;

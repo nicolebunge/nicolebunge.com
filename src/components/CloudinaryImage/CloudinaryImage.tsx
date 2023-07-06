@@ -18,7 +18,7 @@ type Images =
   | 'gallery/kompagnie-2.jpg'
   | 'nicole-bunge.svg';
 
-export interface CloudinaryImageProps {
+interface CloudinaryImageProps {
   alt: string;
   height: number;
   src: Images;
@@ -40,4 +40,5 @@ function CloudinaryImage(props: CloudinaryImageProps): JSX.Element {
   );
 }
 
+export type { CloudinaryImageProps };
 export default CloudinaryImage;

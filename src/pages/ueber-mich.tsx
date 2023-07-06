@@ -1,10 +1,5 @@
 import React from 'react';
-import SEO from '../components/SEO';
-import Section from '../components/Section';
-import Grid from '../components/Grid';
-import Row from '../components/Row';
-import Column from '../components/Column';
-import Link from '../components/Link';
+import { Column, Grid, Link, Row, SEO, Section } from '../components';
 import { useOrganizations } from '../hooks/organizations';
 
 function AboutPage(): JSX.Element {

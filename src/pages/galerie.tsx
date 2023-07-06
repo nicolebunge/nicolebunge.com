@@ -1,8 +1,5 @@
 import React from 'react';
-import SEO from '../components/SEO';
-import Section from '../components/Section';
-import Grid from '../components/Grid';
-import Gallery from '../components/Gallery';
+import { Gallery, Grid, SEO, Section } from '../components';
 
 function GalleryPage(): JSX.Element {
   return (

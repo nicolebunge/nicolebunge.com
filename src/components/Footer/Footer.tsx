@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React, { HTMLAttributes, ReactNode } from 'react';
 import { footer } from './Footer.module.css';
 
-export interface FooterProps extends HTMLAttributes<HTMLElement> {
+interface FooterProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;
 }
 
@@ -12,4 +12,5 @@ function Footer(props: FooterProps): JSX.Element {
   return <footer className={clsx(className, footer)} role="contentinfo" {...otherProps} />;
 }
 
+export type { FooterProps };
 export default Footer;
