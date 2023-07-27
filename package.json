@@ -7,7 +7,7 @@
     "@fontsource/source-sans-pro": "^5.0.5",
     "@sentry/gatsby": "^7.60.1",
     "@sentry/tracing": "^7.60.1",
-    "@sindresorhus/slugify": "^1.1.2",
+    "@sindresorhus/slugify": "^2.2.1",
     "clsx": "^2.0.0",
     "gatsby": "^5.11.0",
     "gatsby-plugin-google-analytics": "^5.11.0",
