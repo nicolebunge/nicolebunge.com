@@ -16,18 +16,6 @@ const config: GatsbyConfig = {
   },
   plugins: [
     {
-      /**
-       * @link https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/
-       * @link https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/#anonymize
-       */
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        anonymize: true,
-        enableWebVitalsTracking: true,
-        trackingId: 'UA-126642580-1',
-      },
-    },
-    {
       resolve: '@sentry/gatsby',
       options: {
         tracesSampleRate: 0.2,
