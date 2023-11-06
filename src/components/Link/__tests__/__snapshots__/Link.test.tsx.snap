@@ -1,14 +1,16 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Link component renders correctly 1`] = `
+exports[`Link component > renders correctly 1`] = `
 <a
+  aria-current="page"
+  class=""
   href="/"
 >
   Internal Link
 </a>
 `;
 
-exports[`Link component should render external link correctly 1`] = `
+exports[`Link component > should render external link correctly 1`] = `
 <a
   href="http://example.com"
   rel="noopener noreferrer"

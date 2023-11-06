@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`MainNavigation component renders correctly 1`] = `
+exports[`MainNavigation component > renders correctly 1`] = `
 <nav
   aria-label="Hauptmenü"
   class="mainNavigation"
@@ -29,6 +29,7 @@ exports[`MainNavigation component renders correctly 1`] = `
       class="mainNavigation__item"
     >
       <a
+        aria-current="page"
         class="mainNavigation__link"
         href="/"
       >

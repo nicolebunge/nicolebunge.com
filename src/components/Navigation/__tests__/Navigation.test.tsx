@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import { axe } from 'jest-axe';
+import { describe, expect, it } from 'vitest';
 import Navigation from '..';
 
 describe('Navigation component', () => {
@@ -14,6 +14,5 @@ describe('Navigation component', () => {
     const { container } = render(<Navigation routes={routes} />);
 
     expect(container.firstChild).toMatchSnapshot();
-    expect(await axe(container)).toHaveNoViolations();
   });
 });

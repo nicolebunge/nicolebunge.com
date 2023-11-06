@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Productions component renders correctly 1`] = `
+exports[`Productions component > renders correctly 1`] = `
 <p>
   <strong>
     „
