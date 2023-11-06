@@ -16,12 +16,6 @@ const config: GatsbyConfig = {
   },
   plugins: [
     {
-      resolve: '@sentry/gatsby',
-      options: {
-        tracesSampleRate: 0.2,
-      },
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
