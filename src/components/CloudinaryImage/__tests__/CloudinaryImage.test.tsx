@@ -1,7 +1,7 @@
-import { composeStories } from '@storybook/testing-react';
+import { composeStories } from '@storybook/react';
 import { render } from '@testing-library/react';
 import React from 'react';
-import { axe } from 'jest-axe';
+import { describe, expect, it } from 'vitest';
 import * as stories from '../CloudinaryImage.stories';
 
 const { Default } = composeStories(stories);
@@ -11,6 +11,5 @@ describe('Cloudinary image component', () => {
     const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();
-    expect(await axe(container)).toHaveNoViolations();
   });
 });

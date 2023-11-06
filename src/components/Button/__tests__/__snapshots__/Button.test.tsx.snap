@@ -1,7 +1,8 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Button component renders correctly 1`] = `
+exports[`Button component > renders correctly 1`] = `
 <a
+  aria-current="page"
   class="button"
   href="/"
 >

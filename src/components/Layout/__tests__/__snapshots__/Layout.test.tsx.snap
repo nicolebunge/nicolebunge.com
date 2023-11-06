@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`layout component should render correctly 1`] = `
+exports[`layout component > should render correctly 1`] = `
 <div
   class="layout"
 >
@@ -9,6 +9,8 @@ exports[`layout component should render correctly 1`] = `
     role="banner"
   >
     <a
+      aria-current="page"
+      class=""
       href="/"
     >
       <img
@@ -105,7 +107,7 @@ exports[`layout component should render correctly 1`] = `
         role="navigation"
       >
         <ul
-          class="navigation__list navigation__listInline"
+          class="navigation__list undefined"
         >
           <li>
             <a

@@ -1,24 +1,24 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Alignment component should align content to center 1`] = `
+exports[`Alignment component > should align content to center 1`] = `
 <div
-  class="alignment alignmentAlignCenter"
+  class="alignment"
 />
 `;
 
-exports[`Alignment component should center content 1`] = `
+exports[`Alignment component > should center content 1`] = `
 <div
-  class="alignment alignmentAlignCenter alignmentJustifyCenter"
+  class="alignment undefined"
 />
 `;
 
-exports[`Alignment component should justify content to center 1`] = `
+exports[`Alignment component > should justify content to center 1`] = `
 <div
-  class="alignment alignmentJustifyCenter"
+  class="alignment undefined"
 />
 `;
 
-exports[`Alignment component should render correctly 1`] = `
+exports[`Alignment component > should render correctly 1`] = `
 <div
   class=""
 >

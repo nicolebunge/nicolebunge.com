@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Cloudinary image component renders correctly 1`] = `
+exports[`Cloudinary image component > renders correctly 1`] = `
 <img
   alt="Image alt text"
   height="300"
