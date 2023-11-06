@@ -1,8 +1,0 @@
-{
-  "color": {
-    "font": {
-      "base": { "value": "{color.base.value}" },
-      "headline": { "value": "{color.primary.value}" }
-    }
-  }
-}
