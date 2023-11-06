@@ -7,7 +7,7 @@ import * as stories from '../Grid.stories';
 const { Default } = composeStories(stories);
 
 describe('Grid component', () => {
-  it('renders correctly', async () => {
+  it('renders correctly', () => {
     const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();

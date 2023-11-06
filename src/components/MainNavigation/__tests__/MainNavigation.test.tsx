@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 import MainNavigation from '..';
 
 describe('MainNavigation component', () => {
-  it('renders correctly', async () => {
+  it('renders correctly', () => {
     const routes = [
       {
         name: 'Index',

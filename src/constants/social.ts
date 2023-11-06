@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { Instagram14, Linkedin4, Xing4 } from '../components/Icons';
 
 interface Icon {

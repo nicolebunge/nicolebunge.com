@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 
-import { SiteQuery } from '../site';
+import type { SiteQuery } from '../site';
 
 function useSite(): SiteQuery {
   return {

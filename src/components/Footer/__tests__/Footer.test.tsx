@@ -7,7 +7,7 @@ import * as stories from '../Footer.stories';
 const { Default } = composeStories(stories);
 
 describe('Footer component', () => {
-  it('renders correctly', async () => {
+  it('renders correctly', () => {
     const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();

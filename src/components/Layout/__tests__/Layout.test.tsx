@@ -10,7 +10,7 @@ vi.mock('../../../constants/dates');
 vi.mock('../../../hooks/site');
 
 describe('layout component', () => {
-  it('should render correctly', async () => {
+  it('should render correctly', () => {
     const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();

@@ -34,4 +34,5 @@ function usePublications(): PublicationsQuery {
   `);
 }
 
-export { usePublications, PublicationsQuery };
+export { usePublications };
+export type { PublicationsQuery };

@@ -7,7 +7,7 @@ import * as stories from '../Alignment.stories';
 const { Default, AlignCenter, Center, JustifyCenter } = composeStories(stories);
 
 describe('Alignment component', () => {
-  it('should render correctly', async () => {
+  it('should render correctly', () => {
     const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();

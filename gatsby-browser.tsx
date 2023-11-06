@@ -6,7 +6,7 @@
 
 import '@fontsource/source-sans-pro/latin-400.css';
 import '@fontsource/source-sans-pro/latin-600.css';
-import { WrapPageElementBrowserArgs } from 'gatsby';
+import type { WrapPageElementBrowserArgs } from 'gatsby';
 import React from 'react';
 import Layout from './src/components/Layout';
 import './src/styles/all.css';
