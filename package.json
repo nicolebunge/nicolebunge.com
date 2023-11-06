@@ -5,8 +5,6 @@
   "private": true,
   "dependencies": {
     "@fontsource/source-sans-pro": "^5.0.8",
-    "@sentry/gatsby": "^7.74.1",
-    "@sentry/tracing": "^7.74.1",
     "@sindresorhus/slugify": "^1.1.2",
     "clsx": "^2.0.0",
     "gatsby": "^5.12.7",
