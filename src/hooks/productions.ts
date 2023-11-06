@@ -64,4 +64,5 @@ function useProductions(): ProductionsQuery {
   `);
 }
 
-export { useProductions, ProductionsQuery };
+export { useProductions };
+export type { ProductionsQuery };

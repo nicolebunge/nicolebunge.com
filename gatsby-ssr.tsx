@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 
-import { WrapPageElementBrowserArgs } from 'gatsby';
+import type { WrapPageElementBrowserArgs } from 'gatsby';
 import React from 'react';
 import Layout from './src/components/Layout';
 

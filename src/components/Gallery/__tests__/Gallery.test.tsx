@@ -7,7 +7,7 @@ import * as stories from '../Gallery.stories';
 const { Default } = composeStories(stories);
 
 describe('Gallery component', () => {
-  it('renders correctly', async () => {
+  it('renders correctly', () => {
     const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();

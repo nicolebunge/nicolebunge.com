@@ -26,4 +26,5 @@ function useSite(): SiteQuery {
   `);
 }
 
-export { useSite, SiteQuery };
+export { useSite };
+export type { SiteQuery };

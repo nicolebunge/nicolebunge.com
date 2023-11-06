@@ -70,4 +70,5 @@ function useDirectors(): DirectorsQuery {
   `);
 }
 
-export { useDirectors, DirectorsQuery };
+export { useDirectors };
+export type { DirectorsQuery };

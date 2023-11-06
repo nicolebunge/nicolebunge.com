@@ -7,7 +7,7 @@ import * as stories from '../Button.stories';
 const { Default } = composeStories(stories);
 
 describe('Button component', () => {
-  it('renders correctly', async () => {
+  it('renders correctly', () => {
     const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();

@@ -60,7 +60,7 @@
 
   .mainNavigation__link--active::after {
     background-color: currentcolor;
-    content: "";
+    content: '';
     height: 0.25em;
     position: absolute;
     right: 0;

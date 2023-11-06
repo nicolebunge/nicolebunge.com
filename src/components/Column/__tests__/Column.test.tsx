@@ -7,7 +7,7 @@ import * as stories from '../Column.stories';
 const { Default } = composeStories(stories);
 
 describe('Column component', () => {
-  it('renders correctly', async () => {
+  it('renders correctly', () => {
     const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();

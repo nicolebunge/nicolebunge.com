@@ -7,7 +7,7 @@ import * as stories from '../Social.stories';
 const { Default } = composeStories(stories);
 
 describe('Social component', () => {
-  it('renders correctly', async () => {
+  it('renders correctly', () => {
     const { container } = render(<Default />);
 
     expect(container.firstChild).toMatchSnapshot();

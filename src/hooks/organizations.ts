@@ -69,4 +69,5 @@ function useOrganizations(): OrganizationsQuery {
   `);
 }
 
-export { useOrganizations, OrganizationsQuery };
+export { useOrganizations };
+export type { OrganizationsQuery };
