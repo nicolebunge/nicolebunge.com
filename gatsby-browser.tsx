@@ -8,7 +8,6 @@ import '@fontsource/source-sans-pro/latin-400.css';
 import '@fontsource/source-sans-pro/latin-600.css';
 import { WrapPageElementBrowserArgs } from 'gatsby';
 import React from 'react';
-import './build/css/variables.css';
 import Layout from './src/components/Layout';
 import './src/styles/all.css';
 import './src/styles/anchor.css';
@@ -22,6 +21,7 @@ import './src/styles/list.css';
 import './src/styles/paragraph.css';
 import './src/styles/selection.css';
 import './src/styles/svg.css';
+import './src/styles/variables.css';
 
 /**
  * @link https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement
