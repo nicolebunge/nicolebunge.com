@@ -42,7 +42,7 @@
     "url": "https://github.com/nicolebunge/nicolebunge.com"
   },
   "devDependencies": {
-    "@storybook/react": "^7.5.2",
+    "@storybook/react": "^7.6.2",
     "@svgr/cli": "^8.1.0",
     "@testing-library/react": "^14.0.0",
     "@types/lodash": "^4.14.200",
