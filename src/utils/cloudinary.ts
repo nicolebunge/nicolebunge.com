@@ -9,7 +9,9 @@ function buildQuery(props: QueryProps): string {
   const { height, width } = props;
 
   const params = {
-    c: 'fill',
+    // c: 'fill',
+    c: 'pad',
+    b: 'gen_fill',
     f: 'auto',
     h: height,
     q: 'auto',
