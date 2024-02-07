@@ -2,9 +2,14 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable camelcase */
 
+import dotenv from 'dotenv';
 import type { GatsbyConfig } from 'gatsby';
 import startCase from 'lodash/startCase';
 import type { Node } from './gatsby-node';
+
+dotenv.config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -15,6 +20,17 @@ const config: GatsbyConfig = {
     title: 'Nicole Bunge',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-image',
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'joqlngd4kbcg',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        enableTags: true,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

@@ -1,3 +1,4 @@
+import orderBy from 'lodash/orderBy';
 import React from 'react';
 import { Column, Grid, Link, Productions, Row, SEO, Section } from '../components';
 import { useDirectors } from '../hooks/directors';
@@ -15,8 +16,8 @@ function ActingPage(): JSX.Element {
     theaterKompagnieStuttgart,
     zav,
   } = useOrganizations();
-  const { allProduction } = useProductions();
-  const { allPublication } = usePublications();
+  const { film, theater, rollenrepertoire } = useProductions();
+  const { allContentfulPublication } = usePublications();
 
   return (
     <>
@@ -177,45 +178,20 @@ function ActingPage(): JSX.Element {
 
             <Column span={8} start={5}>
               <Row>
-                <Column span={12}>
-                  <h3>Seit 2020</h3>
-
-                  <div
-                    style={{
-                      display: 'grid',
-                      gap: '1em',
-                      gridTemplateColumns: 'repeat(2, 1fr)',
-                    }}
-                  >
-                    <Productions
-                      productions={
-                        allProduction.group
-                          .find((group) => group.fieldValue === 'berliner-kriminal-theater')
-                          ?.edges.map((edge) => edge.node) || []
-                      }
-                    />
-                  </div>
-                </Column>
-
-                <Column span={12}>
-                  <h3>Seit 2019</h3>
-
-                  <div
-                    style={{
-                      display: 'grid',
-                      gap: '1em',
-                      gridTemplateColumns: 'repeat(2, 1fr)',
-                    }}
-                  >
-                    <Productions
-                      productions={
-                        allProduction.group
-                          .find((group) => group.fieldValue === 'theater-aus-dem-koffer')
-                          ?.edges.map((edge) => edge.node) || []
-                      }
-                    />
-                  </div>
-                </Column>
+                {orderBy(theater.group, 'fieldValue', 'desc').map((group) => (
+                  <Column span={12}>
+                    <h3>Seit {group.fieldValue}</h3>
+                    <div
+                      style={{
+                        display: 'grid',
+                        gap: '1em',
+                        gridTemplateColumns: 'repeat(2, 1fr)',
+                      }}
+                    >
+                      <Productions productions={group.edges.map((edge) => edge.node)} />
+                    </div>
+                  </Column>
+                ))}
               </Row>
             </Column>
           </Row>
@@ -231,24 +207,20 @@ function ActingPage(): JSX.Element {
 
             <Column span={8} start={5}>
               <Row>
-                <Column span={12}>
-                  <h3>2017</h3>
-                  <div
-                    style={{
-                      display: 'grid',
-                      gap: '1em',
-                      gridTemplateColumns: 'repeat(2, 1fr)',
-                    }}
-                  >
-                    <Productions
-                      productions={
-                        allProduction.group
-                          .find((group) => group.fieldValue === 'filmakademie-baden-wuerttemberg')
-                          ?.edges.map((edge) => edge.node) || []
-                      }
-                    />
-                  </div>
-                </Column>
+                {orderBy(film.group, 'fieldValue', 'desc').map((group) => (
+                  <Column span={12}>
+                    <h3>Seit {group.fieldValue}</h3>
+                    <div
+                      style={{
+                        display: 'grid',
+                        gap: '1em',
+                        gridTemplateColumns: 'repeat(2, 1fr)',
+                      }}
+                    >
+                      <Productions productions={group.edges.map((edge) => edge.node)} />
+                    </div>
+                  </Column>
+                ))}
               </Row>
             </Column>
           </Row>
@@ -264,44 +236,19 @@ function ActingPage(): JSX.Element {
 
             <Column span={8} start={5}>
               <Row>
-                <Column span={12}>
-                  <div
-                    style={{
-                      display: 'grid',
-                      gap: '1em',
-                      gridTemplateColumns: 'repeat(2, 1fr)',
-                    }}
-                  >
-                    <p>
-                      <strong>„Ein idealer Gatte“</strong>, Das junge Mädchen <br />
-                      Oscar Wilde
-                    </p>
-                    <p>
-                      <strong>„Alice im Wunderland“</strong>, Alice <br />
-                      Roland Schimmelpfennig
-                    </p>
-                    <p>
-                      <strong>„La Double Inconstance“</strong>, Silvia <br />
-                      Pierre Carlet de Marivaux
-                    </p>
-                    <p>
-                      <strong>„Bier für Frauen“</strong>, Eine Frau <br />
-                      Felicia Zeller
-                    </p>
-                    <p>
-                      <strong>„Der Tor und der Tod“</strong>, Mabel Chiltern <br />
-                      Hugo von Hofmannsthal
-                    </p>
-                    <p>
-                      <strong>„Emilia Galotti“</strong>, Gräfin Orsina <br />
-                      Gotthold Ephraim Lessing
-                    </p>
-                    <p>
-                      <strong>„Merlin oder das wüste Land“</strong>, Mordred <br />
-                      Tankred Dorst
-                    </p>
-                  </div>
-                </Column>
+                {orderBy(rollenrepertoire.group, 'fieldValue', 'desc').map((group) => (
+                  <Column span={12}>
+                    <div
+                      style={{
+                        display: 'grid',
+                        gap: '1em',
+                        gridTemplateColumns: 'repeat(2, 1fr)',
+                      }}
+                    >
+                      <Productions productions={group.edges.map((edge) => edge.node)} />
+                    </div>
+                  </Column>
+                ))}
               </Row>
             </Column>
           </Row>
@@ -412,7 +359,7 @@ function ActingPage(): JSX.Element {
 
             <Column span={8} start={5}>
               <ul>
-                {allPublication.edges.map((edge) => {
+                {allContentfulPublication.edges.map((edge) => {
                   const { date, id, title, url } = edge.node;
 
                   return (

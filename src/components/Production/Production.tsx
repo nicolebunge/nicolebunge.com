@@ -8,14 +8,13 @@ function formatList(list: string[]): string {
 }
 
 interface Director {
+  id: string;
   name: string;
   url?: string;
 }
 
 interface Organization {
-  fields: {
-    slug: string;
-  };
+  id: string;
   name: string;
   url: string;
 }
@@ -25,7 +24,7 @@ interface ProductionProps {
   // eslint-disable-next-line react/no-unused-prop-types
   id: string;
   name: string;
-  organization: Organization;
+  organization?: Organization;
   role: string;
 }
 
@@ -37,7 +36,7 @@ function Production(props: ProductionProps): JSX.Element {
       <strong>„{name}“</strong>, {role}
       <br />
       Regie: {formatList(directors.map((director) => director.name))},{' '}
-      <Link to={organization.url}>{organization.name}</Link>
+      {organization && <Link to={organization.url}>{organization.name}</Link>}
     </p>
   );
 }

@@ -1,14 +1,13 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 interface Director {
+  id: string;
   name: string;
   url?: string;
 }
 
 interface Organization {
-  fields: {
-    slug: string;
-  };
+  id: string;
   name: string;
   url: string;
 }
@@ -18,7 +17,7 @@ interface Edge {
     directors: Director[];
     id: string;
     name: string;
-    organization: Organization;
+    organization?: Organization;
     role: string;
   };
 }
@@ -29,7 +28,13 @@ interface Group {
 }
 
 interface ProductionsQuery {
-  allProduction: {
+  theater: {
+    group: Group[];
+  };
+  film: {
+    group: Group[];
+  };
+  rollenrepertoire: {
     group: Group[];
   };
 }
@@ -37,25 +42,72 @@ interface ProductionsQuery {
 function useProductions(): ProductionsQuery {
   return useStaticQuery<ProductionsQuery>(graphql`
     {
-      allProduction {
-        group(field: { organization: { fields: { slug: SELECT } } }) {
+      theater: allContentfulProduction(
+        filter: { metadata: { tags: { elemMatch: { name: { eq: "Theater" } } } } }
+        sort: { start: DESC }
+      ) {
+        group(field: { fields: { startYear: SELECT } }) {
           fieldValue
           edges {
             node {
-              directors {
-                name
-                url
-              }
               id
               name
+              role
               organization {
-                fields {
-                  slug
-                }
+                id
                 name
                 url
               }
+              directors {
+                id
+                name
+                url
+              }
+            }
+          }
+        }
+      }
+      film: allContentfulProduction(
+        filter: { metadata: { tags: { elemMatch: { name: { eq: "Film" } } } } }
+        sort: { start: DESC }
+      ) {
+        group(field: { fields: { startYear: SELECT } }) {
+          fieldValue
+          edges {
+            node {
+              id
+              name
               role
+              organization {
+                id
+                name
+                url
+              }
+              directors {
+                id
+                name
+                url
+              }
+            }
+          }
+        }
+      }
+      rollenrepertoire: allContentfulProduction(
+        filter: { metadata: { tags: { elemMatch: { name: { eq: "Rollenrepertoire" } } } } }
+        sort: { start: DESC }
+      ) {
+        group(field: { fields: { startYear: SELECT } }) {
+          fieldValue
+          edges {
+            node {
+              id
+              name
+              role
+              directors {
+                id
+                name
+                url
+              }
             }
           }
         }

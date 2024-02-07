@@ -8,7 +8,7 @@ interface Publication {
 }
 
 interface PublicationsQuery {
-  allPublication: {
+  allContentfulPublication: {
     edges: [
       {
         node: Publication;
@@ -20,12 +20,12 @@ interface PublicationsQuery {
 function usePublications(): PublicationsQuery {
   return useStaticQuery<PublicationsQuery>(graphql`
     {
-      allPublication(sort: { date: DESC }) {
+      allContentfulPublication(sort: { date: DESC }) {
         edges {
           node {
-            date(formatString: "DD.MM.YYYY")
             id
             title
+            date(formatString: "DD.MM.YYYY")
             url
           }
         }
