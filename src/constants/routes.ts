@@ -13,6 +13,11 @@ export const ACTING = {
   path: '/schauspiel/',
 };
 
+export const DANCING = {
+  name: 'Tanz',
+  path: '/tanz/',
+};
+
 export const GALLERY = {
   name: 'Galerie',
   path: '/galerie/',

@@ -10,6 +10,7 @@ interface OrganizationsQuery {
   bismarckschule: Organization;
   but: Organization;
   lka: Organization;
+  longo: Organization;
   reduta: Organization;
   steinenbergSchule: Organization;
   theaterAkademieStuttgart: Organization;
@@ -34,6 +35,10 @@ function useOrganizations(): OrganizationsQuery {
         url
       }
       lka: organization(fields: { slug: { eq: "landeskriminalamt-baden-wuerttemberg" } }) {
+        name
+        url
+      }
+      longo: organization(fields: { slug: { eq: "tanzraum-longo" } }) {
         name
         url
       }

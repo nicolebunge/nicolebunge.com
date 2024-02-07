@@ -16,6 +16,8 @@ type Images =
   | 'gallery/image-03.jpg'
   | 'gallery/kompagnie-1.jpg'
   | 'gallery/kompagnie-2.jpg'
+  | 'gallery/portrait/10_kqpbxw.jpg'
+  | 'tanz-rumba.jpg'
   | 'nicole-bunge.svg';
 
 interface CloudinaryImageProps {
