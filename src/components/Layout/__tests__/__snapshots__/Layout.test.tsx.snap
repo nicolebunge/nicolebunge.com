@@ -80,6 +80,16 @@ exports[`layout component > should render correctly 1`] = `
         >
           <a
             class="mainNavigation__link"
+            href="/tanz/"
+          >
+            Tanz
+          </a>
+        </li>
+        <li
+          class="mainNavigation__item"
+        >
+          <a
+            class="mainNavigation__link"
             href="/galerie/"
           >
             Galerie

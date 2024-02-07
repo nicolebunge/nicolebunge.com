@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, CloudinaryImage, Column, Grid, Link, Row, SEO, Section } from '../components';
-import { ABOUT, ACTING, THEATRE_PEDAGOGY } from '../constants/routes';
+import { ABOUT, ACTING, DANCING, THEATRE_PEDAGOGY } from '../constants/routes';
 import { useOrganizations } from '../hooks/organizations';
 
 function IndexPage(): JSX.Element {
-  const { berlinerKriminalTheater, reduta, theaterAkademieStuttgart, theaterAusDemKoffer } =
+  const { berlinerKriminalTheater, longo, theaterAkademieStuttgart, theaterAusDemKoffer } =
     useOrganizations();
 
   return (
@@ -17,9 +17,9 @@ function IndexPage(): JSX.Element {
               <p>
                 Mein Name ist <span itemProp="name">Nicole Bunge</span>, ich bin staatlich
                 anerkannte Schauspielerin und Theaterpädagogin. Studiert habe ich an der{' '}
-                {theaterAkademieStuttgart.name} in Stuttgart. Derzeit lebe und arbeite ich in Berlin
-                und spiele unter anderem am {berlinerKriminalTheater.name} in Friedrichshain, sowie
-                am {theaterAusDemKoffer.name}, Berlin. Zudem doziere ich an der {reduta.name}.
+                {theaterAkademieStuttgart.name}. Derzeit lebe und arbeite ich in Berlin und spiele
+                unter anderem am {berlinerKriminalTheater.name} in Friedrichshain, Berlin. Zudem
+                unterrichte ich als Tanz- und Schauspielcoach am {longo.name}.
               </p>
               <Button to={ABOUT.path}>Mehr über mich</Button>
             </Column>
@@ -54,7 +54,7 @@ function IndexPage(): JSX.Element {
             <Column span={4} start={3}>
               <Link to={ACTING.path}>
                 <CloudinaryImage
-                  src="gallery/image-02.jpg"
+                  src="gallery/portrait/10_kqpbxw.jpg"
                   alt="Nicole Bunge"
                   width={451}
                   height={602}
@@ -88,6 +88,28 @@ function IndexPage(): JSX.Element {
                   width={464}
                   height={464}
                 />
+              </Link>
+            </Column>
+          </Row>
+        </Grid>
+      </Section>
+
+      <Section isFull>
+        <Grid>
+          <Row align="center">
+            <Column span={4} start={5}>
+              <h2>Tanz</h2>
+              <p>
+                Tanz bedeutet für mich den Einklang von Körper und Seele. Es ist eine zeitlose
+                Interpretation des Lebens. Es ist mehr, es ist das Leben. Jede Bewegung im Tanz ist
+                eine Geschichte, ein Gedicht. Mein Körper erzählt eine Geschichte in einer Ästhetik,
+                die in meinen Augen in dieser Kunstform so berührend ist, wie in keiner anderen.
+              </p>
+              <Button to={DANCING.path}>Mehr zu Tanz</Button>
+            </Column>
+            <Column span={4} start={1}>
+              <Link to={DANCING.path}>
+                <CloudinaryImage src="tanz-rumba.jpg" alt="Rumba Tanz" width={464} height={464} />
               </Link>
             </Column>
           </Row>
