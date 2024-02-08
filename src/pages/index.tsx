@@ -83,7 +83,7 @@ function IndexPage(): JSX.Element {
             <Column span={5} start={8}>
               <Link to={THEATRE_PEDAGOGY.path}>
                 <CloudinaryImage
-                  src="gallery/image-03.jpg"
+                  src="home/theaterpaedagogik.jpg"
                   alt="Nicole Bunge"
                   width={464}
                   height={464}
