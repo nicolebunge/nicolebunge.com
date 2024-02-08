@@ -18,6 +18,7 @@ type Images =
   | 'gallery/kompagnie-2.jpg'
   | 'gallery/portrait/10_kqpbxw.jpg'
   | 'tanz-rumba.jpg'
+  | 'home/theaterpaedagogik.jpg'
   | 'nicole-bunge.svg';
 
 interface CloudinaryImageProps {
