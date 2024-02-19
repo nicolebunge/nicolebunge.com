@@ -27,7 +27,7 @@ function IndexPage(): JSX.Element {
             <Column span={5} start={6}>
               <Link to={ABOUT.path}>
                 <CloudinaryImage
-                  src="gallery/image-01.jpg"
+                  src="nicolebunge.com/gallery/image-01.jpg"
                   alt="Nicole Bunge"
                   width={464}
                   height={464}
@@ -54,7 +54,7 @@ function IndexPage(): JSX.Element {
             <Column span={4} start={3}>
               <Link to={ACTING.path}>
                 <CloudinaryImage
-                  src="gallery/portrait/10_kqpbxw.jpg"
+                  src="nicolebunge.com/gallery/portrait/10_kqpbxw.jpg"
                   alt="Nicole Bunge"
                   width={451}
                   height={602}
@@ -83,7 +83,7 @@ function IndexPage(): JSX.Element {
             <Column span={5} start={8}>
               <Link to={THEATRE_PEDAGOGY.path}>
                 <CloudinaryImage
-                  src="home/theaterpaedagogik.jpg"
+                  src="nicolebunge.com/home/theaterpaedagogik.jpg"
                   alt="Nicole Bunge"
                   width={464}
                   height={464}
@@ -109,7 +109,12 @@ function IndexPage(): JSX.Element {
             </Column>
             <Column span={4} start={1}>
               <Link to={DANCING.path}>
-                <CloudinaryImage src="tanz-rumba.jpg" alt="Rumba Tanz" width={464} height={464} />
+                <CloudinaryImage
+                  src="nicolebunge.com/tanz-rumba.jpg"
+                  alt="Rumba Tanz"
+                  width={464}
+                  height={464}
+                />
               </Link>
             </Column>
           </Row>
