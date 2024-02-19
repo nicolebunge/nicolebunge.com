@@ -4,15 +4,15 @@ import React, { HTMLAttributes, ReactNode } from 'react';
 import { NOW } from '../../constants/dates';
 import { FOOTER, MAIN } from '../../constants/menus';
 import { useSite } from '../../hooks/site';
-import Header from '../Header';
 import CloudinaryImage from '../CloudinaryImage';
-import Navigation from '../Navigation';
-import Main from '../Main';
 import Footer from '../Footer';
 import Grid from '../Grid';
+import Header from '../Header';
+import Main from '../Main';
+import MainNavigation from '../MainNavigation';
+import Navigation from '../Navigation';
 import Social from '../Social';
 import { layout } from './Layout.module.css';
-import MainNavigation from '../MainNavigation';
 
 interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
@@ -31,7 +31,7 @@ function Layout(props: LayoutProps): JSX.Element {
       <Header>
         <Link to="/">
           <CloudinaryImage
-            src="nicole-bunge.svg"
+            src="nicolebunge.com/nicole-bunge.svg"
             alt={site.siteMetadata.title}
             width={160}
             height={28}
