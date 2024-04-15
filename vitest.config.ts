@@ -12,5 +12,8 @@ export default defineConfig({
       },
     },
     environment: 'happy-dom',
+    coverage: {
+      include: ['src/**'],
+    },
   },
 });
