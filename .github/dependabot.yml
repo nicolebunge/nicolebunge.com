@@ -25,3 +25,7 @@ updates:
         patterns:
           - '@vitest/coverage-v8'
           - 'vitest'
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
