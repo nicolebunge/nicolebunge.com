@@ -22,16 +22,13 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: 🔋 Install
-        run: npm ci
-
-      - name: ⚙️ Generate
-        run: npm run generate
+        run: npm ci --ignore-scripts
 
       - name: 🤖 Linting
         run: npm run lint
 
       - name: 🧪 Testing
-        run: npm run test:ci
+        run: npm run coverage
 
       - name: 🛠️ Building
         run: npm run build
