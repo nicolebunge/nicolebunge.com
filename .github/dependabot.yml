@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: 'monthly'
     groups:
+      minor-and-patch:
+        update-types:
+          - 'patch'
+          - 'minor'
       eslint:
         patterns:
           - '@typescript-eslint/*'
@@ -23,7 +27,7 @@ updates:
           - 'stylelint*'
       vite:
         patterns:
-          - '@vitest/coverage-v8'
+          - '@vitest/*'
           - 'vitest'
   - package-ecosystem: 'github-actions'
     directory: '/'
