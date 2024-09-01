@@ -13,7 +13,8 @@ export default defineConfig({
     },
     environment: 'happy-dom',
     coverage: {
-      include: ['src/**'],
+      include: ['gatsby-browser.tsx', 'gatsby-node.ts', 'gatsby-ssr.tsx', 'src/**'],
     },
+    setupFiles: ['./src/setupTest.js'],
   },
 });

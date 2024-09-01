@@ -1,0 +1,35 @@
+{
+  "data": {
+    "akkaya": {
+      "name": "Ben Akkaya",
+      "url": "http://www.ben-akkaya.de/"
+    },
+    "borlan": {
+      "name": "Attila Borlan",
+      "url": "http://www.attila-borlan.de"
+    },
+    "gold": {
+      "name": "Abini Gold"
+    },
+    "jovanovic": {
+      "name": "Aleksandar Jovanovic",
+      "url": "http://aleksandarjovanovic.com"
+    },
+    "rumpf": {
+      "name": "Wolfgang Rumpf"
+    },
+    "schloesser": {
+      "name": "Christian Schlösser"
+    },
+    "schock": {
+      "name": "Nadja Schock"
+    },
+    "wien": {
+      "name": "Matti Wien"
+    },
+    "wingrich": {
+      "name": "Thomas Wingrich"
+    }
+  },
+  "extensions": {}
+}

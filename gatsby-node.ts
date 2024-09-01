@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-import type { CreatePagesArgs, CreateSchemaCustomizationArgs, CreateNodeArgs } from 'gatsby';
-import { resolve } from 'node:path';
 import slugify from '@sindresorhus/slugify';
+import type { CreateNodeArgs, CreatePagesArgs, CreateSchemaCustomizationArgs } from 'gatsby';
+import { resolve } from 'node:path';
 
 const defaultTemplate = resolve('src/templates/default.tsx');
 
@@ -65,8 +65,9 @@ async function createPages(props: CreatePagesArgs): Promise<void> {
 }
 
 function createSchemaCustomization(props: CreateSchemaCustomizationArgs): void {
-  const { actions } = props;
-  const { createTypes } = actions;
+  const {
+    actions: { createTypes },
+  } = props;
 
   const typeDefs = `
     type Director implements Node {
@@ -110,5 +111,5 @@ function onCreateNode(props: CreateNodeArgs<Node>): void {
   }
 }
 
-export type { Node };
 export { createPages, createSchemaCustomization, onCreateNode };
+export type { Data, Node };

@@ -1,0 +1,121 @@
+{
+  "data": {
+    "allPublication": {
+      "edges": [
+        {
+          "node": {
+            "date": "08.05.2023",
+            "id": "312df5e5-f785-5368-986a-6d26fb97d2cf",
+            "title": "Als der Pontifex in der koscheren Speisekammer landet",
+            "url": "https://www.morgenpost.de/kultur/article238342981/Als-der-Pontifex-in-der-koscheren-Speisekammer-landet.html"
+          }
+        },
+        {
+          "node": {
+            "date": "09.04.2022",
+            "id": "5c25a627-9d82-5d02-83ea-6ef8032e2299",
+            "title": "Nichts für schwache Nerven",
+            "url": "https://www.badische-zeitung.de/nichts-fuer-schwache-nerven-xukxt26ix--211490382.html"
+          }
+        },
+        {
+          "node": {
+            "date": "07.02.2022",
+            "id": "d5ea39a1-4e84-5c2b-b310-cbcd7ae560cc",
+            "title": "Berliner Kriminaltheater zeigt Klassiker „Die 12 Zwölf Geschworenen“",
+            "url": "https://www.waz-online.de/Gifhorn/Gifhorn-Stadt/Stadthalle-Gifhorn-Berliner-Kriminaltheater-zeigt-Die-zwoelf-Geschworenen"
+          }
+        },
+        {
+          "node": {
+            "date": "23.11.2021",
+            "id": "14d4b039-3ddd-51e7-9bff-257312db0bdd",
+            "title": "Packende Aufführung von Sebastian Fitzek in Kleve",
+            "url": "https://rp-online.de/nrw/staedte/kleve/kleve-packende-auffuehrung-von-passagier-23-2021-in-der-stadthalle_aid-64212389"
+          }
+        },
+        {
+          "node": {
+            "date": "12.11.2021",
+            "id": "d140954e-d16b-55ba-97ae-ceb1aa2f38a2",
+            "title": "TV- Star aus STURM DER LIEBE Julian Schneider übernimmt die Rolle des MORTIMER BREWSTER",
+            "url": "https://zeitblatt.com/tv-star-aus-sturm-der-liebe-julian-schneider-uebernimmt-die-rolle-des-mortimer-brewster/"
+          }
+        },
+        {
+          "node": {
+            "date": "03.11.2020",
+            "id": "c7ed8454-28c2-5f6f-a632-82d840ec8595",
+            "title": "TV Beitrag: Wiederaufnahme INSPEKTOR CAMPBELLS LETZTER FALL",
+            "url": "https://www.youtube.com/watch?v=n0QRkYO8JdM"
+          }
+        },
+        {
+          "node": {
+            "date": "03.11.2020",
+            "id": "3d6b375f-b375-5e3f-8aa8-df9f73125c40",
+            "title": "#SangundKlanglos #AlarmstufeRot #OhneKunstundKulturwirdsstill #BerlinerKriminalTheater",
+            "url": "https://www.youtube.com/watch?v=tvKSgfexH9A"
+          }
+        },
+        {
+          "node": {
+            "date": "24.10.2020",
+            "id": "454e2d06-d24f-590b-b5d0-28ca7cb75440",
+            "title": "Herbstzeit ist Kürbiszeit | Kriminal Theater Inspektor Campbell ermittelt wieder",
+            "url": "http://www.tvb.de/sendungen/130/4514/Herbstzeit_ist_Kuerbiszeit_Kriminal_Theater_Inspektor_Campbell_ermittelt_wieder.html"
+          }
+        },
+        {
+          "node": {
+            "date": "24.10.2020",
+            "id": "4b22cfea-549a-576f-b9c1-58b30b627a0b",
+            "title": "Wiederaufnahme der Kriminalkomödie von Saul O’Hara (alias Peter Hacks) mit neuer Besetzung!",
+            "url": "https://zeitblatt.com/wiederaufnahme-der-kriminalkomoedie-von-saul-o-hara-alias-peter-hacks-mit-neuer-besetzung/"
+          }
+        },
+        {
+          "node": {
+            "date": "06.03.2020",
+            "id": "137187b6-3be2-5199-b2e8-af63d8a85053",
+            "title": "Mysteriöse Vorgänge an Bord",
+            "url": "https://www.schwaebische.de/landkreis/landkreis-tuttlingen/tuttlingen_artikel,-mysterioese-vorgaenge-an-bord-_arid,11196366.html"
+          }
+        },
+        {
+          "node": {
+            "date": "27.02.2020",
+            "id": "da4280c1-3508-5c10-bc13-e66b85227280",
+            "title": "Auf Mörderjagd mit Fitzeks „Passagier 23“ in Bersenbrück",
+            "url": "https://www.noz.de/lokales/bersenbrueck/artikel/auf-moerderjagd-mit-fitzeks-passagier-23-in-bersenbrueck-20314222"
+          }
+        },
+        {
+          "node": {
+            "date": "23.02.2020",
+            "id": "3a196f0e-2ec1-54a9-ab30-f4d8c26d8c40",
+            "title": "Horror an Bord: Mörder unter den Passagieren",
+            "url": "https://www.shz.de/lokales/sylter-rundschau/horror-an-bord-moerder-unter-den-passagieren-id27469177.html"
+          }
+        },
+        {
+          "node": {
+            "date": "20.03.2017",
+            "id": "3fa30169-3ddb-513b-9873-6afed6aeb925",
+            "title": "Da hätte Shakespeare aber gestaunt",
+            "url": "https://www.badische-zeitung.de/da-haette-shakespeare-aber-gestaunt--134703256.html"
+          }
+        },
+        {
+          "node": {
+            "date": "17.03.2017",
+            "id": "267099b8-366c-5380-b5b2-ebb40d1ba2b4",
+            "title": "Flippiger Liebesreigen im Rap-Tonfall",
+            "url": "https://www.verlagshaus-jaumann.de/inhalt.schopfheim-flippiger-liebesreigen-im-rap-tonfall.dc40f62f-5ba6-456e-bfa5-922386199fa1.html"
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {}
+}

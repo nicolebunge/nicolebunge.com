@@ -6,7 +6,7 @@ import type { GatsbyConfig } from 'gatsby';
 import startCase from 'lodash/startCase';
 import type { Node } from './gatsby-node';
 
-const config: GatsbyConfig = {
+const config = {
   siteMetadata: {
     author: '@BungeNicole',
     description:
@@ -46,6 +46,6 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-transformer-remark',
     },
   ],
-};
+} satisfies GatsbyConfig;
 
 export default config;

@@ -9,7 +9,7 @@ function formatList(list: string[]): string {
 
 interface Director {
   name: string;
-  url?: string;
+  url: string | null;
 }
 
 interface Organization {
