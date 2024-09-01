@@ -56,7 +56,7 @@ function AboutPage(): JSX.Element {
                 <li>Gut strukturierte und klare Vorbereitung</li>
                 <li>Tiefgründige und gut fundierte künstlerische Arbeit</li>
                 <li>Prozess- und zielorientiert</li>
-                <li>Gruppendynamische Prozesse – Die Erkenntniss des Individuums für die Gruppe</li>
+                <li>Gruppendynamische Prozesse – Die Erkenntnis des Individuums für die Gruppe</li>
                 <li>Teamorientiertes Arbeiten</li>
                 <li>Abholen und Leiten einer Gruppe</li>
               </ul>
