@@ -1,0 +1,49 @@
+{
+  "data": {
+    "berlinerKriminalTheater": {
+      "name": "Berliner Kriminal Theater",
+      "url": "https://www.kriminaltheater.de"
+    },
+    "bismarckschule": {
+      "name": "Bismackschule Stuttgart Feuerbach",
+      "url": "https://www.bismarckschule-stuttgart.de"
+    },
+    "but": {
+      "name": "BuT",
+      "url": "https://www.butinfo.de"
+    },
+    "lka": {
+      "name": "Landeskriminalamt Baden-Württemberg",
+      "url": "https://lka.polizei-bw.de"
+    },
+    "longo": {
+      "name": "Tanzraum Longo",
+      "url": "https://longo-tanzraum.com"
+    },
+    "reduta": {
+      "name": "Reduta-Berlin Schauspielschule",
+      "url": "https://www.reduta-berlin.de"
+    },
+    "steinenbergSchule": {
+      "name": "Steinenberg-Grundschule",
+      "url": "https://www.steinenbergschule.de"
+    },
+    "theaterAkademieStuttgart": {
+      "name": "Theater Akademie Stuttgart",
+      "url": "https://www.theater-akademie-stuttgart.de"
+    },
+    "theaterAusDemKoffer": {
+      "name": "Theater aus dem Koffer",
+      "url": "https://theater-aus-dem-koffer.de"
+    },
+    "theaterKompagnieStuttgart": {
+      "name": "Theater Kompagnie Stuttgart",
+      "url": "https://theater-kompagnie-stuttgart.de"
+    },
+    "zav": {
+      "name": "ZAV",
+      "url": "https://zav.arbeitsagentur.de/DE/Kuenstler/Schauspiel/F/B/Bunge-Nicole/Sedcard.html"
+    }
+  },
+  "extensions": {}
+}

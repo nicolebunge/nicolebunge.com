@@ -1,0 +1,328 @@
+{
+  "data": {
+    "allProduction": {
+      "group": [
+        {
+          "fieldValue": "berliner-kriminal-theater",
+          "edges": [
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Wolfgang Rumpf",
+                    "url": "http://www.wolfgangrumpf.de"
+                  }
+                ],
+                "id": "38bf519f-dcb9-5c99-a0b2-25275ffce966",
+                "name": "Erbarmen",
+                "organization": {
+                  "fields": {
+                    "slug": "berliner-kriminal-theater"
+                  },
+                  "name": "Berliner Kriminal Theater",
+                  "url": "https://www.kriminaltheater.de"
+                },
+                "role": "Lis Sørensen"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Wolfgang Rumpf",
+                    "url": "http://www.wolfgangrumpf.de"
+                  }
+                ],
+                "id": "a68375ba-4afa-58ec-b0e1-861e32260cd2",
+                "name": "Arsen und Spitzenhäubchen",
+                "organization": {
+                  "fields": {
+                    "slug": "berliner-kriminal-theater"
+                  },
+                  "name": "Berliner Kriminal Theater",
+                  "url": "https://www.kriminaltheater.de"
+                },
+                "role": "Elaine Harper"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Wolfgang Rumpf",
+                    "url": "http://www.wolfgangrumpf.de"
+                  },
+                  {
+                    "name": "Matti Wien",
+                    "url": null
+                  }
+                ],
+                "id": "9a653165-0720-53b0-afbb-0d5e4e62a565",
+                "name": "Inspektor Campbells letzter Fall 23",
+                "organization": {
+                  "fields": {
+                    "slug": "berliner-kriminal-theater"
+                  },
+                  "name": "Berliner Kriminal Theater",
+                  "url": "https://www.kriminaltheater.de"
+                },
+                "role": "Jennifer"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Wolfgang Rumpf",
+                    "url": "http://www.wolfgangrumpf.de"
+                  }
+                ],
+                "id": "258b55d4-81c6-52bb-b148-9901f23020f8",
+                "name": "Die zwölf Geschworenen",
+                "organization": {
+                  "fields": {
+                    "slug": "berliner-kriminal-theater"
+                  },
+                  "name": "Berliner Kriminal Theater",
+                  "url": "https://www.kriminaltheater.de"
+                },
+                "role": "Nr. 5"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Thomas Wingrich",
+                    "url": "https://www.schauspielervideos.de/fullprofile/schauspieler-thomas-wingrich.html"
+                  }
+                ],
+                "id": "89d40958-57d3-55a1-a441-aa5f684b54d0",
+                "name": "Passagier 23",
+                "organization": {
+                  "fields": {
+                    "slug": "berliner-kriminal-theater"
+                  },
+                  "name": "Berliner Kriminal Theater",
+                  "url": "https://www.kriminaltheater.de"
+                },
+                "role": "Lisa"
+              }
+            }
+          ]
+        },
+        {
+          "fieldValue": "filmakademie-baden-wuerttemberg",
+          "edges": [
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Abini Gold",
+                    "url": "https://www.abinigold.com"
+                  }
+                ],
+                "id": "52a6f9bc-d6e8-55fe-99a0-8a5626b663fa",
+                "name": "Crossing Borders",
+                "organization": {
+                  "fields": {
+                    "slug": "filmakademie-baden-wuerttemberg"
+                  },
+                  "name": "Filmakademie Baden-Württemberg",
+                  "url": "https://www.filmakademie.de"
+                },
+                "role": "Leonie"
+              }
+            }
+          ]
+        },
+        {
+          "fieldValue": "theater-aus-dem-koffer",
+          "edges": [
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Nadja Schock",
+                    "url": null
+                  }
+                ],
+                "id": "c3dffbed-d48c-5df0-99f2-245a934920e6",
+                "name": "Die Liedfee und das Liedwettsingen",
+                "organization": {
+                  "fields": {
+                    "slug": "theater-aus-dem-koffer"
+                  },
+                  "name": "Theater aus dem Koffer",
+                  "url": "https://theater-aus-dem-koffer.de"
+                },
+                "role": "Liedfee"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Nadja Schock",
+                    "url": null
+                  }
+                ],
+                "id": "ec8d1e7b-8d87-551e-b01c-f0df6054076a",
+                "name": "Die Liedfee und der Drehschwungtanz",
+                "organization": {
+                  "fields": {
+                    "slug": "theater-aus-dem-koffer"
+                  },
+                  "name": "Theater aus dem Koffer",
+                  "url": "https://theater-aus-dem-koffer.de"
+                },
+                "role": "Liedfee"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Nadja Schock",
+                    "url": null
+                  }
+                ],
+                "id": "de326a82-9ca0-5868-a78e-527edcda03b1",
+                "name": "Toni und die Urwaldparty",
+                "organization": {
+                  "fields": {
+                    "slug": "theater-aus-dem-koffer"
+                  },
+                  "name": "Theater aus dem Koffer",
+                  "url": "https://theater-aus-dem-koffer.de"
+                },
+                "role": "Toni"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Nadja Schock",
+                    "url": null
+                  }
+                ],
+                "id": "e2f5e27d-e393-5fa5-b7a6-1706ed9c351f",
+                "name": "Toni und das große Durcheinander",
+                "organization": {
+                  "fields": {
+                    "slug": "theater-aus-dem-koffer"
+                  },
+                  "name": "Theater aus dem Koffer",
+                  "url": "https://theater-aus-dem-koffer.de"
+                },
+                "role": "Toni"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Nadja Schock",
+                    "url": null
+                  }
+                ],
+                "id": "ecdf6008-197f-55f1-a243-9961b4b7fb16",
+                "name": "Toni und das Gewitter im Zwergenwald",
+                "organization": {
+                  "fields": {
+                    "slug": "theater-aus-dem-koffer"
+                  },
+                  "name": "Theater aus dem Koffer",
+                  "url": "https://theater-aus-dem-koffer.de"
+                },
+                "role": "Toni"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Nadja Schock",
+                    "url": null
+                  }
+                ],
+                "id": "49d8be48-5a99-550e-9d9f-40fc38173f93",
+                "name": "Toni und die Gute-Laune-Geräusche",
+                "organization": {
+                  "fields": {
+                    "slug": "theater-aus-dem-koffer"
+                  },
+                  "name": "Theater aus dem Koffer",
+                  "url": "https://theater-aus-dem-koffer.de"
+                },
+                "role": "Toni"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Nadja Schock",
+                    "url": null
+                  }
+                ],
+                "id": "f9a673c8-2f7a-50dd-9f7b-4c3c48784a69",
+                "name": "Toni und die Klapperschlangenbande",
+                "organization": {
+                  "fields": {
+                    "slug": "theater-aus-dem-koffer"
+                  },
+                  "name": "Theater aus dem Koffer",
+                  "url": "https://theater-aus-dem-koffer.de"
+                },
+                "role": "Toni"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Nadja Schock",
+                    "url": null
+                  }
+                ],
+                "id": "1f689336-47c8-5e86-9fe7-f575069cba72",
+                "name": "Toni und die bunten Ostereier",
+                "organization": {
+                  "fields": {
+                    "slug": "theater-aus-dem-koffer"
+                  },
+                  "name": "Theater aus dem Koffer",
+                  "url": "https://theater-aus-dem-koffer.de"
+                },
+                "role": "Toni"
+              }
+            },
+            {
+              "node": {
+                "directors": [
+                  {
+                    "name": "Nadja Schock",
+                    "url": null
+                  }
+                ],
+                "id": "6269d4a6-44f7-57de-8557-5b6230096c45",
+                "name": "Toni und das geheimnisvolle Klingelingeling",
+                "organization": {
+                  "fields": {
+                    "slug": "theater-aus-dem-koffer"
+                  },
+                  "name": "Theater aus dem Koffer",
+                  "url": "https://theater-aus-dem-koffer.de"
+                },
+                "role": "Toni"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "extensions": {}
+}

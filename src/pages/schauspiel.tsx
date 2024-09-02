@@ -62,7 +62,7 @@ function ActingPage(): JSX.Element {
 
       <Section>
         <Grid>
-          <h1>Vita</h1>
+          <h2>Vita</h2>
           <Row>
             <Column span={4}>
               <h2 id="persoenlichkeit">Persönlichkeit</h2>

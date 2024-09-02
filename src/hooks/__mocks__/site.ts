@@ -1,17 +1,10 @@
 /* eslint-disable import/prefer-default-export */
 
+import site from '../__fixtures__/site.json';
 import type { SiteQuery } from '../site';
 
 function useSite(): SiteQuery {
-  return {
-    site: {
-      siteMetadata: {
-        author: 'Site Author',
-        description: 'Site Description',
-        title: 'Site Title',
-      },
-    },
-  };
+  return site.data;
 }
 
 export { useSite };

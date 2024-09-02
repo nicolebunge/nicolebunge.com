@@ -9,6 +9,6 @@ describe('SEO component', () => {
   it('should render correctly', async () => {
     render(<SEO title="Page Title" />);
 
-    await waitFor(() => expect(document.title).toStrictEqual('Page Title | Site Title'));
+    await waitFor(() => expect(document.title).toStrictEqual('Page Title | Nicole Bunge'));
   });
 });

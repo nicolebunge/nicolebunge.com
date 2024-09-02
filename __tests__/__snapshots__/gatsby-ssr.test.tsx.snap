@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`layout component > should render correctly 1`] = `
+exports[`wrapPageElement > should wrap each page in layout 1`] = `
 <div
   class="layout"
 >
@@ -102,7 +102,7 @@ exports[`layout component > should render correctly 1`] = `
     class="main"
     role="main"
   >
-    Main Content
+    Page
   </main>
   <footer
     class="footer"

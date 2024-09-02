@@ -9,11 +9,9 @@ interface Publication {
 
 interface PublicationsQuery {
   allPublication: {
-    edges: [
-      {
-        node: Publication;
-      },
-    ];
+    edges: {
+      node: Publication;
+    }[];
   };
 }
 

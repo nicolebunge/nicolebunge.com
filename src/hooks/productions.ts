@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 interface Director {
   name: string;
-  url?: string;
+  url: string | null;
 }
 
 interface Organization {
