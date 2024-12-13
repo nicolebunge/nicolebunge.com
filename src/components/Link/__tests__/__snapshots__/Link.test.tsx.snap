@@ -2,8 +2,6 @@
 
 exports[`Link component > renders correctly 1`] = `
 <a
-  aria-current="page"
-  class=""
   href="/"
 >
   Internal Link

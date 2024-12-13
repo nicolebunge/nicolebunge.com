@@ -1,12 +1,12 @@
 import clsx from 'clsx';
-import React, { HTMLAttributes, ReactNode } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 import { main } from './Main.module.css';
 
 interface MainProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
 }
 
-function Main(props: MainProps): JSX.Element {
+function Main(props: MainProps) {
   const { className, ...otherProps } = props;
 
   return <main className={clsx(className, main)} role="main" {...otherProps} />;

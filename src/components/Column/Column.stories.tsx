@@ -1,11 +1,14 @@
 import Column from '.';
 
-export default {
+const meta = {
   component: Column,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Column',
   },
 };
+
+export { Default };
+export default meta;

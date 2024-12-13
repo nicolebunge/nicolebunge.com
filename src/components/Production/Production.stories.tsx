@@ -1,10 +1,10 @@
 import Production from '.';
 
-export default {
+const meta = {
   component: Production,
 };
 
-export const Default = {
+const Default = {
   args: {
     id: '12345678-9012-3456-7890-123456789012',
     name: 'Erbarmen',
@@ -21,3 +21,6 @@ export const Default = {
     ],
   },
 };
+
+export { Default };
+export default meta;

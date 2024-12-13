@@ -1,0 +1,74 @@
+[
+  {
+    "id": "e7b7ac63-8b3f-401a-a389-0d501e9fcf75",
+    "slug": "berliner-kriminal-theater",
+    "name": "Berliner Kriminal Theater",
+    "url": "https://www.kriminaltheater.de"
+  },
+  {
+    "id": "320acdd5-7950-4a88-93b2-394edc8f7932",
+    "slug": "bismackschule-stuttgart-feuerbach",
+    "name": "Bismackschule Stuttgart Feuerbach",
+    "url": "https://www.bismarckschule-stuttgart.de"
+  },
+  {
+    "id": "ff5fb0c9-ad55-4224-8282-656b5a84945b",
+    "slug": "bu-t",
+    "name": "BuT",
+    "url": "https://www.butinfo.de"
+  },
+  {
+    "id": "9479422e-a53a-4486-935f-eb8547ec9cdc",
+    "slug": "tanzraum-longo",
+    "name": "Tanzraum Longo",
+    "url": "https://longo-tanzraum.com"
+  },
+  {
+    "id": "fcaa6e3a-e92f-4e7f-9448-defcd0e04dd0",
+    "slug": "filmakademie-baden-wuerttemberg",
+    "name": "Filmakademie Baden-Württemberg",
+    "url": "https://www.filmakademie.de"
+  },
+  {
+    "id": "bb678de5-7df8-438e-96e7-379d7bebda8a",
+    "slug": "landeskriminalamt-baden-wuerttemberg",
+    "name": "Landeskriminalamt Baden-Württemberg",
+    "url": "https://lka.polizei-bw.de"
+  },
+  {
+    "id": "0e708338-59f9-48b5-918b-bcd6d87a98a8",
+    "slug": "steinenberg-grundschule",
+    "name": "Steinenberg-Grundschule",
+    "url": "https://www.steinenbergschule.de"
+  },
+  {
+    "id": "05b6e020-b1a6-4ec9-91f6-7d7134853ce5",
+    "slug": "theater-akademie-stuttgart",
+    "name": "Theater Akademie Stuttgart",
+    "url": "https://www.theater-akademie-stuttgart.de"
+  },
+  {
+    "id": "f108cc0c-74ac-43c0-9037-b28b8cf7bb6c",
+    "slug": "theater-kompagnie-stuttgart",
+    "name": "Theater Kompagnie Stuttgart",
+    "url": "https://theater-kompagnie-stuttgart.de"
+  },
+  {
+    "id": "99459c9b-50f0-4f1b-a4ae-306c0eecede3",
+    "slug": "theater-aus-dem-koffer",
+    "name": "Theater aus dem Koffer",
+    "url": "https://theater-aus-dem-koffer.de"
+  },
+  {
+    "id": "279764bc-a7f3-4c85-9a9b-a557061141a0",
+    "slug": "reduta-berlin-schauspielschule",
+    "name": "Reduta-Berlin Schauspielschule",
+    "url": "https://www.reduta-berlin.de"
+  },
+  {
+    "id": "bb660845-5f45-4dd1-8474-5a11bcc68338",
+    "slug": "zav",
+    "name": "ZAV",
+    "url": "https://zav.arbeitsagentur.de/DE/Kuenstler/Schauspiel/F/B/Bunge-Nicole/Sedcard.html"
+  }
+]

@@ -1,11 +1,14 @@
 import Main from '.';
 
-export default {
+const meta = {
   component: Main,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Main',
   },
 };
+
+export { Default };
+export default meta;
