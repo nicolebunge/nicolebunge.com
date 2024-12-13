@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from '../Link';
 
 function formatList(list: string[]): string {
@@ -8,28 +7,29 @@ function formatList(list: string[]): string {
 }
 
 interface Director {
+  id: string;
   name: string;
+  slug: string;
   url?: string;
 }
 
 interface Organization {
-  fields: {
-    slug: string;
-  };
+  id: string;
   name: string;
+  slug: string;
   url: string;
 }
 
 interface ProductionProps {
   directors: Director[];
-  // eslint-disable-next-line react/no-unused-prop-types
   id: string;
   name: string;
   organization: Organization;
   role: string;
+  slug: string;
 }
 
-function Production(props: ProductionProps): JSX.Element {
+function Production(props: ProductionProps) {
   const { name, role, directors, organization } = props;
 
   return (

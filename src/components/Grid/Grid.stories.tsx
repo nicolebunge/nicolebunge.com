@@ -1,11 +1,14 @@
 import Grid from '.';
 
-export default {
+const meta = {
   component: Grid,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Grid',
   },
 };
+
+export { Default };
+export default meta;

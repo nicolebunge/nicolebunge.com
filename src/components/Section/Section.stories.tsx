@@ -1,11 +1,14 @@
 import Section from '.';
 
-export default {
+const meta = {
   component: Section,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Section',
   },
 };
+
+export { Default };
+export default meta;

@@ -1,7 +1,10 @@
 import Social from '.';
 
-export default {
+const meta = {
   component: Social,
 };
 
-export const Default = {};
+const Default = {};
+
+export { Default };
+export default meta;

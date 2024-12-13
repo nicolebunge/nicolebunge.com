@@ -1,11 +1,14 @@
 import Layout from '.';
 
-export default {
+const meta = {
   component: Layout,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Main Content',
   },
 };
+
+export { Default };
+export default meta;

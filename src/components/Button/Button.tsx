@@ -1,6 +1,6 @@
 import clsx from 'clsx';
-import { Link } from 'gatsby';
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
+import Link from '../Link';
 import { button } from './Button.module.css';
 
 interface ButtonProps {
@@ -9,7 +9,7 @@ interface ButtonProps {
   to: string;
 }
 
-function Button(props: ButtonProps): JSX.Element {
+function Button(props: ButtonProps) {
   const { className, ...otherProps } = props;
 
   return <Link className={clsx(className, button)} {...otherProps} />;

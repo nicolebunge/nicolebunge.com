@@ -1,11 +1,14 @@
 import Header from '.';
 
-export default {
+const meta = {
   component: Header,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Header',
   },
 };
+
+export { Default };
+export default meta;

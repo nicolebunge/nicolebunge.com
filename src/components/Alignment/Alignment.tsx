@@ -1,16 +1,14 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-
 import clsx from 'clsx';
-import React, { HTMLAttributes, ReactNode } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 import {
   alignment,
-  alignmentAlignCenter,
-  alignmentAlignEnd,
-  alignmentAlignStart,
-  alignmentJustifyCenter,
-  alignmentJustifyEnd,
-  alignmentJustifySpaceBetween,
-  alignmentJustifyStart,
+  'alignment-align-center' as alignmentAlignCenter,
+  'alignment-align-end' as alignmentAlignEnd,
+  'alignment-align-start' as alignmentAlignStart,
+  'alignment-justify-center' as alignmentJustifyCenter,
+  'alignment-justify-end' as alignmentJustifyEnd,
+  'alignment-justify-space-between' as alignmentJustifySpaceBetween,
+  'alignment-justify-start' as alignmentJustifyStart,
 } from './Alignment.module.css';
 
 type Align = 'center' | 'end' | 'start';
@@ -35,7 +33,7 @@ const justifyClassNames = {
   start: alignmentJustifyStart,
 };
 
-function Alignment(props: AlignmentProps): JSX.Element {
+function Alignment(props: AlignmentProps) {
   const { align, className, justify, ...otherProps } = props;
 
   return (

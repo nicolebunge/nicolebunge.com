@@ -1,11 +1,11 @@
 declare const styles: {
   readonly alignment: string;
-  readonly alignmentAlignCenter: string;
-  readonly alignmentAlignEnd: string;
-  readonly alignmentAlignStart: string;
-  readonly alignmentJustifyCenter: string;
-  readonly alignmentJustifyEnd: string;
-  readonly alignmentJustifySpaceBetween: string;
-  readonly alignmentJustifyStart: string;
+  readonly 'alignment-align-center': string;
+  readonly 'alignment-align-end': string;
+  readonly 'alignment-align-start': string;
+  readonly 'alignment-justify-center': string;
+  readonly 'alignment-justify-end': string;
+  readonly 'alignment-justify-space-between': string;
+  readonly 'alignment-justify-start': string;
 };
 export = styles;

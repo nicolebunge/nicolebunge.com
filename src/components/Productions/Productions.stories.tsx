@@ -1,10 +1,10 @@
 import Productions from '.';
 
-export default {
+const meta = {
   component: Productions,
 };
 
-export const Default = {
+const Default = {
   args: {
     productions: [
       {
@@ -25,3 +25,6 @@ export const Default = {
     ],
   },
 };
+
+export { Default };
+export default meta;

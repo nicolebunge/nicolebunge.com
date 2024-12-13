@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 declare const styles: {
   readonly social: string;
   readonly social__icons: string;

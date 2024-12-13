@@ -9,15 +9,16 @@ exports[`layout component > should render correctly 1`] = `
     role="banner"
   >
     <a
-      aria-current="page"
-      class=""
       href="/"
     >
       <img
-        alt="Site Title"
-        height="28"
+        alt=""
+        data-nimg="1"
+        decoding="async"
+        height="100"
         loading="lazy"
-        src="https://res.cloudinary.com/nicolebunge/image/upload/c_fill,f_auto,h_28,q_auto,w_160/v1627923793/nicolebunge.com/nicole-bunge.svg"
+        src="nicolebunge.com/nicole-bunge.svg"
+        style="color: transparent;"
         width="160"
       />
     </a>
@@ -50,7 +51,7 @@ exports[`layout component > should render correctly 1`] = `
         >
           <a
             class="mainNavigation__link"
-            href="/ueber-mich/"
+            href="/ueber-mich"
           >
             Über mich
           </a>
@@ -60,7 +61,7 @@ exports[`layout component > should render correctly 1`] = `
         >
           <a
             class="mainNavigation__link"
-            href="/schauspiel/"
+            href="/schauspiel"
           >
             Schauspiel
           </a>
@@ -70,7 +71,7 @@ exports[`layout component > should render correctly 1`] = `
         >
           <a
             class="mainNavigation__link"
-            href="/theaterpaedagogik/"
+            href="/theaterpaedagogik"
           >
             Theaterpädagogik
           </a>
@@ -80,7 +81,7 @@ exports[`layout component > should render correctly 1`] = `
         >
           <a
             class="mainNavigation__link"
-            href="/tanz/"
+            href="/tanz"
           >
             Tanz
           </a>
@@ -90,7 +91,7 @@ exports[`layout component > should render correctly 1`] = `
         >
           <a
             class="mainNavigation__link"
-            href="/galerie/"
+            href="/galerie"
           >
             Galerie
           </a>
@@ -122,7 +123,7 @@ exports[`layout component > should render correctly 1`] = `
           <li>
             <a
               class="navigation__link"
-              href="/impressum/"
+              href="/impressum"
             >
               Impressum
             </a>
@@ -130,7 +131,7 @@ exports[`layout component > should render correctly 1`] = `
           <li>
             <a
               class="navigation__link"
-              href="/datenschutz/"
+              href="/datenschutz"
             >
               Datenschutz
             </a>

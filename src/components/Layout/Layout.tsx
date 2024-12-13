@@ -1,13 +1,13 @@
 import clsx from 'clsx';
-import { Link } from 'gatsby';
-import React, { HTMLAttributes, ReactNode } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
+// import { useSite } from '../../../../src/hooks/site';
 import { NOW } from '../../constants/dates';
 import { FOOTER, MAIN } from '../../constants/menus';
-import { useSite } from '../../hooks/site';
-import CloudinaryImage from '../CloudinaryImage';
 import Footer from '../Footer';
 import Grid from '../Grid';
 import Header from '../Header';
+import Image from '../Image';
+import Link from '../Link';
 import Main from '../Main';
 import MainNavigation from '../MainNavigation';
 import Navigation from '../Navigation';
@@ -22,20 +22,15 @@ interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
  * @link https://www.gatsbyjs.com/docs/how-to/routing/layout-components/
  */
 
-function Layout(props: LayoutProps): JSX.Element {
+function Layout(props: LayoutProps) {
   const { children, className } = props;
-  const { site } = useSite();
+  // const { site } = useSite();
 
   return (
     <div className={clsx(className, layout)}>
       <Header>
         <Link to="/">
-          <CloudinaryImage
-            src="nicolebunge.com/nicole-bunge.svg"
-            alt={site.siteMetadata.title}
-            width={160}
-            height={28}
-          />
+          <Image src="nicolebunge.com/nicole-bunge.svg" alt={''} width={160} height={28} />
         </Link>
 
         <MainNavigation routes={MAIN} />

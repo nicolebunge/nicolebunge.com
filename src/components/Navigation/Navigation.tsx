@@ -1,14 +1,12 @@
-/* eslint-disable camelcase */
-
 import clsx from 'clsx';
-import React, { HTMLAttributes } from 'react';
+import { HTMLAttributes } from 'react';
 import Link from '../Link';
 import {
   navigation,
   navigation__link,
-  navigation__linkActive,
+  'navigation__link--active' as navigation__linkActive,
   navigation__list,
-  navigation__listInline,
+  'navigation__list--inline' as navigation__listInline,
 } from './Navigation.module.css';
 
 interface Route {
@@ -21,7 +19,7 @@ interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
   routes: Route[];
 }
 
-function Navigation(props: NavigationProps): JSX.Element {
+function Navigation(props: NavigationProps) {
   const { className, inline, routes, ...otherProps } = props;
 
   return (
