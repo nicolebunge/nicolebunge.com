@@ -10,8 +10,14 @@ exports[`Gallery component > renders correctly 1`] = `
     <figure>
       <img
         alt="Image alt tag"
+        data-nimg="1"
+        decoding="async"
+        height="100"
         loading="lazy"
-        src="https://res.cloudinary.com/nicolebunge/image/upload/c_fill,f_auto,q_auto/v1627923793/path/to/image.jpg"
+        src="/_next/image?url=%2Fpath%2Fto%2Fimage.jpg&w=1920&q=75"
+        srcset="/_next/image?url=%2Fpath%2Fto%2Fimage.jpg&w=640&q=75 1x, /_next/image?url=%2Fpath%2Fto%2Fimage.jpg&w=1920&q=75 2x"
+        style="color: transparent;"
+        width="640"
       />
     </figure>
   </li>

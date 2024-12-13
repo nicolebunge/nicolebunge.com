@@ -1,9 +1,0 @@
-p {
-  margin-bottom: var(--space-lg);
-  margin-top: var(--space-xs);
-  max-width: 768px;
-}
-
-strong {
-  font-weight: 600;
-}

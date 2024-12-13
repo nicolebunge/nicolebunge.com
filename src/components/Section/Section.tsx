@@ -1,13 +1,13 @@
 import clsx from 'clsx';
-import React, { HTMLAttributes, ReactNode } from 'react';
-import { section, sectionFull } from './Section.module.css';
+import { HTMLAttributes, ReactNode } from 'react';
+import { section, 'section--full' as sectionFull } from './Section.module.css';
 
 interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   isFull?: boolean;
 }
 
-function Section(props: SectionProps): JSX.Element {
+function Section(props: SectionProps) {
   const { className, isFull = false, ...otherProps } = props;
 
   return (

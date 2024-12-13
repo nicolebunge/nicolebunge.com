@@ -1,11 +1,14 @@
 import Footer from '.';
 
-export default {
+const meta = {
   component: Footer,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Footer',
   },
 };
+
+export { Default };
+export default meta;

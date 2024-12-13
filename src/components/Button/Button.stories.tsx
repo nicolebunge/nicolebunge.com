@@ -1,12 +1,15 @@
 import Button from '.';
 
-export default {
+const meta = {
   component: Button,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Button',
     to: '/',
   },
 };
+
+export { Default };
+export default meta;

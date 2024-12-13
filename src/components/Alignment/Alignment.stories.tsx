@@ -1,30 +1,33 @@
 import Alignment from '.';
 
-export default {
+const meta = {
   component: Alignment,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Alignment',
   },
 };
 
-export const AlignCenter = {
+const AlignCenter = {
   args: {
     align: 'center',
   },
 };
 
-export const JustifyCenter = {
+const JustifyCenter = {
   args: {
     justify: 'center',
   },
 };
 
-export const Center = {
+const Center = {
   args: {
     align: 'center',
     justify: 'center',
   },
 };
+
+export { AlignCenter, Center, Default, JustifyCenter };
+export default meta;

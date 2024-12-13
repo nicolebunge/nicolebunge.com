@@ -1,10 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-
-import { Link as GatsbyLink } from 'gatsby';
-import React, { ReactNode } from 'react';
+import NextLink from 'next/link';
+import { AnchorHTMLAttributes, ReactNode } from 'react';
 import { isExternalUrl } from '../../utils/string';
 
-interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   activeClassName?: string;
   children: ReactNode;
   external?: boolean;
@@ -15,14 +13,14 @@ interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
  * @link https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/#reminder-use-link-only-for-internal-links
  */
 
-function Link(props: LinkProps): JSX.Element {
+function Link(props: LinkProps) {
   const { to, external = false, ...otherProps } = props;
 
   if (external || isExternalUrl(to)) {
     return <a href={to} target="_blank" rel="noopener noreferrer" {...otherProps} />;
   }
 
-  return <GatsbyLink to={to} {...otherProps} />;
+  return <NextLink href={to} {...otherProps} />;
 }
 
 export type { LinkProps };
