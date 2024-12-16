@@ -1,6 +1,5 @@
 import { composeStories } from '@storybook/react';
 import { render } from '@testing-library/react';
-import React from 'react';
 import { describe, expect, it, vi } from 'vitest';
 import * as stories from '../Layout.stories';
 

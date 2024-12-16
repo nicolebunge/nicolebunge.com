@@ -2,7 +2,6 @@
 
 exports[`Button component > renders correctly 1`] = `
 <a
-  aria-current="page"
   class="button"
   href="/"
 >

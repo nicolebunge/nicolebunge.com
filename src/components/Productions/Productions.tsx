@@ -1,11 +1,10 @@
-import React from 'react';
 import Production, { ProductionProps } from '../Production';
 
 interface ProductionsProps {
   productions: ProductionProps[];
 }
 
-function Productions(props: ProductionsProps): JSX.Element {
+function Productions(props: ProductionsProps) {
   const { productions } = props;
 
   return (

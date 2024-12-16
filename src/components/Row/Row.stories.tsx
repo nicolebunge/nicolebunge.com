@@ -1,11 +1,14 @@
 import Row from '.';
 
-export default {
+const meta = {
   component: Row,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Row',
   },
 };
+
+export { Default };
+export default meta;

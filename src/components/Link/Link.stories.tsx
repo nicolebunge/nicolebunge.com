@@ -1,19 +1,22 @@
 import Link from '.';
 
-export default {
+const meta = {
   component: Link,
 };
 
-export const Default = {
+const Default = {
   args: {
     children: 'Internal Link',
     to: '/',
   },
 };
 
-export const External = {
+const External = {
   args: {
     children: 'External Link',
     to: 'http://example.com',
   },
 };
+
+export { Default, External };
+export default meta;

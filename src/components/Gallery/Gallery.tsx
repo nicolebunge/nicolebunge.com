@@ -1,24 +1,21 @@
-/* eslint-disable camelcase */
-
 import clsx from 'clsx';
-import React from 'react';
-import CloudinaryImage, { CloudinaryImageProps } from '../CloudinaryImage';
+import Image, { ImageProps } from '../Image';
 import { gallery, gallery__item } from './Gallery.module.css';
 
 interface GalleryProps {
   className?: string;
-  images: CloudinaryImageProps[];
+  images: ImageProps[];
 }
 
-function Gallery(props: GalleryProps): JSX.Element {
+function Gallery(props: GalleryProps) {
   const { className, images, ...otherProps } = props;
 
   return (
     <ul className={clsx(className, gallery)} {...otherProps}>
-      {images.map((image) => (
-        <li className={gallery__item} key={image.src}>
+      {images.map((image, index) => (
+        <li className={gallery__item} key={index}>
           <figure>
-            <CloudinaryImage {...image} />
+            <Image {...image} />
           </figure>
         </li>
       ))}

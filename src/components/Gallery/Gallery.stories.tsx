@@ -1,16 +1,20 @@
 import Gallery from '.';
 
-export default {
+const meta = {
   component: Gallery,
 };
 
-export const Default = {
+const Default = {
   args: {
     images: [
       {
-        src: 'path/to/image.jpg',
+        src: '/path/to/image.jpg',
         alt: 'Image alt tag',
+        width: 640,
       },
     ],
   },
 };
+
+export { Default };
+export default meta;

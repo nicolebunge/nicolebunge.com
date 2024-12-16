@@ -1,19 +1,19 @@
-/* eslint-disable camelcase */
+'use client';
 
 import clsx from 'clsx';
-import React, { HTMLAttributes } from 'react';
+import { HTMLAttributes } from 'react';
 import { useLockBodyScroll, useToggle } from 'react-use';
+import { Menu1, XMark1 } from '../Icons';
 import Link from '../Link';
 import {
   mainNavigation,
-  mainNavigationIsActive,
+  'mainNavigation--is-active' as mainNavigationIsActive,
   mainNavigation__button,
   mainNavigation__item,
   mainNavigation__link,
-  mainNavigation__linkActive,
+  'mainNavigation__link--active' as mainNavigation__linkActive,
   mainNavigation__list,
 } from './MainNavigation.module.css';
-import { Menu1, XMark1 } from '../Icons';
 
 interface Route {
   name: string;
@@ -25,7 +25,7 @@ interface MainNavigationProps extends HTMLAttributes<HTMLDivElement> {
   routes: Route[];
 }
 
-function MainNavigation(props: MainNavigationProps): JSX.Element {
+function MainNavigation(props: MainNavigationProps) {
   const { className, routes, ...otherProps } = props;
   const [isActive, toggle] = useToggle(false);
 

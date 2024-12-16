@@ -29,7 +29,6 @@ exports[`MainNavigation component > renders correctly 1`] = `
       class="mainNavigation__item"
     >
       <a
-        aria-current="page"
         class="mainNavigation__link"
         href="/"
       >

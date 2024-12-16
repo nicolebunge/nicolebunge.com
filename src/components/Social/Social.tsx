@@ -1,14 +1,12 @@
-/* eslint-disable camelcase */
-
 import clsx from 'clsx';
-import React, { HTMLAttributes } from 'react';
+import { HTMLAttributes } from 'react';
 import { INSTAGRAM, LINKED_IN, XING } from '../../constants/social';
 import Link from '../Link';
 import { social, social__icon, social__icons } from './Social.module.css';
 
 type SocialProps = HTMLAttributes<HTMLDivElement>;
 
-function Social(props: SocialProps): JSX.Element {
+function Social(props: SocialProps) {
   const { className, ...otherProps } = props;
 
   return (
