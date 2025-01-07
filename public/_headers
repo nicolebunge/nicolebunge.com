@@ -5,8 +5,6 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: same-origin
 
-# https://www.gatsbyjs.com/docs/caching/
-
 /*.html
   cache-control: public, max-age=0, must-revalidate
 /page-data/*
