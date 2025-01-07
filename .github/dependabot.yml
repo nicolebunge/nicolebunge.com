@@ -13,9 +13,6 @@ updates:
         patterns:
           - '@typescript-eslint/*'
           - 'eslint*'
-      gatsby:
-        patterns:
-          - 'gatsby*'
       react:
         patterns:
           - '@types/react'
