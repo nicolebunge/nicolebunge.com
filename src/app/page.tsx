@@ -1,20 +1,13 @@
 import { Button, Column, Grid, Image, Link, Row, Section } from '@/components';
 import { ABOUT, ACTING, DANCING, THEATRE_PEDAGOGY } from '@/constants/routes';
+import {
+  berlinerKriminalTheater,
+  longo,
+  theaterAkademieStuttgart,
+  theaterAusDemKoffer,
+} from '@/data/utils';
 
 function Home() {
-  const berlinerKriminalTheater = {
-    name: 'Berliner Kriminal Theater',
-  };
-  const longo = {
-    name: 'Longo Tanzraum',
-  };
-  const theaterAkademieStuttgart = {
-    name: 'TheaterAkademieStuttgart',
-  };
-  const theaterAusDemKoffer = {
-    name: 'Theater aus dem Koffer',
-  };
-
   return (
     <>
       <Section isFull>

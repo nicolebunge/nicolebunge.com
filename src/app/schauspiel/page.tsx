@@ -1,39 +1,33 @@
 import { Column, Grid, Link, Row, Section } from '@/components';
-import directors from '@/data/directors.json';
-import organizations from '@/data/organizations.json';
 import productions from '@/data/productions.json';
 import publications from '@/data/publications.json';
+import {
+  akkaya,
+  berlinerKriminalTheater,
+  borlan,
+  but,
+  findDirectorByName,
+  findOrganizationBySlug,
+  jovanovic,
+  schloesser,
+  theaterAkademieStuttgart,
+  theaterAusDemKoffer,
+  theaterKompagnieStuttgart,
+  zav,
+} from '@/data/utils';
 import { Metadata } from 'next';
 
 const metadata: Metadata = {
   title: 'Schauspiel',
 };
 
-const berlinerKriminalTheater = organizations.find(
-  (org) => org.name === 'Berliner Kriminal Theater',
-)!;
-const theaterAusDemKoffer = organizations.find((org) => org.name === 'Theater aus dem Koffer')!;
-const theaterAkademieStuttgart = organizations.find(
-  (org) => org.name === 'Theater Akademie Stuttgart',
-)!;
-const but = organizations.find((org) => org.name === 'BuT')!;
-const zav = organizations.find((org) => org.name === 'ZAV')!;
-const theaterKompagnieStuttgart = organizations.find(
-  (org) => org.name === 'Theater Kompagnie Stuttgart',
-)!;
-
-const jovanovic = directors.find((director) => director.name === 'Aleksandar Jovanovic')!;
-const borlan = directors.find((director) => director.name === 'Attila Borlan')!;
-const akkaya = directors.find((director) => director.name === 'Ben Akkaya')!;
-const schloesser = directors.find((director) => director.name === 'Christian Schlösser')!;
-
 const mappedProductions = productions.map((production) => ({
   ...production,
   directors: production.directors.map((director) => ({
-    ...directors.find((d) => d.slug === director),
+    ...findDirectorByName(director),
   })),
   organization: {
-    ...organizations.find((organization) => organization.slug === production.organization),
+    ...findOrganizationBySlug(production.organization),
   },
 }));
 
