@@ -1,20 +1,16 @@
 import { Column, Grid, Link, Row, Section } from '@/components';
-import organizations from '@/data/organizations.json';
+import {
+  berlinerKriminalTheater,
+  lka,
+  reduta,
+  theaterAkademieStuttgart,
+  theaterAusDemKoffer,
+} from '@/data/utils';
 import { Metadata } from 'next';
 
 const metadata: Metadata = {
   title: 'Über Mich',
 };
-
-const berlinerKriminalTheater = organizations.find(
-  (org) => org.name === 'Berliner Kriminal Theater',
-)!;
-const lka = organizations.find((org) => org.name === 'Landeskriminalamt Baden-Württemberg')!;
-const reduta = organizations.find((org) => org.name === 'Reduta-Berlin Schauspielschule')!;
-const theaterAkademieStuttgart = organizations.find(
-  (org) => org.name === 'Theater Akademie Stuttgart',
-)!;
-const theaterAusDemKoffer = organizations.find((org) => org.name === 'Theater aus dem Koffer')!;
 
 function AboutPage() {
   return (

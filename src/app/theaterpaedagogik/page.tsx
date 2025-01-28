@@ -1,16 +1,10 @@
 import { Column, Grid, Link, Row, Section } from '@/components';
-import organizations from '@/data/organizations.json';
+import { bismarckschule, reduta, steinenbergSchule } from '@/data/utils';
 import { Metadata } from 'next';
 
 const metadata: Metadata = {
   title: 'Theaterpädagogik',
 };
-
-const bismarckschule = organizations.find(
-  (org) => org.name === 'Bismackschule Stuttgart Feuerbach',
-)!;
-const reduta = organizations.find((org) => org.name === 'Reduta-Berlin Schauspielschule')!;
-const steinenbergSchule = organizations.find((org) => org.name === 'Steinenberg-Grundschule')!;
 
 function TheatrePedagogyPage() {
   return (
