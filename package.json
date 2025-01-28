@@ -6,7 +6,6 @@
   "scripts": {
     "build": "next build",
     "check": "tsc",
-    "clean": "gatsby clean",
     "coverage": "vitest run --coverage",
     "dev": "next dev --turbopack",
     "format": "prettier --ignore-unknown --write .",
