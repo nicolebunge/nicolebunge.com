@@ -9,10 +9,6 @@ interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   to: string;
 }
 
-/**
- * @link https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/#reminder-use-link-only-for-internal-links
- */
-
 function Link(props: LinkProps) {
   const { to, external = false, ...otherProps } = props;
 
