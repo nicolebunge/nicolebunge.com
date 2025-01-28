@@ -1,4 +1,4 @@
-import { Column, Grid, Link, Productions, Row, Section } from '@/components';
+import { Column, Grid, Link, List, Productions, Row, Section } from '@/components';
 import productions from '@/data/productions.json';
 import publications from '@/data/publications.json';
 import {
@@ -421,17 +421,18 @@ function ActingPage() {
             </Column>
 
             <Column span={8} start={5}>
-              <ul>
-                {publications.map((publication) => {
-                  const { date, id, title, url } = publication;
+              <List
+                items={publications}
+                renderItem={(publication) => {
+                  const { date, title, url } = publication;
 
                   return (
-                    <li key={id}>
+                    <>
                       <Link to={url}>„{title}“</Link> – {date}
-                    </li>
+                    </>
                   );
-                })}
-              </ul>
+                }}
+              />
             </Column>
           </Row>
         </Grid>

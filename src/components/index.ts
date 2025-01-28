@@ -19,6 +19,8 @@ export * from './Layout';
 export { default as Layout } from './Layout';
 export * from './Link';
 export { default as Link } from './Link';
+export * from './List';
+export { default as List } from './List';
 export * from './Main';
 export { default as Main } from './Main';
 export * from './MainNavigation';
