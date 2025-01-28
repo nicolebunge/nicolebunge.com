@@ -1,4 +1,4 @@
-import { Column, Grid, Link, Row, Section } from '@/components';
+import { Column, Grid, Link, Productions, Row, Section } from '@/components';
 import productions from '@/data/productions.json';
 import publications from '@/data/publications.json';
 import {
@@ -6,7 +6,7 @@ import {
   berlinerKriminalTheater,
   borlan,
   but,
-  findDirectorByName,
+  findDirectorBySlug,
   findOrganizationBySlug,
   jovanovic,
   schloesser,
@@ -24,14 +24,12 @@ const metadata: Metadata = {
 const mappedProductions = productions.map((production) => ({
   ...production,
   directors: production.directors.map((director) => ({
-    ...findDirectorByName(director),
+    ...findDirectorBySlug(director)!,
   })),
   organization: {
-    ...findOrganizationBySlug(production.organization),
+    ...findOrganizationBySlug(production.organization)!,
   },
 }));
-
-console.log({ productions: mappedProductions });
 
 function ActingPage() {
   return (
@@ -203,12 +201,12 @@ function ActingPage() {
                       gridTemplateColumns: 'repeat(2, 1fr)',
                     }}
                   >
-                    {/* <Productions
+                    <Productions
                       productions={mappedProductions.filter(
                         (production) =>
                           production.organization.slug === 'berliner-kriminal-theater',
                       )}
-                    /> */}
+                    />
                   </div>
                 </Column>
 
@@ -222,11 +220,11 @@ function ActingPage() {
                       gridTemplateColumns: 'repeat(2, 1fr)',
                     }}
                   >
-                    {/* <Productions
+                    <Productions
                       productions={mappedProductions.filter(
                         (production) => production.organization.slug === 'theater-aus-dem-koffer',
                       )}
-                    /> */}
+                    />
                   </div>
                 </Column>
               </Row>
@@ -253,12 +251,12 @@ function ActingPage() {
                       gridTemplateColumns: 'repeat(2, 1fr)',
                     }}
                   >
-                    {/* <Productions
+                    <Productions
                       productions={mappedProductions.filter(
                         (production) =>
                           production.organization.slug === 'filmakademie-baden-wuerttemberg',
                       )}
-                    /> */}
+                    />
                   </div>
                 </Column>
               </Row>

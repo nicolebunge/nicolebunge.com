@@ -5,6 +5,10 @@ function findDirectorByName(name: string) {
   return directors.find((director) => director.name === name);
 }
 
+function findDirectorBySlug(slug: string) {
+  return directors.find((director) => director.slug === slug);
+}
+
 function findOrganizationByName(name: string) {
   return organizations.find((organization) => organization.name === name);
 }
@@ -37,6 +41,7 @@ export {
   borlan,
   but,
   findDirectorByName,
+  findDirectorBySlug,
   findOrganizationByName,
   findOrganizationBySlug,
   jovanovic,
