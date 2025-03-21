@@ -41,7 +41,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^4.3.4",
-    "@vitest/coverage-v8": "^3.0.4",
+    "@vitest/coverage-v8": "^3.0.9",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "happy-dom": "^16.8.1",
@@ -52,6 +52,6 @@
     "stylelint-order": "^6.0.4",
     "stylelint-selector-bem-pattern": "^4.0.1",
     "typescript": "^5",
-    "vitest": "^3.0.4"
+    "vitest": "^3.0.9"
   }
 }
