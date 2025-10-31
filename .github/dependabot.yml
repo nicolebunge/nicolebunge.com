@@ -19,6 +19,10 @@ updates:
           - '@types/react-dom'
           - 'react'
           - 'react-dom'
+      storybook:
+        patterns:
+          - 'storybook'
+          - '@storybook/*'
       stylelint:
         patterns:
           - 'stylelint*'
