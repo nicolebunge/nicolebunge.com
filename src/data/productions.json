@@ -6,7 +6,8 @@
     "role": "Ein Körper",
     "organization": "berliner-kriminal-theater",
     "directors": ["wolfgang-rumpf"],
-    "date": "2024-09-01"
+    "date": "2024-09-01",
+    "url": "https://www.kriminaltheater.de/events/ausser-kontrolle/"
   },
   {
     "id": "ecc861ae-0035-4c85-a6cd-2162acc68022",
@@ -15,7 +16,8 @@
     "role": "Louise Bourget  ",
     "organization": "berliner-kriminal-theater",
     "directors": ["matti-wien", "wolfgang-rumpf"],
-    "date": "2024-07-01"
+    "date": "2024-07-01",
+    "url": "https://www.kriminaltheater.de/events/tod-auf-dem-nil/"
   },
   {
     "id": "f3ecad97-2499-4104-81f3-40b0eb7e507b",
@@ -24,7 +26,8 @@
     "role": "Miriam Leibowitz",
     "organization": "berliner-kriminal-theater",
     "directors": ["thomas-wingrich"],
-    "date": "2024-03-01"
+    "date": "2024-03-01",
+    "url": "https://www.kriminaltheater.de/events/der-tag-an-dem-der-papst-gekidnappt-wurde/"
   },
   {
     "id": "75780016-2436-4bf8-a799-bc9a656e2d66",
@@ -42,7 +45,8 @@
     "role": "Elaine Harper",
     "organization": "berliner-kriminal-theater",
     "directors": ["wolfgang-rumpf"],
-    "date": "2020-11-08"
+    "date": "2020-11-08",
+    "url": "https://www.kriminaltheater.de/events/arsen-und-spitzenhaeubchen/"
   },
   {
     "id": "c9657115-7906-484b-aa6e-804c3e61b166",
@@ -60,7 +64,8 @@
     "role": "Nr. 5",
     "organization": "berliner-kriminal-theater",
     "directors": ["wolfgang-rumpf"],
-    "date": "2020-09-18"
+    "date": "2020-09-18",
+    "url": "https://www.kriminaltheater.de/events/die-zwoelf-geschworenen/"
   },
   {
     "id": "6bd0a075-23b6-462a-bfa4-334ba121f2fe",
@@ -69,7 +74,8 @@
     "role": "Lisa",
     "organization": "berliner-kriminal-theater",
     "directors": ["thomas-wingrich"],
-    "date": "2020-01-25"
+    "date": "2020-01-25",
+    "url": "https://www.kriminaltheater.de/events/passagier-23/"
   },
   {
     "id": "8198d81b-268f-48f7-a328-39892cefc782",

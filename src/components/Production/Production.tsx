@@ -27,14 +27,23 @@ interface ProductionProps {
   organization: Organization;
   role: string;
   slug: string;
+  date?: string;
+  url?: string;
 }
 
 function Production(props: ProductionProps) {
-  const { name, role, directors, organization } = props;
+  const { name, role, directors, organization, url } = props;
 
   return (
     <p>
-      <strong>„{name}“</strong>, {role}
+      {url ? (
+        <Link to={url}>
+          <strong>„{name}“</strong>
+        </Link>
+      ) : (
+        <strong>„{name}“</strong>
+      )}
+      , {role}
       <br />
       Regie: {formatList(directors.map((director) => director.name))},{' '}
       <Link to={organization.url}>{organization.name}</Link>
