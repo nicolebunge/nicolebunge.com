@@ -5,7 +5,8 @@
     "name": "Außer Kontrolle",
     "role": "Ein Körper",
     "organization": "berliner-kriminal-theater",
-    "directors": ["wolfgang-rumpf"]
+    "directors": ["wolfgang-rumpf"],
+    "date": "2024-09-01"
   },
   {
     "id": "ecc861ae-0035-4c85-a6cd-2162acc68022",
@@ -13,7 +14,8 @@
     "name": "Tod auf dem Nil",
     "role": "Louise Bourget  ",
     "organization": "berliner-kriminal-theater",
-    "directors": ["matti-wien", "wolfgang-rumpf"]
+    "directors": ["matti-wien", "wolfgang-rumpf"],
+    "date": "2024-07-01"
   },
   {
     "id": "f3ecad97-2499-4104-81f3-40b0eb7e507b",
@@ -21,7 +23,8 @@
     "name": "Der Tag, an dem der Papst gekidnappt wurde",
     "role": "Miriam Leibowitz",
     "organization": "berliner-kriminal-theater",
-    "directors": ["thomas-wingrich"]
+    "directors": ["thomas-wingrich"],
+    "date": "2024-03-01"
   },
   {
     "id": "75780016-2436-4bf8-a799-bc9a656e2d66",
@@ -29,7 +32,8 @@
     "name": "Erbarmen",
     "role": "Lis Sørensen",
     "organization": "berliner-kriminal-theater",
-    "directors": ["wolfgang-rumpf"]
+    "directors": ["wolfgang-rumpf"],
+    "date": "2021-09-16"
   },
   {
     "id": "64fab7ec-a8b5-4d1d-bb2a-73cf40d546c9",
@@ -37,7 +41,8 @@
     "name": "Arsen und Spitzenhäubchen",
     "role": "Elaine Harper",
     "organization": "berliner-kriminal-theater",
-    "directors": ["wolfgang-rumpf"]
+    "directors": ["wolfgang-rumpf"],
+    "date": "2020-11-08"
   },
   {
     "id": "c9657115-7906-484b-aa6e-804c3e61b166",
@@ -45,7 +50,8 @@
     "name": "Inspektor Campbells letzter Fall 23",
     "role": "Jennifer",
     "organization": "berliner-kriminal-theater",
-    "directors": ["wolfgang-rumpf", "matti-wien"]
+    "directors": ["wolfgang-rumpf", "matti-wien"],
+    "date": "2020-10-23"
   },
   {
     "id": "570fb41d-a35d-4ba7-922f-d980114ece8a",
@@ -53,7 +59,8 @@
     "name": "Die zwölf Geschworenen",
     "role": "Nr. 5",
     "organization": "berliner-kriminal-theater",
-    "directors": ["wolfgang-rumpf"]
+    "directors": ["wolfgang-rumpf"],
+    "date": "2020-09-18"
   },
   {
     "id": "6bd0a075-23b6-462a-bfa4-334ba121f2fe",
@@ -61,7 +68,8 @@
     "name": "Passagier 23",
     "role": "Lisa",
     "organization": "berliner-kriminal-theater",
-    "directors": ["thomas-wingrich"]
+    "directors": ["thomas-wingrich"],
+    "date": "2020-01-25"
   },
   {
     "id": "8198d81b-268f-48f7-a328-39892cefc782",
