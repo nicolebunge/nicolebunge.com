@@ -8,6 +8,14 @@
     "directors": ["wolfgang-rumpf"]
   },
   {
+    "id": "ecc861ae-0035-4c85-a6cd-2162acc68022",
+    "slug": "tod-auf-dem-nil",
+    "name": "Tod auf dem Nil",
+    "role": "Louise Bourget  ",
+    "organization": "berliner-kriminal-theater",
+    "directors": ["matti-wien", "wolfgang-rumpf"]
+  },
+  {
     "id": "75780016-2436-4bf8-a799-bc9a656e2d66",
     "slug": "erbarmen",
     "name": "Erbarmen",
