@@ -1,5 +1,13 @@
 [
   {
+    "id": "e18ec8cb-abe1-4d08-85f2-cc84addf481b",
+    "slug": "ausser-kontrolle",
+    "name": "Außer Kontrolle",
+    "role": "Ein Körper",
+    "organization": "berliner-kriminal-theater",
+    "directors": ["wolfgang-rumpf"]
+  },
+  {
     "id": "75780016-2436-4bf8-a799-bc9a656e2d66",
     "slug": "erbarmen",
     "name": "Erbarmen",
