@@ -16,6 +16,14 @@
     "directors": ["matti-wien", "wolfgang-rumpf"]
   },
   {
+    "id": "f3ecad97-2499-4104-81f3-40b0eb7e507b",
+    "slug": "der-tag-an-dem-der-papst-gekidnappt-wurde",
+    "name": "Der Tag, an dem der Papst gekidnappt wurde",
+    "role": "Miriam Leibowitz",
+    "organization": "berliner-kriminal-theater",
+    "directors": ["thomas-wingrich"]
+  },
+  {
     "id": "75780016-2436-4bf8-a799-bc9a656e2d66",
     "slug": "erbarmen",
     "name": "Erbarmen",
