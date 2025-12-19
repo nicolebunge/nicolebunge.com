@@ -14,9 +14,9 @@ function ImprintPage() {
         <p>
           Nicole Bunge
           <br />
-          Akeleiweg 93
+          Schönhauser Allee 10a
           <br />
-          12487, Berlin
+          12157, Berlin
         </p>
         <h2>Kontakt</h2>
         <p>
