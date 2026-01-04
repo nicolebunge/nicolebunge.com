@@ -27,7 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
+    ".next/dev/types/**/*.ts",
+    "src/app/impressum/page.mdx",
+    "src/app/datenschutz/page.mdx"
   ],
   "exclude": ["node_modules"]
 }
