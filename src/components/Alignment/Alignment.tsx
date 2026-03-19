@@ -2,13 +2,13 @@ import clsx from 'clsx';
 import { HTMLAttributes, ReactNode } from 'react';
 import {
   alignment,
-  'alignment-align-center' as alignmentAlignCenter,
-  'alignment-align-end' as alignmentAlignEnd,
-  'alignment-align-start' as alignmentAlignStart,
-  'alignment-justify-center' as alignmentJustifyCenter,
-  'alignment-justify-end' as alignmentJustifyEnd,
-  'alignment-justify-space-between' as alignmentJustifySpaceBetween,
-  'alignment-justify-start' as alignmentJustifyStart,
+  'alignment--align-center' as alignmentAlignCenter,
+  'alignment--align-end' as alignmentAlignEnd,
+  'alignment--align-start' as alignmentAlignStart,
+  'alignment--justify-center' as alignmentJustifyCenter,
+  'alignment--justify-end' as alignmentJustifyEnd,
+  'alignment--justify-space-between' as alignmentJustifySpaceBetween,
+  'alignment--justify-start' as alignmentJustifyStart,
 } from './Alignment.module.css';
 
 type Align = 'center' | 'end' | 'start';
