@@ -21,6 +21,8 @@ describe('cloudinaryLoader', () => {
   it('reflects the width parameter in the URL', () => {
     const result = cloudinaryLoader({ src: 'photo.jpg', width: 1200 });
 
-    expect(result).toContain('w_1200');
+    expect(result).toBe(
+      'https://res.cloudinary.com/nicolebunge/image/upload/c_limit,f_auto,q_auto,w_1200/v1627923793/photo.jpg',
+    );
   });
 });
