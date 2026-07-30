@@ -2,61 +2,48 @@ import { describe, expect, it } from 'vitest';
 import { getProductions } from '../utils';
 
 describe('getProductions', () => {
-  it('returns an array of resolved productions', () => {
-    const result = getProductions();
-
-    expect(Array.isArray(result)).toBe(true);
-    expect(result.length).toBeGreaterThan(0);
+  it('returns a non-empty list', () => {
+    expect(getProductions().length).toBeGreaterThan(0);
   });
 
-  it('resolves organization slugs into full organization objects', () => {
-    const result = getProductions();
+  it('resolves an organization slug into a full organization object', () => {
+    const production = getProductions().find((p) => p.slug === 'ausser-kontrolle')!;
 
-    for (const production of result) {
-      expect(production.organization).toMatchObject({
-        id: expect.any(String),
-        name: expect.any(String),
-        slug: expect.any(String),
-        url: expect.any(String),
-      });
-    }
-  });
-
-  it('resolves director slugs into full director objects', () => {
-    const result = getProductions();
-
-    for (const production of result) {
-      expect(Array.isArray(production.directors)).toBe(true);
-      expect(production.directors.length).toBeGreaterThan(0);
-
-      for (const director of production.directors) {
-        expect(director).toMatchObject({
-          id: expect.any(String),
-          name: expect.any(String),
-          slug: expect.any(String),
-        });
-      }
-    }
-  });
-
-  it('preserves production fields such as id, slug, name, role', () => {
-    const result = getProductions();
-    const first = result[0];
-
-    expect(first).toMatchObject({
-      id: expect.any(String),
-      slug: expect.any(String),
-      name: expect.any(String),
-      role: expect.any(String),
+    expect(production.organization).toEqual({
+      id: 'e7b7ac63-8b3f-401a-a389-0d501e9fcf75',
+      name: 'Berliner Kriminal Theater',
+      slug: 'berliner-kriminal-theater',
+      url: 'https://www.kriminaltheater.de',
     });
   });
 
-  it('includes a berliner-kriminal-theater production resolved correctly', () => {
-    const result = getProductions();
-    const bkt = result.find((p) => p.organization.slug === 'berliner-kriminal-theater');
+  it('resolves director slugs into full director objects', () => {
+    const production = getProductions().find((p) => p.slug === 'ausser-kontrolle')!;
 
-    expect(bkt).toBeDefined();
-    expect(bkt!.organization.name).toBe('Berliner Kriminal Theater');
-    expect(bkt!.organization.url).toBe('https://www.kriminaltheater.de');
+    expect(production.directors).toEqual([
+      {
+        id: '624a318c-57d6-4839-9da7-eb90f9956bce',
+        name: 'Wolfgang Rumpf',
+        slug: 'wolfgang-rumpf',
+        url: 'http://www.wolfgangrumpf.de',
+      },
+    ]);
+  });
+
+  it('preserves the raw production fields alongside resolved relations', () => {
+    const production = getProductions().find((p) => p.slug === 'ausser-kontrolle')!;
+
+    expect(production).toMatchObject({
+      id: 'e18ec8cb-abe1-4d08-85f2-cc84addf481b',
+      slug: 'ausser-kontrolle',
+      name: 'Außer Kontrolle',
+      role: 'Ein Körper',
+    });
+  });
+
+  it('resolves a production with multiple directors', () => {
+    const production = getProductions().find((p) => p.slug === 'tod-auf-dem-nil')!;
+
+    expect(production.directors.map((d) => d.slug)).toEqual(['matti-wien', 'wolfgang-rumpf']);
   });
 });

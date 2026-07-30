@@ -68,7 +68,6 @@ const borlan = findDirectorByName('Attila Borlan')!;
 const jovanovic = findDirectorByName('Aleksandar Jovanovic')!;
 const schloesser = findDirectorByName('Christian Schlösser')!;
 
-export type { Director, Organization, ResolvedProduction };
 export {
   akkaya,
   berlinerKriminalTheater,
@@ -87,3 +86,4 @@ export {
   theaterKompagnieStuttgart,
   zav,
 };
+export type { Director, Organization, ResolvedProduction };

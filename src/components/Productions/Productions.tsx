@@ -1,7 +1,8 @@
-import Production, { ProductionProps } from '../Production';
+import { ResolvedProduction } from '@/data/utils';
+import Production from '../Production';
 
 interface ProductionsProps {
-  productions: ProductionProps[];
+  productions: ResolvedProduction[];
 }
 
 function Productions(props: ProductionsProps) {
