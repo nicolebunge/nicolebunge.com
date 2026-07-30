@@ -1,10 +1,5 @@
 import Link from '../Link';
-
-function formatList(list: string[]): string {
-  return list.reduce(
-    (text, value, i, array) => text + (i < array.length - 1 ? ', ' : ' & ') + value,
-  );
-}
+import { formatList } from '../../utils/string';
 
 interface Director {
   id: string;
