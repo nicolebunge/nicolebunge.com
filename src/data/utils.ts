@@ -1,5 +1,31 @@
 import directors from '@/data/directors.json';
 import organizations from '@/data/organizations.json';
+import productions from '@/data/productions.json';
+
+interface Director {
+  id: string;
+  name: string;
+  slug: string;
+  url?: string;
+}
+
+interface Organization {
+  id: string;
+  name: string;
+  slug: string;
+  url: string;
+}
+
+interface ResolvedProduction {
+  id: string;
+  slug: string;
+  name: string;
+  role: string;
+  organization: Organization;
+  directors: Director[];
+  date?: string;
+  url?: string;
+}
 
 function findDirectorByName(name: string) {
   return directors.find((director) => director.name === name);
@@ -17,6 +43,14 @@ function findOrganizationBySlug(slug: string) {
   return organizations.find((organization) => organization.slug === slug);
 }
 
+function getProductions(): ResolvedProduction[] {
+  return productions.map((production) => ({
+    ...production,
+    directors: production.directors.map((slug) => ({ ...findDirectorBySlug(slug)! })),
+    organization: { ...findOrganizationBySlug(production.organization)! },
+  }));
+}
+
 const berlinerKriminalTheater = findOrganizationByName('Berliner Kriminal Theater')!;
 const bismarckschule = findOrganizationByName('Bismackschule Stuttgart Feuerbach')!;
 const but = findOrganizationByName('BuT')!;
@@ -32,7 +66,7 @@ const zav = findOrganizationByName('ZAV')!;
 const akkaya = findDirectorByName('Ben Akkaya')!;
 const borlan = findDirectorByName('Attila Borlan')!;
 const jovanovic = findDirectorByName('Aleksandar Jovanovic')!;
-const schloesser = findDirectorByName('Christian Schlösser')!;
+const schloesser = findDirectorByName('Christian Schlösser')!;
 
 export {
   akkaya,
@@ -40,10 +74,7 @@ export {
   bismarckschule,
   borlan,
   but,
-  findDirectorByName,
-  findDirectorBySlug,
-  findOrganizationByName,
-  findOrganizationBySlug,
+  getProductions,
   jovanovic,
   lka,
   longo,
@@ -55,3 +86,4 @@ export {
   theaterKompagnieStuttgart,
   zav,
 };
+export type { Director, Organization, ResolvedProduction };
