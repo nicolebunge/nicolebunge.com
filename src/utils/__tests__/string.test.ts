@@ -8,13 +8,13 @@ describe('formatList', () => {
     expect(formatList(['Alice'])).toStrictEqual('Alice');
   });
 
-  it('should join two items with " & "', () => {
+  it('should join two items with "&"', () => {
     expect.assertions(1);
 
     expect(formatList(['Alice', 'Bob'])).toStrictEqual('Alice & Bob');
   });
 
-  it('should join three or more items with commas and " & " before the last', () => {
+  it('should join three or more items with commas and "&" before the last', () => {
     expect.assertions(1);
 
     expect(formatList(['Alice', 'Bob', 'Carol'])).toStrictEqual('Alice, Bob & Carol');
