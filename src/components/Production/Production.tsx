@@ -1,30 +1,8 @@
+import { ResolvedProduction } from '@/data/utils';
 import Link from '../Link';
 import { formatList } from '../../utils/string';
 
-interface Director {
-  id: string;
-  name: string;
-  slug: string;
-  url?: string;
-}
-
-interface Organization {
-  id: string;
-  name: string;
-  slug: string;
-  url: string;
-}
-
-interface ProductionProps {
-  directors: Director[];
-  id: string;
-  name: string;
-  organization: Organization;
-  role: string;
-  slug: string;
-  date?: string;
-  url?: string;
-}
+type ProductionProps = ResolvedProduction;
 
 function Production(props: ProductionProps) {
   const { name, role, directors, organization, url } = props;

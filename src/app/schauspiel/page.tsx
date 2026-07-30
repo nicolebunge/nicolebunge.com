@@ -1,13 +1,11 @@
 import { Column, Grid, Link, List, Productions, Row, Section } from '@/components';
-import productions from '@/data/productions.json';
 import publications from '@/data/publications.json';
 import {
   akkaya,
   berlinerKriminalTheater,
   borlan,
   but,
-  findDirectorBySlug,
-  findOrganizationBySlug,
+  getProductions,
   jovanovic,
   schloesser,
   theaterAkademieStuttgart,
@@ -21,15 +19,7 @@ const metadata: Metadata = {
   title: 'Schauspiel',
 };
 
-const mappedProductions = productions.map((production) => ({
-  ...production,
-  directors: production.directors.map((director) => ({
-    ...findDirectorBySlug(director)!,
-  })),
-  organization: {
-    ...findOrganizationBySlug(production.organization)!,
-  },
-}));
+const allProductions = getProductions();
 
 function ActingPage() {
   return (
@@ -202,7 +192,7 @@ function ActingPage() {
                     }}
                   >
                     <Productions
-                      productions={mappedProductions.filter(
+                      productions={allProductions.filter(
                         (production) =>
                           production.organization.slug === 'berliner-kriminal-theater',
                       )}
@@ -221,7 +211,7 @@ function ActingPage() {
                     }}
                   >
                     <Productions
-                      productions={mappedProductions.filter(
+                      productions={allProductions.filter(
                         (production) => production.organization.slug === 'theater-aus-dem-koffer',
                       )}
                     />
@@ -252,7 +242,7 @@ function ActingPage() {
                     }}
                   >
                     <Productions
-                      productions={mappedProductions.filter(
+                      productions={allProductions.filter(
                         (production) =>
                           production.organization.slug === 'filmakademie-baden-wuerttemberg',
                       )}
