@@ -95,22 +95,19 @@ h3 {
 h1 {
   font-size: clamp(2rem, 1.5rem + 2.5vw, 3rem);
   line-height: 1.125;
-  margin-bottom: var(--space-xs);
-  margin-top: var(--space-lg);
+  margin-block: var(--space-lg) var(--space-xs);
 }
 
 h2 {
   font-size: clamp(1.75rem, 1.375rem + 1.875vw, 2.5rem);
   line-height: 1.25;
-  margin-bottom: var(--space-xs);
-  margin-top: 0;
+  margin-block: 0 var(--space-xs);
 }
 
 h3 {
   font-size: clamp(1.25rem, 1.125rem + 0.625vw, 1.5rem);
   line-height: 1.25;
-  margin-bottom: 0;
-  margin-top: var(--space-s);
+  margin-block: var(--space-s) 0;
 }
 
 img {
@@ -124,9 +121,8 @@ li {
 }
 
 ul {
-  margin-bottom: var(--space-lg);
-  margin-top: var(--space-xs);
-  padding-left: var(--space-lg);
+  margin-block: var(--space-xs) var(--space-lg);
+  padding-inline-start: var(--space-lg);
 }
 
 ::marker {
@@ -134,8 +130,7 @@ ul {
 }
 
 p {
-  margin-bottom: var(--space-lg);
-  margin-top: var(--space-xs);
+  margin-block: var(--space-xs) var(--space-lg);
   max-width: 768px;
 }
 
