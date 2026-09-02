@@ -16,8 +16,7 @@
 
 .navigation__link {
   display: inline-block;
-  padding-bottom: var(--space-md);
-  padding-top: var(--space-md);
+  padding-block: var(--space-md);
   position: relative;
   transition: color 0.3s;
 }

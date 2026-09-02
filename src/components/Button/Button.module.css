@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   font-weight: 600;
-  padding-right: 3em;
+  padding-inline-end: 3em;
   position: relative;
   text-transform: uppercase;
 }
@@ -10,9 +10,9 @@
   background-color: currentcolor;
   content: '';
   height: 0.125em;
+  inset-block-start: 50%;
+  inset-inline-end: 0;
   position: absolute;
-  right: 0;
-  top: 50%;
   transform: translateY(-50%);
   width: 2.5em;
 }
