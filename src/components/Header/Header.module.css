@@ -6,27 +6,24 @@
   background-size: calc(90% / 3);
   display: flex;
   flex-wrap: wrap;
+  inset-block-start: 0;
+  inset-inline: 0;
   justify-content: space-between;
-  left: 0;
   padding: var(--space-xs) 5%;
   position: fixed;
-  right: 0;
-  top: 0;
   will-change: transform;
   z-index: 1;
 }
 
 @media (width >= 640px) {
   .header {
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-block: 0;
   }
 }
 
 @media (width >= 1440px) {
   .header {
     background-size: calc(var(--grid-max-width) / 3);
-    padding-left: 3.5em;
-    padding-right: 3.5em;
+    padding-inline: 3.5em;
   }
 }

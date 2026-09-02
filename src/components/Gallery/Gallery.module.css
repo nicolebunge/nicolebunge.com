@@ -18,7 +18,7 @@
 
 .gallery__item:nth-child(7n + 1) {
   grid-column: 2 / span 3;
-  margin-top: 14em;
+  margin-block-start: 14em;
 }
 
 .gallery__item:nth-child(7n + 1) img {
@@ -43,7 +43,7 @@
 
 .gallery__item:nth-child(7n + 4) {
   grid-column: 2 / span 2;
-  margin-top: 10em;
+  margin-block-start: 10em;
 }
 
 .gallery__item:nth-child(7n + 4) img {
@@ -69,7 +69,7 @@
 
 .gallery__item:nth-child(7n + 7) {
   grid-column: 9 / span 3;
-  margin-top: 14em;
+  margin-block-start: 14em;
 }
 
 .gallery__item:nth-child(7n + 7) img {

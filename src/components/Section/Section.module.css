@@ -1,14 +1,12 @@
 .section {
   align-items: center;
   display: flex;
-  padding-bottom: var(--space-xxl);
-  padding-top: var(--space-xxl);
+  padding-block: var(--space-xxl);
 }
 
 @media (width >= 1080px) {
   .section {
-    padding-bottom: var(--space-xxxl);
-    padding-top: var(--space-xxxl);
+    padding-block: var(--space-xxxl);
   }
 }
 

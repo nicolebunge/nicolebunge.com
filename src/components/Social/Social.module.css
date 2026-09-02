@@ -3,22 +3,20 @@
   background-image: linear-gradient(to right, #f4f4f4 1px, transparent 1px);
   background-position: 50%;
   background-size: calc(90% / 3);
-  bottom: 0;
   display: flex;
   flex-wrap: wrap;
+  inset-block-end: 0;
+  inset-inline: 0;
   justify-content: flex-end;
-  left: 0;
   padding: var(--space-xs) 5% var(--space-lg);
   position: sticky;
-  right: 0;
   will-change: transform;
 }
 
 @media (width >= 1440px) {
   .social {
     background-size: calc(var(--grid-max-width) / 3);
-    padding-left: 3.5em;
-    padding-right: 3.5em;
+    padding-inline: 3.5em;
   }
 }
 
